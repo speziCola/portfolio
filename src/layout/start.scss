@@ -4,7 +4,7 @@
     grid-template-areas: 
     'content footer'
     'content footer';
-    grid-template-columns: auto 6.4rem;
+    grid-template-columns: auto 8.0rem;
 
     @media only screen and (max-width: 650px) {
         grid-template-areas: 
@@ -47,19 +47,20 @@
         &--hi {
             position: relative;
             display: block;
+            left: calc(-0px - (16 - 0) * ((100vw - 320px) / (2560 - 320)));
             @include margin-bottom(8, 32);
             margin-left: calc(-8px - (8 - 8) * ((100vw - 320px) / (2560 - 320)));
-            @include font-size(80, 140);
-            @include line-height(80, 140);
+            @include font-size(80, 440);
+            @include line-height(80, 440);
             font-weight: 700;
             text-transform: none;
 
             &:before {
                 content: "“";
                 position: absolute;
-                left: calc(-45px - (80 - 45) * ((100vw - 320px) / (2560 - 320)));
-                @include line-height(80, 140);
-                @include font-size(80, 140);
+                left: calc(-45px - (224 - 45) * ((100vw - 320px) / (2560 - 320)));
+                @include font-size(80, 440);
+                @include line-height(80, 440);
                 font-weight: 700;
             }
         }
@@ -83,7 +84,7 @@
    
     &__subtext {
         max-width: 96.0rem;
-        @include margin-bottom(32, 48);
+        @include margin-bottom(32, 96);
         @extend %ck-text;
         @extend %ck-subtitle;
         color: $ck-font-third;
