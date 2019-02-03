@@ -1,0 +1,181 @@
+.ck__welcome__conatainer {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'content footer'
+    'content footer';
+    grid-template-columns: auto 5.6rem;
+
+    @media only screen and (max-width: 650px) {
+        grid-template-areas: 
+        'content content'
+        'footer footer';
+        grid-template-rows: auto auto;
+    }
+}
+
+//* Content
+.ck__start__content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    @media only screen and (max-width: 650px) {
+        align-items: flex-start;
+        height: 100%;
+    }
+}
+
+//* Wrapper
+.ck__start__wrapper {
+    display: block;
+    @include padding-left-right(64,192,24,64);
+    box-sizing: border-box;
+
+    &__headline {
+        @include margin-bottom(8, 24);
+        padding-top: 3.2rem;
+        font-family: $ck-font-01;  
+        @include font-size(18, 40);
+        @include line-height(24, 48);
+        color: $ck-font-title;
+        text-transform: uppercase;
+    
+        &--hi {
+            position: relative;
+            display: block;
+            @include margin-bottom(8, 32);
+            margin-left: calc(-8px - (8 - 8) * ((100vw - 320px) / (2560 - 320)));
+            @include font-size(80, 140);
+            @include line-height(80, 140);
+            font-weight: 700;
+            text-transform: none;
+
+            &:before {
+                content: "“";
+                position: absolute;
+                left: calc(-45px - (80 - 45) * ((100vw - 320px) / (2560 - 320)));
+                @include line-height(80, 140);
+                @include font-size(80, 140);
+                font-weight: 700;
+            }
+        }
+    
+        &__line {
+            animation: blinker 1s linear infinite;  
+            @keyframes blinker {
+                0% {color: rgba(66,100,251,1);}
+                50% {color: rgba(66,100,251,0);}
+                100% {color: rgba(66,100,251,1);}   
+            }  
+            @media only screen and (max-width: 650px) {
+                @keyframes blinker {
+                    0% {color: rgba(255,255,255,1);}
+                    50% {color: rgba(66,100,251,1);}
+                    100% {color: rgba(255,255,255,1);}
+                }
+            }
+        }      
+    }
+   
+    &__subtext {
+        max-width: 96.0rem;
+        @include margin-bottom(32, 48);
+        @extend %ck-text;
+        @extend %ck-subtitle;
+        color: $ck-font-third;
+    }
+    
+    & ul {
+        display: flex;
+        @include margin-bottom(56, 48);
+        align-items: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+
+        & li {
+            @include margin-right(0, 16);
+            border-radius: 100%;
+            box-sizing: border-box;
+            transition: box-shadow 0.25s ease-in-out;
+
+            &:hover {
+                @extend %hover;
+            }
+    
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
+                width: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
+            }
+    
+            &:hover i {
+                color: $ck-gray-00;
+            }
+        }
+
+        & .line {
+            width: 0.1rem;
+            @include height(24, 40);
+            @include margin-elemente(8, 16);
+            border-radius: 0;
+            border: 0;
+            background: $ck-font-second;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        &__headline {
+            color: $ck-gray-00;
+            @include margin-bottom(40, 64);
+        }
+        &--welcome {
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            height: 65vh;
+            @include margin-bottom(32, 64);
+            background: $ck-primary;
+            box-sizing: border-box;
+        }
+
+        &--about {
+            @include padding-left-right(24,64,24,64);
+            @include margin-bottom(32, 64);
+        }
+    }
+}
+
+//* About Button
+.about__button {
+    @extend %ck-text;
+    @include font-size(18, 24);
+    @include line-height(24, 40);
+    display: inline-block;
+    @include margin-bottom(24, 48);
+    @include padding-xy(12, 12, 80, 144);
+    border: 0.1rem solid $ck-primary;
+    border-radius: 50rem;
+    transition: all 0.25s ease-out;
+    color: $ck-primary;
+    box-sizing: border-box;
+
+    &:hover {
+        background: $ck-primary;
+        color: $ck-gray-00;
+    }
+
+    @media only screen and (max-width: 650px) {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        background: $ck-primary;
+        color: $ck-gray-00;
+    }
+}

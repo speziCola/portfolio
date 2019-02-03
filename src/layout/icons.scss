@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "symbols";
+    src: url('../fonts/chriskuhrt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+i {
+    display: inline-block;
+    font-family: "symbols";
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(2rem + (32 - 20) * (100vw - 320px)/(2560 - 320));
+    line-height: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
+    color: $ck-font-second;
+    transition: color 0.16s ease-in-out; 
+    box-sizing: border-box;
+}
+
+.s-2x {
+    font-size: 3rem;
+}
+  
+.ck-icon-steam:before { content: "\EA01" }
+.ck-icon-facebook:before { content: "\EA02" }
+.ck-icon-instagram:before { content: "\EA03" }
+.ck-icon-twitter:before { content: "\EA04" }
+.ck-icon-whatsapp:before { content: "\EA05" }
+.ck-icon-share:before { content: "\EA06" }
+.ck-icon-snapchat:before { content: "\EA07" }
+.ck-icon-discord:before { content: "\EA08" }
+.ck-icon-vimeo:before { content: "\EA09" }
+.ck-icon-500pixel:before { content: "\EA0A" }
+.ck-icon-xing:before { content: "\EA0B" }
+.ck-icon-linkedin:before { content: "\EA0C" }
+.ck-icon-dribble:before { content: "\EA0D" }
+.ck-icon-behance:before { content: "\EA0E" }
+.ck-icon-close:before { content: "\EA0F" }
+.ck-icon-remove:before { content: "\EA10" }
+.ck-icon-add:before { content: "\EA11" }
+.ck-icon-menu:before { content: "\EA12" }
+.ck-icon-mail:before { content: "\EA13" }
+.ck-icon-arrow-up-a:before { content: "\EA14" }
+.ck-icon-arrow-right-a:before { content: "\EA15" }
+.ck-icon-arrow-down-a:before { content: "\EA16" }
+.ck-icon-arrow-left-a:before { content: "\EA17" }
+.ck-icon-settings:before { content: "\EA18" }
