@@ -1,9 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+
+import Layout from "../components/layout"
 import NavbarBack from '../components/navbarback';
 import Footer from '../components/footer';
 
 const Imprint = () => (
+  <Layout>
   <div>
      <Helmet
       title="Chris Kuhrt - Imprint"
@@ -84,6 +87,7 @@ const Imprint = () => (
     <Footer></Footer> 
     </div>
   </div>
+  </Layout>
 )
 
 export default Imprint

@@ -1,10 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+
+import Layout from "../components/layout"
 import TimeStamp from '../components/timestamp';
 import NavbarBack from '../components/navbarback';
 import Footer from '../components/footer';
 
 const About = () => (
+  <Layout>
   <div>
     <Helmet
       title="Chris Kuhrt - About"
@@ -253,8 +256,7 @@ const About = () => (
               <li>
                 <TimeStamp time="03/2017" title="Haus des Engagements" type="Design" link="yes" url="https://haus-des-engagements.de/" 
                 infos="
-                Provided logo and corporate colors.
-                "></TimeStamp>
+                Provided logo and corporate colors."></TimeStamp>
               </li>
               <li>
                 <TimeStamp time="02/2012 – 02/2013" title="Palliatives Hospiz Solingen" type="Cinematographer" link="yes" url="https://vimeo.com/64133805" 
@@ -363,6 +365,7 @@ const About = () => (
       <Footer></Footer>
     </div>
   </div>
+  </Layout>
 )
 
 export default About

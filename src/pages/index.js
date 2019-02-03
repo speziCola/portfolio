@@ -17,8 +17,8 @@ const IndexPage = () => (
           <span className="ck__start__wrapper__headline--hi">
           Hi,
           </span>
-          my name is Chris{NBSP}Kuhrt. I’m{NBSP}a{NBSP}product{NBSP}designer<br /> 
-          living in Freiburg i. B., Germany.”<span className="ck__start__wrapper__headline__line">_</span>
+          my name is Chris{NBSP}Kuhrt.<br />
+          I’m{NBSP}a{NBSP}product{NBSP}designer.”<span className="ck__start__wrapper__headline__line">_</span>
         </h1>
       </div> 
       <div className="ck__start__wrapper ck__start__wrapper--about">
@@ -27,15 +27,8 @@ const IndexPage = () => (
           digital media design.<br /> Since then, I have been a keen learner and always 
           ambitious to learn new stuff.
         </p>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/christopher-kuhrt/"><i className="ck-icon-linkedin"></i></a></li>
-          <li><a href="https://www.xing.com/profile/Christopher_Kuhrt2"><i className="ck-icon-xing"></i></a></li>
-          <li className="line"></li> 
-          <li><a href="https://www.instagram.com/chriskuhrt/"><i className="ck-icon-instagram"></i></a></li>
-          <li><a href="https://500px.com/chriskuhrt"><i className="ck-icon-500pixel"></i></a></li>
-          <li><a href="https://vimeo.com/cqrt"><i className="ck-icon-vimeo"></i></a></li>
-        </ul>
-        <Link className="about__button" to="/about/">About</Link>
+
+        <Link className="about__button" to="/about/">About me</Link>
       </div>
     </div>  
     <Footer></Footer>

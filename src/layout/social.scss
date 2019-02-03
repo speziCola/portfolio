@@ -1,0 +1,40 @@
+.ck__social {
+    & ul {
+        position: fixed;
+        display: flex;
+        @include margin-bottom(56, 48);
+        padding-left: 0.8rem;
+        align-items: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+
+
+        & li {
+
+            &:first-child {
+                @include margin-top(16, 32);
+            } 
+
+            @include margin-bottom(8, 32);
+            border-radius: 100%;
+            box-sizing: border-box;
+            transition: box-shadow 0.25s ease-in-out;
+
+            &:hover {
+                @extend %hover;
+            }
+
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 4.8rem;
+                width: 4.8rem;
+            }
+
+            &:hover i {
+                color: $ck-gray-00;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
     grid-template-areas: 
     'content footer'
     'content footer';
-    grid-template-columns: auto 5.6rem;
+    grid-template-columns: auto 6.4rem;
 
     @media only screen and (max-width: 650px) {
         grid-template-areas: 
@@ -87,47 +87,7 @@
         @extend %ck-text;
         @extend %ck-subtitle;
         color: $ck-font-third;
-    }
-    
-    & ul {
-        display: flex;
-        @include margin-bottom(56, 48);
-        align-items: center;
-        list-style-type: none;
-        flex-wrap: wrap;
-
-        & li {
-            @include margin-right(0, 16);
-            border-radius: 100%;
-            box-sizing: border-box;
-            transition: box-shadow 0.25s ease-in-out;
-
-            &:hover {
-                @extend %hover;
-            }
-    
-            & a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
-                width: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
-            }
-    
-            &:hover i {
-                color: $ck-gray-00;
-            }
-        }
-
-        & .line {
-            width: 0.1rem;
-            @include height(24, 40);
-            @include margin-elemente(8, 16);
-            border-radius: 0;
-            border: 0;
-            background: $ck-font-second;
-        }
-    }
+    }  
 
     @media only screen and (max-width: 650px) {
         &__headline {
@@ -158,7 +118,7 @@
     @include line-height(24, 40);
     display: inline-block;
     @include margin-bottom(24, 48);
-    @include padding-xy(12, 12, 80, 144);
+    @include padding-xy(12, 12, 80, 64);
     border: 0.1rem solid $ck-primary;
     border-radius: 50rem;
     transition: all 0.25s ease-out;
