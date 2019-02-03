@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mypackage",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.111",
@@ -27,6 +27,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
@@ -38,12 +39,13 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "name": "mypackage",
-  "version": "0.0.1",
   "eslintConfig": {
-      "env": {
-          "browser": true,
-          "node": true
-      }
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
