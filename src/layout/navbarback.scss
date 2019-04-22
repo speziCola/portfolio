@@ -12,6 +12,7 @@
         
         &:hover {
                 @extend %hover;
+                background: $ck-primary;
             & i {
                 color: $ck-gray-00;
             }

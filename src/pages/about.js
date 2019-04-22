@@ -255,8 +255,8 @@ const About = () => (
             <ul className="ck__skill-list">
               <li>
                 <TimeStamp time="03/2017" title="Haus des Engagements" type="Design" link="yes" url="https://haus-des-engagements.de/" 
-                infos="
-                Provided logo and corporate colors."></TimeStamp>
+                infos="Provided logo and corporate colors.
+                "></TimeStamp>
               </li>
               <li>
                 <TimeStamp time="02/2012 – 02/2013" title="Palliatives Hospiz Solingen" type="Cinematographer" link="yes" url="https://vimeo.com/64133805" 
@@ -276,7 +276,7 @@ const About = () => (
         </div>
 
         <div className="ck__spacer"></div>
-
+{/* 
         <div className="ck__content__wrapper">
           <div className="ck__content__wrapper__title">
             <h2>Travel</h2>
@@ -291,9 +291,9 @@ const About = () => (
               </li>
             </ul>
           </div>
-        </div>
+        </div> 
 
-        <div className="ck__spacer"></div>
+        <div className="ck__spacer"></div> */}
 
         <div className="ck__content__wrapper">
           <div className="ck__content__wrapper__title">

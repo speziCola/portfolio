@@ -1,3 +1,35 @@
+/* Font */
+@mixin font-size($small, $big) {
+    font-size: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
+}
+
+@mixin line-height($small, $big) {
+    line-height: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
+}
+
+/* Spacing */
+
+
+@mixin mx($small, $big) {
+    margin-left: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
+    margin-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+}
+
+@mixin px($small, $big) {
+    padding-left: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
+    padding-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+}
+@mixin py($small, $big) {
+    padding-left: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
+    padding-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+}
+
+
+
+
+
+/* Needed? */
+
 @mixin width($small, $big) {
     width: 
       calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
@@ -7,18 +39,8 @@
     height: 
       calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
 }
-/* Font */
-@mixin font-size($small, $big) {
-    font-size: 
-      calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
-}
 
-@mixin line-height($small, $big) {
-    line-height: 
-        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
-}
 
-/* Spacing */
 
 @mixin margin-top($small, $big) {
     margin-top: 

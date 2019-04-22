@@ -45,7 +45,7 @@ $ck-font-02: 'Titillium', sans-serif;
         content: '';
         @include width(64,192);
         height: 0.4rem;
-        background: $ck-gray-50;
+        background: $ck-gray-15;
     }
 }
 
@@ -65,7 +65,7 @@ $ck-font-02: 'Titillium', sans-serif;
     font-family: $ck-font-02;
     font-weight: 400;
     text-align: left;
-    color: $ck-font-third;
+    color: $ck-font-second;
 }
 
 .ck-text {

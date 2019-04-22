@@ -3,6 +3,10 @@
     grid-area: footer;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 650px) {
+        display: block;
+    }
   
     &__credit {
         position: fixed;
@@ -21,7 +25,7 @@
         text-align: left;
         color: $ck-primary;
         text-transform: uppercase;
-        background: #191E28;
+        background: $ck-background;
     
         & a {
             padding-left: 0.8rem;
@@ -35,11 +39,12 @@
     }
   
     @media only screen and (max-width: 650px) {
-        align-items: flex-start;
     
         &__credit {
             position: relative;
             transform: rotate(0);
+            margin-left: 0;
+            padding-left: 0;
             padding: 3.2rem;
             width: 100%;
             box-sizing: border-box;
