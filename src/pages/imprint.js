@@ -7,7 +7,6 @@ import Footer from '../components/footer';
 
 const Imprint = () => (
   <Layout>
-  <div>
      <Helmet
       title="Chris Kuhrt - Imprint"
       meta={[
@@ -15,7 +14,6 @@ const Imprint = () => (
         { name: 'keywords', content: 'Imprint' },
       ]}
     />
-    <div className="ck__container">
       <div className="ck__navbar">
         <NavbarBack></NavbarBack>
       </div>
@@ -85,8 +83,6 @@ const Imprint = () => (
       </div> 
     {/* Footer */}
     <Footer></Footer> 
-    </div>
-  </div>
   </Layout>
 )
 

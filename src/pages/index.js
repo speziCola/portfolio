@@ -10,7 +10,6 @@ import Footer from '../components/footer';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="ck__container">
       <div className="ck__start__content__01">
         <div className="ck__start__wrapper__01"> 
           <div className="ck__welcome">
@@ -19,7 +18,7 @@ const IndexPage = () => (
               Hi,
               </span>
               my name is Chris{NBSP}Kuhrt.<br /> 
-              I’m{NBSP}a{NBSP}product{NBSP}designer based in Germany.”<span className="ck__welcome__headline__line">_</span>
+              I’m{NBSP}a{NBSP}Digital{NBSP}designer based in Germany.”<span className="ck__welcome__headline__line">_</span>
             </h1>
           </div>
         </div>
@@ -37,7 +36,10 @@ const IndexPage = () => (
         </div>
       </div>
       <Footer></Footer>
-    </div>
+      <div className="ck__stripe">
+        <div className="ck__stripe__a"></div>
+        <div className="ck__stripe__b"></div>
+      </div>
   </Layout>
 )
 

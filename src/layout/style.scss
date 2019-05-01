@@ -2,6 +2,7 @@
 @import 'color';
 @import 'icons';
 @import 'font';
+@import 'animation';
 
 
 @import 'start';
@@ -29,11 +30,10 @@
 }
 
 %hoverspeed {
-  transition: all 0.16s ease-in-out;
+  transition: all $time-1 ease-in-out;
 }
 
 %hover {
-  box-shadow: 0 4px 8px 2px $ck-primary;
   @extend %hoverspeed;
 }
 
@@ -47,7 +47,8 @@ html {
   font-size: 62.5%;
 }
 
-.ck__container {
+main {
+  position: relative;
   display: grid;
   grid-template-columns: auto 8rem;
   grid-template-areas: 

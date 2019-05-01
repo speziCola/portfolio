@@ -1,3 +1,34 @@
+.ck__stripe {
+    position: fixed;
+    width: 50vw;
+    height: 100%;
+    margin-right: 12rem;
+    right: 0;
+    z-index: -1;
+/*     filter: blur(4px); */
+
+    &__a {
+        position: absolute;
+        margin-left: -4.8rem; 
+        @include width(320,960);
+        height: 100%;
+        background: #FCFBFB;
+        transform: skew(-20deg);
+    }
+
+    &__b {
+        position: absolute;
+        @include width(320,960);
+        height: 100%;
+        background: #fff;
+        transform: skew(-20deg);
+    }
+
+    @media only screen and (max-width: 650px) {
+       display: none;
+    }
+}
+
 .ck__start__content__01 {
     display: grid;
     grid-template-columns: repeat(40, 1fr);
@@ -7,7 +38,7 @@
     @include px(32,8); 
 
     @media only screen and (max-width: 650px) {
-        @include margin-bottom(32, 64);
+        @include mb(32, 64);
         background: $ck-primary;
     }
 }
@@ -50,7 +81,7 @@
     grid-column-end: 41; 
 
     &__headline {
-        @include margin-bottom(8, 24);
+        @include mb(8, 24);
         padding-top: 3.2rem;
         font-family: $ck-font-01;  
         @include font-size(18, 40);
@@ -60,14 +91,14 @@
 
         @media only screen and (max-width: 650px) {
             color: $ck-gray-00;
-            @include margin-bottom(40, 64);
+            @include mb(40, 64);
         }
     
         &--hi {
             position: relative;
             display: block;
             left: calc(0px - (24 - 0) * ((100vw - 320px) / (2560 - 320)));
-            @include margin-bottom(4, 8);
+            @include mb(4, 8);
             @include font-size(80, 280);
             @include line-height(80, 304);
             font-weight: 700;
@@ -105,14 +136,14 @@
 .ck__about {
     &__subtext {
         max-width: 96.0rem;
-        @include margin-bottom(32, 48);
+        @include mb(32, 48);
         @extend %ck-text;
         @extend %ck-subtitle;
         color: $ck-font-second;
     }  
 
     @media only screen and (max-width: 650px) {
-        @include margin-bottom(32, 64);
+        @include mb(32, 64);
     }
 
     &__button {
@@ -120,8 +151,8 @@
         @include font-size(18, 24);
         @include line-height(24, 40);
         display: inline-block;
-        @include margin-bottom(24, 48);
-        @include padding-xy(12, 12, 80, 64);
+        @include mb(24, 48);
+        @include pxy(12, 12, 80, 64);
         border: 0.1rem solid $ck-primary;
         border-radius: 50rem;
         transition: all 0.25s ease-out;
@@ -129,8 +160,10 @@
         box-sizing: border-box;
 
         &:hover {
+            @extend %hover;
             background: $ck-primary;
             color: $ck-gray-00;
+            box-shadow: 0 4px 8px 2px $ck-gray-10;
         }
 
         @media only screen and (max-width: 650px) {

@@ -1,21 +1,21 @@
 .ck__navbar {
     grid-area: content;
     grid-row: 1;
-    @include padding-xy(4,32,4,32);
+    @include pxy(4,32,4,32);
   }
   
   .ck__header {
     grid-area: content;
     grid-row: 2;
-    @include padding-xy(0,56,8,192);
-    @include padding-bottom(16,48);
+    @include pxy(0,56,8,192);
+    @include pb(16,48);
   }
   
   .ck__content {
     grid-area: content;
     grid-row: 3;
-    @include margin-bottom(40, 96);
-    @include padding-left-right(8,192,8,192);
+    @include mb(40, 96);
+    @include px(8,192);
   }
 
 .ck__content__wrapper {
@@ -148,6 +148,6 @@
 .ck__spacer {
     width: 100%;
     height: 0.1rem;
-    @include margin-spacer(24, 144);
-    background: $ck-gray-15;
+    @include my(24, 144);
+    background: $ck-gray-05;
 }

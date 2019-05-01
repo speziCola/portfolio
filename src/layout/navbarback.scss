@@ -13,6 +13,7 @@
         &:hover {
                 @extend %hover;
                 background: $ck-primary;
+                box-shadow: 0 4px 8px 2px $ck-gray-10;
             & i {
                 color: $ck-gray-00;
             }

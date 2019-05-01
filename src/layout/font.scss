@@ -27,12 +27,12 @@ $ck-font-02: 'Titillium', sans-serif;
 
 @mixin hover {
     @extend %hoverspeed;
-    color: red;
+    color: $ck-font-hover;
 }
 
 .ck-h1 {
     position: relative;
-    @include margin-bottom(16, 48);
+    @include mb(16, 48);
     font-family: $ck-font-01;
     @include font-size(40, 96);
     @include line-height(64, 112);
@@ -50,7 +50,7 @@ $ck-font-02: 'Titillium', sans-serif;
 }
 
 .ck-subtitle {
-    @include margin-bottom(16, 48);
+    @include mb(16, 48);
     @include font-size(18, 24);
     @include line-height(24, 40);
     @extend %ck-text;
@@ -81,7 +81,7 @@ $ck-font-02: 'Titillium', sans-serif;
     }
 
     &:last-child {
-        @include margin-bottom(16, 64);
+        @include mb(16, 64);
     }
 
     &--no-bottom {

@@ -1,7 +1,7 @@
 .timestamp {
     position: relative;
-    @include padding-left-right(16, 32, 16, 32);
-    @include margin-bottom(24, 64);
+    @include mb(24, 64);
+    @include px(16, 32);
     box-sizing: border-box;
     
     &__time {
@@ -12,6 +12,7 @@
         line-height: 2.4rem;
         color: $ck-primary;
     }
+    
     &__title {
         display: inline;
         font-family: $ck-font-01;
@@ -23,31 +24,57 @@
 
     &__link {
         display: none;
+        position: relative; 
+        padding-top: 0.4rem;
         font-family: "WorkSans", sans-serif;
         font-weight: 500;
         font-size: 1.4rem;
-        line-height: 2.4rem;
+        @include line-height(20, 28);
         color: $ck-font-second;
         transition: color 0.25s ease-in-out;
 
         &:hover {
-            color: red;
-            transition: color 0.16s ease-in-out;
+            color: $ck-font-hover;
+            transition: color $time-1 ease-in-out;
+
+            &::after {
+                padding-left: 0.4rem;
+                transition: padding $time-1 ease-in-out;
+            }
         }
 
         &:after {
+            display: inline-block;
+            margin-top: -0.1rem;
             padding-left: 0.2rem;
-            content: '\EA15';  
+            
             font-family: "symbols";
             font-style: normal;
             font-weight: normal;
-            line-height: 2.4rem;
+            @include line-height(20, 28);
             vertical-align: middle;
+            transition: padding $time-1 ease-in-out;
+        }
+
+        & span {
+            @include line-height(20, 28);
         }
     }
 
-    &__yes {
+    &--internal {
         display: inline-block;
+
+        &:after {    
+            content: '\EA17';     
+        }
+    }
+
+    &--external {
+        display: inline-block;
+
+        &:after {    
+            content: '\EA13';     
+        }
     }
 
     &__type {
@@ -67,18 +94,11 @@
         color: $ck-font-second;
     }
     &__infos {
-        display: inline;
+        display: block;
         font-family: $ck-font-02;
         font-weight: 400;
         @include font-size(14, 18);
         @include line-height(20, 28);
         color: $ck-font-third;
-
-        &:after {
-            display: inline-block;
-            content: '';  
-            width: 0.8rem;
-        }
-
     }
 }

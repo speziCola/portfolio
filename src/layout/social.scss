@@ -2,8 +2,8 @@
     & ul {
         position: fixed;
         display: flex;
-        @include margin-top(16, 32);
-        @include margin-bottom(56, 48);
+        @include mt(16, 32);
+        @include mb(56, 48);
         padding-left: 1.6rem;
         align-items: center;
         list-style-type: none;
@@ -18,7 +18,7 @@
 
 
         & li {
-            @include margin-bottom(8, 32);
+            @include mb(8, 32);
             border-radius: 100%;
             box-sizing: border-box;
             transition: box-shadow 0.25s ease-in-out;
@@ -26,6 +26,7 @@
             &:hover {
                 @extend %hover;
                 background: $ck-primary;
+                box-shadow: 0 4px 8px 2px $ck-gray-10;
             }
 
             & a {
