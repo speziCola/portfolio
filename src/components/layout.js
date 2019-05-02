@@ -17,7 +17,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <main>{children}</main> 
+      <div id="theme" className="theme-dark">
+        <div className="container">
+          <main>{children}</main>
+        </div>
+      </div> 
       </>
     )}
   />

@@ -31,21 +31,23 @@ $ck-font-02: 'Titillium', sans-serif;
 }
 
 .ck-h1 {
-    position: relative;
-    @include mb(16, 48);
-    font-family: $ck-font-01;
-    @include font-size(40, 96);
-    @include line-height(64, 112);
-    color: $ck-primary;
-    text-transform: uppercase;
+    @include themify($themes) {
+        position: relative;
+        @include mb(16, 48);
+        font-family: $ck-font-01;
+        @include font-size(40, 96);
+        @include line-height(64, 112);
+        color: $ck-primary;
+        text-transform: uppercase;
 
-    &:before {
-        position: absolute;
-        bottom: 0;
-        content: '';
-        @include width(64,192);
-        height: 0.4rem;
-        background: $ck-gray-15;
+        &:before {
+            position: absolute;
+            bottom: 0;
+            content: '';
+            @include width(64,192);
+            height: 0.4rem;
+            background: themed('base-10');
+        }
     }
 }
 
@@ -62,10 +64,12 @@ $ck-font-02: 'Titillium', sans-serif;
 }
 
 %ck-text {
-    font-family: $ck-font-02;
-    font-weight: 400;
-    text-align: left;
-    color: $ck-font-second;
+    @include themify($themes) {
+        font-family: $ck-font-02;
+        font-weight: 400;
+        text-align: left;
+        color: themed('font-third');
+    }
 }
 
 .ck-text {

@@ -1,32 +1,108 @@
-$ck-primary: #4264fb; 
-$ck-secondary: #00BE73;
-/* #4264fb; */
-$ck-background: #f8f5f5; 
-/* #191E28; */
-$ck-gray-00: #FAFAFA;
+        $ck-primary: #4264fb;
+        $ck-secondary: #00BE73;
+        /* #4264fb, */  /* #191E28, */
+        $ck-background: #f8f5f5; 
+        /* Base Color */ /*theme-dark, theme-light */
+        $ck-base-00: #FAFAFA;
+        $ck-base-05: #D7D7E1;
+        $ck-base-10: #BEBEC8;
+        $ck-base-15: #9f9faf;
+        $ck-base-25: #5A6478;
+        $ck-base-50: #38414B;
+        $ck-base-100: #2f2f2f;
 
-$ck-gray-05: #D7D7E1;
-$ck-gray-10: #BEBEC8;
-$ck-gray-15: #9f9faf;
-$ck-gray-25: #5A6478;
-$ck-gray-50: #38414B;
-$ck-gray-100: #2f2f2f;
+        /* Timeline - last child */
+        $ck-alpha: rgba(0, 0, 0, 0);
 
+        /* Fonts */
+        $ck-font-title: $ck-primary;
+        $ck-font-hover: $ck-secondary;
+        $ck-font-main: $ck-base-25;
+        $ck-font-second: $ck-base-25;
+        $ck-font-third: $ck-base-25;
+        $ck-font-fourth: $ck-base-15; 
 
-/* Timeline - last child */
-$ck-alpha: rgba(0, 0, 0, 0);
+$themes: (
+    light: (
+        primary: $ck-primary, 
+        secondary: $ck-secondary,
+        /* #4264fb, */  /* #191E28, */
+        background: $ck-background, 
+        /* Base Color */
+        base-00: $ck-base-00,
+        base-05: $ck-base-05,
+        base-10: $ck-base-10,
+        base-15: $ck-base-15,
+        base-25: $ck-base-25,
+        base-50: $ck-base-50,
+        base-100: $ck-base-100,
 
+        /* Timeline - last child */
+        alpha: rgba(0, 0, 0, 0),
 
-/* Fonts */
-$ck-font-title: $ck-primary;
-$ck-font-hover: $ck-secondary;
-$ck-font-main: $ck-gray-25;
-$ck-font-second: $ck-gray-25;
-$ck-font-third: $ck-gray-25;
-$ck-font-fourth: $ck-gray-15; 
+        /* Fonts */
+        font-title: $ck-primary,
+        font-hover: $ck-secondary,
+        font-main: $ck-base-25,
+        font-second: $ck-base-25,
+        font-third: $ck-base-25,
+        font-fourth: $ck-base-15,
 
-@mixin font-gradient {
-    background-image:linear-gradient(104deg, #4264FB 0%, #009FE3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+        icon: $ck-base-25,
+        shadow: $ck-base-10,
+        stripe-a: #FCFBFB,
+        stripe-b: #fff,
+
+        theme-icon: "\EA16"
+    ),
+    dark: (
+        primary: $ck-primary, 
+        secondary: $ck-secondary,
+        /* #4264fb, */  /* #191E28, */
+        background: #0f0f23, 
+        /* Base Color */
+        base-00: $ck-base-100,
+        base-05: $ck-base-50,
+        base-10: $ck-base-25,
+        base-15: $ck-base-15,
+        base-25: $ck-base-10,
+        base-50: $ck-base-05,
+        base-100: $ck-base-00,
+
+        /* Timeline - last child */
+        alpha: rgba(0, 0, 0, 0),
+
+        /* Fonts */
+        font-title: $ck-primary,
+        font-hover: $ck-secondary,
+        font-main: $ck-base-10,
+        font-second: $ck-base-25,
+        font-third: $ck-base-15,
+        font-fourth: $ck-base-25,
+
+        icon: $ck-base-15,
+        shadow: rgba(66, 100, 251, 0.55),
+        stripe-a: #17172f,
+        stripe-b: #1d1d3a,
+
+        theme-icon: "\EA17"
+    ),
+);
+
+@mixin themify($themes) {
+    @each $theme, $map in $themes {
+      .theme-#{$theme} & {
+        $theme-map: () !global;
+        @each $key, $submap in $map {
+          $value: map-get(map-get($themes, $theme), '#{$key}');
+          $theme-map: map-merge($theme-map, ($key: $value)) !global;
+        }
+        @content;
+        $theme-map: null !global;
+      }
+    }
+   }
+   
+   @function themed($key) {
+        @return map-get($theme-map, $key);
+   }

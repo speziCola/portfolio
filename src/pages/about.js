@@ -411,6 +411,10 @@ const About = () => (
       </div>
       {/* Footer */}
       <Footer></Footer>
+      <div className="ck__stripe">
+        <div className="ck__stripe__a"></div>
+        <div className="ck__stripe__b"></div>
+      </div>
   </Layout>
 )
 

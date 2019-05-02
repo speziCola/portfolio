@@ -20,6 +20,8 @@
   padding: 0;
   text-decoration: none;
   border-style: none;
+  transition: color 0.5s ease-in-out; 
+  transition: background-color 0.5s ease-in-out;
 }
 
 ::-moz-selection {
@@ -38,13 +40,21 @@
 }
 
 body {
- height: 100%;
- background: $ck-background;
+  height: 100%;
+  background: $ck-background;
 }
 
 html {
   height: 100%;
   font-size: 62.5%;
+}
+
+.container {
+  @include themify($themes) {
+    position: relative;
+    height: 100%;
+    background: themed('background');
+  }
 }
 
 main {
@@ -55,6 +65,7 @@ main {
   "content footer"
   "content footer"
   "content footer";
+  z-index: 5;
 
   @media only screen and (max-width: 650px) {
       grid-template-columns: auto;

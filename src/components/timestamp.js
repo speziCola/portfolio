@@ -8,7 +8,6 @@ const TimeStamp = ({
       <p className="timestamp__time">{time}</p>
       <h3 className="timestamp__title">{title}</h3>
       <p className="timestamp__type">{type}</p>
-      <h4 className="timestamp__subtitle"></h4>
       <p className="timestamp__infos">{infos}</p>
       <a className={`timestamp__link timestamp--${link}`} href={url}>view</a>  
     </div>

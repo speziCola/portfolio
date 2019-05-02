@@ -22,8 +22,8 @@ module.exports = {
         name: `Chris Kuhrt`,
         short_name: `Chris Kuhrt`,
         start_url: `/`,
-        background_color: `$ck-primary`,
-        theme_color: `$ck-primary`,
+        background_color: `#4264fb`,
+        theme_color: `#4264fb`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
