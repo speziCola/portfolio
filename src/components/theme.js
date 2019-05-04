@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useStore } from 'outstated'
 
-const DARK_THEME_NAME = 'theme-dark';
-const LIGHT_THEME_NAME = 'theme-light';
-
-class ThemeToggleButton extends React.Component {
+const store = () => {
+  const currentThemeName = isDarkMode ? 'theme-dark' : 'theme-light';
+  console.log(currentThemeName);
   
-  constructor(props) {
+}
+
+
+function ThemeToggleButton() {
+
+/*     const [isDarkMode, setDarkMode] = useState(0);
+    const currentThemeName = isDarkMode ? 'theme-dark' : 'theme-light';
+    console.log(isDarkMode);
+    console.log(currentThemeName); */
+
+    const { isDarkMode, setDarkMode } = useStore(store);
+
+  return (
+    <div>
+        <button onClick={() => setDarkMode(!isDarkMode)} className="ck__footer__theme">Click<i className="ck__footer__theme__icon"></i></button>
+    </div>
+  ) 
+}
+
+export default ThemeToggleButton;
+
+
+
+
+
+/*   constructor(props) {
     super(props);
     this.handleToggle = this.handleToggle.bind(this);
   }
@@ -14,29 +39,23 @@ class ThemeToggleButton extends React.Component {
     console.log('did update')
     const isDarkThemeMode = document.getElementById('theme').className == DARK_THEME_NAME;
     this.setState({ isDarkThemeMode: isDarkThemeMode})
-  }
+  } */
 
-  handleToggle() {
-    this.setState({ isDarkThemeMode: !this.state.isDarkThemeMode })
-    this.toggleTheme();
-  }
 
-  toggleTheme() {
+
+
+/*   toggleTheme() {
     console.log('set theme');
     if (!this.state.isDarkThemeMode) {
       document.getElementById('theme').className = DARK_THEME_NAME;
     } else {
       document.getElementById('theme').className = LIGHT_THEME_NAME;
     }
-  }
+  } */
 
-  render() {
-    return (
-      <div>
-         <button onClick={this.handleToggle} className="ck__footer__theme"><i className="ck__footer__theme__icon"></i></button>
-      </div>
-    )
-  }
-}
 
-export default ThemeToggleButton;
+/* 
+  handleToggle() {
+    this.setState({ isDarkThemeMode: !this.state.isDarkThemeMode })
+    this.toggleTheme();
+  } */
