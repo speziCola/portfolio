@@ -49,12 +49,12 @@ html {
   font-size: 62.5%;
 }
 
-.container {
+ .container {
   @include themify($themes) {
     position: relative;
     height: 100%;
     background: themed('background');
-  }
+  } 
 }
 
 main {
