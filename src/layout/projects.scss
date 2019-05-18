@@ -1,0 +1,50 @@
+.project {
+    @include themify($themes) {
+        display: grid;
+        grid-template-columns: repeat(29, 1fr);
+        width: 100%;
+        max-width: 139.2rem;
+        height: 38.4rem;
+
+        &__img {
+            grid-column-start: 1;
+            grid-column-end: 21;
+            overflow: hidden;
+
+            & img {
+                max-height: 100%;
+            }
+        }
+
+        &__tile {
+            grid-column-start: 22;
+            grid-column-end: 30;
+
+            &__title {
+                font-family: $ck-font-01;
+                font-weight: 500;
+                @include font-size(18, 40);
+                @include line-height(24, 48);
+                color: themed('font-main');
+            }
+            &__subtitle {
+                @include mb(16, 48);
+                font-family: $ck-font-01;
+                font-weight: 500;
+                font-size: 1.2rem;
+                line-height: 2.0rem;
+                color: themed('font-fourth');
+                text-transform: uppercase;
+            }
+            &__info {
+                display: block;
+                @include mb(8, 16);
+                font-family: $ck-font-02;
+                font-weight: 400;
+                @include font-size(14, 18);
+                @include line-height(20, 28);
+                color: themed('font-third');
+            }
+        }
+    }
+}

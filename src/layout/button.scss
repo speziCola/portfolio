@@ -1,0 +1,40 @@
+.button {
+    @include themify($themes) {
+        display: inline-block;
+        margin-bottom: 1.6rem;
+        margin-right: 1.6rem;
+        
+        @extend %ck-text;
+        @include font-size(18, 24);
+        @include line-height(24, 40); 
+        
+        border-radius: 50rem;
+        transition: all 0.25s ease-out;
+        color: $ck-primary;
+        box-sizing: border-box;
+
+        &[type="primary"] {
+            @include pxy(12, 12, 104, 64);
+            color: $ck-base-00;
+            background: $ck-primary;
+        }
+        &[type="secondary"] {
+            @include pxy(12, 12, 56, 40);
+            border: 0.1rem solid $ck-primary;
+        }
+
+        &:hover {
+            @extend %hover;
+            background: $ck-primary;
+            color: $ck-base-00;
+            box-shadow: 0 4px 8px 2px themed('shadow');
+        }
+
+        @media only screen and (max-width: 650px) {
+            display: block;
+            width: 100%;
+            margin: 0 auto 1.6rem auto;
+            text-align: center;
+        }
+    } 
+}
