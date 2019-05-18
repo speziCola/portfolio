@@ -23,10 +23,6 @@
             background: themed(stripe-b);
             transform: skew(-20deg);
         }
-
-        @media only screen and (max-width: 650px) {
-        display: none;
-        }
     }
 }
 
@@ -83,7 +79,7 @@
         grid-column-end: 41; 
 
         &__headline {
-            @include mb(8, 24);
+            @include mb(8, 32);
             padding-top: 3.2rem;
             font-family: $ck-font-01;  
             @include font-size(18, 40);
@@ -92,7 +88,7 @@
             text-transform: uppercase;
 
             @media only screen and (max-width: 650px) {
-                color: themed('base-100');
+                color: $ck-base-00;
                 @include mb(40, 64);
             }
         
@@ -140,9 +136,9 @@
     @include themify($themes) {
         &__subtext {
             max-width: 96.0rem;
-            @include mb(32, 48);
+            @include mb(32, 112);
             @extend %ck-text;
-            @extend %ck-subtitle;
+            @include font-size(16, 24);
             color: themed('font-third');
         }  
 

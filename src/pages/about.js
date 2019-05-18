@@ -149,7 +149,7 @@ const About = () => (
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="05/2012" title="SteamCalculator" type="Product Design" link="internal" url="https://steamcalculator.com/"
+                <TimeStamp time="05/2012" title="SteamCalculator" type="UX/UI, Frontend" link="internal" url="https://steamcalculator.com/"
                 infos="
                   SteamCalculator calculates the value of an user’s Steam account. Steam is an online gaming download platform. 
                   Due to the immense popularity of our application I was able to write my Bachelor thesis* about it.

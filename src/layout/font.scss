@@ -53,7 +53,7 @@ $ck-font-02: 'Titillium', sans-serif;
 
 .ck-subtitle {
     @include mb(16, 48);
-    @include font-size(18, 24);
+    @include font-size(16, 24);
     @include line-height(24, 40);
     @extend %ck-text;
 }

@@ -5,12 +5,19 @@
 @import 'animation';
 
 
-@import 'start';
-@import 'about';
+@import 'button';
+@import 'buttonlink';
+
 @import 'timestamp';
 @import 'navbarback';
 @import 'social';
 @import 'footer';
+
+/* Pages */
+@import 'start';
+@import 'about';
+@import 'projects';
+
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -40,8 +47,10 @@
 }
 
 body {
-  height: 100%;
-  background: $ck-background;
+  @include themify($themes) {
+    height: 100%;
+    background: $ck-background;
+  }
 }
 
 html {
@@ -51,7 +60,7 @@ html {
 
  .container {
   @include themify($themes) {
-    position: relative;
+    min-height: 100vh;
     height: 100%;
     background: themed('background');
   } 

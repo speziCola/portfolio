@@ -5,6 +5,8 @@ import { NBSP } from '../constants';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import Button from "../components/button"
 import Footer from '../components/footer';
 
 const IndexPage = () => (
@@ -31,7 +33,8 @@ const IndexPage = () => (
                 digital media design.<br /> Since then, I have been a keen learner and always 
                 ambitious to learn new stuff.
               </p>
-              <Link className="ck__about__button" to="/about/">About me</Link>
+              <Button type="primary" title="Projects" url="/projects/"></Button>
+              <Button type="secondary" title="About me" url="/about/"></Button>
             </div>
         </div>
       </div>
