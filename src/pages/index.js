@@ -16,7 +16,8 @@ const IndexPage = () => (
         <div className="ck__start__wrapper__01"> 
           <div className="ck__welcome">
             <h1 className="ck__welcome__headline">
-              <span className="ck__welcome__headline--hi">
+              <span className="ck__welcome__headline--quote glitch__text">“</span>
+              <span className="ck__welcome__headline--hi glitch__text">
               Hi,
               </span>
               my name is Chris{NBSP}Kuhrt.<br /> 

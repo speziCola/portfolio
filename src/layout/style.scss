@@ -17,6 +17,7 @@
 @import 'start';
 @import 'about';
 @import 'projects';
+@import 'project';
 
 
 * {
@@ -74,6 +75,7 @@ main {
   "content footer"
   "content footer"
   "content footer";
+  height: 100%;
   z-index: 5;
 
   @media only screen and (max-width: 650px) {

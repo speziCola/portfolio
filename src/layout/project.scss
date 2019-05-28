@@ -1,0 +1,140 @@
+.project {
+    @include themify($themes) {
+        @include pxy(0,56,8,192);
+        max-width: calc(1360px + (1520 - 1360) * ((100vw - 320px) / (2560 - 320))); 
+
+        &__header {
+            display: grid;
+            grid-template-columns: repeat(29, 1fr);
+            grid-row: 2;
+            @include mb(16, 48);
+            height: 25.6rem;
+    
+            @media only screen and (max-width: 650px) {
+                grid-auto-rows: min-content; 
+                height: auto; 
+            }
+
+            &__img {
+                grid-column-start: 11;
+                grid-column-end: 28;
+                grid-row: 1;
+                overflow: hidden;
+
+                @media only screen and (max-width: 950px) {
+                    grid-column-start: 1;
+                    grid-column-end: 30;
+                    grid-row: 2;
+                }
+    
+                & img {
+                    max-width: 100%;
+                    transition: transform 0.24s ease-in-out;
+    
+                    @media only screen and (max-width: 950px) {
+                        max-width: 100%;
+                        max-height: none;
+                    }
+                }
+            }
+    
+            &__tile {
+                grid-column-start: 1;
+                grid-column-end: 10;
+                grid-row: 1;
+    
+                @media only screen and (max-width: 950px) {
+                    grid-column-start: 1;
+                    grid-column-end: 30;
+                    grid-row: 1;
+                }
+    
+                &__title {
+                    position: relative;
+                    display: inline-block;
+                    font-family: $ck-font-01;
+                    font-weight: 500;
+                    @include font-size(24, 40);
+                    @include line-height(32, 48);
+                    color: themed('font-main');
+                    transition: transform 0.24s ease-in-out;
+                }
+                &__subtitle {
+                    @include mb(16, 48);
+                    font-family: $ck-font-01;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 2.0rem;
+                    color: themed('font-fourth');
+                    text-transform: uppercase;
+                }
+            }
+        }
+      
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(29, 1fr);
+            grid-row: 3;
+        }
+
+        &__spacer {
+            grid-column-start: 1;
+            grid-column-end: 30;
+            @include mb(16, 96);
+        }
+
+        &__title {
+            grid-column-start: 11;
+            grid-column-end: 28;
+            @extend %ck-text;
+            font-weight: 600;
+            color: $ck-primary;
+            @include font-size(14, 18);
+            @include line-height(20, 28); 
+
+            @media only screen and (max-width: 950px) {
+                grid-column-start: 1;
+                grid-column-end: 30;
+            }    
+        }
+
+        &__text {
+            grid-column-start: 11;
+            grid-column-end: 28;
+            @extend %ck-text;
+            @include font-size(14, 18);
+            @include line-height(20, 28);  
+            
+            @media only screen and (max-width: 950px) {
+                grid-column-start: 1;
+                grid-column-end: 30;
+            }  
+        }
+
+        &__marker {
+            font-weight: 600;    
+        }
+
+        &__img {
+            grid-column-start: 9;
+            grid-column-end: 30; 
+            overflow: hidden;   
+
+            & img {
+                max-width: 100%;
+            }
+
+            & figcaption {
+                @extend %ck-text;
+                text-align: right;
+                @include font-size(10, 12);
+                @include line-height(16, 16);  
+            }
+            
+            @media only screen and (max-width: 950px) {
+                grid-column-start: 1;
+                grid-column-end: 30;
+            }  
+        }
+    }
+}

@@ -14,12 +14,12 @@
         box-sizing: border-box;
 
         &[type="primary"] {
-            @include pxy(12, 12, 104, 64);
+            @include pxy(12, 12, 64, 104);
             color: $ck-base-00;
             background: $ck-primary;
         }
         &[type="secondary"] {
-            @include pxy(12, 12, 56, 40);
+            @include pxy(12, 12, 40, 56);
             border: 0.1rem solid $ck-primary;
         }
 
