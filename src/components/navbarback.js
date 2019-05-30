@@ -1,10 +1,22 @@
 import React from 'react';
 import { Link } from "gatsby"
+import PropTypes from 'prop-types';
 
-const navbarBack = () => (
+const navbarback = ({
+  url
+}) => (
     <div className="navbarback">
-        <Link to="/"><i className="ck-icon-arrow-left-a"></i></Link>
+        <Link to={url}><i className="ck-icon-arrow-left-a"></i></Link>
     </div>
 );
 
-export default navbarBack;
+navbarback.defaultProps = {
+  url: ''
+};
+
+navbarback.propTypes = {   
+  url: PropTypes.string
+
+};
+
+export default navbarback;

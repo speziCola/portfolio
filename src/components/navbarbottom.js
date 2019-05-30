@@ -2,27 +2,26 @@ import React from 'react';
 import { Link } from "gatsby"
 import PropTypes from 'prop-types';
 
-const Button = ({
+const navbarBottom = ({
   type, size, title, url
 }) => (
-    <Link type={type} var={size} className="button" to={url}>
+  <div>
+    <div className="navbarBottom__line"></div>
+    <Link className="navbarBottom__link" to={url}>
       {title} 
     </Link>
+  </div>
 );
 
-Button.defaultProps = {
-  type: '',
-  size: '',
+navbarBottom.defaultProps = {
   title: '',
   url: ''
 };
 
-Button.propTypes = {
-  type: PropTypes.string,
-  size: PropTypes.string,  
+navbarBottom.propTypes = {  
   title: PropTypes.string, 
   url: PropTypes.string
 
 };
 
-export default Button;
+export default navbarBottom;

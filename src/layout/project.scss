@@ -77,6 +77,16 @@
             grid-row: 3;
         }
 
+        &__wrapper {
+            grid-column-start: 11;
+            grid-column-end: 28;
+            
+            @media only screen and (max-width: 950px) {
+                grid-column-start: 1;
+                grid-column-end: 30;
+            }  
+        }
+
         &__spacer {
             grid-column-start: 1;
             grid-column-end: 30;
@@ -153,5 +163,20 @@
               }
         }
 
+        & a {
+            &[var="link"] {
+                @extend %ck-text;
+                @include font-size(14, 18);
+                @include line-height(20, 28); 
+                font-weight: 600; 
+                color: $ck-font-second;
+                transition: color 0.25s ease-in-out;
+
+                &:hover {
+                color: $ck-font-hover;
+                transition: color $time-1 ease-in-out;
+                }
+            }
+        }
     }
 }

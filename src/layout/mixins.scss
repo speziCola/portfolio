@@ -42,8 +42,8 @@
     padding-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
 }
 @mixin py($small, $big) {
-    padding-left: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
-    padding-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+    padding-top: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))); 
+    padding-bottom: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
 }
 
 @mixin pxy($y-small, $y-big, $x-small, $x-big) {

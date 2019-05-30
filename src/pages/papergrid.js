@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 import Layout from "../components/layout"
 import NavbarBack from '../components/navbarback';
 import Footer from '../components/footer';
-import ButtonLink from '../components/button-link';
+import Button from "../components/button";
+import NavbarBottom from "../components/navbarbottom";
 
 import gridpaper from '../images/projects/8-grid-paper/img-8-grid-paper.jpg';
 import gridpaperpreview from '../images/projects/8-grid-paper/img-8-grid-paper-preview.jpg';
@@ -19,7 +20,7 @@ const Projects = () => (
       ]}
     />
       <div className="ck__navbar">
-        <NavbarBack></NavbarBack>
+        <NavbarBack url="/projects/"></NavbarBack>
       </div>
       {/* Content */}
       <div className="project">
@@ -33,27 +34,28 @@ const Projects = () => (
           </div> 
         </div>
         <div className="project__content">
-          <h3 className="project__title">One sentence summary:</h3>
+          <h3 className="project__title">One sentence summary</h3>
           <p className="project__text">
-            The 8-Grid Paper works like a scale model. It will help meeting the end result 
-            more precisely.
+            The 8-Grid Paper is based on the <a var="link" href="https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632">8-Point Grid System</a>.
+            It works like a scale model helping to meet the end result more precisely.
           </p> 
           <span className="project__spacer"></span>
           <h3 className="project__title">Motivation</h3>
           <p className="project__text">
             Sketching is nothing new. The 8-Grid Paper however works like a scale model.
-            It will help to see every component in perspective. Therefore the interface becomes more consistent. 
+            It will help to see every component in perspective. Therefore the sketches are becoming more consistent. 
             <br /><br /> 
             <span className="project__marker">Who will benefit?</span>
             <ul>
               <li>
-                <span className="project__marker">UI Designers</span> have to do less decisions and concessions when designing a high fidelity prototype afterwards.
+                <span className="project__marker">Designers:</span> Less decisions and concessions when designing a high fidelity prototype afterwards.
+                They can easy keep track of an 8 Pixel increment while sketching.
               </li>
               <li>
-                <span className="project__marker">UX Designers</span> can easy keep track of an 8 Pixel increment while sketching.
+                <span className="project__marker">The Team:</span> An easy system of communication between Designers, Product Owners and Developers.
               </li>
               <li>
-                <span className="project__marker">The project it self</span> if the interface is bounded to a certain screen resolution.
+                <span className="project__marker">The Project:</span> Especially if the interface is bounded to a certain screen resolution.
               </li>
             </ul>
           </p>
@@ -88,6 +90,16 @@ const Projects = () => (
             Due to the real proportion Tom know’s on which position the interaction will happen 
             and if the user has to scroll to make an action.
           </p>
+          <span className="project__spacer"></span>
+            <p className="project__text">5 steps via <a var="link" href="http://katafrakt.me/2017/04/29/snowflake-method-for-software-projects/">The Snowflake Method</a></p>
+          <span className="project__spacer"></span>
+          <div className="project__wrapper">
+            <Button type="primary" size="middle" title="Download" url="/projects/"></Button>
+          </div>
+          <span className="project__spacer"></span>
+          <div className="project__wrapper">
+            <NavbarBottom title="Back to all projects" url="/projects/"></NavbarBottom>
+          </div>
           <span className="project__spacer"></span>
         </div>
       </div>
