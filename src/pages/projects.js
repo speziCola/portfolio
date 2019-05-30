@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 import Layout from "../components/layout"
 import NavbarBack from '../components/navbarback';
 import Footer from '../components/footer';
-import ButtonLink from '../components/button-link';
 
 import gridpaper from '../images/projects/8-grid-paper/img-8-grid-paper.jpg';
 
