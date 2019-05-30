@@ -171,15 +171,16 @@
                 padding-right: 2.0rem;
                 font-weight: 600; 
                 color: themed('font-main');
-                transition: color 0.25s ease-in-out;
+                transition: all $time-1 ease-in-out;
 
                 &:hover {
                 color: $ck-font-hover;
-                transition: color $time-1 ease-in-out;
-                
+                transition: all $time-1 ease-in-out;
+
                 &::after {
-                    padding-left: 0.4rem;
-                    transition: padding $time-1 ease-in-out;
+                    color: $ck-font-hover;
+                    transform: translate(2px, -2px);
+                    transition: all $time-1 ease-in-out;
                 }
 
                 }
@@ -195,7 +196,8 @@
                     @include font-size(14, 18);
                     @include line-height(20, 28);
                     vertical-align: middle;
-                    transition: padding $time-1 ease-in-out;
+                    color: themed('font-main');
+                    transition: all $time-1 ease-in-out;
                 }
             }
         }

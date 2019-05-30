@@ -94,7 +94,7 @@ const Projects = () => (
             <p className="project__text">5 steps via <a var="link" href="http://katafrakt.me/2017/04/29/snowflake-method-for-software-projects/">The Snowflake Method</a></p>
           <span className="project__spacer"></span>
           <div className="project__wrapper">
-            <Button type="primary" size="middle" title="Download" url="/projects/"></Button>
+            <Button type="primary" size="middle" title="Download" url="/static/8-grid-paper-v2019.pdf"></Button>
           </div>
           <span className="project__spacer"></span>
           <div className="project__wrapper">
