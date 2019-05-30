@@ -14,9 +14,9 @@
             padding-left: 3.2rem; 
             font-family: $ck-font-01;
             font-weight: 500;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             @include line-height(20, 28);
-            color: $ck-font-second;
+            color: themed('font-main');
             transition: color 0.25s ease-in-out;
 
             &:hover {
