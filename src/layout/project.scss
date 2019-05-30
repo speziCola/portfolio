@@ -80,7 +80,7 @@
         &__spacer {
             grid-column-start: 1;
             grid-column-end: 30;
-            @include mb(16, 96);
+            @include mb(32, 72);
         }
 
         &__title {
@@ -118,7 +118,10 @@
         &__img {
             grid-column-start: 9;
             grid-column-end: 30; 
-            overflow: hidden;   
+            overflow: hidden;
+            padding: 1.6rem;
+            background: themed('img');
+            box-shadow: 0 4px 8px 2px themed('img-shadow');
 
             & img {
                 max-width: 100%;
@@ -136,5 +139,19 @@
                 grid-column-end: 30;
             }  
         }
+
+        & li {
+            padding: 0.8rem 0 0.8rem 2.4rem;
+            list-style: none;
+
+            &::before {
+                position: absolute;
+                margin-left: -1.6rem;
+                content: "•";
+                color: $ck-primary;
+                font-family: $ck-font-01;
+              }
+        }
+
     }
 }

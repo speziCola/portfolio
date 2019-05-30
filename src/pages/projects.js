@@ -33,7 +33,7 @@ const Projects = () => (
               <Link to="/papergrid/"><img src={gridpaper} alt="8-Grid Paper concept" /></Link>
             </figure>
             <div className="projects__tile">
-              <Link to=""><h2 className="projects__tile__title"><span className="projects__tile__title--underline">8-Grid Paper</span></h2></Link>
+              <Link to="/papergrid/"><h2 className="projects__tile__title"><span className="projects__tile__title--underline">8-Grid Paper</span></h2></Link>
               <p className="projects__tile__subtitle">Concept, Print</p>
               <p className="projects__tile__info">
                 The 8-Grid Paper works like a scale model. It will meet the end result 

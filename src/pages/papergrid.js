@@ -35,29 +35,33 @@ const Projects = () => (
         <div className="project__content">
           <h3 className="project__title">One sentence summary:</h3>
           <p className="project__text">
-            The 8-Grid Paper works like a scale model. It will meet the end result 
+            The 8-Grid Paper works like a scale model. It will help meeting the end result 
             more precisely.
           </p> 
           <span className="project__spacer"></span>
           <h3 className="project__title">Motivation</h3>
           <p className="project__text">
             Sketching is nothing new. The 8-Grid Paper however works like a scale model.
-            Therefore your sketches will meet the end result more precisely.
+            It will help to see every component in perspective. Therefore the interface becomes more consistent. 
             <br /><br /> 
             <span className="project__marker">Who will benefit?</span>
-            <br /><br /> 
-            <span className="project__marker">UI Designers</span> have to do less decisions and concessions when designing a high fidelity prototype afterwards. 
-            <br /><br /> 
-            <span className="project__marker">UX Designers</span> can easy keep track of an 8 Pixel increment while sketching.
-            <br /><br /> 
-            <span className="project__marker">The project it self</span> if the interface is bounded to a certain screen resolution.
+            <ul>
+              <li>
+                <span className="project__marker">UI Designers</span> have to do less decisions and concessions when designing a high fidelity prototype afterwards.
+              </li>
+              <li>
+                <span className="project__marker">UX Designers</span> can easy keep track of an 8 Pixel increment while sketching.
+              </li>
+              <li>
+                <span className="project__marker">The project it self</span> if the interface is bounded to a certain screen resolution.
+              </li>
+            </ul>
           </p>
           <span className="project__spacer"></span>
           <h3 className="project__title">Main features</h3>
           <p className="project__text">
-            Every child square on the sketch sheet represents 8px and every parent square 64px. 
-            Therefore your sketches will meet the end result more precisely. For example: 320px 
-            are 40 child squares or 5 parent squares.
+            Every child square on the sketch sheet represents 8px and every parent square 64px. <br />
+            For example: iPhone 5s (320px) consist of 40 child squares or 5 parent squares.
           </p>
           <span className="project__spacer"></span>
           <figure className="project__img">

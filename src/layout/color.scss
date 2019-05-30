@@ -52,7 +52,8 @@ $themes: (
         shadow: $ck-base-10,
         stripe-a: #FCFBFB,
         stripe-b: #fff,
-
+        img: #FCFBFB,
+        img-shadow: rgba(0, 0, 0, 0.08),
         theme-icon: "\EA16"
     ),
     dark: (
@@ -84,7 +85,8 @@ $themes: (
         shadow: rgba(66, 100, 251, 0.55),
         stripe-a: #17172f,
         stripe-b: #1d1d3a,
-
+        img: #17172f,
+        img-shadow: rgba(0, 0, 0, 0.45),
         theme-icon: "\EA17"
     ),
 );
