@@ -35,8 +35,8 @@ const Projects = () => (
               <Link to="/papergrid/"><h2 className="projects__tile__title"><span className="projects__tile__title--underline">8-Grid Paper</span></h2></Link>
               <p className="projects__tile__subtitle">Concept, Print</p>
               <p className="projects__tile__info">
-                The 8-Grid Paper works like a scale model. It will meet the end result 
-                more precisely.
+                The 8-Grid Paper works like a scale model. It will help you to see every 
+                component in perspective.
               </p>
             </div>     
           </div>

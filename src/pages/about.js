@@ -81,7 +81,7 @@ const About = () => (
               <li>
                 <TimeStamp time="04/2015 – 05/2015" title="IPB - Ingenieurbüro für Projektentwicklung" type="Logo, Print"
                 infos="
-                  BLA BLA BLA
+                Designed a logo and thier company stationery.
                 "
                 ></TimeStamp>
               </li>
