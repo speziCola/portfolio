@@ -1,6 +1,6 @@
 .navbarBottom {
     @include themify($themes) {
-        
+
         &__line {
             width: 100%;
             height: 0.1rem;
@@ -9,9 +9,9 @@
         }
 
         &__link {
-            position: relative; 
-            padding-top: 0.4rem;
-            padding-left: 3.2rem; 
+            position: relative;
+            display: inline-block;
+            padding-left: 3.2rem;
             font-family: $ck-font-01;
             font-weight: 500;
             font-size: 1.6rem;
@@ -34,12 +34,11 @@
                 display: inline-block;
                 margin-left: -2.4rem;
                 padding-left: 0.2rem;
-                content: '\EA1B'; 
+                content: '\EA1B';
                 font-family: "symbols";
                 font-style: normal;
                 font-weight: normal;
                 @include line-height(20, 28);
-                vertical-align: middle;
                 transition: margin $time-1 ease-in-out;
             }
         }

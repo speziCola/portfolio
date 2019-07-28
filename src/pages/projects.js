@@ -46,7 +46,7 @@ const Projects = () => (
             info=" The 8-Grid Paper works like a scale model. It will help you to see every component in perspective."
             img={gridpaper}
             alt="8-Grid Paper concept"
-            url="/papergrid/">
+            url="projects/papergrid/">
           </ProjectView >
 
           </div>

@@ -10,7 +10,6 @@
 
 @import 'timestamp';
 @import 'navbarback';
-@import 'projectpreview';
 @import 'navbarbottom';
 @import 'social';
 @import 'footer';
@@ -18,7 +17,7 @@
 /* Pages */
 @import 'start';
 @import 'about';
-@import 'projects';
+@import 'projectpreview';
 @import 'project';
 
 
@@ -31,7 +30,7 @@
   text-decoration: none;
   border-style: none;
   transition: box-shadow 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out; 
+  transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -67,14 +66,14 @@ html {
     min-height: 100vh;
     height: 100%;
     background: themed('background');
-  } 
+  }
 }
 
 main {
   position: relative;
   display: grid;
   grid-template-columns: auto 8rem;
-  grid-template-areas: 
+  grid-template-areas:
   "content footer"
   "content footer"
   "content footer";
@@ -83,10 +82,10 @@ main {
 
   @media only screen and (max-width: 650px) {
       grid-template-columns: auto;
-      grid-template-areas: 
+      grid-template-areas:
       "content"
       "content"
       "content"
       "footer";
-  }  
-} 
+  }
+}
