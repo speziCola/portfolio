@@ -21,7 +21,7 @@ const IndexPage = () => (
               Hi,
               </span>
               my name is Chris{NBSP}Kuhrt.<br /> 
-              I’m{NBSP}a{NBSP}Digital{NBSP}designer based in Germany.”<span className="ck__welcome__headline__line">_</span>
+              I’m{NBSP}a{NBSP}Product{NBSP}Designer based in Germany.”<span className="ck__welcome__headline__line">_</span>
             </h1>
           </div>
         </div>
@@ -31,8 +31,8 @@ const IndexPage = () => (
           <div className="ck__about">
               <p className="ck__about__subtext">
                 Starting to explore the internet in the early 2000s I discovered 
-                digital media design.<br /> Since then, I have been a keen learner and always 
-                ambitious to learn new stuff.
+                digital media design.<br /> Since then, I’ve worked in several fields. I always strive to create 
+                new or better user experience with empathy.
               </p>
               <Button type="primary" title="Projects" url="/projects/"></Button>
               <Button type="secondary" title="About me" url="/about/"></Button>

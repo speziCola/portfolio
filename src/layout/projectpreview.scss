@@ -1,0 +1,7 @@
+.project_thumb {
+  display: grid;
+  grid-template-columns: repeat(29, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 30;
+  @include mb (32, 96);
+}

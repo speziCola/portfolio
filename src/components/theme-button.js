@@ -11,7 +11,7 @@ class ThemeButton extends React.Component {
             </button>
           )}
         </ThemeContext.Consumer>
-      );    
+      );
     }
 }
 

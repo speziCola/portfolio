@@ -1,6 +1,6 @@
 @font-face {
     font-family: "WorkSans";
-    src: 
+    src:
     url('../fonts/WorkSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "WorkSans";
-    src: 
+    src:
     url('../fonts/WorkSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Titillium";
-    src: 
+    src:
     url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -37,7 +37,7 @@ $ck-font-02: 'Titillium', sans-serif;
         font-family: $ck-font-01;
         @include font-size(40, 96);
         @include line-height(64, 112);
-        color: $ck-primary;
+        color: themed('font-main');
         text-transform: uppercase;
 
         &:before {
@@ -46,7 +46,7 @@ $ck-font-02: 'Titillium', sans-serif;
             content: '';
             @include width(64,192);
             height: 0.4rem;
-            background: themed('base-10');
+            background: $ck-primary;
         }
     }
 }

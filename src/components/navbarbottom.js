@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import PropTypes from 'prop-types';
 
 const navbarBottom = ({
-  type, size, title, url
+  title, url
 }) => (
   <div>
     <div className="navbarBottom__line"></div>

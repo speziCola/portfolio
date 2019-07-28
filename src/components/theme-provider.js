@@ -9,14 +9,6 @@ class ThemeProvider extends React.Component {
         };
       }
 
-    componentDidMount() {
-        // Getting dark mode value from localStorage!
-        const theme = JSON.parse(localStorage.getItem("theme"))
-        if (theme) {
-          this.setState({ theme: theme })
-        }
-    }
-
     toggleTheme = () => {
       localStorage.setItem("theme", JSON.stringify(this.state.theme))
       this.setState(state => ({
@@ -26,6 +18,14 @@ class ThemeProvider extends React.Component {
         : 'theme-dark',
       }));
     }
+
+    componentDidMount() {
+      // Getting dark mode value from localStorage!
+      const theme = JSON.parse(localStorage.getItem("theme-dark"))
+      if (theme) {
+        this.setState({ theme: theme })
+      }
+  }
 
     render() {
       const { children } = this.props

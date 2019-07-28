@@ -4,9 +4,11 @@ import Link from 'gatsby-link'
 
 import Layout from "../components/layout"
 import NavbarBack from '../components/navbarback';
+import ProjectView from '../components/project-preview';
 import Footer from '../components/footer';
 
-import gridpaper from '../images/projects/8-grid-paper/img-8-grid-paper.jpg';
+import gridpaper from '../images/projects/8-grid-paper/thumb-8-grid-paper.jpg';
+import steamcalculator from '../images/projects/steamcalculator/img-steamcalculator-preview.jpg';
 
 const Projects = () => (
   <Layout>
@@ -28,17 +30,25 @@ const Projects = () => (
       <div className="ck__content">
         <div className="ck__content__wrapper">
           <div className="projects">
-            <figure className="projects__img">
-              <Link to="/papergrid/"><img src={gridpaper} alt="8-Grid Paper concept" /></Link>
-            </figure>
-            <div className="projects__tile">
-              <Link to="/papergrid/"><h2 className="projects__tile__title"><span className="projects__tile__title--underline">8-Grid Paper</span></h2></Link>
-              <p className="projects__tile__subtitle">Concept, Print</p>
-              <p className="projects__tile__info">
-                The 8-Grid Paper works like a scale model. It will help you to see every 
-                component in perspective.
-              </p>
-            </div>     
+
+          <ProjectView
+            title="SteamCalculator"
+            subtitle="Product Design"
+            info="SteamCalculator is a web application for calculating your current value of your Steam-Account."
+            img={steamcalculator}
+            alt="SteamCalculator, How much is your account worth?"
+            url="projects/steamcalculator">
+          </ProjectView >
+
+          <ProjectView
+            title="8-Grid Paper"
+            subtitle="Design"
+            info=" The 8-Grid Paper works like a scale model. It will help you to see every component in perspective."
+            img={gridpaper}
+            alt="8-Grid Paper concept"
+            url="/papergrid/">
+          </ProjectView >
+
           </div>
         </div>
       </div>
