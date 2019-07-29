@@ -4,7 +4,7 @@
         @include mb(24, 64);
         @include px(16, 32);
         box-sizing: border-box;
-        
+
         &__time {
             margin-bottom: 1.2rem;
             font-family: $ck-font-01;
@@ -13,7 +13,7 @@
             line-height: 2.4rem;
             color: $ck-primary;
         }
-        
+
         &__title {
             display: inline;
             font-family: $ck-font-01;
