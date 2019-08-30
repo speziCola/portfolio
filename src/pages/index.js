@@ -13,14 +13,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div className="ck__start__content__01">
-        <div className="ck__start__wrapper__01"> 
+        <div className="ck__start__wrapper__01">
           <div className="ck__welcome">
             <h1 className="ck__welcome__headline">
               <span className="ck__welcome__headline--quote glitch__text">“</span>
               <span className="ck__welcome__headline--hi glitch__text">
               Hi,
               </span>
-              my name is Chris{NBSP}Kuhrt.<br /> 
+              my name is Chris{NBSP}Kuhrt.<br />
               I’m{NBSP}a{NBSP}Product{NBSP}Designer based in Germany.”<span className="ck__welcome__headline__line">_</span>
             </h1>
           </div>
@@ -30,12 +30,12 @@ const IndexPage = () => (
         <div className="ck__start__wrapper__02">
           <div className="ck__about">
               <p className="ck__about__subtext">
-                Starting to explore the internet in the early 2000s I discovered 
-                digital media design.<br /> Since then, I’ve worked in several fields. I always strive to create 
+                Starting to explore the internet in the early 2000s I discovered
+                digital media design.<br /> Since then, I’ve worked in several fields. I always strive to create
                 new or better user experience with empathy.
               </p>
-              <Button type="primary" title="Projects" url="/projects/"></Button>
-              <Button type="secondary" title="About me" url="/about/"></Button>
+            {/*   <Button type="primary" title="Projects" url="/projects/"></Button> */}
+              <Button type="primary" title="About me" url="/about/"></Button>
             </div>
         </div>
       </div>

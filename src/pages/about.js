@@ -6,6 +6,8 @@ import TimeStamp from '../components/timestamp';
 import NavbarBack from '../components/navbarback';
 import Footer from '../components/footer';
 
+import ck_logos from '../../src/images/ck_logos.png';
+
 const About = () => (
   <Layout>
     <Helmet
@@ -20,10 +22,26 @@ const About = () => (
       </div>
       {/* Header */}
       <div className="ck__header">
-          <h1 className="ck-h1">About</h1>
-          <p className="ck-subtitle">
-            Here is a list of my stuff I've done over the years.
-          </p>
+        <h1 className="ck-h1">About</h1>
+      </div>
+      <div className="ck__about__info">
+        <p className="ck__text">
+            I’m a passionate product designer with a focus on user centered design.
+            <br /><br />
+            As a representative of the customers ans users I advocate for user needs through
+            planning, design and implementation ensuring all results reflects a solid understanding of
+            UX principles. Therefore I work closely together with development, product development and
+            product management. Ensuring that all goals, expectations and customer and user needs are
+            being fulfilled.
+            <br /><br />
+            I have a strong desire for creativity, innovative thinking and solution-oriented work for
+            creating new interactive experiences and products.
+        </p>
+        <span className="ck__about__spacer"></span>
+        <div className="ck__about__img">
+          <img src={ck_logos} alt="References" />
+        </div>
+        <span className="ck__about__spacer"></span>
       </div>
       {/* Content */}
       <div className="ck__content">
@@ -36,8 +54,8 @@ const About = () => (
               <li>
                 <TimeStamp time="06/2015" title="Reservix" type="UX/UI" link="internal" url="https://www.reservix.net/"
                 infos="
-                  Supporting several teams with UX/UI designs for our B2C and B2B products. Therefore I’m responsible for 3000 
-                  white label shops and three Apps. Always seeking to create a great user experience for buying or reselling tickets for local 
+                  Supporting several teams with UX/UI designs for our B2C and B2B products. Therefore I’m responsible for 3000
+                  white label shops and three Apps. Always seeking to create a great user experience for buying or reselling tickets for local
                   events up to film premieres (Star Wars, James Bond, ... ) or 1. Bundesliga and DFB.
                 "
                 ></TimeStamp>
@@ -45,7 +63,7 @@ const About = () => (
               <li>
                 <TimeStamp time="03/2015" title="Frau Skroblies & Freunde" type="Cinematographer" link="external" url="https://www.frau-skroblies.com/"
                 infos="
-                  Staging, filming and editing wedding movies. The job requires me to work precisely and fast. Failure at any time is 
+                  Staging, filming and editing wedding movies. The job requires me to work precisely and fast. Failure at any time is
                   definitely not an option.
                 "
                 ></TimeStamp>
@@ -54,7 +72,7 @@ const About = () => (
                 <TimeStamp time="01/2009 - 02/2009" title="Platformsixproduction" type="Web Design, Photography" url=""
                 infos="
                   Brisbane, Australia:
-                  Using Photoshop, I modified and enhanced fashion, people and lifestyle pictures. I was also responsible for maintaining the 
+                  Using Photoshop, I modified and enhanced fashion, people and lifestyle pictures. I was also responsible for maintaining the
                   in-house customer management system.
                 "
                 ></TimeStamp>
@@ -72,7 +90,7 @@ const About = () => (
           <div className="ck__content__wrapper__timestamp">
             <ul className="ck__skill-list">
               <li>
-                <TimeStamp time="06/2015" title="GeoSpin" type="Web, Print & Photography" link="external" url="https://www.geospin.de"
+                <TimeStamp time="06/2015" title="GeoSpin" type="Product Desgin" link="external" url="https://www.geospin.de"
                 infos="
                   Building a Corporate Design for a Big Data Company and also their webpage.
                 "
@@ -102,7 +120,7 @@ const About = () => (
               <li>
                 <TimeStamp time="05/2012 – 07/2012" title="sunzinet" type="Webdesign" link="external" url="https://www.sunzinet.com/"
                 infos="
-                  Worked independently with the Creative Art Director and interpreted a design concept to deliver a 
+                  Worked independently with the Creative Art Director and interpreted a design concept to deliver a
                   responsive webpage.
                 "
                 ></TimeStamp>
@@ -117,7 +135,7 @@ const About = () => (
               <li>
                 <TimeStamp time="02/2011 – 05/2011" title="Kunstlicht" type="Cinematogrpaher" link="external" url="https://kunstlicht.de/ueber-uns/"
                 infos="
-                    Staging, filming and editing a corporate video for Kunstlicht - an exclusive interior lighting design company. 
+                    Staging, filming and editing a corporate video for Kunstlicht - an exclusive interior lighting design company.
                     This assignment required me to work independently and the product was delivered under the budgeted timeline.
                   "
                 ></TimeStamp>
@@ -151,7 +169,7 @@ const About = () => (
               <li>
                 <TimeStamp time="05/2012" title="SteamCalculator" type="UX/UI, Frontend" link="internal" url="https://steamcalculator.com/"
                 infos="
-                  SteamCalculator calculates the value of an user’s Steam account. Steam is an online gaming download platform. 
+                  SteamCalculator calculates the value of an user’s Steam account. Steam is an online gaming download platform.
                   Due to the immense popularity of our application I was able to write my Bachelor thesis* about it.
                   *Title: Self-efficacy in online gaming: Conception of a personalize data visualization as a marketing tool for a game community.
                 "
@@ -258,7 +276,7 @@ const About = () => (
         </div>
 
         <div className="ck__spacer"></div>
-          
+
         <div className="ck__content__wrapper">
           <div className="ck__content__wrapper__title">
             <h2>Education</h2>
@@ -284,14 +302,14 @@ const About = () => (
           <div className="ck__content__wrapper__timestamp">
             <ul className="ck__skill-list">
               <li>
-                <TimeStamp time="03/2017" title="Haus des Engagements" type="Corporate Design" link="external" url="https://haus-des-engagements.de/" 
+                <TimeStamp time="03/2017" title="Haus des Engagements" type="Corporate Design" link="external" url="https://haus-des-engagements.de/"
                 infos="
                   Providing logo and corporate colors.
                 "
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="02/2012 – 02/2013" title="Palliatives Hospiz Solingen" type="Cinematographer" link="external" url="https://vimeo.com/64133805" 
+                <TimeStamp time="02/2012 – 02/2013" title="Palliatives Hospiz Solingen" type="Cinematographer" link="external" url="https://vimeo.com/64133805"
                 infos="
                   Filming and editing a corporate video for PHoS – Palliatives Hospiz Solingen – a nonprofit terminal care organization.
                   This image film was a part of my friends bachelor thesis.
@@ -299,7 +317,7 @@ const About = () => (
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="07/2007, 06/2006, 06/2005" title="Caritas" type="Child carer" link="external" url="https://www.caritas-rheine.de/hilfeundberatung/kinderjugendlicheundfamilien/kinderjugendundfamilienberatung/jugendberatung/stadtranderholung/stadtranderholung" 
+                <TimeStamp time="07/2007, 06/2006, 06/2005" title="Caritas" type="Child carer" link="external" url="https://www.caritas-rheine.de/hilfeundberatung/kinderjugendlicheundfamilien/kinderjugendundfamilienberatung/jugendberatung/stadtranderholung/stadtranderholung"
                 infos="
                   Working and playing with socially underprivileged children by planning and organizing day trips.
                 "
@@ -310,7 +328,7 @@ const About = () => (
         </div>
 
         <div className="ck__spacer"></div>
-{/* 
+{/*
         <div className="ck__content__wrapper">
           <div className="ck__content__wrapper__title">
             <h2>Travel</h2>
@@ -325,7 +343,7 @@ const About = () => (
               </li>
             </ul>
           </div>
-        </div> 
+        </div>
 
         <div className="ck__spacer"></div> */}
 
@@ -337,7 +355,7 @@ const About = () => (
             <ul className="ck__skill-list">
               <li>
                 <TimeStamp time="05/2018" title="Använda" type="Fashion & Design" link="external" url="https://www.indiegogo.com/projects/anvanda-a-great-f-cking-bag#/" infos="
-                  Använda – „A Great F*cking Bag.“ Just a cool looking bag. 
+                  Använda – „A Great F*cking Bag.“ Just a cool looking bag.
                 "
                 ></TimeStamp>
               </li>
@@ -348,14 +366,14 @@ const About = () => (
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="09/2015" title="Reissue of the 1975 NASA Graphics Standards Manual" type="Design" link="external" url="https://www.kickstarter.com/projects/thestandardsmanual/reissue-of-the-1975-nasa-graphics-standards-manual" 
+                <TimeStamp time="09/2015" title="Reissue of the 1975 NASA Graphics Standards Manual" type="Design" link="external" url="https://www.kickstarter.com/projects/thestandardsmanual/reissue-of-the-1975-nasa-graphics-standards-manual"
                 infos="
                   This Kickstarter campaign is a celebration of Danne and Blackburn's work. Brought back to earth 41 years after it was designed, and 23 years after it was lost.
                 "
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="08/2015" title="Support Team USA in the Giant Robot Duel" type="Tech" link="external" url="https://www.kickstarter.com/projects/megabots/support-team-usa-in-the-giant-robot-duel" 
+                <TimeStamp time="08/2015" title="Support Team USA in the Giant Robot Duel" type="Tech" link="external" url="https://www.kickstarter.com/projects/megabots/support-team-usa-in-the-giant-robot-duel"
                 infos="
                   'Murcia!
                 "
@@ -376,7 +394,7 @@ const About = () => (
               <li>
                 <TimeStamp time="08/2004" title="ThW Mapping Contest" type="Organisator" url=""
                 infos="
-                  Back in those days my brother and I started a Half-Life deathmatch remake mapping contest for the thewall.de community. 
+                  Back in those days my brother and I started a Half-Life deathmatch remake mapping contest for the thewall.de community.
                   Thewall.de was the biggest German Half-life mapping community back then.
                 "
                 ></TimeStamp>
@@ -384,22 +402,22 @@ const About = () => (
               <li>
                 <TimeStamp time="07/2004" title="Killbox Mod" type="Level Design" link="external" url="http://killbox.spike-fx.net/home.html"
                 infos="
-                  It all happend during a LAN-Party. The development of v1.0 took 17 hours. And of course there was a mapping contest. 
+                  It all happend during a LAN-Party. The development of v1.0 took 17 hours. And of course there was a mapping contest.
                   My map was voted second place.
                 "
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="09/2002" title="PC Action Counter-Strike Special-Edition" type="Level Design" url="" 
+                <TimeStamp time="09/2002" title="PC Action Counter-Strike Special-Edition" type="Level Design" url=""
                 infos="
-                  Winning a mapping contest for an exclusive Counter-Strike map pack. The exclusive-pack also known as 
-                  “best of german speaking Mapper”-pack was organized by the Clan00 map-forum in collaboration with the PC Action magazine. 
+                  Winning a mapping contest for an exclusive Counter-Strike map pack. The exclusive-pack also known as
+                  “best of german speaking Mapper”-pack was organized by the Clan00 map-forum in collaboration with the PC Action magazine.
                   The pack contained 12 high-quality maps.
                 "
                 ></TimeStamp>
               </li>
               <li>
-                <TimeStamp time="06/2001" title="spezi-clan.com" type="Co-Clanleader, Wedbdesign" link="external" url="http://www.spezi-clan.com" 
+                <TimeStamp time="06/2001" title="spezi-clan.com" type="Co-Clanleader, Wedbdesign" link="external" url="http://www.spezi-clan.com"
                 infos="
                   And yes, I'm still playing.
                 "
