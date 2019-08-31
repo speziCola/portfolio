@@ -1,6 +1,6 @@
 @font-face {
     font-family: "WorkSans";
-    src: 
+    src:
     url('../fonts/WorkSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "WorkSans";
-    src: 
+    src:
     url('../fonts/WorkSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Titillium";
-    src: 
+    src:
     url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -31,27 +31,29 @@ $ck-font-02: 'Titillium', sans-serif;
 }
 
 .ck-h1 {
-    position: relative;
-    @include mb(16, 48);
-    font-family: $ck-font-01;
-    @include font-size(40, 96);
-    @include line-height(64, 112);
-    color: $ck-primary;
-    text-transform: uppercase;
+    @include themify($themes) {
+        position: relative;
+        @include mb(16, 48);
+        font-family: $ck-font-01;
+        @include font-size(40, 96);
+        @include line-height(64, 112);
+        color: themed('font-main');
+        text-transform: uppercase;
 
-    &:before {
-        position: absolute;
-        bottom: 0;
-        content: '';
-        @include width(64,192);
-        height: 0.4rem;
-        background: $ck-gray-15;
+        &:before {
+            position: absolute;
+            bottom: 0;
+            content: '';
+            @include width(64,192);
+            height: 0.4rem;
+            background: $ck-primary;
+        }
     }
 }
 
 .ck-subtitle {
     @include mb(16, 48);
-    @include font-size(18, 24);
+    @include font-size(16, 24);
     @include line-height(24, 40);
     @extend %ck-text;
 }
@@ -62,10 +64,12 @@ $ck-font-02: 'Titillium', sans-serif;
 }
 
 %ck-text {
-    font-family: $ck-font-02;
-    font-weight: 400;
-    text-align: left;
-    color: $ck-font-second;
+    @include themify($themes) {
+        font-family: $ck-font-02;
+        font-weight: 400;
+        text-align: left;
+        color: themed('font-third');
+    }
 }
 
 .ck-text {
@@ -89,5 +93,19 @@ $ck-font-02: 'Titillium', sans-serif;
         &:last-child {
             padding-bottom: 0;
         }
+    }
+}
+
+
+.ck__text {
+    max-width: 82rem;
+    @extend %ck-text;
+    @include font-size(14, 18);
+    @include line-height(20, 40);
+
+    & span {
+        font-weight: 800;
+        color: $ck-font-second;
+        text-transform: uppercase;
     }
 }

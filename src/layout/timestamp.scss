@@ -1,104 +1,43 @@
 .timestamp {
-    position: relative;
-    @include mb(24, 64);
-    @include px(16, 32);
-    box-sizing: border-box;
-    
-    &__time {
-        margin-bottom: 1.2rem;
-        font-family: $ck-font-01;
-        font-weight: 700;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        color: $ck-primary;
-    }
-    
-    &__title {
-        display: inline;
-        font-family: $ck-font-01;
-        font-weight: 700;
-        font-size: 1.8rem;
-        line-height: 2.4rem;
-        color: $ck-font-main;
-    }
+    @include themify($themes) {
+        position: relative;
+        @include mb(24, 64);
+        @include px(16, 32);
+        box-sizing: border-box;
 
-    &__link {
-        display: none;
-        position: relative; 
-        padding-top: 0.4rem;
-        font-family: "WorkSans", sans-serif;
-        font-weight: 500;
-        font-size: 1.4rem;
-        @include line-height(20, 28);
-        color: $ck-font-second;
-        transition: color 0.25s ease-in-out;
-
-        &:hover {
-            color: $ck-font-hover;
-            transition: color $time-1 ease-in-out;
-
-            &::after {
-                padding-left: 0.4rem;
-                transition: padding $time-1 ease-in-out;
-            }
+        &__time {
+            margin-bottom: 1.2rem;
+            font-family: $ck-font-01;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $ck-primary;
         }
 
-        &:after {
-            display: inline-block;
-            margin-top: -0.1rem;
-            padding-left: 0.2rem;
-            
-            font-family: "symbols";
-            font-style: normal;
-            font-weight: normal;
+        &__title {
+            display: inline;
+            font-family: $ck-font-01;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            color: themed('font-main');
+        }
+        &__type {
+            margin-bottom: 0.4rem;
+            font-family: $ck-font-01;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 2.0rem;
+            color: themed('font-fourth');
+            text-transform: uppercase;
+        }
+        &__infos {
+            display: block;
+            font-family: $ck-font-02;
+            font-weight: 400;
+            @include font-size(14, 18);
             @include line-height(20, 28);
-            vertical-align: middle;
-            transition: padding $time-1 ease-in-out;
+            color: themed('font-third');
         }
-
-        & span {
-            @include line-height(20, 28);
-        }
-    }
-
-    &--internal {
-        display: inline-block;
-
-        &:after {    
-            content: '\EA17';     
-        }
-    }
-
-    &--external {
-        display: inline-block;
-
-        &:after {    
-            content: '\EA13';     
-        }
-    }
-
-    &__type {
-        margin-bottom: 0.4rem;
-        font-family: $ck-font-01;
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 2.0rem;
-        color: $ck-font-fourth;
-        text-transform: uppercase;
-    }
-    &__subtitle {
-        font-family: $ck-font-01;
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        color: $ck-font-second;
-    }
-    &__infos {
-        display: block;
-        font-family: $ck-font-02;
-        font-weight: 400;
-        @include font-size(14, 18);
-        @include line-height(20, 28);
-        color: $ck-font-third;
     }
 }

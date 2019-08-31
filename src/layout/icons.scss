@@ -6,15 +6,17 @@
 }
   
 i {
-    display: inline-block;
-    font-family: "symbols";
-    font-style: normal;
-    font-weight: normal;
-    font-size: calc(2rem + (32 - 20) * (100vw - 320px)/(2560 - 320));
-    line-height: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
-    color: $ck-font-second;
-    transition: color 0.16s ease-in-out; 
-    box-sizing: border-box;
+    @include themify($themes) {
+        display: inline-block;
+        font-family: "symbols";
+        font-style: normal;
+        font-weight: normal;
+        font-size: calc(2rem + (32 - 20) * (100vw - 320px)/(2560 - 320));
+        line-height: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
+        color: themed('icon');
+        transition: color 0.16s ease-in-out; 
+        box-sizing: border-box;
+    }
 }
 
 .s-2x {
@@ -42,8 +44,10 @@ i {
 .ck-icon-external:before { content: "\EA13" }
 .ck-icon-mail:before { content: "\EA14" }
 .ck-icon-github:before { content: "\EA15" }
-.ck-icon-arrow-up-a:before { content: "\EA16" }
-.ck-icon-arrow-right-a:before { content: "\EA17" }
-.ck-icon-arrow-down-a:before { content: "\EA18" }
-.ck-icon-arrow-left-a:before { content: "\EA19" }
-.ck-icon-settings:before { content: "\EA1A" }
+.ck-icon-night:before { content: "\EA16" }
+.ck-icon-day:before { content: "\EA17" }
+.ck-icon-arrow-up-a:before { content: "\EA18" }
+.ck-icon-arrow-right-a:before { content: "\EA19" }
+.ck-icon-arrow-down-a:before { content: "\EA1A" }
+.ck-icon-arrow-left-a:before { content: "\EA1B" }
+.ck-icon-settings:before { content: "\EA1C" }

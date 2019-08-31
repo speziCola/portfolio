@@ -1,0 +1,46 @@
+.navbarBottom {
+    @include themify($themes) {
+
+        &__line {
+            width: 100%;
+            height: 0.1rem;
+            @include mb(16, 48);
+            background: themed('base-05');
+        }
+
+        &__link {
+            position: relative;
+            display: inline-block;
+            padding-left: 3.2rem;
+            font-family: $ck-font-01;
+            font-weight: 500;
+            font-size: 1.6rem;
+            @include line-height(20, 28);
+            color: themed('font-main');
+            transition: color 0.25s ease-in-out;
+
+            &:hover {
+                color: $ck-font-hover;
+                transition: color $time-1 ease-in-out;
+
+                &::before {
+                    margin-left: -2.8rem;
+                    transition: margin $time-1 ease-in-out;
+                }
+            }
+
+            &:before {
+                position: absolute;
+                display: inline-block;
+                margin-left: -2.4rem;
+                padding-left: 0.2rem;
+                content: '\EA1B';
+                font-family: "symbols";
+                font-style: normal;
+                font-weight: normal;
+                @include line-height(20, 28);
+                transition: margin $time-1 ease-in-out;
+            }
+        }
+    }
+}

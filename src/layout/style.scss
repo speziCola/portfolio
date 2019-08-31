@@ -5,12 +5,21 @@
 @import 'animation';
 
 
-@import 'start';
-@import 'about';
+@import 'button';
+@import 'buttonlink';
+
 @import 'timestamp';
 @import 'navbarback';
+@import 'navbarbottom';
 @import 'social';
 @import 'footer';
+
+/* Pages */
+@import 'start';
+@import 'about';
+@import 'projectpreview';
+@import 'project';
+
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -20,6 +29,9 @@
   padding: 0;
   text-decoration: none;
   border-style: none;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 ::-moz-selection {
@@ -38,8 +50,10 @@
 }
 
 body {
- height: 100%;
- background: $ck-background;
+  @include themify($themes) {
+    height: 100%;
+    background: $ck-background;
+  }
 }
 
 html {
@@ -47,21 +61,32 @@ html {
   font-size: 62.5%;
 }
 
+ .container {
+  @include themify($themes) {
+    min-height: 100vh;
+    height: 100%;
+    background: themed('background');
+  }
+}
+
 main {
   position: relative;
   display: grid;
   grid-template-columns: auto 8rem;
-  grid-template-areas: 
+  grid-template-areas:
+  "content footer"
   "content footer"
   "content footer"
   "content footer";
+  height: 100%;
+  z-index: 5;
 
   @media only screen and (max-width: 650px) {
       grid-template-columns: auto;
-      grid-template-areas: 
+      grid-template-areas:
       "content"
       "content"
       "content"
       "footer";
-  }  
-} 
+  }
+}
