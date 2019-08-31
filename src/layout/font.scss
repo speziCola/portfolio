@@ -25,6 +25,24 @@
 $ck-font-01: 'WorkSans', sans-serif;
 $ck-font-02: 'Titillium', sans-serif;
 
+
+::-moz-selection {
+    color: red;
+  }
+  ::selection {
+    color: red;
+  }
+
+
+%hoverspeed {
+    transition: all $time-1 ease-in-out;
+  }
+
+  %hover {
+    @extend %hoverspeed;
+  }
+
+
 @mixin hover {
     @extend %hoverspeed;
     color: $ck-font-hover;

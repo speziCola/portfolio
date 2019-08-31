@@ -1,112 +1,109 @@
-.ck__footer {
-    position: relative;
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
+.ck_footer {
+  position: relative;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 650px) {
+    display: block;
+  }
+
+  &__wrapper {
+    position: fixed;
+    bottom: 0;
 
     @media only screen and (max-width: 650px) {
-        display: block;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3.2rem;
+      width: 100%;
+      box-sizing: border-box;
     }
-
-    &__wrapper {
-        position: fixed;
-        bottom: 0;
-
-        @media only screen and (max-width: 650px) {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 3.2rem;
-            width: 100%;
-            box-sizing: border-box;
-          
-        }
-    }
-  
-    &__credit {
-        transform: rotate(-90deg);
-        transform-origin: bottom left;
-        bottom: 0;
-        width: 15.6rem;
-        margin-left: 8.0rem;
-        padding-top: 2.8rem;
-        padding-bottom: 2.8rem;
-        padding-left: 1.6rem;
-        font-family: $ck-font-01;
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 2.4rem;
-        text-align: left;
-        color: $ck-primary;
-        text-transform: uppercase;
-    
-        & a {
-            padding-left: 0.8rem;
-            color: $ck-font-second;
-            @extend %hoverspeed;
-
-            &:hover {
-                @include hover;
-            }
-        }
-
-        @media only screen and (max-width: 650px) {
-            position: relative;
-            transform: rotate(0);
-            margin-left: 0;
-            padding-left: 0;
-            padding-bottom: 0;
-            padding-top: 0;
-            width: auto;
-            box-sizing: border-box;
-            text-align: center;
-        }
-    }
-
-    &__theme {
-        @include themify($themes) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 4.8rem;
-            width: 4.8rem;
-            margin-left: 1.6rem;
-            margin-bottom: 1.6rem;
-            border-radius: 100%;
-            transition: box-shadow 0.25s ease-in-out;
-            background: none;
-
-            &:hover {
-                @extend %hover;
-                cursor: pointer;
-                background: $ck-primary;
-                box-shadow: 0 4px 8px 2px themed('shadow');
-            }
-
-            &:hover i {
-                color: $ck-base-00;
-            }
-
-            &:focus {
-                outline: none !important;
-            }
-
-            &__icon {
-                line-height: 0;
-
-                &::before {
-                    content: themed('theme-icon');
-                } 
-            }
-
-            @media only screen and (max-width: 650px) {
-                margin-left: 1.6rem;
-                margin-bottom: 0;  
-            }
-        }     
-    }
-  
- 
   }
+
+  &__credit {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    bottom: 0;
+    width: 15.6rem;
+    margin-left: 8rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    padding-left: 1.6rem;
+    font-family: $ck-font-01;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: $ck-primary;
+    text-transform: uppercase;
+
+    & a {
+      padding-left: 0.8rem;
+      color: $ck-font-second;
+      @extend %hoverspeed;
+
+      &:hover {
+        @include hover;
+      }
+    }
+
+    @media only screen and (max-width: 650px) {
+      position: relative;
+      transform: rotate(0);
+      margin-left: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      width: auto;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  }
+
+  &__theme {
+    @include themify($themes) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.8rem;
+      width: 4.8rem;
+      margin-left: 1.6rem;
+      margin-bottom: 1.6rem;
+      border-radius: 100%;
+      transition: box-shadow 0.25s ease-in-out;
+      background: none;
+
+      &:hover {
+        @extend %hover;
+        cursor: pointer;
+        background: $ck-primary;
+        box-shadow: 0 4px 8px 2px themed("shadow");
+      }
+
+      &:hover i {
+        color: $ck-base-03;
+      }
+
+      &:focus {
+        outline: none !important;
+      }
+
+      &__icon {
+        line-height: 0;
+
+        &::before {
+          content: themed("theme-icon");
+        }
+      }
+
+      @media only screen and (max-width: 650px) {
+        margin-left: 1.6rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

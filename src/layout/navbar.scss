@@ -1,0 +1,9 @@
+nav {
+  @include themify($themes) {
+    position: fixed;
+    width: 100%;
+    height: 7.2rem;
+    background: themed("nav");
+    @include shadow-01;
+  }
+}

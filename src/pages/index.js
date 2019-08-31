@@ -6,44 +6,29 @@ import { NBSP } from '../constants';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Button from "../components/button"
 import Footer from '../components/footer';
+
+import avatar from '../../src/images/qrt-ck.png';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div className="ck__start__content__01">
-        <div className="ck__start__wrapper__01">
-          <div className="ck__welcome">
-            <h1 className="ck__welcome__headline">
-              <span className="ck__welcome__headline--quote glitch__text">“</span>
-              <span className="ck__welcome__headline--hi glitch__text">
-              Hi,
-              </span>
-              my name is Chris{NBSP}Kuhrt.<br />
-              I’m{NBSP}a{NBSP}Product{NBSP}Designer based in Germany.”<span className="ck__welcome__headline__line">_</span>
-            </h1>
-          </div>
-        </div>
+    <nav></nav>
+    <div className="ck_start_container">
+      <div className="ck_start_container__wrapper">
+      <img className="ck_start_container__avatar" src={avatar} alt="Chris Kuhrt, porfile picture." />
+        <h1 className="ck_start_container__headline">
+        Hi, my name is Chris{NBSP}Kuhrt.<br />
+        I’m{NBSP}a{NBSP}Product{NBSP}Designer based in Germany.”<span className="ck_start_container__headline__line">_</span>
+        </h1>
+        <p className="ck_start_container__subtext">
+          Starting to explore the internet in the early 2000s I discovered
+          digital media design.<br /> Since then, I’ve worked in several fields. I always strive to create
+          new or better user experience with empathy.
+        </p>
       </div>
-      <div className="ck__start__content__02">
-        <div className="ck__start__wrapper__02">
-          <div className="ck__about">
-              <p className="ck__about__subtext">
-                Starting to explore the internet in the early 2000s I discovered
-                digital media design.<br /> Since then, I’ve worked in several fields. I always strive to create
-                new or better user experience with empathy.
-              </p>
-            {/*   <Button type="primary" title="Projects" url="/projects/"></Button> */}
-              <Button type="primary" title="About me" url="/about/"></Button>
-            </div>
-        </div>
-      </div>
-      <Footer></Footer>
-      <div className="ck__stripe">
-        <div className="ck__stripe__a"></div>
-        <div className="ck__stripe__b"></div>
-      </div>
+    </div>
+    <Footer></Footer>
   </Layout>
 )
 

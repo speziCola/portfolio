@@ -1,9 +1,9 @@
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import React from 'react'
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import React from "react";
 
-import "../layout/style.scss"
-import {ThemeContext} from './theme-context';
+import "../layout/style.scss";
+import { ThemeContext } from "./theme-context";
 
 const Layout = ({ children }) => {
   return (
@@ -19,21 +19,19 @@ const Layout = ({ children }) => {
       `}
       render={data => (
         <ThemeContext.Consumer>
-          {(theme) => (
+          {theme => (
             <div id="theme" className={theme.theme}>
-              <div className="container">
-                <main>{children}</main>
-              </div>
+              <main className="container">{children}</main>
             </div>
           )}
         </ThemeContext.Consumer>
       )}
     />
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
