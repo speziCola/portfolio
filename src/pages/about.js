@@ -28,7 +28,7 @@ const About = () => (
         <p className="ck__text">
             I’m a passionate product designer with a focus on user centered design.
             <br /><br />
-            As a representative of the customers ans users I advocate for user needs through
+            As a representative of the customers and users I advocate for user needs through
             planning, design and implementation ensuring all results reflects a solid understanding of
             UX principles. Therefore I work closely together with development, product development and
             product management. Ensuring that all goals, expectations and customer and user needs are
@@ -41,10 +41,10 @@ const About = () => (
         <div className="ck__about__img">
           <img src={ck_logos} alt="References" />
         </div>
-        <span className="ck__about__spacer"></span>
       </div>
       {/* Content */}
       <div className="ck__content">
+      <div className="ck__spacer"></div>
         <div className="ck__content__wrapper">
           <div className="ck__content__wrapper__title">
             <h2>Work experince</h2>

@@ -5,7 +5,7 @@ class ThemeProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          theme: 'theme-dark'
+          theme: 'theme-light'
         };
       }
 

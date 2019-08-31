@@ -12,9 +12,7 @@
 }
 
 .ck__about__info {
-  grid-area: content;
   grid-row: 3;
-  @include mb(40, 96);
   @include px(8, 192);
 }
 
@@ -25,13 +23,6 @@
   @include px(8, 192);
 }
 
-.ck__about__text {
-    max-width: 82rem;
-    @extend %ck-text;
-    @include font-size(14, 18);
-    @include line-height(20, 40);
-}
-
 .ck__about__spacer {
     display: block;
     @include mb(32, 72);
@@ -40,9 +31,11 @@
 
 .ck__about__img {
     @include themify($themes) {
+        max-width: 96rem;
         @include pxy(0,16,0,16);
         background: themed('img');
         box-shadow: 0 4px 8px 2px themed('img-shadow');
+        border-radius: 0.6rem;
     }
     & img {
         max-width: 100%;

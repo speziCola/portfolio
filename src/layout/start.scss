@@ -9,7 +9,7 @@
 
         &__a {
             position: absolute;
-            margin-left: -4.8rem; 
+            margin-left: -4.8rem;
             @include width(320,960);
             height: 100vh;
             background: themed(stripe-a);
@@ -32,11 +32,11 @@
     grid-area: content;
     grid-row: 1;
     height: 60vh;
-    @include px(32,8); 
+    @include px(32,8);
 
     @media only screen and (max-width: 650px) {
         @include mb(32, 64);
-        background: $ck-primary; 
+        background: $ck-primary;
     }
 }
 
@@ -47,7 +47,7 @@
     grid-row: 2;
     align-content: top;
     height: 40vh;
-    @include px(32,8);   
+    @include px(32,8);
 
     @media only screen and (max-width: 650px) {
         height: auto;
@@ -58,7 +58,7 @@
     grid-column-start: 5;
     grid-column-end: 41;
 }
-    
+
 .ck__start__wrapper__01 {
     align-self: end;
 }
@@ -76,12 +76,12 @@
 .ck__welcome {
     @include themify($themes) {
         grid-column-start: 5;
-        grid-column-end: 41; 
+        grid-column-end: 41;
 
         &__headline {
             @include mb(8, 32);
             padding-top: 3.2rem;
-            font-family: $ck-font-01;  
+            font-family: $ck-font-01;
             @include font-size(18, 40);
             @include line-height(24, 48);
             color: themed('font-title');
@@ -94,33 +94,33 @@
 
             &--quote {
                 position: absolute;
-                margin-top: calc(-12px + (-16 - 12) * ((100vw - 320px) / (2560 - 320))); 
-                left: calc(24px + (56 + 24) * ((100vw - 320px) / (2560 - 320))); 
+                margin-top: calc(-12px + (-16 - 12) * ((100vw - 320px) / (2560 - 320)));
+                left: calc(24px + (56 + 24) * ((100vw - 320px) / (2560 - 320)));
                 @include mb(4, 8);
                 @include font-size(50, 230);
                 @include line-height(80, 304);
                 font-weight: 700;
                 text-transform: none;
             }
-        
+
             &--hi {
                 position: relative;
                 display: block;
-                left: calc(-4px + (-8 - 4) * ((100vw - 320px) / (2560 - 320))); 
+                left: calc(-4px + (-8 - 4) * ((100vw - 320px) / (2560 - 320)));
                 @include mb(4, 8);
                 @include font-size(80, 280);
                 @include line-height(80, 304);
                 font-weight: 700;
                 text-transform: none;
             }
-        
+
             &__line {
-                animation: blinker 1s linear infinite;  
+                animation: blinker 1s linear infinite;
                 @keyframes blinker {
                     0% {opacity: 1.0;}
                     50% {opacity: 0.2;}
-                    100% {opacity: 1.0;}   
-                }  
+                    100% {opacity: 1.0;}
+                }
                 @media only screen and (max-width: 650px) {
                     @keyframes blinker {
                         0% {color: rgba(255,255,255,1);}
@@ -128,21 +128,20 @@
                         100% {color: rgba(255,255,255,1);}
                     }
                 }
-            }      
+            }
         }
     }
-} 
+}
 
 //* Conent__02
 .ck__about {
     @include themify($themes) {
         &__subtext {
-            max-width: 96.0rem;
             @include mb(32, 112);
             @extend %ck-text;
             @include font-size(16, 24);
             color: themed('font-third');
-        }  
+        }
 
         @media only screen and (max-width: 650px) {
             @include mb(32, 64);
@@ -175,7 +174,7 @@
                 text-align: center;
                 background: $ck-primary;
                 color: $ck-base-00;
-            } 
+            }
         }
     }
-} 
+}
