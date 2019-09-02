@@ -3,7 +3,7 @@
 .sidebar {
   @include themify($themes) {
     &__card {
-      @include pxy(8,32,8,32)
+      @include pxy(16,32,16,32)
       background: themed("card");
       border-radius: $border-radius-big;
       @include shadow-01;
