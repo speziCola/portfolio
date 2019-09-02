@@ -25,10 +25,10 @@ const Imprint = () => (
           <div className="sidebar__card">
             <div className="sidebar__card__profile">
               <p className="ck-text">
-                E-Mail: christopher(at)qrt.de <br /> <br />
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
                 Christopher Kuhrt
                 <br /> <br />
+                E-Mail: christopher(at)qrt.de
               </p>
             </div>
           </div>
