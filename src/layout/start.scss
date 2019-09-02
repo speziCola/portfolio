@@ -8,6 +8,7 @@
     height: 100vh;
 
     @media only screen and (max-width: 650px) {
+      @include mt (32, 80);
       height: 100%;
     }
 

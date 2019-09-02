@@ -59,7 +59,7 @@
   line-height: 0;
   @include mb(32,96);
   @media only screen and (max-width: 650px) {
-    text-align: center;
+  text-align: center;
   }
 
   & li {
