@@ -59,6 +59,15 @@ $ck-font-02: "Titillium", sans-serif;
   }
 }
 
+.ck-h3 {
+  @include mb(8,16);
+  font-family: $ck-font-02;
+  @include font-size(16, 18);
+  @include line-height(20, 28);
+  font-weight: 600;
+  color: $ck-primary;
+}
+
 %ck-text {
   @include themify($themes) {
     font-family: $ck-font-02;
@@ -69,6 +78,7 @@ $ck-font-02: "Titillium", sans-serif;
 }
 
 .ck-text {
+  @include mb(16,64);
   max-width: 96rem;
   @extend %ck-text;
   @include font-size(14, 18);

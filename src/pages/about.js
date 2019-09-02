@@ -52,6 +52,18 @@ const About = () => (
               I have a strong desire for creativity, innovative thinking and solution-oriented work for
               creating new interactive experiences and products.
             </p>
+            <h3 className="ck-h3">References</h3>
+            <ul className="ck-logos">
+              <li className="ck-logos__r01"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r02"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r03"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r04"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r05"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r06"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r07"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r08"><a href="https://dfb.de"  title="DFB"></a></li>
+              <li className="ck-logos__r09"><a href="https://dfb.de"  title="DFB"></a></li>
+            </ul>
           </div>
         </div>
       </div>
