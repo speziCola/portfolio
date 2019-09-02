@@ -23,11 +23,11 @@ const Timeline = () => (
     </div>
     {/* Content */}
     <div className="ck-container">
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Work experince</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -75,11 +75,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Freelancer</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -181,11 +181,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Projects</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -218,11 +218,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Further education</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -362,11 +362,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Education</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -392,11 +392,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Volunteer work</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -441,11 +441,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
       {/*
-        <div className="ck-container__wrapper">
-          <div className="ck-container__wrapper__title">
+        <div className="ck-container-timeline__wrapper">
+          <div className="ck-container-timeline__wrapper__title">
             <h2>Travel</h2>
           </div>
-          <div className="ck-container__wrapper__timestamp">
+          <div className="ck-container-timeline__wrapper__timestamp">
             <ul className="ck-skill-list">
               <li>
                 <TimeStamp time="06/2013 – 06/2014" title="Canada" type="Backpacker" url="" infos=""></TimeStamp>
@@ -459,11 +459,11 @@ const Timeline = () => (
 
         <div className="ck-spacer "></div> */}
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Backer</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
@@ -519,11 +519,11 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container__wrapper">
-        <div className="ck-container__wrapper__title">
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
           <h2>Other</h2>
         </div>
-        <div className="ck-container__wrapper__timestamp">
+        <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
             <li>
               <TimeStamp

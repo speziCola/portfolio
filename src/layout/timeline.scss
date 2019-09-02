@@ -1,8 +1,8 @@
-.ck-container__wrapper {
+.ck-container-timeline__wrapper {
   @include themify($themes) {
     display: flex;
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 900px) {
       flex-direction: column;
     }
 
@@ -34,7 +34,7 @@
     &__timestamp {
       width: 75%;
 
-      @media only screen and (max-width: 650px) {
+      @media only screen and (max-width: 900px) {
         width: 100%;
       }
     }

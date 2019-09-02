@@ -46,16 +46,29 @@ main {
 
     &__wrapper {
       display: flex;
+      flex-direction: row;
+      @media only screen and (max-width: 1240px) {
+        flex-direction: column-reverse;
+      }
     }
 
     &__sidebar {
       width: 30%;
       min-width: 38.4rem;
+
+      @media only screen and (max-width: 1240px) {
+        width: 100%;
+      }
     }
 
     &__content {
       width: 70%;
       @include px(16,120);
+
+      @media only screen and (max-width: 1240px) {
+        width: 100%;
+        @include px(0,0);
+      }
     }
   }
 }
