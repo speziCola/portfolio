@@ -32,7 +32,7 @@
         }
 
         &:hover {
-            @extend %hover;
+            @include hoverspeed;
             background: $ck-primary;
             color: $ck-base-03;
             box-shadow: 0 4px 8px 2px themed('shadow');

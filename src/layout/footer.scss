@@ -1,11 +1,12 @@
 .ck_footer {
   position: relative;
-  grid-area: footer;
   display: flex;
+  grid-area: footer;
   justify-content: space-between;
 
   @media only screen and (max-width: 650px) {
     display: block;
+    margin-bottom: 7.2rem;
   }
 
   &__wrapper {
@@ -44,10 +45,10 @@
     & a {
       padding-left: 0.8rem;
       color: $ck-font-second;
-      @extend %hoverspeed;
+      @include hoverspeed;
 
       &:hover {
-        @include hover;
+        @include hover-text;
       }
     }
 
@@ -78,14 +79,13 @@
       background: none;
 
       &:hover {
-        @extend %hover;
+        @include hoverspeed;
         cursor: pointer;
-        background: $ck-primary;
-        box-shadow: 0 4px 8px 2px themed("shadow");
+        box-shadow: 0 4px 8px 2px themed("shadow-hover");
       }
 
       &:hover i {
-        color: $ck-base-03;
+        color: themed("icon-hover");
       }
 
       &:focus {

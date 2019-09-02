@@ -1,90 +1,101 @@
-$ck-primary: #4264fb;
-$ck-secondary: #00be73;
+$ck-primary:        #4264fb;
+$ck-secondary:      #00be73;
 /* #4264fb, */ /* #191E28, */
 
 /* Base Color */ /*theme-dark, theme-light */
-$ck-base-00: #ffffff;
-$ck-base-01: #fdfdff;
-$ck-base-03: #fafafa;
-$ck-base-05: #d7d7e1;
-$ck-base-10: #bebec8;
-$ck-base-15: #9f9faf;
-$ck-base-25: #5a6478;
-$ck-base-50: #38414b;
-$ck-base-100: #2f2f2f;
+$ck-base-00:        #ffffff;
+$ck-base-01:        #fdfdff;
+$ck-base-03:        #fafafa;
+$ck-base-05:        #d7d7e1;
+$ck-base-10:        #bebec8;
+$ck-base-15:        #9f9faf;
+$ck-base-25:        #5a6478;
+$ck-base-50:        #38414b;
+$ck-base-100:       #2f2f2f;
 
-$ck-base-105: #1D1D3A;
-$ck-base-110: #17172F;
-$ck-base-115: #0F0F23;
-
+$ck-base-105:       #1d1d3a;
+$ck-base-110:       #17172f;
+$ck-base-115:       #0f0f23;
 
 /* Timeline - last child */
-$ck-alpha: rgba(0, 0, 0, 0);
+$ck-alpha:          rgba(0, 0, 0, 0);
 
 /* Fonts */
-$ck-font-title: $ck-primary;
-$ck-font-hover: $ck-secondary;
-$ck-font-main: $ck-base-25;
-$ck-font-second: $ck-base-25;
-$ck-font-third: $ck-base-25;
-$ck-font-fourth: $ck-base-15;
+$ck-font-title:       $ck-primary;
+$ck-font-hover:       $ck-secondary;
+$ck-font-main:        $ck-base-25;
+$ck-font-second:      $ck-base-25;
+$ck-font-third:       $ck-base-25;
+$ck-font-fourth:      $ck-base-15;
 
 /* Shadow */
-$ck-shadow-light: #dbe2ff;
-$ck-shadow-dark: rgba(0, 0, 0, 0.45),;
+$ck-shadow-light:    #dbe2ff;
+$ck-shadow-dark:     rgba(0, 0, 0, 0.45);
 
 $themes: (
   light: (
-    primary: $ck-primary,
-    secondary: $ck-secondary,
-    nav: $ck-base-00,
-    background: $ck-base-01,
-    /* Base Color */ base-00: $ck-base-03,
-    base-05: $ck-base-05,
-    base-10: $ck-base-10,
-    base-15: $ck-base-15,
-    base-25: $ck-base-25,
-    base-50: $ck-base-50,
-    base-100: $ck-base-100,
-    /* Timeline - last child */ alpha: rgba(0, 0, 0, 0),
-    /* Fonts */ font-title: $ck-primary,
-    font-hover: $ck-secondary,
-    font-main: $ck-base-25,
-    font-second: $ck-base-25,
-    font-third: $ck-base-25,
-    font-fourth: $ck-base-15,
-    icon: $ck-base-25,
-    shadow: $ck-shadow-light,
-    img: #fcfbfb,
-    img-shadow: rgba(0, 0, 0, 0.08),
-    theme-icon: "\EA16"
+    primary:          $ck-primary,
+    secondary:        $ck-secondary,
+    nav:              $ck-base-00,
+    card:             $ck-base-00,
+    background:       $ck-base-01,
+    /* Base Color */
+    base-00:          $ck-base-03,
+    base-05:          $ck-base-05,
+    base-10:          $ck-base-10,
+    base-15:          $ck-base-15,
+    base-25:          $ck-base-25,
+    base-50:          $ck-base-50,
+    base-100:         $ck-base-100,
+    /* Timeline - last child */
+    alpha:           rgba(0, 0, 0, 0),
+    /* Fonts */
+    font-title:       $ck-primary,
+    font-hover:       $ck-secondary,
+    font-main:        $ck-base-25,
+    font-second:      $ck-base-25,
+    font-third:       $ck-base-25,
+    font-fourth:      $ck-base-15,
+    icon:             $ck-base-15,
+    shadow:           $ck-shadow-light,
+    shadow-hover:     $ck-shadow-light,
+    icon-hover:       $ck-secondary,
+    img:            #fcfbfb,
+    img-shadow:     rgba(0, 0, 0, 0.08),
+    theme-icon:       "\EA16",
+    ck-logo: url('./../images/ck-logo-b.png')
   ),
   dark: (
-    primary: $ck-primary,
-    secondary: $ck-secondary,
-    nav: $ck-base-105,
-    background: #0f0f23,
+    primary:          $ck-primary,
+    secondary:        $ck-secondary,
+    nav:              $ck-base-105,
+    card:             $ck-base-105,
+    background:       $ck-base-115,
     /* Base Color */
-    base-00: $ck-base-100,
-    base-05: $ck-base-50,
-    base-10: $ck-base-25,
-    base-15: $ck-base-15,
-    base-25: $ck-base-10,
-    base-50: $ck-base-05,
-    base-100: $ck-base-03,
-    /* Timeline - last child */ alpha: rgba(0, 0, 0, 0),
+    base-00:          $ck-base-100,
+    base-05:          $ck-base-50,
+    base-10:          $ck-base-25,
+    base-15:          $ck-base-15,
+    base-25:          $ck-base-10,
+    base-50:          $ck-base-05,
+    base-100:         $ck-base-03,
+    /* Timeline - last child */
+    alpha:          rgba(0, 0, 0, 0),
     /* Fonts */
-    font-title: $ck-primary,
-    font-hover: $ck-secondary,
-    font-main: $ck-base-10,
-    font-second: $ck-base-25,
-    font-third: $ck-base-15,
-    font-fourth: $ck-base-25,
-    icon: $ck-base-15,
-    shadow: $ck-shadow-dark,
-    img: #17172f,
-    img-shadow: rgba(0, 0, 0, 0.45),
-    theme-icon: "\EA17"
+    font-title:       $ck-primary,
+    font-hover:       $ck-secondary,
+    font-main:        $ck-base-10,
+    font-second:      $ck-base-25,
+    font-third:       $ck-base-15,
+    font-fourth:      $ck-base-25,
+    icon:             $ck-base-15,
+    shadow:           $ck-shadow-dark,
+    shadow-hover:     $ck-primary,
+    icon-hover:       $ck-base-00,
+    img:            #17172f,
+    img-shadow:     rgba(0, 0, 0, 0.45),
+    theme-icon:       "\EA17",
+    ck-logo: url('./../images/ck-logo-d.png')
   )
 );
 
@@ -109,8 +120,4 @@ $themes: (
 
 @function themed($key) {
   @return map-get($theme-map, $key);
-}
-
-@mixin shadow-01 {
-    box-shadow: 0px 0px 16px themed("shadow");
 }

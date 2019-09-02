@@ -6,6 +6,8 @@ import { NBSP } from '../constants';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Social from '../components/social';
+import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 import avatar from '../../src/images/qrt-ck.png';
@@ -13,7 +15,7 @@ import avatar from '../../src/images/qrt-ck.png';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <nav></nav>
+    <Navbar></Navbar>
     <div className="ck_start_container">
       <div className="ck_start_container__wrapper">
       <img className="ck_start_container__avatar" src={avatar} alt="Chris Kuhrt, porfile picture." />
@@ -23,9 +25,10 @@ const IndexPage = () => (
         </h1>
         <p className="ck_start_container__subtext">
           Starting to explore the internet in the early 2000s I discovered
-          digital media design.<br /> Since then, I’ve worked in several fields. I always strive to create
-          new or better user experience with empathy.
+          digital media design.<br /> Since then, I’ve worked for serveral clients. I always strive to create
+          new or better customer experience with empathy.
         </p>
+        <Social size="big"></Social>
       </div>
     </div>
     <Footer></Footer>

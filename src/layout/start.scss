@@ -1,49 +1,59 @@
 .ck_start_container {
-    @include themify($themes) {
-        display: grid;
-        grid-template-columns: repeat(40, 1fr);
-        grid-area: content;
-        align-items: center;
+  @include themify($themes) {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-area: content;
+    align-items: center;
+    @include px(8, 280);
+    height: 100vh;
 
-        &__wrapper {
-            grid-column-start: 5;
-            grid-column-end: 41;
+    &__wrapper {
+      grid-column-start: 1;
+      grid-column-end: 31;
 
-        }
-
-        &__avatar {
-            width: 25.6rem;
-        }
-
-        &__headline {
-            @include mb(8, 32);
-            padding-top: 3.2rem;
-            font-family: $ck-font-01;
-            @include font-size(18, 32);
-            @include line-height(24, 40);
-            color: themed('font-title');
-            text-transform: uppercase;
-
-            @media only screen and (max-width: 650px) {
-                color: $ck-base-03;
-                @include mb(40, 64);
-            }
-
-            &__line {
-                animation: blinker 1.5s linear infinite;
-                @keyframes blinker {
-                    0% {opacity: 1.0;}
-                    50% {opacity: 0.0;}
-                    100% {opacity: 1.0;}
-                }
-            }
-        }
-
-        &__subtext {
-            @include mb(32, 112);
-            @extend %ck-text;
-            @include font-size(18, 22);
-            color: themed('font-third');
-        }
+      @media only screen and (max-width: 650px) {
+        @include py(16, 64)
+      }
     }
+
+    &__avatar {
+        @include width(128, 256);
+    }
+
+    &__headline {
+      @include mb(8, 32);
+      padding-top: 3.2rem;
+      font-family: $ck-font-01;
+      @include font-size(18, 32);
+      @include line-height(24, 40);
+      color: themed("font-title");
+      text-transform: uppercase;
+
+      &__line {
+        animation: blinker 1.5s linear infinite;
+        @keyframes blinker {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__subtext {
+      @include mb(8, 48);
+      @extend %ck-text;
+      @include font-size(18, 22);
+      color: themed("font-third");
+
+      @media only screen and (max-width: 650px) {
+        @include mb(48, 64);
+      }
+    }
+  }
 }

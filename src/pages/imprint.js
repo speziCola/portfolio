@@ -14,26 +14,23 @@ const Imprint = () => (
         { name: 'keywords', content: 'Imprint' },
       ]}
     />
-      <div className="ck__navbar">
-        <NavbarBack></NavbarBack>
-      </div>
       {/* Header */}
       <div className="ck__header">
         <h1 className="ck-h1">Imprint</h1>
       </div>
       {/* Content */}
-      <div className="ck__content">
-        <p className="ck__text">
+      <div className="ck-container">
+        <p className="ck-text">
           E-Mail: christopher(at)qrt.de <br /> <br />
         </p>
-        <p className="ck__text">
+        <p className="ck-text">
           Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br />
           Christopher Kuhrt, Kontakt s. o.<br /> <br />
         </p>
-        <p className="ck__text">
+        <p className="ck-text">
           Haftungsausschluss<br /><br />
         </p>
-        <p className="ck__text">
+        <p className="ck-text">
           <span>Haftung für Inhalte</span><br />
           Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
           und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter

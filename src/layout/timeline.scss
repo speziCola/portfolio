@@ -1,0 +1,142 @@
+.ck-container__wrapper {
+  @include themify($themes) {
+    display: flex;
+
+    @media only screen and (max-width: 650px) {
+      flex-direction: column;
+    }
+
+    &__title {
+      width: 25%;
+      padding-right: 3.2rem;
+      box-sizing: border-box;
+
+      @media only screen and (max-width: 900px) {
+        min-width: 17.6rem;
+      }
+
+      @media only screen and (max-width: 650px) {
+        width: 100%;
+      }
+
+      & h2 {
+        padding-bottom: 1.6rem;
+        font-family: $ck-font-01;
+        font-weight: 700;
+        @include font-size(20, 28);
+        @include line-height(26, 32);
+        line-height: 2.4rem;
+        color: themed("font-main");
+        text-transform: uppercase;
+      }
+    }
+
+    &__timestamp {
+      width: 75%;
+
+      @media only screen and (max-width: 650px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ck-skill-list {
+  @include themify($themes) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    width: 100%;
+    list-style-type: none;
+
+    &:after {
+      content: "";
+      flex: auto;
+    }
+
+    & li {
+      position: relative;
+      width: 33.3%;
+      padding-top: 0.8rem;
+      border-top: 0.2rem solid themed("base-10");
+
+      @media only screen and (max-width: 1600px) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 900px) {
+        width: 100%;
+        margin-left: 0.8rem;
+        border-top: 0;
+        border-left: 0.2rem solid themed("base-10");
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0.8rem;
+        height: 0.8rem;
+        top: -0.5rem;
+        left: 0.8rem;
+        background: $ck-primary;
+        border-radius: 50%;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 0.2rem;
+        top: -0.2rem;
+        left: -0.2rem;
+        border-left: 1.6rem solid themed("base-10");
+      }
+
+      &:first-child {
+        &:before {
+          border-left: 0;
+          margin-top: -0.9rem;
+          margin-left: -0.9rem;
+          width: 2rem;
+          height: 2rem;
+          background: $ck-primary;
+          border-radius: 50%;
+        }
+
+        &:after {
+          left: -0.5rem;
+          background: $ck-base-03;
+
+          @media only screen and (max-width: 900px) {
+            left: -0.5rem;
+          }
+        }
+      }
+
+      &:last-child {
+        border-top: 0.2rem solid $ck-alpha;
+
+        @media only screen and (max-width: 900px) {
+          border-left: 0.2rem solid $ck-alpha;
+        }
+
+        &:before {
+          position: absolute;
+          content: "";
+          height: 0.2rem;
+          left: -0.2rem;
+          border-left: 1.6rem solid themed("base-10");
+        }
+      }
+    }
+  }
+}
+
+.ck-spacer {
+  @include themify($themes) {
+    width: 100%;
+    height: 0.1rem;
+    @include my(24, 144);
+    background: themed("base-05");
+  }
+}

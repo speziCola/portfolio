@@ -6,13 +6,17 @@
   padding: 0;
   text-decoration: none;
   border-style: none;
-  transition: box-shadow 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 html {
   height: 100%;
   font-size: 62.5%;
   overflow-y: scroll;
+}
+
+a:hover {
+  cursor: pointer;
 }
