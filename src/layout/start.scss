@@ -7,12 +7,16 @@
     @include px(8, 280);
     height: 100vh;
 
+    @media only screen and (max-width: 650px) {
+      height: 100%;
+    }
+
     &__wrapper {
       grid-column-start: 1;
       grid-column-end: 31;
 
       @media only screen and (max-width: 650px) {
-        @include py(16, 64)
+        @include py(16, 64);
       }
     }
 

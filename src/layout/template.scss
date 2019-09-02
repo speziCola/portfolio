@@ -58,6 +58,7 @@ main {
 
       @media only screen and (max-width: 1240px) {
         width: 100%;
+        min-width: 0;
       }
     }
 
