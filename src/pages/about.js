@@ -10,6 +10,16 @@ import Footer from "../components/footer";
 
 import avatar from "../../src/images/qrt-ck.png";
 
+import rdfb from '../../src/images/reference/ck-r-dfb.png';
+import rgeospin from '../../src/images/reference/ck-r-geospin.png';
+import rhr from '../../src/images/reference/ck-r-hr.png';
+import rreservix from '../../src/images/reference/ck-r-reservix.png';
+import rreinpfalz from '../../src/images/reference/ck-r-rheinpfalz.png';
+import rscfreiburg from '../../src/images/reference/ck-r-scfreiburg.png';
+import rsteamcalcualtor from '../../src/images/reference/ck-r-steamcalculator.png';
+import rsunzinet from '../../src/images/reference/ck-r-sunzinet.png';
+import rswisscom from '../../src/images/reference/ck-r-swisscom.png';
+
 const About = () => (
   <Layout>
     <Helmet
@@ -67,32 +77,86 @@ const About = () => (
           </p>
           <h3 className="ck-h3">References</h3>
           <ul className="ck-logos">
-            <li className="ck-logos__r01">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://dfb.de" title="DFB">
+                <img
+                  className="ck-logos__images"
+                  src={rdfb}
+                  alt="DFB reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r02">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.scfreiburg.com" title="SC.Freiburg">
+                <img
+                  className="ck-logos__images"
+                  src={rscfreiburg}
+                  alt="SC.Freiburg reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r03">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.swisscom.ch" title="Swisscom">
+                <img
+                  className="ck-logos__images"
+                  src={rswisscom}
+                  alt="Swisscom reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r04">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.hr.de" title="HR">
+                <img
+                  className="ck-logos__images"
+                  src={rhr}
+                  alt="HR reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r05">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.reservix.de/" title="Reservix">
+                <img
+                  className="ck-logos__images"
+                  src={rreservix}
+                  alt="Reservix reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r06">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.rheinpfalz.de/" title="Rheinpfalz">
+                <img
+                  className="ck-logos__images"
+                  src={rreinpfalz}
+                  alt="Rheinpfalz reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r07">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.geospin.de/" title="GeoSpin">
+                <img
+                  className="ck-logos__images"
+                  src={rgeospin}
+                  alt="GeoSpin reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r08">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://www.sunzinet.com/" title="sunzinet">
+                <img
+                  className="ck-logos__images"
+                  src={rsunzinet}
+                  alt="sunzinet reference"
+                />
+              </a>
             </li>
-            <li className="ck-logos__r09">
-              <a href="https://dfb.de" title="DFB"></a>
+            <li>
+              <a href="https://steamcalculator.com/" title="SteamCalculator">
+                <img
+                  className="ck-logos__images"
+                  src={rsteamcalcualtor}
+                  alt="SteamCalculator reference"
+                />
+              </a>
             </li>
           </ul>
         </div>

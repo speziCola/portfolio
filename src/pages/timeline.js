@@ -45,14 +45,13 @@ const Timeline = () => (
             </li>
             <li>
               <TimeStamp
-                time="03/2015"
-                title="Frau Skroblies & Freunde"
-                type="Cinematographer"
+                time="06/2015"
+                title="GeoSpin"
+                type="Product Desgin"
                 link="external"
-                url="https://www.frau-skroblies.com/"
+                url="https://www.geospin.de"
                 infos="
-                  Staging, filming and editing wedding movies. The job requires me to work precisely and fast. Failure at any time is
-                  definitely not an option.
+                  Product design consultant. Also building a Corporate Design and implementing a CMS with docker.
                 "
               ></TimeStamp>
             </li>
@@ -83,13 +82,14 @@ const Timeline = () => (
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
-                time="06/2015"
-                title="GeoSpin"
-                type="Product Desgin"
+                time="03/2015"
+                title="Frau Skroblies & Freunde"
+                type="Cinematographer"
                 link="external"
-                url="https://www.geospin.de"
+                url="https://www.frau-skroblies.com/"
                 infos="
-                  Building a Corporate Design for a Big Data Company and also their webpage.
+                  Staging, filming and editing wedding movies. The job requires me to work precisely and fast. Failure at any time is
+                  definitely not an option.
                 "
               ></TimeStamp>
             </li>

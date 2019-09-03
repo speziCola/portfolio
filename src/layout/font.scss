@@ -81,8 +81,8 @@ $ck-font-02: "Titillium", sans-serif;
   @include mb(16,64);
   max-width: 96rem;
   @extend %ck-text;
-  @include font-size(14, 18);
-  @include line-height(20, 32);
+  @include font-size(16, 18);
+  @include line-height(22, 32);
 
   & span {
     font-weight: 800;
