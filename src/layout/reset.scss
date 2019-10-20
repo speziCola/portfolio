@@ -1,0 +1,21 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border-style: none;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
+
+a:hover {
+  cursor: pointer;
+}

@@ -1,181 +1,67 @@
-.ck__stripe {
-    @include themify ($themes) {
-            position: fixed;
-            width: 50vw;
-            height: 100vh;
-            margin-right: 12rem;
-            right: 0;
-            z-index: -1;
-
-        &__a {
-            position: absolute;
-            margin-left: -4.8rem; 
-            @include width(320,960);
-            height: 100vh;
-            background: themed(stripe-a);
-            transform: skew(-20deg);
-        }
-
-        &__b {
-            position: absolute;
-            @include width(320,960);
-            height: 100vh;
-            background: themed(stripe-b);
-            transform: skew(-20deg);
-        }
-    }
-}
-
-.ck__start__content__01 {
+.ck_start_container {
+  @include themify($themes) {
     display: grid;
-    grid-template-columns: repeat(40, 1fr);
+    grid-template-columns: repeat(30, 1fr);
     grid-area: content;
-    grid-row: 1;
-    height: 60vh;
-    @include px(32,8); 
+    align-items: center;
+    @include px(8, 280);
+    height: 100vh;
 
     @media only screen and (max-width: 650px) {
-        @include mb(32, 64);
-        background: $ck-primary; 
+      @include mt (32, 80);
+      height: 100%;
     }
-}
 
-.ck__start__content__02 {
-    display: grid;
-    grid-template-columns: repeat(40, 1fr);
-    grid-area: content;
-    grid-row: 2;
-    align-content: top;
-    height: 40vh;
-    @include px(32,8);   
+    &__wrapper {
+      grid-column-start: 1;
+      grid-column-end: 31;
 
-    @media only screen and (max-width: 650px) {
-        height: auto;
+      @media only screen and (max-width: 650px) {
+        @include py(16, 64);
+      }
     }
-}
 
-.ck__start__wrapper__01, .ck__start__wrapper__02  {
-    grid-column-start: 5;
-    grid-column-end: 41;
-}
-    
-.ck__start__wrapper__01 {
-    align-self: end;
-}
-
-.ck__start__wrapper__02 {
-    align-self: start;
-
-    @media only screen and (max-width: 650px) {
-        grid-column-start: 1;
-    }
-}
-
-
-//* Conent__01
-.ck__welcome {
-    @include themify($themes) {
-        grid-column-start: 5;
-        grid-column-end: 41; 
-
-        &__headline {
-            @include mb(8, 32);
-            padding-top: 3.2rem;
-            font-family: $ck-font-01;  
-            @include font-size(18, 40);
-            @include line-height(24, 48);
-            color: themed('font-title');
-            text-transform: uppercase;
-
-            @media only screen and (max-width: 650px) {
-                color: $ck-base-00;
-                @include mb(40, 64);
-            }
-
-            &--quote {
-                position: absolute;
-                margin-top: calc(-12px + (-16 - 12) * ((100vw - 320px) / (2560 - 320))); 
-                left: calc(24px + (56 + 24) * ((100vw - 320px) / (2560 - 320))); 
-                @include mb(4, 8);
-                @include font-size(50, 230);
-                @include line-height(80, 304);
-                font-weight: 700;
-                text-transform: none;
-            }
-        
-            &--hi {
-                position: relative;
-                display: block;
-                left: calc(-4px + (-8 - 4) * ((100vw - 320px) / (2560 - 320))); 
-                @include mb(4, 8);
-                @include font-size(80, 280);
-                @include line-height(80, 304);
-                font-weight: 700;
-                text-transform: none;
-            }
-        
-            &__line {
-                animation: blinker 1s linear infinite;  
-                @keyframes blinker {
-                    0% {opacity: 1.0;}
-                    50% {opacity: 0.2;}
-                    100% {opacity: 1.0;}   
-                }  
-                @media only screen and (max-width: 650px) {
-                    @keyframes blinker {
-                        0% {color: rgba(255,255,255,1);}
-                        50% {color: rgba(66,100,251,1);}
-                        100% {color: rgba(255,255,255,1);}
-                    }
-                }
-            }      
-        }
-    }
-} 
-
-//* Conent__02
-.ck__about {
-    @include themify($themes) {
-        &__subtext {
-            max-width: 96.0rem;
-            @include mb(32, 112);
-            @extend %ck-text;
-            @include font-size(16, 24);
-            color: themed('font-third');
-        }  
-
+    &__avatar {
+        padding-top: 8.8rem;
+        @include width(128, 256);
         @media only screen and (max-width: 650px) {
-            @include mb(32, 64);
-        }
-
-        &__button {
-            @extend %ck-text;
-            @include font-size(18, 24);
-            @include line-height(24, 40);
-            display: inline-block;
-            @include mb(24, 48);
-            @include pxy(12, 12, 80, 64);
-            border: 0.1rem solid $ck-primary;
-            border-radius: 50rem;
-            transition: all 0.25s ease-out;
-            color: $ck-primary;
-            box-sizing: border-box;
-
-            &:hover {
-                @extend %hover;
-                background: $ck-primary;
-                color: $ck-base-00;
-                box-shadow: 0 4px 8px 2px themed('shadow');
-            }
-
-            @media only screen and (max-width: 650px) {
-                display: block;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-                background: $ck-primary;
-                color: $ck-base-00;
-            } 
+          padding-top: 0;
         }
     }
-} 
+
+    &__headline {
+      @include mb(8, 32);
+      padding-top: 3.2rem;
+      font-family: $ck-font-01;
+      @include font-size(18, 32);
+      @include line-height(24, 40);
+      color: themed("font-title");
+
+      &__line {
+        animation: blinker 1.5s linear infinite;
+        @keyframes blinker {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__subtext {
+      @include mb(8, 48);
+      @extend %ck-text;
+      @include font-size(18, 22);
+      color: themed("font-third");
+
+      @media only screen and (max-width: 650px) {
+        @include mb(48, 64);
+      }
+    }
+  }
+}

@@ -8,14 +8,14 @@
             width: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
             border-radius: 100%;
             box-sizing: border-box;
-            @extend %hoverspeed;
-            
+            @include hoverspeed;
+
             &:hover {
-                    @extend %hover;
+                    @include hoverspeed;
                     background: $ck-primary;
                     box-shadow: 0 4px 8px 2px themed('shadow');
                 & i {
-                    color: $ck-base-00;
+                    color: $ck-base-03;
                 }
             }
         }

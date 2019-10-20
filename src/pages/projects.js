@@ -19,16 +19,13 @@ const Projects = () => (
         { name: 'keywords', content: 'Projects' },
       ]}
     />
-      <div className="ck__navbar">
-        <NavbarBack></NavbarBack>
-      </div>
       {/* Header */}
       <div className="ck__header">
           <h1 className="ck-h1">Projects</h1>
       </div>
       {/* Content */}
-      <div className="ck__content">
-        <div className="ck__content__wrapper">
+      <div className="ck-container">
+        <div className="ck-container__wrapper">
           <div className="projects">
 
           <ProjectView

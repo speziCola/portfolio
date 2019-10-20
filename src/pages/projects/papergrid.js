@@ -18,9 +18,6 @@ const Projects = () => (
         { name: 'keywords', content: 'Projects' },
       ]}
     />
-      <div className="ck__navbar">
-        <NavbarBack url="/projects/"></NavbarBack>
-      </div>
       {/* Content */}
       <div className="project">
         <div className="project__header">

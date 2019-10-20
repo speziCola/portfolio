@@ -1,111 +1,100 @@
 @font-face {
-    font-family: "WorkSans";
-    src:
-    url('../fonts/WorkSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "WorkSans";
-    src:
-    url('../fonts/WorkSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Titillium";
-    src:
-    url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Titillium";
+  src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-$ck-font-01: 'WorkSans', sans-serif;
-$ck-font-02: 'Titillium', sans-serif;
+$ck-font-01: "WorkSans", sans-serif;
+$ck-font-02: "Titillium", sans-serif;
 
-@mixin hover {
-    @extend %hoverspeed;
-    color: $ck-font-hover;
+::-moz-selection {
+  color: $ck-secondary;
+}
+::selection {
+  color: $ck-secondary;
+}
+
+@mixin hoverspeed {
+  transition: all $time-1 ease-in-out;
+}
+
+@mixin hover-text {
+  @include hoverspeed;
+  color: $ck-font-hover;
 }
 
 .ck-h1 {
-    @include themify($themes) {
-        position: relative;
-        @include mb(16, 48);
-        font-family: $ck-font-01;
-        @include font-size(40, 96);
-        @include line-height(64, 112);
-        color: themed('font-main');
-        text-transform: uppercase;
+  @include themify($themes) {
+    display: inline-block;
+    position: relative;
+    font-family: $ck-font-01;
+    @include font-size(32, 48);
+    @include line-height(40, 96);
+    color: themed("font-main");
+    text-transform: uppercase;
 
-        &:before {
-            position: absolute;
-            bottom: 0;
-            content: '';
-            @include width(64,192);
-            height: 0.4rem;
-            background: $ck-primary;
-        }
+    &:before {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      @include width(64, 144);
+      height: 0.4rem;
+      background: $ck-primary;
     }
+  }
 }
 
-.ck-subtitle {
-    @include mb(16, 48);
-    @include font-size(16, 24);
-    @include line-height(24, 40);
-    @extend %ck-text;
-}
-
-%ck-subtitle {
-    @include font-size(18, 24);
-    @include line-height(24, 40);
+.ck-h3 {
+  @include mb(8,16);
+  font-family: $ck-font-02;
+  @include font-size(16, 18);
+  @include line-height(20, 28);
+  font-weight: 600;
+  color: $ck-primary;
 }
 
 %ck-text {
-    @include themify($themes) {
-        font-family: $ck-font-02;
-        font-weight: 400;
-        text-align: left;
-        color: themed('font-third');
-    }
+  @include themify($themes) {
+    font-family: $ck-font-02;
+    font-weight: 400;
+    text-align: left;
+    color: themed("font-third");
+  }
 }
 
 .ck-text {
-    max-width: 96rem;
-    @include font-size(14, 18);
-    @include line-height(20, 28);
-    @extend %ck-text;
+  @include mb(16,64);
+  max-width: 96rem;
+  @extend %ck-text;
+  @include font-size(16, 18);
+  @include line-height(22, 32);
 
-    & span {
-        font-weight: 800;
-        color: $ck-font-second;
-        text-transform: uppercase;
-    }
+  & span {
+    font-weight: 800;
+    color: $ck-font-second;
+    text-transform: uppercase;
+  }
 
-    &:last-child {
-        @include mb(16, 64);
-    }
+  &:last-child {
+    @include mb(16, 64);
+  }
 
-    &--no-bottom {
-        padding-bottom: 0;
-        &:last-child {
-            padding-bottom: 0;
-        }
-    }
-}
-
-
-.ck__text {
-    max-width: 82rem;
-    @extend %ck-text;
-    @include font-size(14, 18);
-    @include line-height(20, 40);
-
-    & span {
-        font-weight: 800;
-        color: $ck-font-second;
-        text-transform: uppercase;
-    }
+  &--no-bottom {
+    padding-bottom: 0;
+  }
 }

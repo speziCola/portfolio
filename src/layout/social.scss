@@ -1,18 +1,14 @@
-.ck__social {
+.ck_social {
     @include themify($themes) {
         & ul {
-            position: fixed;
             display: flex;
             @include mt(16, 32);
-            @include mb(56, 48);
-            padding-left: 1.6rem;
             align-items: center;
             list-style-type: none;
             flex-wrap: wrap;
-
             @media only screen and (max-width: 650px) {
                 position: relative;
-                justify-content: center;
+
                 margin-bottom: 0;
                 padding-left: 0;
             }
@@ -25,9 +21,8 @@
                 transition: box-shadow 0.25s ease-in-out;
 
                 &:hover {
-                    @extend %hover;
-                    background: $ck-primary;
-                    box-shadow: 0 4px 8px 2px themed('shadow');
+                    @include hoverspeed;
+                    box-shadow: 0 4px 8px 2px themed('shadow-hover');
                 }
 
                 & a {
@@ -39,7 +34,25 @@
                 }
 
                 &:hover i {
-                    color: $ck-base-00;
+                    color: themed('icon-hover');
+                }
+            }
+        }
+
+        &--big {
+            & ul {
+                @media only screen and (max-width: 650px) {
+                    justify-content: center;
+                }
+                & li {
+                    a {
+                        height: 6.4rem;
+                        width: 6.4rem;
+                        @media only screen and (max-width: 650px) {
+                            height: 4.8rem;
+                            width: 4.8rem;
+                        }
+                    }
                 }
             }
         }

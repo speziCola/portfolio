@@ -1,0 +1,63 @@
+nav {
+  @include themify($themes) {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    position: fixed;
+    @include px(8, 280);
+    width: 100%;
+    height: 7.2rem;
+    background: themed("nav");
+    @include shadow-01;
+    z-index: 10;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 800px) {
+      bottom: 0;
+    }
+
+    & .logo {
+      position: absolute;
+      margin: 1.2rem;
+      width: 4.8rem;
+      height: 4.8rem;
+      background: themed("ck-logo");
+      background-size: 100%;
+      transition: background-image 0.5s ease-in-out;
+    }
+
+    & ul {
+      grid-column-start: 1;
+      grid-column-end: 31;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      height: 7.2rem;
+
+      @media only screen and (max-width: 800px) {
+        justify-content: flex-end;
+      }
+
+      & li {
+        right: 0;
+        width: 100%;
+        max-width: 14.4rem;
+        @media only screen and (max-width: 800px) {
+          max-width: 10.4rem;
+        }
+
+
+        & a {
+          display: inline-block;
+          font-family: $ck-font-02;
+          font-size: 1.8rem;
+          color: themed("font-third");
+          @include hoverspeed;
+
+          &:hover {
+            @include hover-text;
+          }
+        }
+      }
+    }
+  }
+}
