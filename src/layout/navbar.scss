@@ -9,8 +9,9 @@ nav {
     background: themed("nav");
     @include shadow-01;
     z-index: 10;
+    box-sizing: border-box;
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 800px) {
       bottom: 0;
     }
 
@@ -32,7 +33,7 @@ nav {
       list-style: none;
       height: 7.2rem;
 
-      @media only screen and (max-width: 650px) {
+      @media only screen and (max-width: 800px) {
         justify-content: flex-end;
       }
 
@@ -40,7 +41,7 @@ nav {
         right: 0;
         width: 100%;
         max-width: 14.4rem;
-        @media only screen and (max-width: 650px) {
+        @media only screen and (max-width: 800px) {
           max-width: 10.4rem;
         }
 

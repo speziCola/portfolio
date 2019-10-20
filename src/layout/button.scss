@@ -1,4 +1,4 @@
-.button {
+button {
     @include themify($themes) {
         display: inline-block;
         margin-bottom: 1.6rem;
@@ -12,6 +12,7 @@
         transition: all 0.25s ease-out;
         color: $ck-primary;
         box-sizing: border-box;
+        cursor: pointer;
 
         &[type="primary"] {
             @include pxy(12, 12, 64, 104);

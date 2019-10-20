@@ -22,7 +22,11 @@
     }
 
     &__avatar {
+        padding-top: 8.8rem;
         @include width(128, 256);
+        @media only screen and (max-width: 650px) {
+          padding-top: 0;
+        }
     }
 
     &__headline {
@@ -32,7 +36,6 @@
       @include font-size(18, 32);
       @include line-height(24, 40);
       color: themed("font-title");
-      text-transform: uppercase;
 
       &__line {
         animation: blinker 1.5s linear infinite;

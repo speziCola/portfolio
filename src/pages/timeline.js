@@ -10,10 +10,10 @@ import Footer from "../components/footer";
 const Timeline = () => (
   <Layout>
     <Helmet
-      title="Chris Kuhrt - About"
+      title="Chris Kuhrt - Timeline"
       meta={[
-        { name: "description", content: "About" },
-        { name: "keywords", content: "About" }
+        { name: "description", content: "Timeline" },
+        { name: "keywords", content: "Timeline" }
       ]}
     />
     <Navbar></Navbar>
@@ -34,24 +34,12 @@ const Timeline = () => (
                 time="06/2015"
                 title="Reservix"
                 type="UX/UI"
-                link="internal"
+                link="external"
                 url="https://www.reservix.net/"
                 infos="
                   Supporting several teams with UX/UI designs for our B2C and B2B products. Therefore I’m responsible for 3000
                   white label shops and three Apps. Always seeking to create a great user experience for buying or reselling tickets for local
                   events up to film premieres (Star Wars, James Bond, ... ) or 1. Bundesliga and DFB.
-                "
-              ></TimeStamp>
-            </li>
-            <li>
-              <TimeStamp
-                time="06/2015"
-                title="GeoSpin"
-                type="Product Desgin"
-                link="external"
-                url="https://www.geospin.de"
-                infos="
-                  Product design consultant. Also building a Corporate Design and implementing a CMS with docker.
                 "
               ></TimeStamp>
             </li>
@@ -80,6 +68,18 @@ const Timeline = () => (
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
+            <li>
+              <TimeStamp
+                time="06/2015"
+                title="GeoSpin"
+                type="Product Desgin"
+                link="external"
+                url="https://www.geospin.de"
+                infos="
+                  Product design consultant. Also created a Corporate Design and implemented a CMS with docker.
+                "
+              ></TimeStamp>
+            </li>
             <li>
               <TimeStamp
                 time="03/2015"
@@ -191,8 +191,9 @@ const Timeline = () => (
               <TimeStamp
                 time="04/2018"
                 title="Wally"
-                type="Product Design"
-                url=""
+                type="Concept"
+                link="external"
+                url="https://github.com/spezifanta/wally"
                 infos="
                     Having two spare computer screens I additionally bought two raspberry pi's. The goal was building a dashboard displaying the weather forecast and the tramp times.
                   "
@@ -203,7 +204,7 @@ const Timeline = () => (
                 time="05/2012"
                 title="SteamCalculator"
                 type="UX/UI, Frontend"
-                link="internal"
+                link="external"
                 url="https://steamcalculator.com/"
                 infos="
                   SteamCalculator calculates the value of an user’s Steam account. Steam is an online gaming download platform.
@@ -224,6 +225,39 @@ const Timeline = () => (
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
+            <li>
+              <TimeStamp
+                time="09/2019"
+                title="Design Sprint Masterclass"
+                type="Online-Learning"
+                url=""
+                infos="
+                  Leading a team to create and test new product concpets in only 4 days.
+                "
+              ></TimeStamp>
+            </li>
+            <li>
+              <TimeStamp
+                time="04/2019"
+                title="Ticketing Business Forum"
+                type="Conference"
+                url=""
+                infos="
+                  Showcasing the future of live entertainment ticketing.
+                "
+              ></TimeStamp>
+            </li>
+            <li>
+              <TimeStamp
+                time="03/2019"
+                title="INTERNET WORLD EXPO"
+                type="E-Commerce Fair"
+                url=""
+                infos="
+                  The commerce e-xperience 2019.
+                "
+              ></TimeStamp>
+            </li>
             <li>
               <TimeStamp
                 time="12/2018"
@@ -569,7 +603,7 @@ const Timeline = () => (
                 title="spezi-clan.com"
                 type="Co-Clanleader, Wedbdesign"
                 link="external"
-                url="http://www.spezi-clan.com"
+                url="https://spezi-clan.com"
                 infos="
                   And yes, I'm still playing.
                 "

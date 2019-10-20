@@ -20,8 +20,8 @@ const IndexPage = () => (
       <div className="ck_start_container__wrapper">
       <img className="ck_start_container__avatar" src={avatar} alt="Chris Kuhrt, porfile picture." />
         <h1 className="ck_start_container__headline">
-        Hi, my name is Chris{NBSP}Kuhrt.<br />
-        I’m{NBSP}a{NBSP}Product{NBSP}Designer based in Germany.”<span className="ck_start_container__headline__line">_</span>
+        "Hi, my name is Chris{NBSP}Kuhrt.<br />
+        I’m{NBSP}a{NBSP}Product{NBSP}Designer based in Germany."<span className="ck_start_container__headline__line">_</span>
         </h1>
         <p className="ck_start_container__subtext">
           Starting to explore the internet in the early 2000s I discovered

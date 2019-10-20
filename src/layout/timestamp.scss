@@ -35,8 +35,8 @@
             display: block;
             font-family: $ck-font-02;
             font-weight: 400;
-            @include font-size(14, 18);
-            @include line-height(20, 28);
+            @include font-size(16, 18);
+            @include line-height(22, 28);
             color: themed('font-third');
         }
     }
