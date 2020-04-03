@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from "../../components/layout"
-import NavbarBack from '../../components/navbarback';
+import Navbar from "../../components/navbar";
 import Footer from '../../components/footer';
 import NavbarBottom from "../../components/navbarbottom";
 
@@ -18,6 +18,7 @@ const Projects = () => (
         { name: 'keywords', content: 'Projects' },
       ]}
     />
+    <Navbar></Navbar>
       {/* Content */}
       <div className="project">
         <div className="project__header">

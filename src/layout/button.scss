@@ -1,4 +1,4 @@
-button {
+.button {
     @include themify($themes) {
         display: inline-block;
         margin-bottom: 1.6rem;

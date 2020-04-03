@@ -8,27 +8,36 @@
       border-radius: $border-radius-big;
       @include shadow-01;
 
+      &__space {
+        width: 100%;
+        height: 0.2rem;
+        margin: 1.6rem 0 3.2rem;
+        border-radius: 0.4rem;
+        background: themed("base-04");
+      }
+
       &__profile {
+        padding-bottom: 1.6rem;
         & ul {
           list-style: none;
         }
 
         &__avatar {
           position: absolute;
-          width: 8rem;
+          width: 10.4rem;
         }
 
         &__h3 {
           position: relative;
-          margin-bottom: 16px;
-          padding-top: 1.6rem;
-          padding-left: 9.6rem;
+          margin-bottom: 0.4rem;
+          padding-bottom: 0.4rem;
+          padding-top: 0.8rem;
+          padding-left: 12rem;
           font-family: $ck-font-01;
           font-weight: 700;
-          font-size: 2rem;
+          font-size: 2.8rem;
           line-height: 4.8rem;
-          letter-spacing: 0.2rem;
-          color: themed("font-main");
+          color: themed("font-second");
           text-transform: uppercase;
 
           &:before {
@@ -37,17 +46,26 @@
             display: block;
             content: "";
             width: 4.8rem;
-            height: 0.2rem;
+            height: 0.3rem;
             background: $ck-primary;
+            border-radius: 4rem;
           }
         }
-        &__h4 {
-          padding-left: 9.6rem;
-          font-family: $ck-font-02;
-          font-weight: 400;
-          font-size: 1.8rem;
-          line-height: 2.4rem;
-          color: themed("font-main");
+      }
+      &__h4 {
+        margin-bottom: 0.8rem;
+        font-family: $ck-font-02;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        color: themed("font-second");
+
+        &--profile {
+          padding-left: 12rem;
+        }
+
+        &--bold {
+          font-weight: 600;
         }
       }
     }
@@ -81,21 +99,5 @@
   &__images {
     max-width: 100%;
     height: auto;
-  }
-}
-
-
-
-
-.ck-about__img {
-  @include themify($themes) {
-      max-width: 96rem;
-      @include pxy(0,16,0,16);
-      background: themed('img');
-      box-shadow: 0 4px 8px 2px themed('img-shadow');
-      border-radius: 0.6rem;
-  }
-  & img {
-      max-width: 100%;
   }
 }

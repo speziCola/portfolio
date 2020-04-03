@@ -54,16 +54,16 @@
                     position: relative;
                     display: inline-block;
                     font-family: $ck-font-01;
-                    font-weight: 500;
+                    font-weight: 600;
                     @include font-size(24, 40);
                     @include line-height(32, 48);
-                    color: themed('font-main');
+                    color: themed('font-first');
                     transition: transform 0.24s ease-in-out;
                 }
                 &__subtitle {
                     @include mb(16, 48);
                     font-family: $ck-font-01;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 1.4rem;
                     line-height: 2.0rem;
                     color: themed('font-fourth');
@@ -192,7 +192,7 @@
                 @include line-height(20, 28);
                 padding-right: 1.4rem;
                 font-weight: 600;
-                color: themed('font-main');
+                color: themed('font-first');
                 transition: all $time-1 ease-in-out;
 
                 &:hover {
@@ -218,7 +218,7 @@
                     @include font-size(12, 14);
                     @include line-height(20, 28);
                     vertical-align: middle;
-                    color: themed('font-main');
+                    color: themed('font-first');
                     transition: all $time-1 ease-in-out;
                 }
             }
@@ -233,7 +233,7 @@
                 color: $ck-base-03;
                 background: $ck-primary;
                 border-radius: 50rem;
-                transition: all 0.25s ease-out;
+                transition: all 0.24s ease-out;
                 box-sizing: border-box;
 
                 &:hover {

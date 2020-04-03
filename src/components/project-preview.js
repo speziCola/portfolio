@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from "gatsby"
 import PropTypes from 'prop-types';
 
+import lock from '../../src/images/icons/lock.svg';
+
 const projectPreview = ({
-  title, subtitle, info, img, alt, url
+  title, subtitle, info, img, alt, url, type, password
 }) => (
   <div className="project_thumb">
     <figure className="projects__img">
-      <Link to={url}><img src={img} alt={alt} /></Link>
+      <Link to={url}><img src={img} loading="lazy" alt={alt} /></Link>
     </figure>
     <div className="projects__tile">
       <Link to={url}><h2 className="projects__tile__title"><span className="projects__tile__title--underline">{title}</span></h2></Link>
@@ -15,6 +17,10 @@ const projectPreview = ({
       <p className="projects__tile__info">
         {info}
       </p>
+      <Link className={`button__link button__link--${type}`} to={url}>
+        <img className={`social-icon ${password}`} src={lock} alt="Password protected" />
+        view
+      </Link>
     </div>
   </div>
 );
@@ -25,7 +31,9 @@ projectPreview.defaultProps = {
   info: '',
   img: '',
   alt: '',
-  url: ''
+  url: '',
+  type: '',
+  password: ''
 };
 
 projectPreview.propTypes = {
@@ -34,7 +42,9 @@ projectPreview.propTypes = {
   info: PropTypes.string,
   img: PropTypes.string,
   alt: PropTypes.string,
-  url: PropTypes.string
+  url: PropTypes.string,
+  type: PropTypes.string,
+  password: PropTypes.string
 
 };
 

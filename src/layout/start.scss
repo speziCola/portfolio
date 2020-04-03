@@ -30,14 +30,19 @@
     }
 
     &__headline {
-      @include mb(8, 32);
+      position: relative;
+      @include mb(24, 64);
       padding-top: 3.2rem;
+      padding-bottom: 2.4rem;
       font-family: $ck-font-01;
-      @include font-size(18, 32);
-      @include line-height(24, 40);
+      font-weight: 800;
+      @include font-size(28, 48);
+      @include line-height(32, 52);
       color: themed("font-title");
+      text-transform: uppercase;
 
       &__line {
+        padding-left: 0.8rem;
         animation: blinker 1.5s linear infinite;
         @keyframes blinker {
           0% {
@@ -51,10 +56,21 @@
           }
         }
       }
+
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        @include width(64, 144);
+        height: 0.8rem;
+        background: $ck-primary;
+        border-radius: 100px;
+      }
     }
 
     &__subtext {
-      @include mb(8, 48);
+      @include mb(8, 16);
       @extend %ck-text;
       @include font-size(18, 22);
       color: themed("font-third");

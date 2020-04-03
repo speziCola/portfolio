@@ -3,7 +3,7 @@
   grid-template-columns: repeat(29, 1fr);
   grid-column-start: 1;
   grid-column-end: 30;
-  @include mb (32, 96);
+  @include mb (48, 96);
 }
 
 .projects {
@@ -19,10 +19,11 @@
       }
 
       &__img {
-          grid-column-start: 10;
-          grid-column-end: 30;
+          grid-column-start: 1;
+          grid-column-end: 12;
           margin-bottom: 1.6rem;
           overflow: hidden;
+          @include shadow-01;
 
           @media only screen and (max-width: 950px) {
               grid-column-start: 1;
@@ -46,56 +47,44 @@
       }
 
       &__tile {
-          grid-column-start: 1;
-          grid-column-end: 9;
+          grid-column-start: 13;
+          grid-column-end: 30;
           grid-row: 1;
 
           @media only screen and (max-width: 950px) {
-              grid-column-start: 1;
-              grid-column-end: 30;
-              grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 30;
+            grid-row: 2;
           }
 
           &__title {
-              position: relative;
-              display: inline-block;
-              font-family: $ck-font-01;
-              font-weight: 500;
-              @include font-size(24, 40);
-              @include line-height(32, 48);
-              color: themed('font-main');
-              transition: transform 0.24s ease-in-out;
-
-              &--underline {
-                  background-image: linear-gradient(to bottom, transparent 20%, $ck-primary 20%);
-                  background-position: 0 95%;
-                  background-repeat: no-repeat;
-                  background-size: 0% 3px;
-                  transition: background-size 0.16s ease-in-out;
-
-                  &:hover {
-                      background-size: 100% 3px;
-                  }
-              }
+            position: relative;
+            display: inline-block;
+            font-family: $ck-font-01;
+            font-weight: 700;
+            @include font-size(24, 32);
+            @include line-height(24, 48);
+            color: themed('font-first');
+            transition: transform 0.24s ease-in-out;
           }
           &__subtitle {
-              @include mb(16, 48);
-              font-family: $ck-font-01;
-              font-weight: 500;
-              font-size: 1.4rem;
-              line-height: 2.0rem;
-              color: themed('font-fourth');
-              text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            font-family: $ck-font-01;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 2.0rem;
+            color: themed('font-fourth');
+            text-transform: uppercase;
           }
           &__info {
-              display: block;
-              @include mb(8, 16);
-              font-family: $ck-font-02;
-              font-weight: 400;
-              @include font-size(14, 18);
-              @include line-height(20, 28);
-              color: themed('font-third');
+            display: block;
+            @include mb(8, 16);
+            font-family: $ck-font-02;
+            font-weight: 400;
+            @include font-size(14, 18);
+            @include line-height(20, 28);
+            color: themed('font-third');
           }
       }
-  }
+    }
 }

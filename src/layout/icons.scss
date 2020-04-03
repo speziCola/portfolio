@@ -4,17 +4,17 @@
     font-weight: normal;
     font-style: normal;
 }
-  
+
 i {
     @include themify($themes) {
         display: inline-block;
         font-family: "symbols";
         font-style: normal;
         font-weight: normal;
-        font-size: calc(2rem + (32 - 20) * (100vw - 320px)/(2560 - 320));
-        line-height: calc(5.6rem + (80 - 56) * (100vw - 320px)/(2560 - 320));
+        font-size: 2.4rem;
+        line-height: 2.4rem;
         color: themed('icon');
-        transition: color 0.16s ease-in-out; 
+        transition: color 0.16s ease-in-out;
         box-sizing: border-box;
     }
 }
@@ -22,7 +22,7 @@ i {
 .s-2x {
     font-size: 3rem;
 }
-  
+
 .ck-icon-steam:before { content: "\EA01" }
 .ck-icon-facebook:before { content: "\EA02" }
 .ck-icon-instagram:before { content: "\EA03" }

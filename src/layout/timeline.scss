@@ -18,17 +18,6 @@
       @media only screen and (max-width: 650px) {
         width: 100%;
       }
-
-      & h2 {
-        padding-bottom: 1.6rem;
-        font-family: $ck-font-01;
-        font-weight: 700;
-        @include font-size(20, 28);
-        @include line-height(26, 32);
-        line-height: 2.4rem;
-        color: themed("font-main");
-        text-transform: uppercase;
-      }
     }
 
     &__timestamp {

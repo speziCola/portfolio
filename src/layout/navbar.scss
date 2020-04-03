@@ -32,25 +32,20 @@ nav {
       align-items: center;
       list-style: none;
       height: 7.2rem;
-
-      @media only screen and (max-width: 800px) {
-        justify-content: flex-end;
-      }
+      justify-content: flex-end;
 
       & li {
-        right: 0;
-        width: 100%;
-        max-width: 14.4rem;
+        padding-left: 9.6rem;
         @media only screen and (max-width: 800px) {
-          max-width: 10.4rem;
+          padding-left: 6.4rem;
         }
-
 
         & a {
           display: inline-block;
           font-family: $ck-font-02;
           font-size: 1.8rem;
           color: themed("font-third");
+          text-align: left;
           @include hoverspeed;
 
           &:hover {

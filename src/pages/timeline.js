@@ -25,7 +25,7 @@ const Timeline = () => (
     <div className="ck-container">
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Work experince</h2>
+          <h2 className="ck-h2">Work experince</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -33,13 +33,13 @@ const Timeline = () => (
               <TimeStamp
                 time="06/2015"
                 title="Reservix"
-                type="UX/UI"
+                type="UX/UI Design"
                 link="external"
                 url="https://www.reservix.net/"
                 infos="
-                  Supporting several teams with UX/UI designs for our B2C and B2B products. Therefore I’m responsible for 3000
-                  white label shops and three Apps. Always seeking to create a great user experience for buying or reselling tickets for local
-                  events up to film premieres (Star Wars, James Bond, ... ) or 1. Bundesliga and DFB.
+                  Responsible for several B2C and B2B products as well as supporting various teams. Ensuring that all
+                  goals, expectations and user needs are being fulfilled to achieve a great user experience for selling,
+                  purchasing or reselling tickets for local events up to film premieres, 1st Bundesliga or for DFB.
                 "
               ></TimeStamp>
             </li>
@@ -64,7 +64,44 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Freelancer</h2>
+          <h2 className="ck-h2">Part of the team</h2>
+        </div>
+        <div className="ck-container-timeline__wrapper__timestamp">
+          <ul className="ck-skill-list">
+            <li>
+              <TimeStamp
+                  time="01/2020"
+                  title="Hammertime"
+                  type="Product Design"
+                  link="external"
+                  url="https://www.hammertime.io/"
+                  infos="
+                   soon...
+                  "
+                ></TimeStamp>
+            </li>
+            <li>
+              <TimeStamp
+                time="03/2015"
+                title="Frau Skroblies & Freunde"
+                type="Cinematographer"
+                link="external"
+                url="https://www.frau-skroblies.com/"
+                infos="
+                  Staging, filming and editing wedding movies. The job requires me to work precisely and fast. Failure at any time is
+                  definitely not an option.
+                "
+              ></TimeStamp>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="ck-spacer "></div>
+
+      <div className="ck-container-timeline__wrapper">
+        <div className="ck-container-timeline__wrapper__title">
+          <h2 className="ck-h2">Freelancer</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -77,19 +114,6 @@ const Timeline = () => (
                 url="https://www.geospin.de"
                 infos="
                   Product design consultant. Also created a Corporate Design and implemented a CMS with docker.
-                "
-              ></TimeStamp>
-            </li>
-            <li>
-              <TimeStamp
-                time="03/2015"
-                title="Frau Skroblies & Freunde"
-                type="Cinematographer"
-                link="external"
-                url="https://www.frau-skroblies.com/"
-                infos="
-                  Staging, filming and editing wedding movies. The job requires me to work precisely and fast. Failure at any time is
-                  definitely not an option.
                 "
               ></TimeStamp>
             </li>
@@ -183,7 +207,7 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Projects</h2>
+          <h2 className="ck-h2">Projects</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -221,10 +245,21 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Further education</h2>
+          <h2 className="ck-h2">Further education</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
+          <li>
+              <TimeStamp
+                time="12/2019"
+                title="Udemy"
+                type="Online-Learning"
+                url=""
+                infos="
+                 JavaScript, jQuery, node.js
+                "
+              ></TimeStamp>
+            </li>
             <li>
               <TimeStamp
                 time="09/2019"
@@ -398,7 +433,7 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Education</h2>
+          <h2 className="ck-h2">Education</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -428,7 +463,7 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Volunteer work</h2>
+          <h2 className="ck-h2">Volunteer work</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -495,7 +530,7 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Backer</h2>
+          <h2 className="ck-h2">Backer</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -555,7 +590,7 @@ const Timeline = () => (
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
-          <h2>Other</h2>
+          <h2 className="ck-h2">Other</h2>
         </div>
         <div className="ck-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">

@@ -6,10 +6,11 @@ $ck-secondary:      #00be73;
 $ck-base-00:        #ffffff;
 $ck-base-01:        #fdfdff;
 $ck-base-03:        #fafafa;
+$ck-base-04:        #f5f5fa;
 $ck-base-05:        #d7d7e1;
 $ck-base-10:        #bebec8;
 $ck-base-15:        #9f9faf;
-$ck-base-25:        #5a6478;
+$ck-base-25:        #5a648c;
 $ck-base-50:        #38414b;
 $ck-base-100:       #2f2f2f;
 
@@ -23,7 +24,7 @@ $ck-alpha:          rgba(0, 0, 0, 0);
 /* Fonts */
 $ck-font-title:       $ck-primary;
 $ck-font-hover:       $ck-secondary;
-$ck-font-main:        $ck-base-25;
+$ck-font-first:       $ck-base-25;
 $ck-font-second:      $ck-base-25;
 $ck-font-third:       $ck-base-25;
 $ck-font-fourth:      $ck-base-15;
@@ -41,6 +42,7 @@ $themes: (
     background:       $ck-base-01,
     /* Base Color */
     base-00:          $ck-base-03,
+    base-04:          $ck-base-04,
     base-05:          $ck-base-05,
     base-10:          $ck-base-10,
     base-15:          $ck-base-15,
@@ -50,9 +52,9 @@ $themes: (
     /* Timeline - last child */
     alpha:           rgba(0, 0, 0, 0),
     /* Fonts */
-    font-title:       $ck-primary,
+    font-title:       $ck-base-25,
     font-hover:       $ck-secondary,
-    font-main:        $ck-base-25,
+    font-first:       $ck-base-50,
     font-second:      $ck-base-25,
     font-third:       $ck-base-25,
     font-fourth:      $ck-base-15,
@@ -73,6 +75,7 @@ $themes: (
     background:       $ck-base-115,
     /* Base Color */
     base-00:          $ck-base-100,
+    base-04:          $ck-base-50,
     base-05:          $ck-base-50,
     base-10:          $ck-base-25,
     base-15:          $ck-base-15,
@@ -82,11 +85,11 @@ $themes: (
     /* Timeline - last child */
     alpha:          rgba(0, 0, 0, 0),
     /* Fonts */
-    font-title:       $ck-primary,
+    font-title:       $ck-base-01,
     font-hover:       $ck-secondary,
-    font-main:        $ck-base-10,
-    font-second:      $ck-base-25,
-    font-third:       $ck-base-15,
+    font-first:       $ck-base-01,
+    font-second:      $ck-base-10,
+    font-third:       $ck-base-10,
     font-fourth:      $ck-base-25,
     icon:             $ck-base-15,
     shadow:           $ck-shadow-dark,

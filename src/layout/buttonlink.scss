@@ -1,65 +1,78 @@
 .button__link {
-    display: none;
-    position: relative; 
-    padding-top: 0.4rem;
-    font-family: "WorkSans", sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-    @include line-height(20, 28);
-    color: $ck-font-second;
-    transition: color 0.25s ease-in-out;
+    @include themify($themes) {
+        display: none;
+        position: relative;
+        padding-top: 0.4rem;
+        font-family: $ck-font-02;
+        font-weight: 600;
+        font-size: 1.6rem;
+        @include line-height(20, 28);
+        color: $ck-font-second;
+        transition: color 0.25s ease-in-out;
 
-    &:hover {
-        color: $ck-font-hover;
-        transition: color $time-1 ease-in-out;
-
-        &::after {
+        &:hover {
             color: $ck-font-hover;
+            transition: color $time-1 ease-in-out;
+
+            &::after {
+                color: $ck-font-hover;
+                transition: all $time-1 ease-in-out;
+            }
+        }
+
+        &:after {
+            display: inline-block;
+            margin-top: -0.1rem;
+            padding-left: 0.2rem;
+            font-family: "symbols";
+            font-style: normal;
+            font-weight: normal;
+            @include line-height(20, 28);
+            vertical-align: middle;
+            color: themed("font-fourth");
             transition: all $time-1 ease-in-out;
         }
-    }
 
-    &:after {
-        display: inline-block;
-        margin-top: -0.1rem;
-        padding-left: 0.2rem;
-        font-family: "symbols";
-        font-style: normal;
-        font-weight: normal;
-        @include line-height(20, 28);
-        vertical-align: middle;
-        color: $ck-font-second;
-        transition: all $time-1 ease-in-out;
-    }
+        & span {
+            @include line-height(20, 28);
+        }
 
-    & span {
-        @include line-height(20, 28);
-    }
-
-    &--internal {
-        display: inline-block;
-        &:hover {
+        &--internal {
+            display: flex;
             &::after {
-                transform: translate(2px, 0);
+                transform: translate(0px, 2px);
             }
-        }
-        
-        &:after {    
-            content: '\EA19';     
-        }
-    }
-    
-    &--external {
-        display: inline-block;
-        &:hover {
-            &::after {
-                transform: translate(2px, -2px);
+            &:hover {
+                &::after {
+                    transform: translate(2px, 2px);
+                }
+            }
+
+            &:after {
+                content: '\EA19';
             }
         }
 
-        &:after {    
-            content: '\EA13';     
-        }   
+        &--external {
+            display: flex;
+            &::after {
+                transform: translate(0px, 2px);
+            }
+            &:hover {
+                &::after {
+                    transform: translate(2px, 0px);
+                }
+            }
+
+            &:after {
+                content: '\EA13';
+            }
+        &--light {
+            font-weight: 400;
+        }
+        }
+        .no-lock {
+            display: none;
+        }
     }
 }
-

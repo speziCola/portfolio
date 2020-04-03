@@ -1,8 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { Link } from "gatsby"
 
 import Layout from "../components/layout";
-import TimeStamp from "../components/timestamp";
 
 import Social from "../components/social";
 import Navbar from "../components/navbar";
@@ -49,13 +49,29 @@ const About = () => (
                   <h3 className="sidebar__card__profile__h3">Chris Kuhrt</h3>
                 </li>
                 <li>
-                  <h4 className="sidebar__card__profile__h4">
+                  <h4 className="sidebar__card__h4 sidebar__card__h4--profile">
                     Product designer
                   </h4>
                 </li>
               </ul>
-              <Social></Social>
             </div>
+
+            <div className="sidebar__card__space"></div>
+
+            <h4 className="sidebar__card__h4 sidebar__card__h4--bold">You can find me on:</h4>
+
+            <Social></Social>
+
+            <h4 className="sidebar__card__h4 sidebar__card__h4--bold">Part of the team:</h4>
+            <ul className="ck_social ck_social--links">
+              <li>
+                <Link className="button__link button__link--external button__link--external--light" href="https://www.hammertime.io/">hammertime.io</Link>
+              </li>
+              <li>
+                <Link className="button__link button__link--external button__link--external--light" href="https://www.frau-skroblies.com/">frau-skroblies.com</Link>
+              </li>
+            </ul>
+
           </div>
         </div>
         <div className="ck-container__content">

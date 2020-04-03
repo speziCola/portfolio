@@ -1,60 +1,47 @@
 .ck_social {
     @include themify($themes) {
-        & ul {
-            display: flex;
-            @include mt(16, 32);
-            align-items: center;
-            list-style-type: none;
-            flex-wrap: wrap;
-            @media only screen and (max-width: 650px) {
-                position: relative;
+        list-style-type: none;
+        font-family: $ck-font-02;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
 
-                margin-bottom: 0;
-                padding-left: 0;
-            }
-
+        &--two-columns {
+            margin-bottom: 4.0rem;
+            columns: 2;
 
             & li {
-                @include mb(8, 32);
-                border-radius: 100%;
-                box-sizing: border-box;
-                transition: box-shadow 0.25s ease-in-out;
-
-                &:hover {
-                    @include hoverspeed;
-                    box-shadow: 0 4px 8px 2px themed('shadow-hover');
-                }
-
-                & a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 4.8rem;
-                    width: 4.8rem;
-                }
-
-                &:hover i {
-                    color: themed('icon-hover');
-                }
+                margin-bottom: 1.6rem;
             }
         }
 
-        &--big {
-            & ul {
-                @media only screen and (max-width: 650px) {
-                    justify-content: center;
-                }
-                & li {
-                    a {
-                        height: 6.4rem;
-                        width: 6.4rem;
-                        @media only screen and (max-width: 650px) {
-                            height: 4.8rem;
-                            width: 4.8rem;
-                        }
-                    }
-                }
+        &--links {
+            & li {
+                display: flex;
+                align-items: center;
             }
+        }
+
+        & a {
+            display: inline-flex;
+            align-items: center;
+            color: themed("font-first");
+            transition: all $time-1 ease-in-out;
+
+            &:hover {
+                color: $ck-secondary;
+            }
+        }
+
+        & li {
+            :hover img {
+                filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg) brightness(100%) contrast(101%);
+            }
+        }
+
+        .social-icon {
+            padding-right: 0.8rem;
+
         }
     }
 }

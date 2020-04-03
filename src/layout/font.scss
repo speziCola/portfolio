@@ -1,14 +1,21 @@
 @font-face {
-  font-family: "WorkSans";
-  src: url("../fonts/WorkSans-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "WorkSans";
-  src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Black.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -19,7 +26,14 @@
   font-style: normal;
 }
 
-$ck-font-01: "WorkSans", sans-serif;
+@font-face {
+  font-family: "Titillium";
+  src: url("../fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$ck-font-01: "Barlow", sans-serif;
 $ck-font-02: "Titillium", sans-serif;
 
 ::-moz-selection {
@@ -44,18 +58,33 @@ $ck-font-02: "Titillium", sans-serif;
     position: relative;
     font-family: $ck-font-01;
     @include font-size(32, 48);
-    @include line-height(40, 96);
-    color: themed("font-main");
+    @include line-height(40, 72);
+    font-weight: 800;
+    color: themed("font-second");
     text-transform: uppercase;
 
     &:before {
       position: absolute;
       bottom: 0;
       content: "";
-      @include width(64, 144);
+      @include width(64, 96);
       height: 0.4rem;
       background: $ck-primary;
+      border-radius: 0.8rem;
     }
+  }
+}
+
+.ck-h2 {
+  @include themify($themes) {
+    padding-bottom: 1.6rem;
+    font-family: $ck-font-01;
+    font-weight: 700;
+    @include font-size(20, 28);
+    @include line-height(26, 32);
+    line-height: 2.4rem;
+    color: themed("font-second");
+    text-transform: uppercase;
   }
 }
 
@@ -85,7 +114,7 @@ $ck-font-02: "Titillium", sans-serif;
   @include line-height(22, 32);
 
   & span {
-    font-weight: 800;
+    font-weight: 700;
     color: $ck-font-second;
     text-transform: uppercase;
   }

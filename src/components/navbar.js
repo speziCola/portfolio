@@ -6,10 +6,13 @@ const Navbar = () => (
     <Link to="/" className="logo" aria-label="Homelink"></Link>
     <ul>
       <li>
-        <Link to="/about/">About</Link>
+        <Link to="/projects/">Projects</Link>
       </li>
       <li>
         <Link to="/timeline/">Timeline</Link>
+      </li>
+      <li>
+        <Link to="/about/">About</Link>
       </li>
     </ul>
   </nav>
