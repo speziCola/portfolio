@@ -24,7 +24,7 @@ const IndexPage = () => (
         </h1>
         <p className="ck_start_container__subtext">
           Starting to explore the internet in the early 2000s I discovered
-          digital media design. Since then, I’ve worked for serveral clients.<br /> I always strive to create
+          digital media design. Since then, I’ve worked for serveral clients. I always strive to create
           new or better customer experience with empathy.
         </p>
       {/*   Button here */}

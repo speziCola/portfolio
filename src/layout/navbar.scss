@@ -12,6 +12,7 @@ nav {
     box-sizing: border-box;
 
     @media only screen and (max-width: 800px) {
+      padding-right: 1.6rem;
       bottom: 0;
     }
 
@@ -44,6 +45,7 @@ nav {
           display: inline-block;
           font-family: $ck-font-02;
           font-size: 1.8rem;
+          line-height: 3.2rem;
           color: themed("font-third");
           text-align: left;
           @include hoverspeed;
@@ -52,6 +54,18 @@ nav {
             @include hover-text;
           }
         }
+      }
+    }
+    & .menu {
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    & .mobile-menu {
+      display: none;
+      @media only screen and (max-width: 800px) {
+        display: block;
       }
     }
   }

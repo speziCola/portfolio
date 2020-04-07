@@ -65,10 +65,13 @@ const About = () => (
             <h4 className="sidebar__card__h4 sidebar__card__h4--bold">Part of the team:</h4>
             <ul className="ck_social ck_social--links">
               <li>
-                <Link className="button__link button__link--external button__link--external--light" href="https://www.hammertime.io/">hammertime.io</Link>
+                <a className="button__link button__link--external button__link--external--light" href="https://www.frau-skroblies.com/">frau-skroblies.com</a>
               </li>
               <li>
-                <Link className="button__link button__link--external button__link--external--light" href="https://www.frau-skroblies.com/">frau-skroblies.com</Link>
+                <a className="button__link button__link--external button__link--external--light" href="https://www.hammertime.io/">hammertime.io</a>
+              </li>
+              <li>
+                <a className="button__link button__link--external button__link--external--light" href="https://www.steamcalculator.com/">steamcalculator.com</a>
               </li>
             </ul>
 
@@ -76,7 +79,7 @@ const About = () => (
         </div>
         <div className="ck-container__content">
           <p className="ck-text">
-            I’m a passionate product designer with a focus on user centered
+            I’m a passionate product designer with a focus on user-centered
             design.
             <br />
             <br />

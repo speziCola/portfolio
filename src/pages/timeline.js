@@ -93,6 +93,20 @@ const Timeline = () => (
                 "
               ></TimeStamp>
             </li>
+            <li>
+              <TimeStamp
+                time="05/2012"
+                title="SteamCalculator"
+                type="UX/UI, Frontend"
+                link="external"
+                url="https://steamcalculator.com/"
+                infos="
+                SteamCalculator calculates the value of a user’s Steam account. Steam is an online gaming download platform.
+                Due to the immense popularity of our application I was able to write my Bachelor thesis* about it.
+                *Title: Self-efficacy in online gaming: Conception of a personalized data visualization as a marketing tool
+                for a game community."
+              ></TimeStamp>
+            </li>
           </ul>
         </div>
       </div>
@@ -135,7 +149,7 @@ const Timeline = () => (
                 link="external"
                 url="http://www.herlyn-konsens.de/"
                 infos="
-                  Customizing a Wordpess theme for my client needs in consideration of his branding.
+                  Customizing a WordPress theme for my client needs in consideration of his branding.
                 "
               ></TimeStamp>
             </li>
@@ -205,7 +219,7 @@ const Timeline = () => (
 
       <div className="ck-spacer "></div>
 
-      <div className="ck-container-timeline__wrapper">
+     {/*  <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
           <h2 className="ck-h2">Projects</h2>
         </div>
@@ -223,25 +237,12 @@ const Timeline = () => (
                   "
               ></TimeStamp>
             </li>
-            <li>
-              <TimeStamp
-                time="05/2012"
-                title="SteamCalculator"
-                type="UX/UI, Frontend"
-                link="external"
-                url="https://steamcalculator.com/"
-                infos="
-                  SteamCalculator calculates the value of an user’s Steam account. Steam is an online gaming download platform.
-                  Due to the immense popularity of our application I was able to write my Bachelor thesis* about it.
-                  *Title: Self-efficacy in online gaming: Conception of a personalize data visualization as a marketing tool for a game community.
-                "
-              ></TimeStamp>
-            </li>
+
           </ul>
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="ck-spacer "></div> */}
 
       <div className="ck-container-timeline__wrapper">
         <div className="ck-container-timeline__wrapper__title">
@@ -487,8 +488,8 @@ const Timeline = () => (
                 link="external"
                 url="https://vimeo.com/64133805"
                 infos="
-                  Filming and editing a corporate video for PHoS – Palliatives Hospiz Solingen – a nonprofit terminal care organization.
-                  This image film was a part of my friends bachelor thesis.
+                Filming and editing a corporate video for PHoS – Palliatives Hospiz Solingen – a nonprofit terminal care organization.
+                This image film was a part of my friend’s bachelor thesis.
                 "
               ></TimeStamp>
             </li>
@@ -554,7 +555,7 @@ const Timeline = () => (
                 link="external"
                 url="https://subformapp.com/"
                 infos="
-                  A modern tool for digital product designers. Dynamic layout meets direct manipulation.
+                A modern tool for digital product designers. The dynamic layout meets direct manipulation.
                 "
               ></TimeStamp>
             </li>
@@ -614,8 +615,8 @@ const Timeline = () => (
                 link="external"
                 url="http://killbox.spike-fx.net/home.html"
                 infos="
-                  It all happend during a LAN-Party. The development of v1.0 took 17 hours. And of course there was a mapping contest.
-                  My map was voted second place.
+                It all happened during a LAN-Party. The development of v1.0 took 17 hours. And of course there was a mapping contest.
+                My map was voted second place.
                 "
               ></TimeStamp>
             </li>
@@ -626,7 +627,7 @@ const Timeline = () => (
                 type="Level Design"
                 url=""
                 infos="
-                  Winning a mapping contest for an exclusive Counter-Strike map pack. The exclusive-pack also known as
+                  Winning a mapping contest for an exclusive Counter-Strike map pack. The exclusive-pack also is known as
                   “best of german speaking Mapper”-pack was organized by the Clan00 map-forum in collaboration with the PC Action magazine.
                   The pack contained 12 high-quality maps.
                 "
@@ -640,7 +641,7 @@ const Timeline = () => (
                 link="external"
                 url="https://spezi-clan.com"
                 infos="
-                  And yes, I'm still playing.
+                  And yes, I'm still into gaming.
                 "
               ></TimeStamp>
             </li>

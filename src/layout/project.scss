@@ -1,4 +1,4 @@
-.project {
+.work {
     @include themify($themes) {
         @extend %ck-text;
         @include font-size(14, 18);

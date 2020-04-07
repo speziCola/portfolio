@@ -54,7 +54,7 @@
         }
 
         &--external {
-            display: flex;
+            display: inline-flex;
             &::after {
                 transform: translate(0px, 2px);
             }

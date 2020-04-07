@@ -3,7 +3,8 @@
 .sidebar {
   @include themify($themes) {
     &__card {
-      @include pxy(16,32,16,32)
+      @include pxy(16,32,16,32);
+      @include pb(24,40);
       background: themed("card");
       border-radius: $border-radius-big;
       @include shadow-01;
@@ -35,8 +36,8 @@
           padding-left: 12rem;
           font-family: $ck-font-01;
           font-weight: 700;
-          font-size: 2.8rem;
-          line-height: 4.8rem;
+          @include font-size(20, 28);
+          @include line-height(28, 48);
           color: themed("font-second");
           text-transform: uppercase;
 
@@ -56,8 +57,8 @@
         margin-bottom: 0.8rem;
         font-family: $ck-font-02;
         font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 3.2rem;
+        @include font-size(16, 18);
+        @include line-height(28, 32);
         color: themed("font-second");
 
         &--profile {
