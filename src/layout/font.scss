@@ -58,7 +58,7 @@ $ck-font-02: "Titillium", sans-serif;
     position: relative;
     font-family: $ck-font-01;
     @include font-size(32, 48);
-    @include line-height(40, 72);
+    @include line-height(56, 72);
     font-weight: 800;
     color: themed("font-first");
     text-transform: uppercase;
