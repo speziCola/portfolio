@@ -13,7 +13,7 @@ import avatar from '../../src/images/qrt-ck.png';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO keywords={[`gatsby`, `application`, `react`]} />
     <Navbar></Navbar>
     <div className="ck_start_container">
       <div className="ck_start_container__wrapper">
@@ -24,7 +24,7 @@ const IndexPage = () => (
         </h1>
         <p className="ck_start_container__subtext">
           Starting to explore the internet in the early 2000s I discovered
-          digital media design. Since then, I’ve worked for serveral clients. I always strive to create
+          digital media design. Since then, I’ve worked on serveral projects. I always strive to create
           new or better customer experience with empathy.
         </p>
       {/*   Button here */}

@@ -57,6 +57,11 @@
         calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
 }
 
+@mixin pt($small, $big) {
+    padding-top:
+        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+}
+
 @mixin shadow-01 {
     box-shadow: 0px 0px 16px themed("shadow");
     transition: all 0.5s ease-in-out;

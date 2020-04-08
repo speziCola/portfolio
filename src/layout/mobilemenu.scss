@@ -1,0 +1,18 @@
+.mobile-menu {
+  @include themify($themes) {
+    list-style: none;
+
+    & li {
+      padding: 2.4rem 0;
+    }
+
+    & a {
+      font-family: $ck-font-02;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      color: themed("font-third");
+      text-align: left;
+      @include hoverspeed;
+    }
+  }
+}

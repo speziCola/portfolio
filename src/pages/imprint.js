@@ -26,8 +26,8 @@ const Imprint = () => (
             <div className="sidebar__card__profile">
               <p className="ck-text">
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-                Christopher Kuhrt
                 <br /> <br />
+                Christopher Kuhrt<br />
                 E-Mail: christopher(at)qrt.de
               </p>
             </div>
