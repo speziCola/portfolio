@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Chris Kuhrt - Product Designer`,
-    description: `Just a portfolio.`,
+    description: `Hi, my name is Chris Kuhrt. I’m a Product Designer based in Germany.`,
     author: `Chris Kuhrt`,
   },
   plugins: [

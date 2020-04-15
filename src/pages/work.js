@@ -22,7 +22,6 @@ const Work = () => (
         { name: 'keywords', content: 'Work' },
       ]}
       >
-      <html lang="en" />
     </Helmet>
     <Navbar></Navbar>
     {/* Header */}
