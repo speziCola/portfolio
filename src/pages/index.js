@@ -14,7 +14,7 @@ import avatar from '../../src/images/qrt-ck.png';
 
 const IndexPage = () => (
   <Layout>
-        <Helmet
+    <Helmet
       title="Chris Kuhrt - Product Designer"
       meta={[
         { name: "description", content: "Home" },
