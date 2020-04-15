@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"
         />
+        <meta http-equiv="Cache-control" content="public"></meta>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
