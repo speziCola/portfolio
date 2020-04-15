@@ -19,6 +19,7 @@
     }
 
     &__img {
+      display: block;
       grid-column-start: 1;
       grid-column-end: 12;
       margin-bottom: 1.6rem;

@@ -27,14 +27,14 @@
             font-family: "symbols";
             font-style: normal;
             font-weight: normal;
-            @include line-height(20, 28);
+            line-height: 2.4rem;
             vertical-align: middle;
             color: themed("font-fourth");
             transition: all $time-1 ease-in-out;
         }
 
         & span {
-            @include line-height(20, 28);
+            line-height: 2.4rem;
         }
 
         &--internal {

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet";
 
 import { NBSP } from '../constants';
 
@@ -13,6 +14,13 @@ import avatar from '../../src/images/qrt-ck.png';
 
 const IndexPage = () => (
   <Layout>
+        <Helmet
+      title="Chris Kuhrt - Product Designer"
+      meta={[
+        { name: "description", content: "Home" },
+        { name: "keywords", content: "Home" }
+      ]}
+    />
     <SEO keywords={[`gatsby`, `application`, `react`]} />
     <Navbar></Navbar>
     <div className="ck_start_container">
