@@ -19,7 +19,6 @@
     }
 
     &__img {
-      display: block;
       grid-column-start: 1;
       grid-column-end: 12;
       margin-bottom: 1.6rem;
@@ -33,6 +32,7 @@
       }
 
       & img {
+        display: block;
         max-width: 100%;
         transition: transform 0.24s ease-in-out;
 
