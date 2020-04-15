@@ -34,11 +34,14 @@ nav {
       list-style: none;
       height: 7.2rem;
       justify-content: flex-end;
+      @media only screen and (max-width: 800px) {
+        justify-content: flex-start;
+      }
 
       & li {
         padding-left: 9.6rem;
         @media only screen and (max-width: 800px) {
-          padding-left: 6.4rem;
+          padding-left: 1.2rem;
         }
 
         & a {
