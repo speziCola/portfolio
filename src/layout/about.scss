@@ -40,6 +40,9 @@
           @include line-height(28, 48);
           color: themed("font-second");
           text-transform: uppercase;
+          @media only screen and (max-width: 650px) {
+            padding-top: 2.4rem;
+          }
 
           &:before {
             position: absolute;

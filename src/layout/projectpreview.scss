@@ -24,6 +24,7 @@
       margin-bottom: 1.6rem;
       overflow: hidden;
       @include shadow-01;
+      border-radius: 0.4rem;
 
       @media only screen and (max-width: 950px) {
         grid-column-start: 1;
@@ -33,8 +34,9 @@
 
       & img {
         display: block;
-        max-width: 100%;
+        width: 100%;
         transition: transform 0.24s ease-in-out;
+        transform: scale(1.002);
 
         @media only screen and (max-width: 950px) {
           max-width: 100%;

@@ -63,7 +63,7 @@ $ck-font-02: "Titillium", sans-serif;
     position: relative;
     font-family: $ck-font-01;
     @include font-size(32, 48);
-    @include line-height(56, 72);
+    @include line-height(72, 88);
     font-weight: 800;
     color: themed("font-first");
     text-transform: uppercase;
@@ -73,7 +73,7 @@ $ck-font-02: "Titillium", sans-serif;
       bottom: 0;
       content: "";
       @include width(64, 96);
-      height: 0.4rem;
+      height: 0.6rem;
       background: $ck-primary;
       border-radius: 0.8rem;
     }
@@ -96,7 +96,7 @@ $ck-font-02: "Titillium", sans-serif;
 .ck-h3 {
   @include mb(8,16);
   font-family: $ck-font-02;
-  @include font-size(16, 18);
+  @include font-size(18, 20);
   @include line-height(20, 28);
   font-weight: 600;
   color: $ck-primary;
@@ -116,7 +116,7 @@ $ck-font-02: "Titillium", sans-serif;
   max-width: 96rem;
   @extend %ck-text;
   @include font-size(16, 18);
-  @include line-height(22, 32);
+  @include line-height(24, 32);
 
   & span {
     font-weight: 700;

@@ -14,7 +14,7 @@ main {
     grid-template-areas: "content footer";
     align-items: start;
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 800px) {
       grid-template-columns: auto;
       grid-template-areas:
         "content"

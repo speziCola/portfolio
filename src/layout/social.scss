@@ -31,11 +31,15 @@
             &:hover {
                 color: $ck-secondary;
             }
+            &:hover img {
+                filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg) brightness(100%) contrast(101%);
+            }
+
         }
 
         & li {
             :hover img {
-                filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg) brightness(100%) contrast(101%);
+
             }
         }
     }

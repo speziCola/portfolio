@@ -60,7 +60,7 @@
       &:after {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -1.6rem;
         content: "";
         @include width(64, 144);
         height: 0.8rem;
@@ -74,7 +74,7 @@
       max-width: 75%;
       @include mb(8, 16);
       @extend %ck-text;
-      @include font-size(18, 22);
+      @include font-size(20, 22);
       color: themed("font-third");
 
       @media only screen and (max-width: 650px) {

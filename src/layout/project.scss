@@ -137,14 +137,12 @@
         &__img {
             grid-column-start: 9;
             grid-column-end: 30;
-            overflow: hidden;
             padding: 1.6rem;
             background: themed('img');
             box-shadow: 0 4px 8px 2px themed('img-shadow');
-            border-radius: 0.6rem;
 
             & img {
-                max-width: 100%;
+                width: 100%;
             }
 
             & figcaption {

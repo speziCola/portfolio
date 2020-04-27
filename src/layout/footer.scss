@@ -4,7 +4,7 @@
   grid-area: footer;
   justify-content: space-between;
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 800px) {
     display: block;
     margin-bottom: 7.2rem;
   }
@@ -13,7 +13,7 @@
     position: fixed;
     bottom: 0;
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 800px) {
       position: relative;
       display: flex;
       align-items: center;
@@ -52,7 +52,7 @@
       }
     }
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 800px) {
       position: relative;
       transform: rotate(0);
       margin-left: 0;
@@ -82,10 +82,16 @@
         @include hoverspeed;
         cursor: pointer;
         box-shadow: 0 4px 8px 2px themed("shadow-hover");
+        @media only screen and (max-width: 800px) {
+          box-shadow: none;
+        }
       }
 
       &:hover i {
         color: themed("icon-hover");
+        @media only screen and (max-width: 800px) {
+          color: themed('icon');
+        }
       }
 
       &:focus {
@@ -100,9 +106,23 @@
         }
       }
 
-      @media only screen and (max-width: 650px) {
+      @media only screen and (max-width: 800px) {
         margin-left: 1.6rem;
         margin-bottom: 0;
+      }
+      &__mobile {
+        @media only screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+      &__desktop {
+        @media only screen and (min-width: 800px) {
+          display: none;
+        }
+        @media only screen and (max-width: 800px) {
+          position: absolute;
+          right: 0.8rem;
+        }
       }
     }
   }

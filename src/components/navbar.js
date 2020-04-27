@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import ThemeButton from "../components/theme-button";
+
 import menu from '../../src/images/icons/menu.svg';
 
 const Navbar = () => (
@@ -16,11 +18,14 @@ const Navbar = () => (
       <li>
         <Link className="menu" to="/about/">About</Link>
       </li>
-      <li>
+      <li className="mobile-menu">
         <Link to="/menu/" aria-label="Menu">
-          <img className="social-icon mobile-menu" src={menu} alt="menu" />
+          <img className="social-icon" src={menu} alt="menu" />
         </Link>
       </li>
+      <div className="ck_footer__theme__desktop">
+        <ThemeButton />
+      </div>
     </ul>
   </nav>
 );

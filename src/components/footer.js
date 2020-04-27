@@ -9,7 +9,9 @@ const Footer = () => (
       <p className="ck_footer__credit">
         © 2008 - 2019 <Link to="/imprint/">Imprint</Link>
       </p>
-      <ThemeButton />
+      <div className="ck_footer__theme__mobile">
+        <ThemeButton />
+      </div>
     </div>
   </div>
 );
