@@ -1,4 +1,5 @@
 .ck_footer {
+
   position: relative;
   display: flex;
   grid-area: footer;
@@ -26,6 +27,7 @@
   }
 
   &__credit {
+    @include themify($themes) {
     transform: rotate(-90deg);
     transform-origin: bottom left;
     bottom: 0;
@@ -39,18 +41,19 @@
     font-size: 1.2rem;
     line-height: 2.4rem;
     text-align: left;
-    color: $ck-primary;
+    color: themed("font-second");
     text-transform: uppercase;
 
     & a {
       padding-left: 0.8rem;
-      color: $ck-font-second;
+      color: themed("font-second");
       @include hoverspeed;
 
       &:hover {
         @include hover-text;
       }
     }
+  }
 
     @media only screen and (max-width: 800px) {
       position: relative;

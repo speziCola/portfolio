@@ -30,8 +30,12 @@ $ck-font-third:       $ck-base-25;
 $ck-font-fourth:      $ck-base-15;
 
 /* Shadow */
-$ck-shadow-light:    #dbe2ff;
+$ck-shadow-light:    #e6e9f4;
 $ck-shadow-dark:     rgba(0, 0, 0, 0.45);
+
+/* Showcase */
+$ck-showcase: #f0f0ff;
+$ck-showcase-dark: #4264fb;
 
 $themes: (
   light: (
@@ -61,6 +65,7 @@ $themes: (
     icon:             $ck-base-15,
     shadow:           $ck-shadow-light,
     shadow-hover:     $ck-shadow-light,
+    showcase:         $ck-showcase,
     icon-hover:       $ck-secondary,
     img:            #fcfbfb,
     img-shadow:     rgba(0, 0, 0, 0.08),
@@ -93,7 +98,8 @@ $themes: (
     font-fourth:      $ck-base-25,
     icon:             $ck-base-15,
     shadow:           $ck-shadow-dark,
-    shadow-hover:     $ck-primary,
+    shadow-hover:     $ck-shadow-dark,
+    showcase:         $ck-showcase-dark,
     icon-hover:       $ck-base-00,
     img:            #17172f,
     img-shadow:     rgba(0, 0, 0, 0.45),

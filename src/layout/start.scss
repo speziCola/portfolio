@@ -4,29 +4,58 @@
     grid-template-columns: repeat(30, 1fr);
     grid-area: content;
     align-items: center;
-    @include px(8, 280);
     height: 100vh;
 
     @media only screen and (max-width: 650px) {
-      @include mt (32, 80);
+      @include mt(32, 80);
       height: 100%;
     }
 
     &__wrapper {
-      grid-column-start: 1;
-      grid-column-end: 31;
+      grid-column-start: 3;
+      grid-column-end: 18;
 
       @media only screen and (max-width: 650px) {
         @include py(16, 64);
       }
     }
+    &__showcase {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin-right: -8rem;
+      grid-column-start: 20;
+      grid-column-end: 31;
+      background: themed("showcase");
+
+      &-img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      &-video {
+        max-width: 100%;
+        height: auto;
+        mask-image: url('../images/phone-mask.svg');
+        mask-mode: alpha;
+        mask-size: contain;
+        height: auto;
+      }
+
+      &-wrapper {
+        position: relative;
+        margin-top: 7.2rem;
+        @include width(128, 400);
+      }
+    }
 
     &__avatar {
-        padding-top: 8.8rem;
-        @include width(128, 256);
-        @media only screen and (max-width: 650px) {
-          padding-top: 0;
-        }
+      padding-top: 8.8rem;
+      @include width(128, 256);
+      @media only screen and (max-width: 650px) {
+        padding-top: 0;
+      }
     }
 
     &__headline {
@@ -71,7 +100,6 @@
 
     &__subtext {
       width: 100%;
-      max-width: 75%;
       @include mb(8, 16);
       @extend %ck-text;
       @include font-size(20, 22);

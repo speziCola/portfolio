@@ -11,6 +11,9 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 import avatar from '../../src/images/qrt-ck.png';
+import showcase from '../../src/images/showcase.png';
+import phonemask from '../../src/images/phone-mask.svg';
+import showcasevideo from '../../src/images/showcase-ck.mp4';
 
 const IndexPage = () => (
   <Layout>
@@ -29,6 +32,13 @@ const IndexPage = () => (
           new or better customer experience with empathy.
         </p>
       {/*   Button here */}
+      </div>
+      <div className="ck_start_container__showcase">
+      <div className="ck_start_container__showcase-wrapper">
+            <video autoplay="autoplay" muted loop className="ck_start_container__showcase-video">
+              <source src={showcasevideo} type="video/mp4" />
+            </video>
+      </div>
       </div>
     </div>
     <Footer></Footer>
