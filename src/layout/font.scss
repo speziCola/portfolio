@@ -118,7 +118,12 @@ $ck-font-02: "Titillium", sans-serif;
   @include font-size(16, 18);
   @include line-height(24, 32);
 
+  &--no-bottom {
+    margin-bottom: 0 !important;
+  }
+
   & span {
+    font-family: $ck-font-01;
     font-weight: 700;
     color: $ck-font-second;
     text-transform: uppercase;

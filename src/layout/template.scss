@@ -24,6 +24,20 @@ main {
   }
 }
 
+.ck-navbar {
+  @include themify($themes) {
+    position: fixed;
+    width: 100%;
+    height: 7.2rem;
+    background: themed("background");
+    z-index: 5;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+}
+
 .ck-header {
   grid-area: content;
   grid-row: 1;

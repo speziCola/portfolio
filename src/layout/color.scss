@@ -56,12 +56,13 @@ $themes: (
     /* Timeline - last child */
     alpha:           rgba(0, 0, 0, 0),
     /* Fonts */
-    font-title:       $ck-base-25,
+    font-title:       $ck-base-50,
     font-hover:       $ck-secondary,
     font-first:       $ck-base-50,
     font-second:      $ck-base-25,
     font-third:       $ck-base-25,
     font-fourth:      $ck-base-15,
+    font-footer:      $ck-base-15,
     icon:             $ck-base-15,
     shadow:           $ck-shadow-light,
     shadow-hover:     $ck-shadow-light,
@@ -69,6 +70,7 @@ $themes: (
     icon-hover:       $ck-secondary,
     img:            #fcfbfb,
     img-shadow:     rgba(0, 0, 0, 0.08),
+    video-shadow:     #BCBCDC,
     theme-icon:       "\EA16",
     ck-logo: url('./../images/ck-logo-b.png')
   ),
@@ -80,7 +82,7 @@ $themes: (
     background:       $ck-base-115,
     /* Base Color */
     base-00:          $ck-base-100,
-    base-04:          $ck-base-50,
+    base-04:          $ck-base-110,
     base-05:          $ck-base-50,
     base-10:          $ck-base-25,
     base-15:          $ck-base-15,
@@ -96,13 +98,15 @@ $themes: (
     font-second:      $ck-base-10,
     font-third:       $ck-base-10,
     font-fourth:      $ck-base-25,
+    font-footer:      $ck-base-01,
     icon:             $ck-base-15,
     shadow:           $ck-shadow-dark,
     shadow-hover:     $ck-shadow-dark,
     showcase:         $ck-showcase-dark,
     icon-hover:       $ck-base-00,
-    img:            #17172f,
-    img-shadow:     rgba(0, 0, 0, 0.45),
+    img:              #17172f,
+    img-shadow:       rgba(0, 0, 0, 0.45),
+    video-shadow:     #3636CD,
     theme-icon:       "\EA17",
     ck-logo: url('./../images/ck-logo-d.png')
   )

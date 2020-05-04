@@ -1,75 +1,72 @@
 .ck_footer {
-
-  position: relative;
-  display: flex;
-  grid-area: footer;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 800px) {
-    display: block;
-    margin-bottom: 7.2rem;
-  }
-
-  &__wrapper {
-    position: fixed;
-    bottom: 0;
+  @include themify($themes) {
+    position: relative;
+    display: flex;
+    grid-area: footer;
+    justify-content: space-between;
 
     @media only screen and (max-width: 800px) {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 3.2rem;
-      width: 100%;
-      box-sizing: border-box;
+      display: block;
+      margin-bottom: 7.2rem;
     }
-  }
 
-  &__credit {
-    @include themify($themes) {
-    transform: rotate(-90deg);
-    transform-origin: bottom left;
-    bottom: 0;
-    width: 15.6rem;
-    margin-left: 8rem;
-    padding-top: 2.8rem;
-    padding-bottom: 2.8rem;
-    padding-left: 1.6rem;
-    font-family: $ck-font-01;
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 2.4rem;
-    text-align: left;
-    color: themed("font-second");
-    text-transform: uppercase;
+    &__wrapper {
+      position: fixed;
+      bottom: 0;
 
-    & a {
-      padding-left: 0.8rem;
-      color: themed("font-second");
-      @include hoverspeed;
-
-      &:hover {
-        @include hover-text;
+      @media only screen and (max-width: 800px) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 3.2rem;
+        width: 100%;
+        box-sizing: border-box;
       }
     }
-  }
 
-    @media only screen and (max-width: 800px) {
-      position: relative;
-      transform: rotate(0);
-      margin-left: 0;
-      padding-left: 0;
-      padding-bottom: 0;
-      padding-top: 0;
-      width: auto;
-      box-sizing: border-box;
-      text-align: center;
+    &__credit {
+      transform: rotate(-90deg);
+      transform-origin: bottom left;
+      bottom: 0;
+      width: 15.6rem;
+      margin-left: 8rem;
+      padding-top: 2.8rem;
+      padding-bottom: 2.8rem;
+      padding-left: 1.6rem;
+      font-family: $ck-font-01;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+      text-align: left;
+      color: themed("font-footer");
+      text-transform: uppercase;
+
+      & a {
+        padding-left: 0.8rem;
+        color: themed("font-footer");
+        @include hoverspeed;
+
+        &:hover {
+          @include hover-text;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        position: relative;
+        transform: rotate(0);
+        margin-left: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        width: auto;
+        box-sizing: border-box;
+        text-align: center;
+      }
     }
-  }
 
-  &__theme {
-    @include themify($themes) {
+    &__theme {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -93,7 +90,7 @@
       &:hover i {
         color: themed("icon-hover");
         @media only screen and (max-width: 800px) {
-          color: themed('icon');
+          color: themed("icon");
         }
       }
 
@@ -103,6 +100,7 @@
 
       &__icon {
         line-height: 0;
+        color: themed("font-footer");
 
         &::before {
           content: themed("theme-icon");
@@ -112,6 +110,7 @@
       @media only screen and (max-width: 800px) {
         margin-left: 1.6rem;
         margin-bottom: 0;
+        background: themed("nav");
       }
       &__mobile {
         @media only screen and (max-width: 800px) {

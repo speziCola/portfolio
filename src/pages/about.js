@@ -30,6 +30,7 @@ const About = () => (
       ]}
     />
     <Navbar></Navbar>
+    <div className="ck-navbar"></div>
     {/* Header */}
     <div className="ck-header">
       <h1 className="ck-h1">About</h1>

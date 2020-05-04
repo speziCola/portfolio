@@ -6,11 +6,11 @@ import ThemeButton from "../components/theme-button";
 import menu from '../../src/images/icons/menu.svg';
 
 const Navbar = () => (
-  <nav>
+  <nav className="main-menu">
     <Link to="/" className="logo" aria-label="Homelink"></Link>
     <ul>
       <li>
-        <Link className="menu" to="/work/">Work</Link>
+        <Link className="menu" to="/work/">Projects</Link>
       </li>
       <li>
         <Link className="menu" to="/timeline/">Timeline</Link>
@@ -23,9 +23,9 @@ const Navbar = () => (
           <img className="social-icon" src={menu} alt="menu" />
         </Link>
       </li>
-      <div className="ck_footer__theme__desktop">
+      <li className="ck_footer__theme__desktop">
         <ThemeButton />
-      </div>
+      </li>
     </ul>
   </nav>
 );

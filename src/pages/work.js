@@ -16,22 +16,35 @@ import gridpaper from '../images/projects/8-grid-paper/thumb-8-grid-paper.jpg';
 const Work = () => (
   <Layout>
     <Helmet
-      title="Chris Kuhrt - Work"
+      title="Chris Kuhrt - Projects"
       meta={[
-        { name: 'description', content: 'Work' },
-        { name: 'keywords', content: 'Work' },
+        { name: 'description', content: 'Projects' },
+        { name: 'keywords', content: 'Projects' },
       ]}
       >
     </Helmet>
     <Navbar></Navbar>
+    <div className="ck-navbar"></div>
     {/* Header */}
     <div className="ck-header">
-      <h1 className="ck-h1">Work</h1>
+      <h1 className="ck-h1">Projects</h1>
     </div>
       {/* Content */}
       <div className="ck-container">
         <div className="ck-container__wrapper">
           <div className="projects">
+
+          <ProjectView
+            title="Performance on images"
+            subtitle="Research/UX"
+            info="Increase your conversion rate and revenue by optimizing your images."
+            img={imageperformance}
+            alt="Performance on images"
+            url="https://medium.com/@chriskuhrt/increase-your-conversion-rate-and-revenue-by-optimizing-your-images-449a97929e9b"
+            type="external"
+            password="no-lock">
+          </ProjectView >
+
           <ProjectView
             title="Mobile seat map redesign"
             subtitle="UX/UI"
@@ -65,16 +78,7 @@ const Work = () => (
             password="">
           </ProjectView >
 
-          <ProjectView
-            title="Performance on images"
-            subtitle="Research/UX"
-            info="Increase your conversion rate and revenue by optimizing your images."
-            img={imageperformance}
-            alt="Performance on images"
-            url="https://medium.com/@chriskuhrt/increase-your-conversion-rate-and-revenue-by-optimizing-your-images-449a97929e9b"
-            type="external"
-            password="no-lock">
-          </ProjectView >
+
 
         {/*   <ProjectView
             title="SteamCalculator"

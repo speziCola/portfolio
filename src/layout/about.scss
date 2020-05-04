@@ -23,6 +23,10 @@
           list-style: none;
         }
 
+        &--no-bottom {
+          padding-bottom: 0;
+        }
+
         &__avatar {
           position: absolute;
           width: 10.4rem;

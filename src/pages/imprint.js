@@ -15,6 +15,7 @@ const Imprint = () => (
       ]}
     />
     <Navbar></Navbar>
+    <div className="ck-navbar"></div>
     {/* Header */}
     <div className="ck-header">
       <h1 className="ck-h1">Imprint</h1>
@@ -23,8 +24,8 @@ const Imprint = () => (
       <div className="ck-container__wrapper">
         <div className="ck-container__sidebar">
           <div className="sidebar__card">
-            <div className="sidebar__card__profile">
-              <p className="ck-text">
+            <div className="sidebar__card__profile sidebar__card__profile--no-bottom">
+              <p className="ck-text ck-text--no-bottom">
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
                 <br /> <br />
                 Christopher Kuhrt<br />
