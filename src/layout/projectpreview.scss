@@ -68,7 +68,7 @@
         @include font-size(24, 32);
         @include line-height(24, 48);
         color: themed("font-first");
-        transition: transform 0.24s ease-in-out;
+        @include font-fade;
       }
 
       &__subtitle {
@@ -79,6 +79,7 @@
         line-height: 2rem;
         color: themed("font-fourth");
         text-transform: uppercase;
+        @include font-fade;
       }
 
       &__info {
@@ -89,6 +90,7 @@
         @include font-size(14, 18);
         @include line-height(20, 28);
         color: themed("font-third");
+        @include font-fade;
       }
     }
   }
