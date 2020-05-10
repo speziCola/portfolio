@@ -63,7 +63,7 @@
       &__title {
         position: relative;
         display: inline-block;
-        font-family: $ck-font-01;
+        font-family: $font-title;
         font-weight: 700;
         @include font-size(24, 32);
         @include line-height(24, 48);
@@ -73,7 +73,7 @@
 
       &__subtitle {
         margin-bottom: 0.8rem;
-        font-family: $ck-font-01;
+        font-family: $font-title;
         font-weight: 600;
         font-size: 1.4rem;
         line-height: 2rem;
@@ -84,7 +84,7 @@
       &__info {
         display: block;
         @include mb(8, 16);
-        font-family: $ck-font-02;
+        font-family: $font-body;
         font-weight: 400;
         @include font-size(14, 18);
         @include line-height(20, 28);

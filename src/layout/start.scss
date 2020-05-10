@@ -26,12 +26,13 @@
       @include mb(24, 64);
       padding-top: 9.6rem;
       padding-bottom: 2.4rem;
-      font-family: $ck-font-01;
+      font-family: $font-title;
       font-weight: 800;
       @include font-size(28, 48);
       @include line-height(32, 52);
       color: themed("font-title");
       text-transform: uppercase;
+      @include font-fade;
 
       &-line {
         padding-left: 0.8rem;
@@ -67,6 +68,7 @@
       @extend %ck-text;
       @include font-size(20, 22);
       color: themed("font-third");
+      @include font-fade;
 
       @media only screen and (max-width: 650px) {
         @include mb(48, 64);
@@ -126,18 +128,11 @@
         }
       }
 
-      &-img {
-        max-width: 100%;
-        height: auto;
-      }
-
       &-video {
         max-width: 100%;
-        height: auto;
         mask-image: url("../images/phone-mask.svg");
         mask-mode: alpha;
         mask-size: contain;
-        height: auto;
       }
 
       &-video-shadow {
@@ -148,7 +143,7 @@
         background: themed("video-shadow");
         border-radius: 100%;
         filter: blur(24px);
-        z-index: 2;
+        z-index: 10;
       }
     }
   }

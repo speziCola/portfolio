@@ -1,53 +1,109 @@
 @font-face {
-    font-family: "symbols";
-    src: url('../fonts/chriskuhrt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "symbols";
+  src: url("../fonts/chriskuhrt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 i {
-    @include themify($themes) {
-        display: inline-block;
-        font-family: "symbols";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-        color: themed('icon');
-        transition: color 0.16s ease-in-out;
-        box-sizing: border-box;
-    }
+  @include themify($themes) {
+    display: inline-block;
+    font-family: "symbols";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: themed("icon");
+    transition: color 0.16s ease-in-out;
+    box-sizing: border-box;
+  }
 }
 
 .s-2x {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.ck-icon-steam:before { content: "\EA01" }
-.ck-icon-facebook:before { content: "\EA02" }
-.ck-icon-instagram:before { content: "\EA03" }
-.ck-icon-twitter:before { content: "\EA04" }
-.ck-icon-whatsapp:before { content: "\EA05" }
-.ck-icon-share:before { content: "\EA06" }
-.ck-icon-snapchat:before { content: "\EA07" }
-.ck-icon-discord:before { content: "\EA08" }
-.ck-icon-vimeo:before { content: "\EA09" }
-.ck-icon-500pixel:before { content: "\EA0A" }
-.ck-icon-xing:before { content: "\EA0B" }
-.ck-icon-linkedin:before { content: "\EA0C" }
-.ck-icon-dribble:before { content: "\EA0D" }
-.ck-icon-behance:before { content: "\EA0E" }
-.ck-icon-close:before { content: "\EA0F" }
-.ck-icon-remove:before { content: "\EA10" }
-.ck-icon-add:before { content: "\EA11" }
-.ck-icon-menu:before { content: "\EA12" }
-.ck-icon-external:before { content: "\EA13" }
-.ck-icon-mail:before { content: "\EA14" }
-.ck-icon-github:before { content: "\EA15" }
-.ck-icon-night:before { content: "\EA16" }
-.ck-icon-day:before { content: "\EA17" }
-.ck-icon-arrow-up-a:before { content: "\EA18" }
-.ck-icon-arrow-right-a:before { content: "\EA19" }
-.ck-icon-arrow-down-a:before { content: "\EA1A" }
-.ck-icon-arrow-left-a:before { content: "\EA1B" }
-.ck-icon-settings:before { content: "\EA1C" }
+.ck-icon-steam:before {
+  content: "\EA01";
+}
+.ck-icon-facebook:before {
+  content: "\EA02";
+}
+.ck-icon-instagram:before {
+  content: "\EA03";
+}
+.ck-icon-twitter:before {
+  content: "\EA04";
+}
+.ck-icon-whatsapp:before {
+  content: "\EA05";
+}
+.ck-icon-share:before {
+  content: "\EA06";
+}
+.ck-icon-snapchat:before {
+  content: "\EA07";
+}
+.ck-icon-discord:before {
+  content: "\EA08";
+}
+.ck-icon-vimeo:before {
+  content: "\EA09";
+}
+.ck-icon-500pixel:before {
+  content: "\EA0A";
+}
+.ck-icon-xing:before {
+  content: "\EA0B";
+}
+.ck-icon-linkedin:before {
+  content: "\EA0C";
+}
+.ck-icon-dribble:before {
+  content: "\EA0D";
+}
+.ck-icon-behance:before {
+  content: "\EA0E";
+}
+.ck-icon-close:before {
+  content: "\EA0F";
+}
+.ck-icon-remove:before {
+  content: "\EA10";
+}
+.ck-icon-add:before {
+  content: "\EA11";
+}
+.ck-icon-menu:before {
+  content: "\EA12";
+}
+.ck-icon-external:before {
+  content: "\EA13";
+}
+.ck-icon-mail:before {
+  content: "\EA14";
+}
+.ck-icon-github:before {
+  content: "\EA15";
+}
+.ck-icon-night:before {
+  content: "\EA16";
+}
+.ck-icon-day:before {
+  content: "\EA17";
+}
+.ck-icon-arrow-up-a:before {
+  content: "\EA18";
+}
+.ck-icon-arrow-right-a:before {
+  content: "\EA19";
+}
+.ck-icon-arrow-down-a:before {
+  content: "\EA1A";
+}
+.ck-icon-arrow-left-a:before {
+  content: "\EA1B";
+}
+.ck-icon-settings:before {
+  content: "\EA1C";
+}

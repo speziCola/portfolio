@@ -1,43 +1,47 @@
 .timestamp {
-    @include themify($themes) {
-        position: relative;
-        @include mb(24, 64);
-        @include px(16, 32);
-        box-sizing: border-box;
+  @include themify($themes) {
+    position: relative;
+    @include mb(24, 64);
+    @include px(16, 32);
+    box-sizing: border-box;
 
-        &__time {
-            margin-bottom: 1.2rem;
-            font-family: $ck-font-01;
-            font-weight: 700;
-            font-size: 1.6rem;
-            line-height: 2.4rem;
-            color: $ck-primary;
-        }
-
-        &__title {
-            display: inline;
-            font-family: $ck-font-01;
-            font-weight: 700;
-            font-size: 1.8rem;
-            line-height: 2.4rem;
-            color: themed('font-third');
-        }
-        &__type {
-            margin-bottom: 0.4rem;
-            font-family: $ck-font-01;
-            font-weight: 600;
-            font-size: 1.4rem;
-            line-height: 2.0rem;
-            color: themed('font-fourth');
-            text-transform: uppercase;
-        }
-        &__infos {
-            display: block;
-            font-family: $ck-font-02;
-            font-weight: 400;
-            @include font-size(16, 18);
-            @include line-height(24, 28);
-            color: themed('font-third');
-        }
+    &__time {
+      margin-bottom: 1.2rem;
+      font-family: $font-title;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: $ck-primary;
+      @include font-fade;
     }
+
+    &__title {
+      display: inline;
+      font-family: $font-title;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: themed("font-third");
+      @include font-fade;
+    }
+    &__type {
+      margin-bottom: 0.4rem;
+      font-family: $font-title;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: themed("font-fourth");
+      text-transform: uppercase;
+      @include font-fade;
+    }
+    &__infos {
+      display: block;
+      font-family: $font-body;
+      font-weight: 400;
+      @include font-size(16, 18);
+      @include line-height(24, 28);
+      color: themed("font-third");
+      @include font-fade;
+    }
+  }
 }

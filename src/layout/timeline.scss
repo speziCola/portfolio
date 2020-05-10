@@ -49,6 +49,7 @@
       width: 33.3%;
       padding-top: 0.8rem;
       border-top: 0.2rem solid themed("base-10");
+      @include bg-fade;
 
       @media only screen and (max-width: 1600px) {
         width: 50%;
@@ -70,6 +71,7 @@
         left: 0.8rem;
         background: $ck-primary;
         border-radius: 50%;
+        @include bg-fade;
       }
 
       &:before {
@@ -79,6 +81,7 @@
         top: -0.2rem;
         left: -0.2rem;
         border-left: 1.6rem solid themed("base-10");
+        @include bg-fade;
       }
 
       &:first-child {
@@ -127,5 +130,6 @@
     height: 0.1rem;
     @include my(24, 144);
     background: themed("base-05");
+    @include bg-fade;
   }
 }

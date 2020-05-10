@@ -80,12 +80,12 @@ main {
 
     &__content {
       width: 70%;
-      @include px(16,120);
-      @include pt(16,32);
+      @include px(16, 120);
+      @include pt(16, 32);
 
       @media only screen and (max-width: 1240px) {
         width: 100%;
-        @include px(0,0);
+        @include px(0, 0);
       }
     }
   }

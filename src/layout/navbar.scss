@@ -46,11 +46,11 @@
 
         & a {
           display: inline-block;
-          font-family: $ck-font-02;
+          font-family: $font-body;
           font-size: 1.8rem;
           line-height: 3.2rem;
           font-weight: 700;
-          color: themed("font-third");
+          color: themed("font-navbar");
           text-align: left;
           @include hoverspeed;
 

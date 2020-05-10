@@ -1,114 +1,122 @@
-$ck-primary:        #4264fb;
-$ck-secondary:      #00be73;
+$ck-primary: #4264fb;
+$ck-secondary: #00be73;
 /* #4264fb, */ /* #191E28, */
 
 /* Base Color */ /*theme-dark, theme-light */
-$ck-base-00:        #ffffff;
-$ck-base-01:        #fdfdff;
-$ck-base-03:        #fafafa;
-$ck-base-04:        #f5f5fa;
-$ck-base-05:        #d7d7e1;
-$ck-base-10:        #bebec8;
-$ck-base-15:        #9f9faf;
-$ck-base-25:        #5a648c;
-$ck-base-50:        #38414b;
-$ck-base-100:       #2f2f2f;
+$ck-base-00: #ffffff;
+$ck-base-01: #fdfdff;
+$ck-base-03: #fafafa;
+$ck-base-04: #f5f5fa;
+$ck-base-05: #d7d7e1;
+$ck-base-10: #bebec8;
+$ck-base-15: #9f9faf;
+$ck-base-25: #5a648c;
+$ck-base-50: #38414b;
+$ck-base-100: #2f2f2f;
 
-$ck-base-105:       #1d1d3a;
-$ck-base-110:       #17172f;
-$ck-base-115:       #0f0f23;
+$ck-base-105: #1d1d3a;
+$ck-base-110: #17172f;
+$ck-base-115: #0f0f23;
 
 /* Timeline - last child */
-$ck-alpha:          rgba(0, 0, 0, 0);
+$ck-alpha: rgba(0, 0, 0, 0);
 
 /* Fonts */
-$ck-font-title:       $ck-primary;
-$ck-font-hover:       $ck-secondary;
-$ck-font-first:       $ck-base-25;
-$ck-font-second:      $ck-base-25;
-$ck-font-third:       $ck-base-25;
-$ck-font-fourth:      $ck-base-15;
+$ck-font-title: $ck-primary;
+$ck-font-hover: $ck-secondary;
+$ck-font-first: $ck-base-25;
+$ck-font-second: $ck-base-25;
+$ck-font-third: $ck-base-25;
+$ck-font-fourth: $ck-base-15;
 
 /* Shadow */
-$ck-shadow-light:    #e6e9f4;
-$ck-shadow-dark:     rgba(0, 0, 0, 0.45);
+$ck-shadow-light: #e6e9f4;
+$ck-shadow-dark: rgba(0, 0, 0, 0.45);
 
 /* Showcase */
 $ck-showcase: #f0f0ff;
 $ck-showcase-dark: #4264fb;
 
+@mixin font-fade {
+  transition: color 1.5s ease-in-out;
+}
+@mixin bg-fade {
+  transition: all 1.5s ease-in-out;
+}
+
 $themes: (
   light: (
-    primary:          $ck-primary,
-    secondary:        $ck-secondary,
-    nav:              $ck-base-00,
-    card:             $ck-base-00,
-    background:       $ck-base-01,
+    primary: $ck-primary,
+    secondary: $ck-secondary,
+    nav: $ck-base-00,
+    card: $ck-base-00,
+    background: $ck-base-01,
     /* Base Color */
-    base-00:          $ck-base-03,
-    base-04:          $ck-base-04,
-    base-05:          $ck-base-05,
-    base-10:          $ck-base-10,
-    base-15:          $ck-base-15,
-    base-25:          $ck-base-25,
-    base-50:          $ck-base-50,
-    base-100:         $ck-base-100,
+    base-00: $ck-base-03,
+    base-04: $ck-base-04,
+    base-05: $ck-base-05,
+    base-10: $ck-base-10,
+    base-15: $ck-base-15,
+    base-25: $ck-base-25,
+    base-50: $ck-base-50,
+    base-100: $ck-base-100,
     /* Timeline - last child */
-    alpha:           rgba(0, 0, 0, 0),
+    alpha: rgba(0, 0, 0, 0),
     /* Fonts */
-    font-title:       $ck-base-50,
-    font-hover:       $ck-secondary,
-    font-first:       $ck-base-50,
-    font-second:      $ck-base-25,
-    font-third:       $ck-base-25,
-    font-fourth:      $ck-base-15,
-    font-footer:      $ck-base-15,
-    icon:             $ck-base-15,
-    shadow:           $ck-shadow-light,
-    shadow-hover:     $ck-shadow-light,
-    showcase:         $ck-showcase,
-    icon-hover:       $ck-secondary,
-    img:            #fcfbfb,
-    img-shadow:     rgba(0, 0, 0, 0.08),
-    video-shadow:     #BCBCDC,
-    theme-icon:       "\EA16",
-    ck-logo: url('./../images/ck-logo-b.png')
+    font-title: $ck-base-50,
+    font-hover: $ck-secondary,
+    font-first: $ck-base-50,
+    font-second: $ck-base-25,
+    font-third: $ck-base-25,
+    font-fourth: $ck-base-15,
+    font-footer: $ck-base-15,
+    font-navbar: $ck-base-25,
+    icon: $ck-base-15,
+    shadow: $ck-shadow-light,
+    shadow-hover: $ck-shadow-light,
+    showcase: $ck-showcase,
+    icon-hover: $ck-secondary,
+    img: #fcfbfb,
+    img-shadow: rgba(0, 0, 0, 0.08),
+    video-shadow: #bcbcdc,
+    theme-icon: "\EA16",
+    ck-logo: url("./../images/ck-logo.svg")
   ),
   dark: (
-    primary:          $ck-primary,
-    secondary:        $ck-secondary,
-    nav:              $ck-base-105,
-    card:             $ck-base-105,
-    background:       $ck-base-115,
-    /* Base Color */
-    base-00:          $ck-base-100,
-    base-04:          $ck-base-110,
-    base-05:          $ck-base-50,
-    base-10:          $ck-base-25,
-    base-15:          $ck-base-15,
-    base-25:          $ck-base-10,
-    base-50:          $ck-base-05,
-    base-100:         $ck-base-03,
+    primary: $ck-primary,
+    secondary: $ck-secondary,
+    nav: $ck-base-105,
+    card: $ck-base-105,
+    background: $ck-base-115,
+    /* Base Color */ base-00: $ck-base-100,
+    base-04: $ck-base-110,
+    base-05: $ck-base-50,
+    base-10: $ck-base-25,
+    base-15: $ck-base-15,
+    base-25: $ck-base-10,
+    base-50: $ck-base-05,
+    base-100: $ck-base-03,
     /* Timeline - last child */
-    alpha:          rgba(0, 0, 0, 0),
+    alpha: rgba(0, 0, 0, 0),
     /* Fonts */
-    font-title:       $ck-base-01,
-    font-hover:       $ck-secondary,
-    font-first:       $ck-base-01,
-    font-second:      $ck-base-10,
-    font-third:       $ck-base-10,
-    font-fourth:      $ck-base-25,
-    font-footer:      $ck-base-01,
-    icon:             $ck-base-15,
-    shadow:           $ck-shadow-dark,
-    shadow-hover:     $ck-shadow-dark,
-    showcase:         $ck-showcase-dark,
-    icon-hover:       $ck-base-00,
-    img:              #17172f,
-    img-shadow:       rgba(0, 0, 0, 0.45),
-    video-shadow:     #3636CD,
-    theme-icon:       "\EA17",
-    ck-logo: url('./../images/ck-logo-d.png')
+    font-title: $ck-base-01,
+    font-hover: $ck-secondary,
+    font-first: $ck-base-01,
+    font-second: $ck-base-10,
+    font-third: $ck-base-10,
+    font-fourth: $ck-base-25,
+    font-footer: $ck-base-01,
+    font-navbar: $ck-base-00,
+    icon: $ck-base-15,
+    shadow: $ck-shadow-dark,
+    shadow-hover: $ck-shadow-dark,
+    showcase: $ck-showcase-dark,
+    icon-hover: $ck-base-00,
+    img: $ck-base-110,
+    img-shadow: rgba(0, 0, 0, 0.45),
+    video-shadow: #3636cd,
+    theme-icon: "\EA17",
+    ck-logo: url("./../images/ck-logo.svg")
   )
 );
 

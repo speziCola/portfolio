@@ -38,8 +38,8 @@
   font-style: normal;
 }
 
-$ck-font-01: "Barlow", sans-serif;
-$ck-font-02: "Titillium", sans-serif;
+$font-title: "Barlow", sans-serif;
+$font-body: "Titillium", sans-serif;
 
 ::-moz-selection {
   color: $ck-secondary;
@@ -61,12 +61,13 @@ $ck-font-02: "Titillium", sans-serif;
   @include themify($themes) {
     display: inline-block;
     position: relative;
-    font-family: $ck-font-01;
+    font-family: $font-title;
     @include font-size(32, 48);
     @include line-height(72, 88);
     font-weight: 800;
     color: themed("font-first");
     text-transform: uppercase;
+    @include font-fade;
 
     &:before {
       position: absolute;
@@ -83,36 +84,39 @@ $ck-font-02: "Titillium", sans-serif;
 .ck-h2 {
   @include themify($themes) {
     padding-bottom: 1.6rem;
-    font-family: $ck-font-01;
+    font-family: $font-title;
     font-weight: 700;
     @include font-size(20, 28);
     @include line-height(26, 32);
     line-height: 2.4rem;
     color: themed("font-second");
     text-transform: uppercase;
+    @include font-fade;
   }
 }
 
 .ck-h3 {
-  @include mb(8,16);
-  font-family: $ck-font-02;
+  @include mb(8, 16);
+  font-family: $font-body;
   @include font-size(18, 20);
   @include line-height(20, 28);
   font-weight: 600;
   color: $ck-primary;
+  @include font-fade;
 }
 
 %ck-text {
   @include themify($themes) {
-    font-family: $ck-font-02;
+    font-family: $font-body;
     font-weight: 400;
     text-align: left;
     color: themed("font-third");
+    @include font-fade;
   }
 }
 
 .ck-text {
-  @include mb(16,64);
+  @include mb(16, 64);
   max-width: 96rem;
   @extend %ck-text;
   @include font-size(16, 18);
@@ -120,10 +124,11 @@ $ck-font-02: "Titillium", sans-serif;
 
   &--no-bottom {
     margin-bottom: 0 !important;
+    padding-bottom: 0;
   }
 
   & span {
-    font-family: $ck-font-01;
+    font-family: $font-title;
     font-weight: 700;
     color: $ck-font-second;
     text-transform: uppercase;
@@ -131,9 +136,5 @@ $ck-font-02: "Titillium", sans-serif;
 
   &:last-child {
     @include mb(16, 64);
-  }
-
-  &--no-bottom {
-    padding-bottom: 0;
   }
 }

@@ -53,21 +53,23 @@
                 &__title {
                     position: relative;
                     display: inline-block;
-                    font-family: $ck-font-01;
+                    font-family: $font-title;
                     font-weight: 600;
                     @include font-size(24, 40);
                     @include line-height(32, 48);
                     color: themed('font-first');
                     transition: transform 0.24s ease-in-out;
+                    @include font-fade;
                 }
                 &__subtitle {
                     @include mb(16, 48);
-                    font-family: $ck-font-01;
+                    font-family: $font-title;
                     font-weight: 600;
                     font-size: 1.4rem;
                     line-height: 2.0rem;
                     color: themed('font-fourth');
                     text-transform: uppercase;
+                    @include font-fade;
                 }
             }
         }
@@ -178,7 +180,7 @@
                 margin-left: -1.6rem;
                 content: "•";
                 color: $ck-primary;
-                font-family: $ck-font-01;
+                font-family: $font-title;
             }
 
         }

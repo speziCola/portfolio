@@ -1,51 +1,50 @@
 .ck_social {
-    @include themify($themes) {
-        list-style-type: none;
-        font-family: $ck-font-02;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+  @include themify($themes) {
+    list-style-type: none;
+    font-family: $font-body;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 
-        &--two-columns {
-            margin-bottom: 4.0rem;
-            columns: 2;
+    &--two-columns {
+      margin-bottom: 4rem;
+      columns: 2;
 
-            & li {
-                margin-bottom: 1.6rem;
-            }
-        }
-
-        &--links {
-            & li {
-                display: flex;
-                align-items: center;
-            }
-        }
-
-        & a {
-            display: inline-flex;
-            align-items: center;
-            color: themed("font-first");
-            transition: all $time-1 ease-in-out;
-
-            &:hover {
-                color: $ck-secondary;
-            }
-            &:hover img {
-                filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg) brightness(100%) contrast(101%);
-            }
-
-        }
-
-        & li {
-            :hover img {
-
-            }
-        }
+      & li {
+        margin-bottom: 1.6rem;
+      }
     }
+
+    &--links {
+      & li {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    & a {
+      display: inline-flex;
+      align-items: center;
+      color: themed("font-first");
+      @include font-fade;
+
+      &:hover {
+        color: $ck-secondary;
+      }
+      &:hover img {
+        filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg)
+          brightness(100%) contrast(101%);
+      }
+    }
+
+    & li {
+      :hover img {
+      }
+    }
+  }
 }
 
 .social-icon {
-    display: block;
-    padding-right: 0.4rem;
+  display: block;
+  padding-right: 0.4rem;
 }

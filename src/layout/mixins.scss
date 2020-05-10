@@ -1,70 +1,97 @@
 /* Font */
 @mixin font-size($small, $big) {
-    font-size: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
 }
 
 @mixin line-height($small, $big) {
-    line-height: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
 }
-
 
 /* Size */
 @mixin width($small, $big) {
-    width:
-      calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  width: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 /* Spacing */
 @mixin mx($small, $big) {
-    margin-left: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
-    margin-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  margin-left: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
+  margin-right: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 @mixin my($small, $big) {
-    margin:
-        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)))
-        0
-        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)))
-        0;
+  margin: calc(
+      #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+    )
+    0
+    calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)))
+    0;
 }
 
 @mixin mt($small, $big) {
-    margin-top:
-        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  margin-top: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 @mixin mb($small, $big) {
-    margin-bottom: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  margin-bottom: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 @mixin px($small, $big) {
-    padding-left: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
-    padding-right: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  padding-left: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
+  padding-right: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 @mixin py($small, $big) {
-    padding-top: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
-    padding-bottom: calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  padding-top: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
+  padding-bottom: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 @mixin pxy($y-small, $y-big, $x-small, $x-big) {
-    padding:
-        calc(#{$y-small}px + (#{$y-big} - #{$y-small}) * ((100vw - 320px) / (2560 - 320)))
-        calc(#{$x-small}px + (#{$x-big} - #{$x-small}) * ((100vw - 320px) / (2560 - 320)));
+  padding: calc(
+      #{$y-small}px + (#{$y-big} - #{$y-small}) *
+        ((100vw - 320px) / (2560 - 320))
+    )
+    calc(
+      #{$x-small}px + (#{$x-big} - #{$x-small}) *
+        ((100vw - 320px) / (2560 - 320))
+    );
 }
 
 @mixin pb($small, $big) {
-    padding-bottom:
-        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  padding-bottom: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 @mixin pt($small, $big) {
-    padding-top:
-        calc(#{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320)));
+  padding-top: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (2560 - 320))
+  );
 }
 
 @mixin shadow-01 {
-    box-shadow: 0px 4px 16px themed("shadow");
-    transition: all 0.5s ease-in-out;
-  }
+  box-shadow: 0px 4px 16px themed("shadow");
+  transition: all 0.5s ease-in-out;
+}
 
 $border-radius-big: 0.8rem;

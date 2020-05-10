@@ -1,28 +1,28 @@
 import React from "react";
 import Link from "gatsby-link";
+import Helmet from "react-helmet";
 
 import { NBSP } from "../constants";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
-import avatar from "../../src/images/qrt-ck.png";
-import showcasevideo from "../../src/images/showcase-ck.mp4";
+import showcasevideoMp4 from "../../src/images/dfb-mockup-v01.mp4";
+import showcasevideoWebm from "../../src/images/dfb-mockup-v01.webm";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Hi!" keywords={[`gatsby`, `application`, `react`]} />
+    <Helmet
+      title="Chris Kuhrt - Product Designer"
+      meta={[
+        { name: "description", content: "Portfolio" },
+        { name: "keywords", content: "Portfolio" }
+      ]}
+    />
     <Navbar></Navbar>
     <div className="home-container">
       <div className="home-container__wrapper">
-     {/*    <img
-          className="home-container__avatar"
-          src={avatar}
-          alt="Chris Kuhrt, porfile picture."
-        /> */}
         <h1 className="home-container__headline">
           Hi, my name is Chris{NBSP}Kuhrt
           <br />
@@ -54,7 +54,8 @@ const IndexPage = () => (
             loop
             className="home-container__showcase-video"
           >
-            <source src={showcasevideo} type="video/mp4" />
+            <source src={showcasevideoMp4} type="video/mp4" />
+            <source src={showcasevideoWebm} type="video/webm" />
           </video>
           <div className="home-container__showcase-video-shadow"></div>
         </div>
