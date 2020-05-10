@@ -129,7 +129,20 @@
       }
 
       &-video {
+        position: absolute;
         max-width: 100%;
+        mask-image: url("../images/phone-mask.svg");
+        mask-mode: alpha;
+        mask-size: contain;
+        z-index: 5;
+      }
+
+      &-img {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+        height: auto;
+        display: block;
         mask-image: url("../images/phone-mask.svg");
         mask-mode: alpha;
         mask-size: contain;

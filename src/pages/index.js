@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 
 import showcasevideoMp4 from "../../src/images/dfb-mockup-v01.mp4";
 import showcasevideoWebm from "../../src/images/dfb-mockup-v01.webm";
+import showcaseimagejpg from "../../src/images/dfb-mockup-thumbmail.jpg";
 
 const IndexPage = () => (
   <Layout>
@@ -57,6 +58,10 @@ const IndexPage = () => (
             <source src={showcasevideoMp4} type="video/mp4" />
             <source src={showcasevideoWebm} type="video/webm" />
           </video>
+          <picture>
+          <source srcset={showcaseimagejpg} type="image/jpg" />
+          <img className="home-container__showcase-img" src={showcaseimagejpg}  alt="thumbnail"></img>
+          </picture>
           <div className="home-container__showcase-video-shadow"></div>
         </div>
       </div>
