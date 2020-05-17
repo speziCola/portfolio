@@ -4,16 +4,16 @@ import Link from "gatsby-link";
 import ThemeButton from "../components/theme-button";
 
 const Footer = () => (
-  <div className="ck_footer">
-    <div className="ck_footer__wrapper">
-      <p className="ck_footer__credit">
+  <footer className="footer">
+    <div className="footer__wrapper">
+      <p className="footer__credit">
         © 2008 - 2019 <Link to="/imprint/">Imprint</Link>
       </p>
-      <div className="ck_footer__theme__mobile">
+      <div className="footer__theme__mobile">
         <ThemeButton />
       </div>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

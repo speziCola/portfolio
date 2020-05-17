@@ -66,13 +66,13 @@ const About = () => (
             <h4 className="sidebar__card__h4 sidebar__card__h4--bold">Part of the team:</h4>
             <ul className="ck_social ck_social--links">
               <li>
-                <a className="button__link button__link--external button__link--external--light" href="https://www.frau-skroblies.com/">frau-skroblies.com</a>
+                <a className="link link--external link--external--light" href="https://www.frau-skroblies.com/">frau-skroblies.com</a>
               </li>
               <li>
-                <a className="button__link button__link--external button__link--external--light" href="https://www.hammertime.io/">hammertime.io</a>
+                <a className="link link--external link--external--light" href="https://www.hammertime.io/">hammertime.io</a>
               </li>
               <li>
-                <a className="button__link button__link--external button__link--external--light" href="https://www.steamcalculator.com/">steamcalculator.com</a>
+                <a className="link link--external link--external--light" href="https://www.steamcalculator.com/">steamcalculator.com</a>
               </li>
             </ul>
 

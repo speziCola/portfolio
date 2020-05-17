@@ -21,13 +21,13 @@ const Menu = () => (
     <div className="ck-container">
       <ul className="mobile-menu">
         <li>
-          <Link className="menu" to="/work/">Work</Link>
+          <Link className="mobile-menu__link" to="/work/">Work</Link>
         </li>
         <li>
-          <Link className="menu" to="/timeline/">Timeline</Link>
+          <Link className="mobile-menu__link" to="/timeline/">Timeline</Link>
         </li>
         <li>
-          <Link className="menu" to="/about/">About</Link>
+          <Link className="mobile-menu__link" to="/about/">About</Link>
         </li>
       </ul>
     </div>

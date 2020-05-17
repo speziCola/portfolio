@@ -1,4 +1,4 @@
-.main-menu {
+.navbar {
   @include themify($themes) {
     display: grid;
     grid-template-columns: repeat(30, 1fr);
@@ -45,7 +45,6 @@
         }
 
         & a {
-          display: inline-block;
           font-family: $font-body;
           font-size: 1.8rem;
           line-height: 3.2rem;
@@ -60,16 +59,9 @@
         }
       }
     }
-    & .menu {
+    &__link {
       @media only screen and (max-width: 800px) {
         display: none;
-      }
-    }
-
-    & .mobile-menu {
-      display: none;
-      @media only screen and (max-width: 800px) {
-        display: block;
       }
     }
   }

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const ButtonLink = ({
   type, url
 }) => (
-  <a className={`button__link button__link--${type}`} href={url}>view</a> 
+  <a className={`link link--${type}`} href={url}>view</a>
 );
 
 ButtonLink.defaultProps = {
@@ -13,7 +13,7 @@ ButtonLink.defaultProps = {
 };
 
 ButtonLink.propTypes = {
-  type: PropTypes.string,  
+  type: PropTypes.string,
   url: PropTypes.string
 };
 

@@ -1,4 +1,4 @@
-.home-container {
+.home {
   @include themify($themes) {
     display: grid;
     grid-template-columns: repeat(30, 1fr);
@@ -11,7 +11,7 @@
       row-gap: 6.4rem;
     }
 
-    &__wrapper {
+    &__content {
       grid-column-start: 3;
       grid-column-end: 18;
 

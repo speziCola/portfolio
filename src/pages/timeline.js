@@ -102,8 +102,8 @@ const Timeline = () => (
                 link="external"
                 url="https://steamcalculator.com/"
                 infos="
-                SteamCalculator calculates the value of a user’s Steam account. Steam is an online gaming download platform.
-                Due to the immense popularity of our application I was able to write my Bachelor thesis* about it.
+                Creating the designs and using the project to learn to do some frontend coding and to learn new technologies.
+                Due to the immense popularity of the application I was able to write my Bachelor thesis* about it.
                 *Title: Self-efficacy in online gaming: Conception of a personalized data visualization as a marketing tool
                 for a game community."
               ></TimeStamp>

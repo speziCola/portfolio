@@ -1,5 +1,6 @@
 .mobile-menu {
   @include themify($themes) {
+    display: none;
     list-style: none;
 
     & li {
@@ -14,6 +15,9 @@
       color: themed("font-third");
       text-align: left;
       @include hoverspeed;
+    }
+    @media only screen and (max-width: 800px) {
+      display: block;
     }
   }
 }

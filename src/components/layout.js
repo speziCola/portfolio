@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import React from "react";
 
-import "../layout/style.scss";
+import "../layout/index.scss";
 import { ThemeContext } from "./theme-context";
 
 const Layout = ({ children }) => {
@@ -21,9 +21,9 @@ const Layout = ({ children }) => {
         <ThemeContext.Consumer>
           {theme => (
             <div id="theme" className={theme.theme}>
-            <div className="content">
-              <main>{children}</main>
-            </div>
+              <main className="content">
+                {children}
+              </main>
             </div>
           )}
         </ThemeContext.Consumer>

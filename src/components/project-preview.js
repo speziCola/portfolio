@@ -17,7 +17,7 @@ const projectPreview = ({
       <p className="project__tile__info">
         {info}
       </p>
-      <a className={`button__link button__link--${type}`} href={url}>
+      <a className={`link link--${type}`} href={url}>
         <img className={`social-icon ${password}`} src={lock} loading="lazy" alt="Password protected" />
         view
       </a>

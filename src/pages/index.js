@@ -11,6 +11,7 @@ import Footer from "../components/footer";
 import showcasevideoMp4 from "../../src/images/dfb-mockup-v01.mp4";
 import showcasevideoWebm from "../../src/images/dfb-mockup-v01.webm";
 import showcaseimagejpg from "../../src/images/dfb-mockup-thumbmail.jpg";
+import showcaseimagewebp from "../../src/images/dfb-mockup-thumbmail.webp";
 
 const IndexPage = () => (
   <Layout>
@@ -22,15 +23,15 @@ const IndexPage = () => (
       ]}
     />
     <Navbar></Navbar>
-    <div className="home-container">
-      <div className="home-container__wrapper">
-        <h1 className="home-container__headline">
+    <content className="home">
+      <div className="home__content">
+        <h1 className="home__headline">
           Hi, my name is Chris{NBSP}Kuhrt
           <br />
           I’m{NBSP}a Product Designer based in Germany.
-          <span className="home-container__headline-line">_</span>
+          <span className="home__headline-line">_</span>
         </h1>
-        <p className="home-container__subtext">
+        <p className="home__subtext">
           Starting to explore the internet in the early 2000s I discovered
           digital media design. Since then, I’ve worked on serveral projects. I
           always strive to create new or better customer experience with
@@ -47,25 +48,25 @@ const IndexPage = () => (
           </ul>
         </nav>
       </div>
-      <div className="home-container__showcase">
-        <div className="home-container__showcase-wrapper">
+      <div className="home__showcase">
+        <div className="home__showcase-wrapper">
           <video
             autoplay="autoplay"
             muted
             loop
-            className="home-container__showcase-video"
+            className="home__showcase-video"
           >
             <source src={showcasevideoMp4} type="video/mp4" />
             <source src={showcasevideoWebm} type="video/webm" />
           </video>
           <picture>
-          <source srcset={showcaseimagejpg} type="image/jpg" />
-          <img className="home-container__showcase-img" src={showcaseimagejpg}  alt="thumbnail"></img>
+          <source srcset={showcaseimagewebp} type="image/webp" />
+          <img className="home__showcase-img" src={showcaseimagejpg}  alt="DFB Seat Map"></img>
           </picture>
-          <div className="home-container__showcase-video-shadow"></div>
+          <div className="home__showcase-video-shadow"></div>
         </div>
       </div>
-    </div>
+    </content>
     <Footer></Footer>
   </Layout>
 );

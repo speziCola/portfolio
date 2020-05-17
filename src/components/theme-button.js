@@ -6,8 +6,8 @@ class ThemeButton extends React.Component {
     return (
       <ThemeContext.Consumer>
         {theme => (
-          <button onClick={theme.toggleTheme} aria-label="Theme toggle" className="ck_footer__theme">
-            <i className="ck_footer__theme__icon"></i>
+          <button onClick={theme.toggleTheme} aria-label="Theme toggle" className="footer__theme">
+            <i className="footer__theme__icon"></i>
           </button>
         )}
       </ThemeContext.Consumer>
