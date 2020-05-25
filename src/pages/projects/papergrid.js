@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar";
 import Footer from '../../components/footer';
-import NavbarBottom from "../../components/navbarbottom";
 
 import gridpaper from '../../images/projects/8-grid-paper/header-8-grid-paper.jpg';
 import gridpaperpreview from '../../images/projects/8-grid-paper/post01-8-grid-paper-preview.jpg';
@@ -102,7 +101,6 @@ const Projects = () => (
           </div>
           <span className="project__spacer"></span>
           <div className="project__wrapper">
-            <NavbarBottom title="Back to all projects" url="/projects/"></NavbarBottom>
           </div>
           <span className="project__spacer"></span>
         </div>

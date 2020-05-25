@@ -8,7 +8,7 @@
     height: 100%;
 
     @media only screen and (max-width: 800px) {
-      row-gap: 6.4rem;
+      row-gap: 3.2rem;
     }
 
     &__content {
@@ -33,6 +33,12 @@
       color: themed("font-title");
       text-transform: uppercase;
       @include font-fade;
+      box-sizing: border-box;
+      @media only screen and (max-width: 800px) {
+        padding-top: 4.8rem;
+        @include font-size(48, 96);
+        @include line-height(56, 104);
+      }
 
       &-line {
         padding-left: 0.8rem;
@@ -69,14 +75,15 @@
       @include font-size(20, 22);
       color: themed("font-third");
       @include font-fade;
+      box-sizing: border-box;
 
-      @media only screen and (max-width: 650px) {
-        @include mb(48, 64);
+      @media only screen and (max-width: 800px) {
+        @include mb(32, 64);
         max-width: 100%;
       }
     }
 
-    & ul {
+    &__menu {
       display: flex;
       align-items: center;
       list-style: none;
@@ -113,16 +120,16 @@
       background: themed("showcase");
 
       @media only screen and (max-width: 800px) {
-        grid-row: 2;
         grid-column-start: 1;
         grid-column-end: 31;
         margin-right: 0;
+        height: 100vh;
       }
 
       &-wrapper {
         position: relative;
         margin-top: 7.2rem;
-        @include width(224, 400);
+        @include width(280, 400);
         @media only screen and (max-width: 800px) {
           margin-bottom: 7.2rem;
         }
@@ -158,5 +165,11 @@
         filter: blur(24px);
       }
     }
+  }
+}
+
+.mobile-full-height {
+  @media only screen and (max-width: 800px) {
+    min-height: calc(100vh - 7.2rem);
   }
 }

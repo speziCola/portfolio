@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import Link from "gatsby-link";
 
 import Layout from "../components/layout";
-import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Menu = () => (
   <Layout>
@@ -31,6 +31,13 @@ const Menu = () => (
         </li>
       </ul>
     </div>
+    <footer className="footer footer__menu">
+    <div className="footer__wrapper">
+      <p className="footer__credit">
+        © 2008 - 2019 <Link to="/imprint/">Imprint</Link>
+      </p>
+    </div>
+  </footer>
   </Layout>
 );
 

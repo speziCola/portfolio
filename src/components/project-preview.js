@@ -7,14 +7,14 @@ import lock from '../../src/images/icons/lock.svg';
 const projectPreview = ({
   title, subtitle, info, img, alt, url, type, password
 }) => (
-  <div className="project_wrapper">
+  <div className="project_container">
     <figure className="project__img">
       <a href={url}><img src={img} loading="lazy" alt={alt} /></a>
     </figure>
-    <div className="project__tile">
-      <a href={url}><h2 className="project__tile__title"><span className="project__tile__title--underline">{title}</span></h2></a>
-      <p className="project__tile__subtitle">{subtitle}</p>
-      <p className="project__tile__info">
+    <div className="project__content">
+      <a href={url}><h2 className="project__title"><span className="project__tile__title--underline">{title}</span></h2></a>
+      <p className="project__subtitle">{subtitle}</p>
+      <p className="project__info">
         {info}
       </p>
       <a className={`link link--${type}`} href={url}>

@@ -2,9 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from "../../components/layout"
-import NavbarBack from '../../components/navbarback';
 import Footer from '../../components/footer';
-import NavbarBottom from "../../components/navbarbottom";
 
 import steamcalculator from '../../images/projects/steamcalculator/header-steamcalculator.jpg';
 import steamcalculatorwork from '../../images/projects/steamcalculator/img-steamcalculator-how-it-works.jpg';
@@ -98,17 +96,12 @@ const Projects = () => (
           <span className="project__spacer"></span>
 
           <div className="project__wrapper">
-            <NavbarBottom title="Back to all projects" url="/projects/"></NavbarBottom>
           </div>
           <span className="project__spacer"></span>
         </div>
       </div>
       {/* Footer */}
       <Footer></Footer>
-      <div className="ck__stripe">
-        <div className="ck__stripe__a"></div>
-        <div className="ck__stripe__b"></div>
-      </div>
   </Layout>
 )
 

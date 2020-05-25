@@ -1,17 +1,14 @@
 .navbar {
   @include themify($themes) {
-    display: grid;
-    grid-template-columns: repeat(30, 1fr);
     position: fixed;
-    @include px(8, 280);
     width: 100%;
     height: 7.2rem;
+    padding-right: 8rem;
     z-index: 10;
     box-sizing: border-box;
 
     @media only screen and (max-width: 800px) {
       padding-right: 1.6rem;
-      padding-left: 8rem;
       bottom: 0;
       background: themed("nav");
     }
@@ -27,12 +24,11 @@
     }
 
     & ul {
-      grid-column-start: 1;
-      grid-column-end: 31;
       display: flex;
       align-items: center;
       list-style: none;
       height: 7.2rem;
+      padding-left: 8rem;
       justify-content: flex-end;
       @media only screen and (max-width: 800px) {
         justify-content: flex-start;

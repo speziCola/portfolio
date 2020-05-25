@@ -15,7 +15,6 @@ const Imprint = () => (
       ]}
     />
     <Navbar></Navbar>
-    <div className="ck-navbar"></div>
     {/* Header */}
     <div className="ck-header">
       <h1 className="ck-h1">Imprint</h1>

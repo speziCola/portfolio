@@ -23,8 +23,9 @@ const IndexPage = () => (
       ]}
     />
     <Navbar></Navbar>
-    <content className="home">
-      <div className="home__content">
+    <div className="home">
+      <content className="home__content">
+        <div className="mobile-full-height">
         <h1 className="home__headline">
           Hi, my name is Chris{NBSP}Kuhrt
           <br />
@@ -37,17 +38,16 @@ const IndexPage = () => (
           always strive to create new or better customer experience with
           empathy.
         </p>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/work/">Projects</Link>
-            </li>
-            <li>
-              <Link to="/about/">About</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        </div>
+        <ul className="home__menu">
+          <li>
+            <Link to="/work/">Work</Link>
+          </li>
+          <li>
+            <Link to="/about/">About</Link>
+          </li>
+        </ul>
+      </content>
       <div className="home__showcase">
         <div className="home__showcase-wrapper">
           <video
@@ -60,13 +60,18 @@ const IndexPage = () => (
             <source src={showcasevideoWebm} type="video/webm" />
           </video>
           <picture>
-          <source srcset={showcaseimagewebp} type="image/webp" />
-          <img className="home__showcase-img" src={showcaseimagejpg}  alt="DFB Seat Map"></img>
+            <source srcset={showcaseimagewebp} type="image/webp" />
+            <source srcset={showcaseimagejpg} type="image/jpeg" />
+            <img
+              className="home__showcase-img"
+              src={showcaseimagejpg}
+              alt="DFB Seat Map"
+            ></img>
           </picture>
           <div className="home__showcase-video-shadow"></div>
         </div>
       </div>
-    </content>
+    </div>
     <Footer></Footer>
   </Layout>
 );

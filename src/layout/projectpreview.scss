@@ -1,4 +1,4 @@
-.project_wrapper {
+.project_container {
   display: grid;
   grid-template-columns: repeat(29, 1fr);
   grid-column-start: 1;
@@ -49,7 +49,7 @@
       }
     }
 
-    &__tile {
+    &__content {
       grid-column-start: 13;
       grid-column-end: 30;
       grid-row: 1;
@@ -59,39 +59,39 @@
         grid-column-end: 30;
         grid-row: 2;
       }
+    }
 
-      &__title {
-        position: relative;
-        display: inline-block;
-        font-family: $font-title;
-        font-weight: 700;
-        @include font-size(24, 32);
-        @include line-height(24, 48);
-        color: themed("font-first");
-        @include font-fade;
-      }
+    &__title {
+      position: relative;
+      display: inline-block;
+      font-family: $font-title;
+      font-weight: 700;
+      @include font-size(24, 32);
+      @include line-height(24, 48);
+      color: themed("font-first");
+      @include font-fade;
+    }
 
-      &__subtitle {
-        margin-bottom: 0.8rem;
-        font-family: $font-title;
-        font-weight: 600;
-        font-size: 1.4rem;
-        line-height: 2rem;
-        color: themed("font-fourth");
-        text-transform: uppercase;
-        @include font-fade;
-      }
+    &__subtitle {
+      margin-bottom: 0.8rem;
+      font-family: $font-title;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: themed("font-fourth");
+      text-transform: uppercase;
+      @include font-fade;
+    }
 
-      &__info {
-        display: block;
-        @include mb(8, 16);
-        font-family: $font-body;
-        font-weight: 400;
-        @include font-size(14, 18);
-        @include line-height(20, 28);
-        color: themed("font-third");
-        @include font-fade;
-      }
+    &__info {
+      display: block;
+      @include mb(8, 16);
+      font-family: $font-body;
+      font-weight: 400;
+      @include font-size(16, 18);
+      @include line-height(24, 28);
+      color: themed("font-third");
+      @include font-fade;
     }
   }
 }

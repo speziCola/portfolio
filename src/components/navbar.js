@@ -10,7 +10,7 @@ const Navbar = () => (
     <Link to="/" className="logo" aria-label="Homelink"></Link>
     <ul>
       <li>
-        <Link className="navbar__link" to="/work/">Projects</Link>
+        <Link className="navbar__link" to="/work/">Work</Link>
       </li>
       <li>
         <Link className="navbar__link" to="/timeline/">Timeline</Link>

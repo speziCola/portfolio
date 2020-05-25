@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         <ThemeContext.Consumer>
           {theme => (
             <div id="theme" className={theme.theme}>
-              <main className="content">
+              <main>
                 {children}
               </main>
             </div>
