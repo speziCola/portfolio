@@ -6,6 +6,11 @@
     padding-right: 8rem;
     z-index: 10;
     box-sizing: border-box;
+    background: themed("nav");
+
+    &__startpage {
+      background: none;
+    }
 
     @media only screen and (max-width: 800px) {
       padding-right: 1.6rem;

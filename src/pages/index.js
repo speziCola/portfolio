@@ -5,8 +5,10 @@ import Helmet from "react-helmet";
 import { NBSP } from "../constants";
 
 import Layout from "../components/layout";
-import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+
+import ThemeButton from "../components/theme-button";
+import menu from '../../src/images/icons/menu.svg';
 
 import showcasevideoMp4 from "../../src/images/dfb-mockup-v01.mp4";
 import showcasevideoWebm from "../../src/images/dfb-mockup-v01.webm";
@@ -22,7 +24,28 @@ const IndexPage = () => (
         { name: "keywords", content: "Portfolio" }
       ]}
     />
-    <Navbar></Navbar>
+      <nav className="navbar navbar__startpage">
+    <Link to="/" className="logo" aria-label="Homelink"></Link>
+    <ul>
+      <li>
+        <Link className="navbar__link" to="/work/">Work</Link>
+      </li>
+      <li>
+        <Link className="navbar__link" to="/timeline/">Timeline</Link>
+      </li>
+      <li>
+        <Link className="navbar__link" to="/about/">About</Link>
+      </li>
+      <li className="mobile-menu">
+        <Link to="/menu/" aria-label="Menu">
+          <img className="social-icon" src={menu} alt="menu" />
+        </Link>
+      </li>
+      <li className="footer__theme__desktop">
+        <ThemeButton />
+      </li>
+    </ul>
+  </nav>
     <div className="home">
       <content className="home__content">
         <div className="mobile-full-height">

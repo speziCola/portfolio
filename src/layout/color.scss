@@ -48,7 +48,7 @@ $themes: (
   light: (
     primary: $ck-primary,
     secondary: $ck-secondary,
-    nav: $ck-base-00,
+    nav: $ck-base-01,
     card: $ck-base-00,
     background: $ck-base-01,
     /* Base Color */
@@ -69,7 +69,7 @@ $themes: (
     font-second: $ck-base-25,
     font-third: $ck-base-25,
     font-fourth: $ck-base-15,
-    font-footer: $ck-base-15,
+    font-footer: $ck-base-05,
     font-navbar: $ck-base-25,
     icon: $ck-base-15,
     shadow: $ck-shadow-light,
@@ -85,7 +85,7 @@ $themes: (
   dark: (
     primary: $ck-primary,
     secondary: $ck-secondary,
-    nav: $ck-base-105,
+    nav: $ck-base-115,
     card: $ck-base-105,
     background: $ck-base-115,
     /* Base Color */ base-00: $ck-base-100,
@@ -105,7 +105,7 @@ $themes: (
     font-second: $ck-base-10,
     font-third: $ck-base-10,
     font-fourth: $ck-base-25,
-    font-footer: $ck-base-01,
+    font-footer: $ck-base-25,
     font-navbar: $ck-base-00,
     icon: $ck-base-15,
     shadow: $ck-shadow-dark,

@@ -11,8 +11,14 @@
     }
 
     &__menu {
-      display: block !important;
+      position: fixed;
+      display: block;
+      transform-origin: bottom left;
+      transform: rotate(-90deg);
+      right: -20.8rem;
+      bottom: 7.2rem;
     }
+
 
     &__wrapper {
       position: fixed;
@@ -106,7 +112,7 @@
 
       &__icon {
         line-height: 0;
-        color: themed("font-footer");
+        color: themed("icon");
 
         &::before {
           content: themed("theme-icon");

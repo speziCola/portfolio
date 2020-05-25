@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import Link from "gatsby-link";
 
 import Layout from "../components/layout";
+import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
 const Menu = () => (
@@ -17,6 +18,7 @@ const Menu = () => (
     <div className="ck-header">
       <h1 className="ck-h1">Menu</h1>
     </div>
+    <Navbar></Navbar>
     {/* Header */}
     <div className="ck-container">
       <ul className="mobile-menu">
@@ -34,7 +36,7 @@ const Menu = () => (
     <footer className="footer footer__menu">
     <div className="footer__wrapper">
       <p className="footer__credit">
-        © 2008 - 2019 <Link to="/imprint/">Imprint</Link>
+        © 2008 - 2020 <Link to="/imprint/">Imprint</Link>
       </p>
     </div>
   </footer>

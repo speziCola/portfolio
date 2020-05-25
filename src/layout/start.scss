@@ -36,8 +36,8 @@
       box-sizing: border-box;
       @media only screen and (max-width: 800px) {
         padding-top: 4.8rem;
-        @include font-size(48, 96);
-        @include line-height(56, 104);
+        @include font-size(32, 96);
+        @include line-height(36, 104);
       }
 
       &-line {
@@ -124,6 +124,7 @@
         grid-column-end: 31;
         margin-right: 0;
         height: 100vh;
+        box-sizing: border-box;
       }
 
       &-wrapper {
@@ -131,7 +132,7 @@
         margin-top: 7.2rem;
         @include width(280, 400);
         @media only screen and (max-width: 800px) {
-          margin-bottom: 7.2rem;
+          margin-top: -7.2rem;
         }
       }
 
