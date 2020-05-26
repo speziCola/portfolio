@@ -50,7 +50,7 @@ const Work = () => (
             subtitle="Case study"
             info="
               Integrating a secondary ticket market into a white labeling ticketing system.
-              Our product increased the purchase and sale of resale tickets of our clients up to 200%.
+              Our product increased the sale and purchase of resale tickets of our clients up to 200%.
             "
             img={ticketresale}
             alt="Ticket resale"
