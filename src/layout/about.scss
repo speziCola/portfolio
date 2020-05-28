@@ -76,6 +76,27 @@
           font-weight: 600;
         }
       }
+      &__credit {
+        padding-top: 2.8rem;
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        text-align: left;
+        color: themed("font-footer");
+        text-transform: uppercase;
+        @include font-fade;
+
+        & a {
+          padding-left: 0.8rem;
+          color: themed("font-footer");
+          @include hoverspeed;
+
+          &:hover {
+            @include hover-text;
+          }
+        }
+      }
     }
   }
 }

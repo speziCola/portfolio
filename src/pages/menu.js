@@ -33,13 +33,6 @@ const Menu = () => (
         </li>
       </ul>
     </div>
-    <footer className="footer footer__menu">
-    <div className="footer__wrapper">
-      <p className="footer__credit">
-        © 2008 - 2020 <Link to="/imprint/">Imprint</Link>
-      </p>
-    </div>
-  </footer>
   </Layout>
 );
 

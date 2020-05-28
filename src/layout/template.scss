@@ -1,5 +1,6 @@
 main {
   @include themify($themes) {
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 8rem;

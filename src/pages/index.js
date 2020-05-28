@@ -52,8 +52,7 @@ const IndexPage = () => (
         <h1 className="home__headline">
           Hi, my name is Chris{NBSP}Kuhrt
           <br />
-          I’m{NBSP}a Product Designer based in Germany.
-          <span className="home__headline-line">_</span>
+          I’m{NBSP}a Product Designer based in Germany
         </h1>
         <p className="home__subtext">
           Starting to explore the internet in the early 2000s I discovered
@@ -70,6 +69,7 @@ const IndexPage = () => (
             <Link to="/about/">About</Link>
           </li>
         </ul>
+
       </content>
       <div className="home__showcase">
         <div className="home__showcase-wrapper">
@@ -96,6 +96,10 @@ const IndexPage = () => (
       </div>
     </div>
     <Footer></Footer>
+    <div className="home__background">
+
+    </div>
+    <div className="home__square"></div>
   </Layout>
 );
 

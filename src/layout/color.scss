@@ -8,6 +8,7 @@ $ck-base-01: #fdfdff;
 $ck-base-03: #fafafa;
 $ck-base-04: #f5f5fa;
 $ck-base-05: #d7d7e1;
+$ck-base-06: #d7d7e1;
 $ck-base-10: #bebec8;
 $ck-base-15: #9f9faf;
 $ck-base-25: #5a648c;
@@ -51,10 +52,12 @@ $themes: (
     nav: $ck-base-01,
     card: $ck-base-00,
     background: $ck-base-01,
+    background-home: #f0f0ff,
+    home-square: $ck-base-03,
     /* Base Color */
     base-00: $ck-base-03,
     base-04: $ck-base-04,
-    base-05: $ck-base-05,
+    base-05: $ck-base-06,
     base-10: $ck-base-10,
     base-15: $ck-base-15,
     base-25: $ck-base-25,
@@ -69,7 +72,7 @@ $themes: (
     font-second: $ck-base-25,
     font-third: $ck-base-25,
     font-fourth: $ck-base-15,
-    font-footer: $ck-base-05,
+    font-footer: $ck-base-06,
     font-navbar: $ck-base-25,
     icon: $ck-base-15,
     shadow: $ck-shadow-light,
@@ -78,7 +81,7 @@ $themes: (
     icon-hover: $ck-secondary,
     img: #fcfbfb,
     img-shadow: rgba(0, 0, 0, 0.08),
-    video-shadow: #bcbcdc,
+    video-shadow: rgba(188, 188, 220, 0.60),
     theme-icon: "\EA16",
     ck-logo: url("./../images/ck-logo.svg")
   ),
@@ -88,13 +91,15 @@ $themes: (
     nav: $ck-base-115,
     card: $ck-base-105,
     background: $ck-base-115,
+    background-home: $ck-base-115,
+    home-square: $ck-base-105,
     /* Base Color */ base-00: $ck-base-100,
     base-04: $ck-base-110,
     base-05: $ck-base-50,
     base-10: $ck-base-25,
     base-15: $ck-base-15,
     base-25: $ck-base-10,
-    base-50: $ck-base-05,
+    base-50: $ck-base-06,
     base-100: $ck-base-03,
     /* Timeline - last child */
     alpha: rgba(0, 0, 0, 0),
@@ -114,7 +119,7 @@ $themes: (
     icon-hover: $ck-base-00,
     img: $ck-base-110,
     img-shadow: rgba(0, 0, 0, 0.45),
-    video-shadow: #3636cd,
+    video-shadow: rgba(0, 0, 0, 0.45),
     theme-icon: "\EA17",
     ck-logo: url("./../images/ck-logo.svg")
   )

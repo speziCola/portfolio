@@ -74,7 +74,7 @@ const About = () => (
                 <a className="link link--external link--external--light" href="https://www.steamcalculator.com/">steamcalculator.com</a>
               </li>
             </ul>
-
+            <p className="sidebar__card__credit">© 2008 - 2020 <Link to="/imprint/">Imprint</Link></p>
           </div>
         </div>
         <div className="ck-container__content">

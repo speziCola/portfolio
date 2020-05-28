@@ -7,13 +7,15 @@
     min-height: 100vh;
     height: 100%;
 
+
     @media only screen and (max-width: 800px) {
-      row-gap: 3.2rem;
+
     }
 
     &__content {
       grid-column-start: 3;
       grid-column-end: 18;
+      z-index: 2;
 
       @media only screen and (max-width: 800px) {
         grid-column-start: 3;
@@ -22,50 +24,33 @@
     }
 
     &__headline {
+      display: inline-block;
       position: relative;
       @include mb(24, 64);
-      padding-top: 9.6rem;
-      padding-bottom: 2.4rem;
+      @include pb (20, 32);
       font-family: $font-title;
-      font-weight: 800;
       @include font-size(28, 56);
       @include line-height(32, 52);
-      color: themed("font-title");
+      font-weight: 800;
+      color: themed("font-first");
       text-transform: uppercase;
       @include font-fade;
-      box-sizing: border-box;
       @media only screen and (max-width: 800px) {
         padding-top: 4.8rem;
         @include font-size(32, 96);
         @include line-height(32, 104);
       }
 
-      &-line {
-        padding-left: 0.8rem;
-        animation: blinker 1.5s linear infinite;
-        @keyframes blinker {
-          0% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-      }
-
-      &:after {
+      &:before {
         position: absolute;
-        left: 0;
-        bottom: -0.9rem;
+        bottom: 0;
         content: "";
-        @include width(64, 144);
+        @include width(64, 96);
         height: 0.8rem;
         background: $ck-primary;
-        border-radius: 100px;
+        border-radius: 0.8rem;
       }
+
     }
 
     &__subtext {
@@ -117,7 +102,6 @@
       margin-right: -8rem;
       grid-column-start: 20;
       grid-column-end: 31;
-      background: themed("showcase");
       overflow: hidden;
 
       @media only screen and (max-width: 800px) {
@@ -126,6 +110,7 @@
         margin-right: 0;
         height: 100vh;
         box-sizing: border-box;
+        background: themed("background-home");
       }
 
       &-wrapper {
@@ -165,7 +150,33 @@
         background: themed("video-shadow");
         border-radius: 100%;
         filter: blur(24px);
+        z-index: 3;
       }
+    }
+
+    &__square {
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: 0;
+      @include width (400, 2000);
+      height: 100%;
+      mask-image:  url("../images/home-square.svg");
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: bottom right;
+      background: themed("home-square");
+      z-index: 1;
+      @media only screen and (max-width: 800px) {
+        width: 108rem;
+      }
+    }
+
+    &__background {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: themed("background-home");
     }
   }
 }

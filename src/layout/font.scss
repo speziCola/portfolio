@@ -61,9 +61,10 @@ $font-body: "Titillium", sans-serif;
   @include themify($themes) {
     display: inline-block;
     position: relative;
+    @include pb (20, 32);
     font-family: $font-title;
     @include font-size(28, 56);
-    @include line-height(72, 96);
+    @include line-height(32, 52);
     font-weight: 800;
     color: themed("font-first");
     text-transform: uppercase;
@@ -74,7 +75,7 @@ $font-body: "Titillium", sans-serif;
       bottom: 0;
       content: "";
       @include width(64, 96);
-      height: 0.6rem;
+      height: 0.8rem;
       background: $ck-primary;
       border-radius: 0.8rem;
     }
