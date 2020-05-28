@@ -129,7 +129,7 @@
     width: 100%;
     height: 0.1rem;
     @include my(24, 144);
-    background: themed("base-05");
+    background: themed("base-04");
     @include bg-fade;
   }
 }

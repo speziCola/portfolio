@@ -24,7 +24,7 @@ const IndexPage = () => (
         { name: "keywords", content: "Portfolio" }
       ]}
     />
-      <nav className="navbar navbar__startpage">
+      <nav className="navbar navbar--startpage">
     <Link to="/" className="logo" aria-label="Homelink"></Link>
     <ul>
       <li>
@@ -41,7 +41,7 @@ const IndexPage = () => (
           <img className="social-icon" src={menu} alt="menu" />
         </Link>
       </li>
-      <li className="footer__theme__desktop">
+      <li className="footer__theme__mobile">
         <ThemeButton />
       </li>
     </ul>

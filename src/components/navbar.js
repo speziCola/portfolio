@@ -23,7 +23,7 @@ const Navbar = () => (
           <img className="social-icon" src={menu} alt="menu" />
         </Link>
       </li>
-      <li className="footer__theme__desktop">
+      <li className="footer__theme__mobile">
         <ThemeButton />
       </li>
     </ul>

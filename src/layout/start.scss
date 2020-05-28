@@ -115,7 +115,6 @@
 
       &-wrapper {
         position: relative;
-        margin-top: 3.2rem;
         @include width(280, 460);
         @media only screen and (max-width: 800px) {
           margin-top: -7.2rem;
