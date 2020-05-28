@@ -49,6 +49,9 @@
         height: 0.8rem;
         background: $ck-primary;
         border-radius: 0.8rem;
+        @media only screen and (max-width: 800px) {
+          height: 0.6rem;
+        }
       }
 
     }

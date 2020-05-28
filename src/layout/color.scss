@@ -39,10 +39,10 @@ $ck-showcase: #f0f0ff;
 $ck-showcase-dark: #4264fb;
 
 @mixin font-fade {
-  transition: color 1.5s ease-in-out;
+  transition: color $time-1 ease-in-out;
 }
 @mixin bg-fade {
-  transition: all 1.5s ease-in-out;
+  transition: all $time-1 ease-in-out;
 }
 
 $themes: (
