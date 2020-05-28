@@ -128,6 +128,7 @@
         mask-mode: alpha;
         mask-size: contain;
         z-index: 5;
+        animation: fadeIn ease 2s;
       }
 
       &-img {
