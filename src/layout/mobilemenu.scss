@@ -1,6 +1,5 @@
 .mobile-menu {
   @include themify($themes) {
-    display: none;
     list-style: none;
 
     & li {
@@ -12,7 +11,7 @@
       font-family: $font-body;
       font-size: 1.8rem;
       line-height: 3.2rem;
-      color: themed("font-third");
+      color: themed("text-first");
       text-align: left;
       @include hoverspeed;
     }

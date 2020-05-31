@@ -9,7 +9,7 @@ const projectPreview = ({
 }) => (
   <div className="project_container">
     <figure className="project__img">
-      <a href={url}><img src={img} loading="lazy" alt={alt} /></a>
+      <a href={url}><img src={img} alt={alt} /></a>
     </figure>
     <div className="project__content">
       <a href={url}><h2 className="project__title"><span className="project__tile__title--underline">{title}</span></h2></a>
@@ -17,7 +17,7 @@ const projectPreview = ({
       <p className="project__info">
         {info}
       </p>
-      <a className={`link link--${type}`} href={url}>
+      <a className={`link link--${type} link--external--light`} href={url}>
         <img className={`social-icon ${password}`} src={lock} loading="lazy" alt="Password protected" />
         view
       </a>

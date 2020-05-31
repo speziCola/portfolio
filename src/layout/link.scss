@@ -7,16 +7,14 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: $ck-font-second;
-    transition: color 0.25s ease-in-out;
+    color: themed("title-second");
+    transition: all $time-1 ease-in-out;
 
     &:hover {
-      color: $ck-font-hover;
-      transition: color $time-1 ease-in-out;
+      color: themed("link-hover");
 
       &::after {
-        color: $ck-font-hover;
-        transition: all $time-1 ease-in-out;
+        color: themed("link-hover");
       }
     }
 
@@ -29,8 +27,7 @@
       font-weight: normal;
       line-height: 2.4rem;
       vertical-align: middle;
-      color: themed("font-fourth");
-      transition: all $time-1 ease-in-out;
+      color: themed("arrow");
     }
 
     & span {
@@ -41,6 +38,7 @@
       display: flex;
       &::after {
         transform: translate(0px, 2px);
+        transition: transform $time-1 ease-in-out;
       }
       &:hover {
         &::after {
@@ -49,7 +47,7 @@
       }
 
       &:after {
-        content: "\EA19";
+        content: "\EA19"
       }
     }
 
@@ -57,6 +55,7 @@
       display: inline-flex;
       &::after {
         transform: translate(0px, 2px);
+        transition: transform $time-1 ease-in-out;
       }
       &:hover {
         &::after {

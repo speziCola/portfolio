@@ -7,7 +7,7 @@ import menu from '../../src/images/icons/menu.svg';
 
 const Navbar = () => (
   <nav className="navbar">
-    <Link to="/" className="logo" aria-label="Homelink"></Link>
+    <Link to="/" className="navbar__logo" aria-label="Homelink"></Link>
     <ul>
       <li>
         <Link className="navbar__link" to="/work/">Work</Link>
@@ -18,8 +18,8 @@ const Navbar = () => (
       <li>
         <Link className="navbar__link" to="/about/">About</Link>
       </li>
-      <li className="mobile-menu">
-        <Link to="/menu/" aria-label="Menu">
+      <li>
+        <Link className="navbar__menu" to="/menu/" aria-label="Menu">
           <img className="social-icon" src={menu} alt="menu" />
         </Link>
       </li>

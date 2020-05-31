@@ -65,7 +65,7 @@ const Social = ({
         </a>
       </li>
       <li>
-        <a href="https://vimeo.com/cqrt" aria-label="Vimeo">
+        <a href="https://vimeo.com/chriskuhrt" aria-label="Vimeo">
           <img className="social-icon" src={vimeo} alt="Vimeo" />
           vimeo
         </a>

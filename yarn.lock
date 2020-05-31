@@ -1536,9 +1536,9 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alphanum-sort@^1.0.0:
+$transparentnum-sort@^1.0.0:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
+  resolved "https://registry.yarnpkg.com/$transparentnum-sort/-/$transparentnum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
 amdefine@>=0.0.4:
@@ -2639,7 +2639,7 @@ caw@^2.0.0, caw@^2.0.1:
   integrity sha512-Cg8/ZSBEa8ZVY9HspcGUYaK63d/bN7rqS3CYCzEGUxuYv6UlmcjzDUz2fCFFHyTvUW5Pk0I+3hkA3iXlIj6guA==
   dependencies:
     get-proxy "^2.0.0"
-    isurl "^1.0.0-alpha5"
+    isurl "^1.0.0-$transparent5"
     tunnel-agent "^0.6.0"
     url-to-options "^1.0.1"
 
@@ -3411,9 +3411,9 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
-css-tree@1.0.0-alpha.37:
-  version "1.0.0-alpha.37"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.37.tgz#98bebd62c4c1d9f960ec340cf9f7522e30709a22"
+css-tree@1.0.0-$transparent.37:
+  version "1.0.0-$transparent.37"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-$transparent.37.tgz#98bebd62c4c1d9f960ec340cf9f7522e30709a22"
   integrity sha512-DMxWJg0rnz7UgxKT0Q1HU/L9BeJI0M6ksor0OgqOnF+aRCDWg/N2641HmVyU9KVIu0OVVWOb2IpC9A+BJRnejg==
   dependencies:
     mdn-data "2.0.4"
@@ -3517,7 +3517,7 @@ csso@^4.0.2:
   resolved "https://registry.yarnpkg.com/csso/-/csso-4.0.2.tgz#e5f81ab3a56b8eefb7f0092ce7279329f454de3d"
   integrity sha512-kS7/oeNVXkHWxby5tHVxlhjizRCSv8QdU7hB2FpdAibDU8FjTAolhNjKNTiLzXtUrKT6HwClE81yXwEk1309wg==
   dependencies:
-    css-tree "1.0.0-alpha.37"
+    css-tree "1.0.0-$transparent.37"
 
 csstype@^2.2.0:
   version "2.6.8"
@@ -5835,7 +5835,7 @@ got@8.3.2, got@^8.3.1, got@^8.3.2:
     get-stream "^3.0.0"
     into-stream "^3.1.0"
     is-retry-allowed "^1.1.0"
-    isurl "^1.0.0-alpha5"
+    isurl "^1.0.0-$transparent5"
     lowercase-keys "^1.0.0"
     mimic-response "^1.0.0"
     p-cancelable "^0.4.0"
@@ -5857,7 +5857,7 @@ got@^7.0.0, got@^7.1.0:
     is-plain-obj "^1.1.0"
     is-retry-allowed "^1.0.0"
     is-stream "^1.0.0"
-    isurl "^1.0.0-alpha5"
+    isurl "^1.0.0-$transparent5"
     lowercase-keys "^1.0.0"
     p-cancelable "^0.3.0"
     p-timeout "^1.1.1"
@@ -7105,7 +7105,7 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-isurl@^1.0.0-alpha5:
+isurl@^1.0.0-$transparent5:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isurl/-/isurl-1.0.0.tgz#b27f4f49f3cdaa3ea44a0a5b7f3462e6edc39d67"
   integrity sha512-1P/yWsxPlDtn7QeRD+ULKQPaIaN6yF368GZ2vDfv0AL0NwpStafjWCDDdn0k8wgFMWpVAqG7oJhxHnlud42i9w==
@@ -9231,7 +9231,7 @@ postcss-minify-params@^4.0.2:
   resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-4.0.2.tgz#6b9cef030c11e35261f95f618c90036d680db874"
   integrity sha512-G7eWyzEx0xL4/wiBBJxJOz48zAKV2WG3iZOqVhPet/9geefm/Px5uo1fzlHu+DOjT+m0Mmiz3jkQzVHe6wxAWg==
   dependencies:
-    alphanum-sort "^1.0.0"
+    $transparentnum-sort "^1.0.0"
     browserslist "^4.0.0"
     cssnano-util-get-arguments "^4.0.0"
     postcss "^7.0.0"
@@ -9243,7 +9243,7 @@ postcss-minify-selectors@^4.0.2:
   resolved "https://registry.yarnpkg.com/postcss-minify-selectors/-/postcss-minify-selectors-4.0.2.tgz#e2e5eb40bfee500d0cd9243500f5f8ea4262fbd8"
   integrity sha512-D5S1iViljXBj9kflQo4YutWnJmwm8VvIsU1GeXJGiG9j8CIg9zs4voPMdQDUmIxetUOh60VilsNzCiAFTOqu3g==
   dependencies:
-    alphanum-sort "^1.0.0"
+    $transparentnum-sort "^1.0.0"
     has "^1.0.0"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
@@ -9422,7 +9422,7 @@ postcss-unique-selectors@^4.0.1:
   resolved "https://registry.yarnpkg.com/postcss-unique-selectors/-/postcss-unique-selectors-4.0.1.tgz#9446911f3289bfd64c6d680f073c03b1f9ee4bac"
   integrity sha512-+JanVaryLo9QwZjKrmJgkI4Fn8SBgRO6WXQBJi7KiAVPlmxikB5Jzc4EvXMT2H0/m0RjrVVm9rGNhZddm/8Spg==
   dependencies:
-    alphanum-sort "^1.0.0"
+    $transparentnum-sort "^1.0.0"
     postcss "^7.0.0"
     uniqs "^2.0.0"
 
@@ -11329,7 +11329,7 @@ svgo@1.3.2, svgo@^1.0.0:
     coa "^2.0.2"
     css-select "^2.0.0"
     css-select-base-adapter "^0.1.1"
-    css-tree "1.0.0-alpha.37"
+    css-tree "1.0.0-$transparent.37"
     csso "^4.0.2"
     js-yaml "^3.13.1"
     mkdirp "~0.5.1"

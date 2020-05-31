@@ -12,10 +12,10 @@
 
       &:hover {
         @include hoverspeed;
-        background: $ck-primary;
+        background: $primary;
         box-shadow: 0 4px 8px 2px themed("shadow");
         & i {
-          color: $ck-base-03;
+          color: $base-2;
         }
       }
     }

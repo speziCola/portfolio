@@ -24,13 +24,11 @@ const Work = () => (
     ></Helmet>
     <Navbar></Navbar>
     {/* Header */}
-    <div className="ck-header">
-      <h1 className="ck-h1">Work</h1>
-    </div>
+    <header>
+      <h1 className="title-1">Work</h1>
+    </header>
     {/* Content */}
-    <div className="ck-container">
-      <div className="ck-container__wrapper">
-        <div className="projects">
+    <div className="container">
           <ProjectView
             title="Mobile seat map redesign"
             subtitle="Case study"
@@ -108,15 +106,9 @@ const Work = () => (
             type="internal"
             password="no-lock">
           </ProjectView > */}
-        </div>
-      </div>
     </div>
     {/* Footer */}
     <Footer></Footer>
-    <div className="ck__stripe">
-      <div className="ck__stripe__a"></div>
-      <div className="ck__stripe__b"></div>
-    </div>
   </Layout>
 );
 

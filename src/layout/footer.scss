@@ -21,26 +21,27 @@
       border-radius: 100%;
       transition: box-shadow 0.24s ease-in-out;
       background: none;
+      box-shadow: 0 4px 8px 2px themed("shadow");
       @media only screen and (max-width: 800px) {
         margin-right: 0;
         margin-left: 1.6rem;
         margin-bottom: 0;
-        background: themed("nav");
+        background: none;
+        box-shadow: none;
       }
 
       &:hover {
         @include hoverspeed;
         cursor: pointer;
-        box-shadow: 0 4px 8px 2px themed("shadow-hover");
         @media only screen and (max-width: 800px) {
           box-shadow: none;
         }
       }
 
       &:hover i {
-        color: themed("icon-hover");
+        color: themed("link-hover");
         @media only screen and (max-width: 800px) {
-          color: themed("icon");
+          color: themed("link-second");
         }
       }
 
@@ -50,7 +51,7 @@
 
       &__icon {
         line-height: 0;
-        color: themed("icon");
+        color: themed("link-second");
 
         &::before {
           content: themed("theme-icon");

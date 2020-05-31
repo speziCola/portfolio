@@ -11,7 +11,7 @@
       font-weight: 700;
       font-size: 1.6rem;
       line-height: 2.4rem;
-      color: $ck-primary;
+      color: themed("primary");
       @include font-fade;
     }
 
@@ -21,7 +21,7 @@
       font-weight: 700;
       font-size: 1.8rem;
       line-height: 2.4rem;
-      color: themed("font-third");
+      color: themed("title-second");
       @include font-fade;
     }
     &__type {
@@ -30,7 +30,7 @@
       font-weight: 600;
       font-size: 1.4rem;
       line-height: 2rem;
-      color: themed("font-fourth");
+      color: themed("title-third");
       text-transform: uppercase;
       @include font-fade;
     }
@@ -40,7 +40,7 @@
       font-weight: 400;
       @include font-size(16, 18);
       @include line-height(24, 28);
-      color: themed("font-third");
+      color: themed("text-first");
       @include font-fade;
     }
   }

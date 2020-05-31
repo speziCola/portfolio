@@ -42,10 +42,10 @@ $font-title: "Barlow", sans-serif;
 $font-body: "Titillium", sans-serif;
 
 ::-moz-selection {
-  color: $ck-secondary;
+  color: $secondary;
 }
 ::selection {
-  color: $ck-secondary;
+  color: $secondary;
 }
 
 @mixin hoverspeed {
@@ -54,19 +54,19 @@ $font-body: "Titillium", sans-serif;
 
 @mixin hover-text {
   @include hoverspeed;
-  color: $ck-font-hover;
+  color: themed("link-hover");
 }
 
-.ck-h1 {
+.title-1 {
   @include themify($themes) {
     display: inline-block;
     position: relative;
     @include pb(20, 32);
     font-family: $font-title;
-    @include font-size(28, 56);
-    @include line-height(32, 52);
+    @include font-size(28, 48);
+    @include line-height(32, 48);
     font-weight: 800;
-    color: themed("font-first");
+    color: themed("title-first");
     text-transform: uppercase;
     @include font-fade;
 
@@ -76,7 +76,7 @@ $font-body: "Titillium", sans-serif;
       content: "";
       @include width(64, 96);
       height: 0.8rem;
-      background: $ck-primary;
+      background: $primary;
       border-radius: 0.8rem;
       @media only screen and (max-width: 800px) {
         height: 0.6rem;
@@ -85,7 +85,7 @@ $font-body: "Titillium", sans-serif;
   }
 }
 
-.ck-h2 {
+.title-2 {
   @include themify($themes) {
     padding-bottom: 1.6rem;
     font-family: $font-title;
@@ -93,52 +93,54 @@ $font-body: "Titillium", sans-serif;
     @include font-size(20, 28);
     @include line-height(26, 32);
     line-height: 2.4rem;
-    color: themed("font-second");
+    color: themed("title-second");
     text-transform: uppercase;
     @include font-fade;
   }
 }
 
-.ck-h3 {
-  @include mb(8, 16);
+.title-3 {
+  @include themify($themes) {
+    @include mb(8, 16);
+    font-family: $font-body;
+    @include font-size(18, 24);
+    @include line-height(20, 32);
+    font-weight: 600;
+    color: themed("title-second");
+    @include font-fade;
+  }
+}
+
+@mixin body-text {
   font-family: $font-body;
-  @include font-size(18, 20);
-  @include line-height(20, 28);
-  font-weight: 600;
-  color: $ck-primary;
+  font-weight: 400;
+  text-align: left;
+  color: themed("text-first");
   @include font-fade;
 }
 
-%ck-text {
+.body-text {
   @include themify($themes) {
-    font-family: $font-body;
-    font-weight: 400;
-    text-align: left;
-    color: themed("font-third");
-    @include font-fade;
-  }
-}
-
-.ck-text {
-  @include mb(16, 64);
-  max-width: 96rem;
-  @extend %ck-text;
-  @include font-size(16, 18);
-  @include line-height(24, 32);
-
-  &--no-bottom {
-    margin-bottom: 0 !important;
-    padding-bottom: 0;
-  }
-
-  & span {
-    font-family: $font-title;
-    font-weight: 700;
-    color: $ck-font-second;
-    text-transform: uppercase;
-  }
-
-  &:last-child {
     @include mb(16, 64);
+    max-width: 96rem;
+    @include body-text;
+    @include font-size(16, 18);
+    @include line-height(24, 32);
+
+    &--no-bottom {
+      margin-bottom: 0 !important;
+      padding-bottom: 0;
+    }
+
+    & span {
+      font-family: $font-title;
+      font-weight: 700;
+      color: themed("text-second");
+      text-transform: uppercase;
+    }
+
+    &:last-child {
+      @include mb(16, 64);
+    }
   }
 }

@@ -25,11 +25,17 @@
     & a {
       display: inline-flex;
       align-items: center;
-      color: $ck-font-second;
+      color: themed("title-second");
+      @include hoverspeed;
 
+      img {
+        filter: invert(37%) sepia(38%) saturate(407%) hue-rotate(191deg)
+          brightness(97%) contrast(93%);
+          @include hoverspeed;
+      }
 
       &:hover {
-        color: $ck-secondary;
+        color: $secondary;
       }
       &:hover img {
         filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg)

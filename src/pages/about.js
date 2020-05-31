@@ -31,12 +31,12 @@ const About = () => (
     />
     <Navbar></Navbar>
     {/* Header */}
-    <div className="ck-header">
-      <h1 className="ck-h1">About</h1>
-    </div>
-    <div className="ck-container">
-      <div className="ck-container__wrapper">
-        <div className="ck-container__sidebar">
+    <header>
+      <h1 className="title-1">About</h1>
+    </header>
+    <div className="container">
+      <div className="container__wrapper">
+        <div className="container__sidebar">
           <div className="sidebar__card">
             <div className="sidebar__card__profile">
               <img
@@ -74,11 +74,11 @@ const About = () => (
                 <a className="link link--external link--external--light" href="https://www.steamcalculator.com/">steamcalculator.com</a>
               </li>
             </ul>
-            <p className="sidebar__card__credit">© 2008 - 2020 <Link to="/imprint/">Imprint</Link></p>
           </div>
+          <p className="sidebar__card__credit">© 2008 - 2020 <Link to="/imprint/">Imprint</Link></p>
         </div>
-        <div className="ck-container__content">
-          <p className="ck-text">
+        <div className="container__content">
+          <p className="body-text">
             I’m a passionate product designer with a focus on user-centered
             design.
             <br />
@@ -94,7 +94,7 @@ const About = () => (
             solution-oriented work for creating new interactive experiences and
             products.
           </p>
-          <h3 className="ck-h3">References</h3>
+          <h3 className="title-3">References</h3>
           <ul className="ck-logos">
             <li>
               <a href="https://dfb.de" title="DFB">

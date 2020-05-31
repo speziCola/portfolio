@@ -15,12 +15,12 @@ const Menu = () => (
         { name: "keywords", content: "Menu" }
       ]}
     />
-    <div className="ck-header">
-      <h1 className="ck-h1">Menu</h1>
-    </div>
+    <header>
+      <h1 className="title-1">Menu</h1>
+    </header>
     <Navbar></Navbar>
     {/* Header */}
-    <div className="ck-container">
+    <div className="container">
       <ul className="mobile-menu">
         <li>
           <Link className="mobile-menu__link" to="/work/">Work</Link>

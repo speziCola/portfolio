@@ -1,38 +1,36 @@
 .home {
   @include themify($themes) {
     display: grid;
-    grid-template-columns: repeat(30, 1fr);
+    grid-template-columns: repeat(40, 1fr);
     grid-area: content;
     align-items: center;
-    min-height: 100vh;
     height: 100%;
-
-
+    min-height: 100vh;
     @media only screen and (max-width: 800px) {
-
+      grid-template-columns: repeat(12, 1fr);
     }
 
     &__content {
-      grid-column-start: 3;
-      grid-column-end: 18;
-      z-index: 2;
-
+      @include mt(0, 48);
+      grid-column-start: 5;
+      grid-column-end: 24;
+      z-index: 5;
       @media only screen and (max-width: 800px) {
-        grid-column-start: 3;
-        grid-column-end: 29;
+        grid-column-start: 2;
+        grid-column-end: 12;
       }
     }
 
     &__headline {
       display: inline-block;
       position: relative;
-      @include mb(24, 64);
-      @include pb (20, 32);
+      @include mb(24, 32);
+      @include pb(20, 32);
       font-family: $font-title;
-      @include font-size(28, 56);
-      @include line-height(32, 52);
+      @include font-size(28, 48);
+      @include line-height(32, 48);
       font-weight: 800;
-      color: themed("font-first");
+      color: themed("title-first");
       text-transform: uppercase;
       @include font-fade;
       @media only screen and (max-width: 800px) {
@@ -47,21 +45,20 @@
         content: "";
         @include width(64, 96);
         height: 0.8rem;
-        background: $ck-primary;
+        background: $primary;
         border-radius: 0.8rem;
         @media only screen and (max-width: 800px) {
           height: 0.6rem;
         }
       }
-
     }
 
     &__subtext {
       width: 100%;
       @include mb(16, 64);
-      @extend %ck-text;
+      @include body-text;
       @include font-size(20, 22);
-      color: themed("font-third");
+      color: themed("text-first");
       @include font-fade;
       box-sizing: border-box;
 
@@ -77,7 +74,7 @@
       list-style: none;
 
       & li {
-        margin-right: 9.6rem;
+        margin-right: 10.4rem;
       }
 
       & li:last-child {
@@ -85,14 +82,14 @@
       }
 
       & li a {
-        @extend %ck-text;
+        @include body-text;
         @include font-size(20, 24);
-        color: $ck-primary;
+        color: $primary;
         font-weight: 600;
         @include hoverspeed;
 
         &:hover {
-          color: $ck-secondary;
+          color: $secondary;
         }
       }
     }
@@ -102,14 +99,12 @@
       justify-content: center;
       align-items: center;
       height: 100%;
-      margin-right: -8rem;
-      grid-column-start: 20;
-      grid-column-end: 31;
-      overflow: hidden;
+      grid-column-start: 28;
+      grid-column-end: 37;
 
       @media only screen and (max-width: 800px) {
         grid-column-start: 1;
-        grid-column-end: 31;
+        grid-column-end: 13;
         margin-right: 0;
         height: 100vh;
         box-sizing: border-box;
@@ -119,6 +114,8 @@
       &-wrapper {
         position: relative;
         @include width(280, 460);
+        animation: fadeIn ease 2s;
+        z-index: 5;
         @media only screen and (max-width: 800px) {
           margin-top: -7.2rem;
         }
@@ -128,10 +125,9 @@
         position: absolute;
         max-width: 100%;
         mask-image: url("../images/phone-mask.svg");
-        mask-mode: alpha;
+        mask-mode: $transparent;
         mask-size: contain;
-        z-index: 5;
-        animation: fadeIn ease 2s;
+        z-index: 7;
       }
 
       &-img {
@@ -141,16 +137,17 @@
         height: auto;
         display: block;
         mask-image: url("../images/phone-mask.svg");
-        mask-mode: alpha;
+        mask-mode: $transparent;
         mask-size: contain;
+        z-index: 6;
       }
 
-      &-video-shadow {
+      &-shadow {
         position: absolute;
         margin-top: 1.6rem;
         width: 100%;
         height: 4rem;
-        background: themed("video-shadow");
+        background: themed("shadow");
         border-radius: 100%;
         filter: blur(24px);
         z-index: 3;
@@ -162,16 +159,15 @@
       display: block;
       right: 0;
       bottom: 0;
-      @include width (400, 2000);
+      @include width(400, 1400);
       height: 100%;
-      mask-image:  url("../images/home-square.svg");
+      mask-image: url("../images/home-square.svg");
       mask-size: contain;
       mask-repeat: no-repeat;
       mask-position: bottom right;
       background: themed("home-square");
-      z-index: 1;
       @media only screen and (max-width: 800px) {
-        width: 108rem;
+        width: 88rem;
       }
     }
 
@@ -182,10 +178,9 @@
       background: themed("background-home");
     }
   }
-}
-
-.mobile-full-height {
-  @media only screen and (max-width: 800px) {
-    min-height: calc(100vh - 7.2rem);
+  &__mobile-full-height {
+    @media only screen and (max-width: 800px) {
+      min-height: calc(100vh - 7.2rem);
+    }
   }
 }

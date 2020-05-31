@@ -3,8 +3,8 @@ main {
     position: relative;
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: auto 8rem;
-    grid-template-areas: "content footer";
+    grid-template-columns: auto;
+    grid-template-areas: "content";
     align-items: start;
     min-height: 100vh;
     height: 100%;
@@ -15,29 +15,28 @@ main {
       grid-template-areas:
         "content"
         "content"
-        "footer";
+        ;
     }
   }
 }
 
-.ck-header {
+header {
   grid-area: content;
   grid-row: 1;
-  @include pxy(88, 208, 8, 280);
-  @include pb(16, 64);
+  @include pxy(88, 160, 8, 208);
+  @include pb(16, 48);
 
   @media only screen and (max-width: 650px) {
-    @include pxy(16, 256, 8, 280);
+    @include pxy(16, 160, 8, 208);
   }
 }
 
-.ck-container {
+.container {
   @include themify($themes) {
     grid-area: content;
     grid-row: 2;
-    margin-right: -8rem;
     @include mb(40, 96);
-    @include px(8, 280);
+    @include px(8, 208);
 
     @media only screen and (max-width: 800px) {
       margin-bottom: 9.6rem;
@@ -67,7 +66,7 @@ main {
 
     &__content {
       width: 70%;
-      @include px(16, 120);
+      @include px(16, 80);
       @include pt(16, 32);
 
       @media only screen and (max-width: 1240px) {

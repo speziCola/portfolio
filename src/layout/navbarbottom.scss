@@ -4,7 +4,7 @@
       width: 100%;
       height: 0.1rem;
       @include mb(16, 48);
-      background: themed("base-05");
+      background: themed("base-30");
     }
 
     &__link {
@@ -15,11 +15,11 @@
       font-weight: 600;
       font-size: 1.6rem;
       @include line-height(20, 28);
-      color: themed("font-first");
+      color: themed("title-first");
       transition: color 0.25s ease-in-out;
 
       &:hover {
-        color: $ck-font-hover;
+        color: themed("link-hover");
         transition: color $time-1 ease-in-out;
 
         &::before {
