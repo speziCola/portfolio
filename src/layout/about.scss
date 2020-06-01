@@ -42,7 +42,7 @@
           font-weight: 800;
           @include font-size(20, 28);
           @include line-height(32, 48);
-          color: themed("title-second");
+          color: themed("title-third");
           text-transform: uppercase;
           @include font-fade;
 
@@ -64,7 +64,7 @@
         font-weight: 400;
         @include font-size(16, 18);
         @include line-height(28, 32);
-        color: themed("title-third");
+        color: themed("title-second");
         @include font-fade;
 
         &--profile {
