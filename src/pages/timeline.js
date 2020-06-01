@@ -193,7 +193,7 @@ const Timeline = () => (
               <TimeStamp
                 time="02/2011 – 05/2011"
                 title="Kunstlicht"
-                type="Cinematogrpaher"
+                type="Cinematography"
                 link="external"
                 url="https://kunstlicht.de/ueber-uns/"
                 infos="
@@ -484,7 +484,7 @@ const Timeline = () => (
               <TimeStamp
                 time="02/2012 – 02/2013"
                 title="Palliatives Hospiz Solingen"
-                type="Cinematographer"
+                type="Cinematography"
                 link="external"
                 url="https://vimeo.com/64133805"
                 infos="

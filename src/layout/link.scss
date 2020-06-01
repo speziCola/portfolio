@@ -38,7 +38,7 @@
       display: flex;
       &::after {
         transform: translate(0px, 2px);
-        transition: transform $time-1 ease-in-out;
+        transition: all $time-1 ease-in-out;
       }
       &:hover {
         &::after {
@@ -47,7 +47,7 @@
       }
 
       &:after {
-        content: "\EA19"
+        content: "\EA19";
       }
     }
 
@@ -55,7 +55,7 @@
       display: inline-flex;
       &::after {
         transform: translate(0px, 2px);
-        transition: transform $time-1 ease-in-out;
+        transition: all $time-1 ease-in-out;
       }
       &:hover {
         &::after {
