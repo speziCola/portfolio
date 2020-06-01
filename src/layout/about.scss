@@ -64,7 +64,7 @@
         font-weight: 400;
         @include font-size(16, 18);
         @include line-height(28, 32);
-        color: themed("title-second");
+        color: themed("title-third");
         @include font-fade;
 
         &--profile {

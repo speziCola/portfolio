@@ -25,7 +25,7 @@
     & a {
       display: inline-flex;
       align-items: center;
-      color: themed("title-second");
+      color: themed("link-first");
       @include hoverspeed;
 
       img {
@@ -40,11 +40,6 @@
       &:hover img {
         filter: invert(65%) sepia(48%) saturate(5096%) hue-rotate(118deg)
           brightness(100%) contrast(101%);
-      }
-    }
-
-    & li {
-      :hover img {
       }
     }
   }

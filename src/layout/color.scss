@@ -38,7 +38,8 @@ $themes: (
     /* Font - Title */
     title-first: $base-70,
     title-second: $base-65,
-    title-third: $base-45,
+    title-third: $base-65,
+    title-fourth: $base-45,
 
     /* Font - Text */
     text-first: $base-65,
@@ -77,22 +78,23 @@ $themes: (
 
     /* Font - Title */
     title-first: $base-1,
-    title-second: $base-3,
-    title-third: $base-65,
+    title-second: $base-45,
+    title-third: $base-3,
+    title-fourth: $base-65,
 
     /* Font - Text */
-    text-first: $base-30,
+    text-first: $base-15,
     text-second: $base-30,
 
     /* Font - Links */
-    link-first: $base-1,
+    link-first: $base-3,
     link-second: $base-65,
     link-hover: $secondary,
 
     /* Styling */
     shadow: $base-90,
     spacer: $base-80,
-    arrow: $base-65,
+    arrow: $base-70,
     text-footer: $base-45,
     card: $base-80,
     home-square: $base-80,

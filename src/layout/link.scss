@@ -7,7 +7,7 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: themed("title-second");
+    color: themed("link-second");
     transition: all $time-1 ease-in-out;
 
     &:hover {
@@ -67,6 +67,7 @@
         content: "\EA13";
       }
       &--light {
+        color: themed("link-first");
         font-weight: 400;
       }
     }
