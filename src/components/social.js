@@ -17,55 +17,55 @@ const Social = ({
   <div>
     <ul className="ck_social ck_social--two-columns">
       <li>
-        <a href="https://www.linkedin.com/in/christopher-kuhrt/" aria-label="Linkedin">
+        <a href="http://linkedin.chriskuhrt.de/" aria-label="Linkedin">
           <img className="social-icon" src={linkedin} alt="Linkedin" />
           linkedin
         </a>
       </li>
       <li>
-        <a href="https://www.xing.com/profile/Christopher_Kuhrt2" aria-label="Xing">
+        <a href="http://xing.chriskuhrt.de/" aria-label="Xing">
           <img className="social-icon" src={xing} alt="Xing" />
           xing
         </a>
       </li>
       <li>
-        <a href="https://medium.com/@chriskuhrt" aria-label="Medium">
+        <a href="http://medium.chriskuhrt.de/" aria-label="Medium">
           <img className="social-icon" src={medium} alt="Medium" />
           medium
         </a>
       </li>
       <li>
-        <a href="https://www.behance.net/chriskuhrtv2" aria-label="Behance">
+        <a href="http://behance.chriskuhrt.de/" aria-label="Behance">
           <img className="social-icon" src={behance} alt="Behance" />
           behance
         </a>
       </li>
       <li>
-        <a href="https://github.com//spezicola" aria-label="Github">
+        <a href="http://git.chriskuhrt.de/" aria-label="Github">
           <img className="social-icon" src={github} alt="Github" />
           github
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/chriskuhrt" aria-label="Twitter">
+        <a href="http://twitter.chriskuhrt.de/" aria-label="Twitter">
         <img className="social-icon" src={twitter} alt="Twitter" />
           twitter
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/chriskuhrt/" aria-label="Instagram">
+        <a href="http://instagram.chriskuhrt.de/" aria-label="Instagram">
         <img className="social-icon" src={instagram} alt="Instagram" />
           instagram
         </a>
       </li>
       <li>
-        <a href="https://500px.com/chriskuhrt" aria-label="500px">
+        <a href="http://500px.chriskuhrt.de/" aria-label="500px">
           <img className="social-icon" src={fivepx} alt="500px" />
           500px
         </a>
       </li>
       <li>
-        <a href="https://vimeo.com/chriskuhrt" aria-label="Vimeo">
+        <a href="http://vimeo.chriskuhrt.de/" aria-label="Vimeo">
           <img className="social-icon" src={vimeo} alt="Vimeo" />
           vimeo
         </a>

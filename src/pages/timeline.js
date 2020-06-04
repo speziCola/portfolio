@@ -84,7 +84,7 @@ const Timeline = () => (
               <TimeStamp
                 time="03/2015"
                 title="Frau Skroblies & Freunde"
-                type="Cinematographer"
+                type="Cinematography"
                 link="external"
                 url="https://www.frau-skroblies.com/"
                 infos="
@@ -101,7 +101,7 @@ const Timeline = () => (
                 link="external"
                 url="https://steamcalculator.com/"
                 infos="
-                Creating the designs and using the project to learn to do some frontend coding and to learn new technologies.
+                Creating the designs and using the project to learn new technologies. Also to do some frontend coding.
                 Due to the immense popularity of the application I was able to write my Bachelor thesis* about it.
                 *Title: Self-efficacy in online gaming: Conception of a personalized data visualization as a marketing tool
                 for a game community."
