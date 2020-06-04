@@ -32,6 +32,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    /*
+      gatsby develop
+      npm run deploy
+    */
   },
   "repository": {
     "type": "git",
