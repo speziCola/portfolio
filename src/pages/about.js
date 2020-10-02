@@ -94,7 +94,8 @@ const About = () => (
             solution-oriented work for creating new interactive experiences and
             products.
           </p>
-          <h3 className="title-3">References</h3>
+          <div className="spacer-3"></div>
+          <h3 className="title-5">References</h3>
           <ul className="ck-logos">
             <li>
               <a href="https://dfb.de" title="DFB">

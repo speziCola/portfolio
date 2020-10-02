@@ -103,11 +103,49 @@ $font-body: "Titillium", sans-serif;
   @include themify($themes) {
     @include mb(8, 16);
     font-family: $font-body;
-    @include font-size(18, 24);
-    @include line-height(20, 32);
+    @include font-size(18, 28);
+    @include line-height(20, 36);
     font-weight: 600;
-    color: themed("title-second");
+    color: themed("title-third");
     @include font-fade;
+  }
+}
+
+.title-4 {
+  @include themify($themes) {
+    @include mb(8, 16);
+    font-family: $font-title;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: themed("title-fourth");
+    text-transform: uppercase;
+    @include font-fade;
+  }
+}
+
+.title-5 {
+  @include themify($themes) {
+    font-family: $font-title;
+    font-weight: 600;
+    text-align: left;
+    @include font-size(16, 18);
+    @include line-height(24, 32);
+    color: themed("title-third");
+    @include font-fade;
+    &--spacing {
+      @include mb(8, 16);
+    }
+  }
+}
+
+.title-6 {
+  @include themify($themes) {
+    font-family: $font-title;
+    @include font-size(16, 18);
+    @include line-height(24, 32);
+    font-weight: 700;
+    color: themed("title-third");
   }
 }
 
@@ -121,7 +159,7 @@ $font-body: "Titillium", sans-serif;
 
 .body-text {
   @include themify($themes) {
-    @include mb(16, 64);
+    @include mb(16, 32);
     max-width: 96rem;
     @include body-text;
     @include font-size(16, 18);
@@ -135,12 +173,39 @@ $font-body: "Titillium", sans-serif;
     & span {
       font-family: $font-title;
       font-weight: 700;
-      color: themed("text-second");
+      color: themed("text-third");
       text-transform: uppercase;
     }
 
     &:last-child {
-      @include mb(16, 64);
+      @include mb(32, 64);
+    }
+  }
+}
+
+.no-bottom {
+  @include themify($themes) {
+    margin-bottom: 0;
+  }
+}
+
+.side-border {
+  @include themify($themes) {
+    position: relative;
+    padding-left: 3.2rem;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      @include width(4,6);
+      height: 100%;
+      border-radius: 10rem;
+      @include bg-fade;
+      background: themed("spacer");
+    }
+    @media only screen and (max-width: 800px) {
+      padding-left: 1.6rem;
     }
   }
 }

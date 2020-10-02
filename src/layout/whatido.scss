@@ -1,0 +1,123 @@
+.diamant {
+  @include themify($themes) {
+    @include width(298, 1056);
+    @include height(140, 495);
+    @include mb(16, 64);
+    background-image: themed("diamant");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 88rem;
+}
+
+.skill {
+  @include themify($themes) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(20% - 4.8rem);
+    margin-right: 4.8rem;
+    margin-bottom: 3.2rem;
+    @media only screen and (max-width: 800px) {
+      width: calc(25% - 2.4rem);
+      margin-right: 2.4rem;
+    }
+
+    &__icon {
+      width: 6rem;
+      height: 6rem;
+      background-size: 60rem 24rem;
+      background-image: url("./../images/skill-icons.png");
+      @include bg-fade;
+      /* Visual Design, Concept, Wireframing, Prototyping & Interaction Design */
+      &--figma {
+        background-position: 0px 0px;
+      }
+      &--sketch {
+        background-position: -60px 0px;
+      }
+      &--framer {
+        background-position: -360px 0px;
+      }
+      &--invision {
+        background-position: -120px 0px;
+      }
+      &--zeplin {
+        background-position: -180px 0px;
+      }
+      &--protopie {
+        background-position: -240px 0px;
+      }
+      &--principle {
+        background-position: -300px 0px;
+      }
+      &--airtable {
+        background-position: 0px -60px;
+      }
+      &--good-notes {
+        background-position: -60px -60px;
+      }
+      &--concepts {
+        background-position: -120px -60px;
+      }
+      /* Web & Coding */
+      &--vsc {
+        background-position: 0px -180px;
+      }
+      &--git {
+        background-position: -60px -180px;
+      }
+      &--html {
+        background-position: -120px -180px;
+      }
+      &--css {
+        background-position: -180px -180px;
+      }
+      &--sass {
+        background-position: -240px -180px;
+      }
+      &--javascript {
+        background-position: -300px -180px;
+      }
+      &--vc {
+        background-position: -360px -180px;
+      }
+      &--elementor {
+        background-position: -420px -180px;
+      }
+      /* Illustration, Photo & Video Editing */
+      &--photoshop {
+        background-position: 0px -120px;
+      }
+      &--illustrator {
+        background-position: -60px -120px;
+      }
+      &--indesign {
+        background-position: -120px -120px;
+      }
+      &--premiere {
+        background-position: -180px -120px;
+      }
+      &--aftereffects {
+        background-position: -240px -120px;
+      }
+      &--cinema {
+        background-position: -300px -120px;
+      }
+    }
+
+    & h4 {
+      font-family: $font-body;
+      font-weight: 400;
+      text-align: center;
+      @include font-size(14, 16);
+      @include line-height(16, 24);
+      color: themed("text-first");
+    }
+  }
+}

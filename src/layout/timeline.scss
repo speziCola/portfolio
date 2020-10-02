@@ -115,14 +115,3 @@
     }
   }
 }
-
-.ck-spacer {
-  @include themify($themes) {
-    width: 100%;
-    height: 0.2rem;
-    border-radius: 0.2rem;
-    @include mt(16, 80);
-    @include mb(40, 144);
-    background: themed("spacer");
-  }
-}

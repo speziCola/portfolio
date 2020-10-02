@@ -4,7 +4,6 @@ import Link from "gatsby-link";
 
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 const Menu = () => (
   <Layout>
@@ -24,6 +23,9 @@ const Menu = () => (
       <ul className="mobile-menu">
         <li>
           <Link className="mobile-menu__link" to="/work/">Work</Link>
+        </li>
+        <li>
+          <Link className="mobile-menu__link" to="/whatido/">What I do</Link>
         </li>
         <li>
           <Link className="mobile-menu__link" to="/timeline/">Timeline</Link>

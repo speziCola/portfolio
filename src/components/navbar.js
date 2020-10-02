@@ -13,6 +13,9 @@ const Navbar = () => (
         <Link className="navbar__link" to="/work/">Work</Link>
       </li>
       <li>
+        <Link className="navbar__link" to="/whatido/">What I do</Link>
+      </li>
+      <li>
         <Link className="navbar__link" to="/timeline/">Timeline</Link>
       </li>
       <li>

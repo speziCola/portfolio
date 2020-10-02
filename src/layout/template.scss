@@ -14,8 +14,7 @@ main {
       grid-template-columns: auto;
       grid-template-areas:
         "content"
-        "content"
-        ;
+        "content";
     }
   }
 }
@@ -74,5 +73,30 @@ header {
         @include px(0, 0);
       }
     }
+  }
+}
+
+.spacer-1 {
+  @include themify($themes) {
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 0.2rem;
+    @include mt(16, 80);
+    @include mb(40, 144);
+    background: themed("spacer");
+  }
+}
+
+.spacer-2 {
+  @include themify($themes) {
+    width: 100%;
+    @include height(32, 96);
+  }
+}
+
+.spacer-3 {
+  @include themify($themes) {
+    width: 100%;
+    @include height(8, 32);
   }
 }

@@ -40,6 +40,7 @@ $themes: (
     title-second: $base-65,
     title-third: $base-65,
     title-fourth: $base-45,
+    title-fifth: $base-70,
 
     /* Font - Text */
     text-first: $base-65,
@@ -61,7 +62,9 @@ $themes: (
 
     /* Assets */
     theme-icon: "\EA16",
-    home-logo: url("./../images/ck-logo.svg")
+    home-logo: url("./../images/ck-logo.svg"),
+    diamant: url("./../images/double-diamant-light.png")
+
   ),
   dark: (
      /* Main Color */
@@ -81,6 +84,7 @@ $themes: (
     title-second: $base-45,
     title-third: $base-3,
     title-fourth: $base-65,
+    title-fifth: $base-1,
 
     /* Font - Text */
     text-first: $base-3,
@@ -102,7 +106,9 @@ $themes: (
 
     /* Assets */
     theme-icon: "\EA17",
-    home-logo: url("./../images/ck-logo.svg")
+    home-logo: url("./../images/ck-logo.svg"),
+    diamant: url("./../images/double-diamant-dark.png")
+
   )
 );
 

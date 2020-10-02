@@ -22,9 +22,6 @@
       grid-column-start: 1;
       grid-column-end: 12;
       margin-bottom: 1.6rem;
-      overflow: hidden;
-      @include shadow-01;
-      border-radius: 0.4rem;
 
       @media only screen and (max-width: 950px) {
         grid-column-start: 1;
@@ -37,6 +34,8 @@
         width: 100%;
         transition: transform 0.24s ease-in-out;
         transform: scale(1.002);
+        @include shadow-01;
+        border-radius: 0.4rem;
 
         @media only screen and (max-width: 950px) {
           max-width: 100%;

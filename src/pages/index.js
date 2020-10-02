@@ -32,12 +32,18 @@ const IndexPage = () => (
             I’m{NBSP}a Product Designer based in Germany
           </h1>
           <p className="home__subtext">
-            Starting to explore the internet in the early 2000s I discovered
-            digital media design. Since then, I’ve worked on serveral projects.
-            I{NBSP}always strive to create new or better customer experience
-            with empathy.
+            Browsing the internet since the early 2000s. I’ve worked on several
+            projects for companies and clients with a focus on the user and
+            business needs.
           </p>
         </div>
+        <a href="#showcase" className="home__arrow-wrapper">
+          <div className="home__arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
         <ul className="home__menu">
           <li>
             <Link to="/work/">Work</Link>
@@ -47,7 +53,7 @@ const IndexPage = () => (
           </li>
         </ul>
       </article>
-      <aside className="home__showcase">
+      <aside id="showcase" className="home__showcase">
         <div className="home__showcase-wrapper">
           <video
             autoplay="autoplay"

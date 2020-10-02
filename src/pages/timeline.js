@@ -60,7 +60,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer"></div>
+      <div className="spacer-1"></div>
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -111,7 +111,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="spacer-1 "></div>
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -217,7 +217,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="spacer-1 "></div>
 
      {/*  <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -242,7 +242,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div> */}
+      <div className="spacer-1 "></div> */}
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -430,7 +430,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="spacer-1 "></div>
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -460,7 +460,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="spacer-1 "></div>
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -509,7 +509,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="spacer-1 "></div>
       {/*
         <div className="container-timeline__wrapper">
           <div className="container-timeline__wrapper__title">
@@ -527,7 +527,7 @@ const Timeline = () => (
           </div>
         </div>
 
-        <div className="ck-spacer "></div> */}
+        <div className="spacer-1 "></div> */}
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
@@ -587,7 +587,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="ck-spacer "></div>
+      <div className="spacer-1 "></div>
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">

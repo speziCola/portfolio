@@ -26,6 +26,18 @@
   );
 }
 
+@mixin height($small, $big) {
+  height: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
+}
+
+@mixin left($small, $big) {
+  margin-left: calc(
+    -#{$small}px - (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
+}
+
 /* Spacing */
 @mixin mx($small, $big) {
   margin-left: calc(

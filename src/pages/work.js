@@ -29,63 +29,63 @@ const Work = () => (
     </header>
     {/* Content */}
     <div className="container">
-          <ProjectView
-            title="Mobile seat map redesign"
-            subtitle="Case study"
-            info="
-              Optimizing the UX/UI without big code changes. Furthermore, the new generic design
-              allows different views depending on given settings.
-            "
-            img={mobileseatmap}
-            alt="Mobile seat map redesign"
-            url="https://uxfol.io/project/04249acc/Mobile-seat-map-redesign"
-            type="external"
-            password=""
-          ></ProjectView>
-
-          <ProjectView
-            title="Ticket resale"
-            subtitle="Case study"
-            info="
+      <ProjectView
+        title="Ticket resale"
+        subtitle="Case study"
+        info="
               Integrating a secondary ticket market into a white labeling ticketing system.
               Our product increased the sale and purchase of resale tickets of our clients up to 200%.
             "
-            img={ticketresale}
-            alt="Ticket resale"
-            url="https://uxfol.io/project/04b91a34/Ticket-ReSale"
-            type="external"
-            password=""
-          ></ProjectView>
+        img={ticketresale}
+        alt="Ticket resale"
+        url="https://uxfol.io/project/04b91a34/Ticket-ReSale"
+        type="external"
+        password=""
+      ></ProjectView>
 
-          <ProjectView
-            title="Shop-configurator"
-            subtitle="Case study"
-            info="
+      <ProjectView
+        title="Mobile seat map redesign"
+        subtitle="Case study"
+        info="
+              Optimizing the UX/UI without big code changes. Furthermore, the new generic design
+              allows different views depending on given settings.
+            "
+        img={mobileseatmap}
+        alt="Mobile seat map redesign"
+        url="https://uxfol.io/project/04249acc/Mobile-seat-map-redesign"
+        type="external"
+        password=""
+      ></ProjectView>
+
+      <ProjectView
+        title="Shop-configurator"
+        subtitle="Case study"
+        info="
               Sorting settings and providing an easy scalable UI for additional features.
               By adding a wizard it become super easy to set up a new shop within 2 minutes.
             "
-            img={shopconfigurator}
-            alt="Shop-configurator"
-            url="https://uxfol.io/project/0485a1c7/Shop-configurator"
-            type="external"
-            password=""
-          ></ProjectView>
+        img={shopconfigurator}
+        alt="Shop-configurator"
+        url="https://uxfol.io/project/0485a1c7/Shop-configurator"
+        type="external"
+        password=""
+      ></ProjectView>
 
-          <ProjectView
-            title="Performance on images"
-            subtitle="UX/Frontend"
-            info="
+      <ProjectView
+        title="Performance on images"
+        subtitle="UX/Frontend"
+        info="
               Increase your conversion rate and revenue by optimizing your images.
               It can cut the size of images to load up to 70%.
             "
-            img={imageperformance}
-            alt="Performance on images"
-            url="https://medium.com/@chriskuhrt/increase-your-conversion-rate-and-revenue-by-optimizing-your-images-449a97929e9b"
-            type="external"
-            password="no-lock"
-          ></ProjectView>
+        img={imageperformance}
+        alt="Performance on images"
+        url="https://medium.com/@chriskuhrt/increase-your-conversion-rate-and-revenue-by-optimizing-your-images-449a97929e9b"
+        type="external"
+        password="no-lock"
+      ></ProjectView>
 
-          {/*   <ProjectView
+      {/*   <ProjectView
             title="SteamCalculator"
             subtitle="Product Design"
             info="SteamCalculator is a web application for calculating your current value of your Steam-Account."
