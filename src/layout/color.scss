@@ -47,9 +47,9 @@ $themes: (
     text-second: $base-45,
 
     /* Font - Links */
-    link-first: $base-65,
-    link-second: $base-65,
-    link-hover: $secondary,
+    color-link-first: $base-65,
+    color-link-second: $base-65,
+    color-link-hover: $secondary,
 
     /* Styling */
     shadow: $base-10,
@@ -59,6 +59,7 @@ $themes: (
     card: $base-1,
     home-square: $base-2,
     background: $base-3,
+    nav-background: $base-1,
 
     /* Assets */
     theme-icon: "\EA16",
@@ -91,9 +92,9 @@ $themes: (
     text-second: $base-30,
 
     /* Font - Links */
-    link-first: $base-3,
-    link-second: $base-65,
-    link-hover: $secondary,
+    color-link-first: $base-3,
+    color-link-second: $base-65,
+    color-link-hover: $secondary,
 
     /* Styling */
     shadow: $base-90,
@@ -103,6 +104,7 @@ $themes: (
     card: $base-80,
     home-square: $base-80,
     background: $base-90,
+    nav-background: $base-80,
 
     /* Assets */
     theme-icon: "\EA17",

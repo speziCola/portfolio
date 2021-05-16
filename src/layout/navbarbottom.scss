@@ -19,7 +19,7 @@
       transition: color 0.25s ease-in-out;
 
       &:hover {
-        color: themed("link-hover");
+        color: themed("color-link-hover");
         transition: color $time-1 ease-in-out;
 
         &::before {

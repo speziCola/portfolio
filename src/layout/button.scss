@@ -3,7 +3,7 @@
     display: inline-block;
     margin-bottom: 1.6rem;
     margin-right: 1.6rem;
-    @include body-text;
+    @extend %body-text;
     @include font-size(18, 24);
     @include line-height(24, 40);
 
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-      @include hoverspeed;
+      @extend %hoverspeed;
       background: $primary;
       color: $base-2;
       box-shadow: 0 4px 8px 2px themed("shadow");

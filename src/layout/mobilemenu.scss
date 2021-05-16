@@ -13,7 +13,7 @@
       line-height: 3.2rem;
       color: themed("text-first");
       text-align: left;
-      @include hoverspeed;
+      @extend %hoverspeed;
     }
     @media only screen and (max-width: 800px) {
       display: block;

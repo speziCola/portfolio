@@ -21,7 +21,7 @@
       font-weight: 700;
       font-size: 1.8rem;
       line-height: 2.4rem;
-      color: themed("title-third");
+      color: themed("title-first");
       @include font-fade;
     }
     &__type {
@@ -38,7 +38,7 @@
       display: block;
       font-family: $font-body;
       font-weight: 400;
-      @include font-size(16, 18);
+      @include font-size(14, 16);
       @include line-height(24, 28);
       color: themed("text-first");
       @include font-fade;

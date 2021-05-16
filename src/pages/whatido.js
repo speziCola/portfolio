@@ -21,6 +21,22 @@ const Work = () => (
     </header>
     {/* Content */}
     <div className="container">
+    <h2 className="title-3 no-bottom">Understanding the goal</h2>
+      <h3 className="title-4">Asking questions</h3>
+      <div className="side-border">
+        <h4 className="title-5">Why</h4>
+        <p className="body-text">
+          Understanding the importance of the product or feature.
+        </p>
+        <h4 className="title-5">What</h4>
+        <p className="body-text">
+          Are we building the right thing? Which problem are we trying to solve?
+        </p>
+        <h4 className="title-5">How</h4>
+        <p className="body-text">
+          Does it benefit customers? Does it extend the company's mission?
+        </p>
+      </div>
       <h2 className="title-3 no-bottom">Determine the challenge</h2>
       <h3 className="title-4">Discover & Define</h3>
       <div className="side-border">

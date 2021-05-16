@@ -87,7 +87,7 @@
         & a {
           padding-left: 0.8rem;
           color: themed("text-footer");
-          @include hoverspeed;
+          @extend %hoverspeed;
 
           &:hover {
             @include hover-text;

@@ -31,7 +31,7 @@
       }
 
       &:hover {
-        @include hoverspeed;
+        @extend %hoverspeed;
         cursor: pointer;
         @media only screen and (max-width: 800px) {
           box-shadow: none;
@@ -39,7 +39,7 @@
       }
 
       &:hover i {
-        color: themed("link-hover");
+        color: themed("color-link-hover");
         @media only screen and (max-width: 800px) {
           color: themed("link-second");
         }
@@ -51,7 +51,7 @@
 
       &__icon {
         line-height: 0;
-        color: themed("link-first");
+        color: themed("color-link-first");
 
         &::before {
           content: themed("theme-icon");

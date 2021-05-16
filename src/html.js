@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function HTML(props) {
   return (
@@ -11,20 +11,22 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"
         />
-        <meta http-equiv="Cache-control" content="public"></meta>
+        <meta httpEquiv="Cache-control" content="public"></meta>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
-      </body>
+
+          <body {...props.bodyAttributes}>
+            {props.preBodyComponents}
+            <div
+              key={`body`}
+              id="___gatsby"
+              dangerouslySetInnerHTML={{ __html: props.body }}
+            />
+            {props.postBodyComponents}
+          </body>
+
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -34,4 +36,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};

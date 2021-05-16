@@ -25,6 +25,7 @@ module.exports = {
         background_color: `#4264fb`,
         theme_color: `#4264fb`,
         display: `minimal-ui`,
+        lang: `en`,
         icon: `src/images/ck-icon.png`, // This path is relative to the root of the site.
       },
     },

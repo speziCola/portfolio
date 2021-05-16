@@ -13,7 +13,7 @@ const Timeline = () => (
       title="Chris Kuhrt - Timeline"
       meta={[
         { name: "description", content: "Timeline" },
-        { name: "keywords", content: "Timeline" }
+        { name: "keywords", content: "Timeline" },
       ]}
     />
     <Navbar></Navbar>
@@ -31,15 +31,31 @@ const Timeline = () => (
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
-                time="06/2015"
+                time="11/2020"
+                title="Chrono24"
+                type="UX/UI Design"
+                link="external"
+                url="https://about.chrono24.com/en/"
+                infos="
+                  Setting up a new location within Freiburg. Our team is responsible for: first class service & VIPs.
+                  My tasks are among others the following: web & app alignment, initiator to improve the software stack due to changing workflows,
+                  laying down a foundation for our Design System. 
+                "
+              ></TimeStamp>
+            </li>
+            <li>
+              <TimeStamp
+                time="06/2015 - 08/2020"
                 title="Reservix"
                 type="UX/UI Design"
                 link="external"
                 url="https://www.reservix.net/"
                 infos="
-                  Responsible for several B2C and B2B products as well as supporting various teams. Ensuring that all
-                  goals, expectations and user needs are being fulfilled to achieve a great user experience for selling,
-                  purchasing or reselling tickets for local events up to film premieres, 1st Bundesliga or for DFB.
+                  Worked in the areas of web, app, B2C, B2C, consumer and enterprise.
+                  Responsible for the UX/UI within the Portal team witch managed all white-lable webshops (+3000).
+                  As well as supporting B2B and B2C apps and various teams. My tasks were among others the following:
+                  raise requirements, create prototypes, laying the foundation for a Design System, introduction of a cross-site software stack for 
+                  better collaboration within the design team, founder of labs.reservix.de which is now maintained by a student worker.
                 "
               ></TimeStamp>
             </li>
@@ -70,19 +86,19 @@ const Timeline = () => (
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
-                  time="01/2020"
-                  title="Hammertime"
-                  type="Product Design"
-                  link="external"
-                  url="https://www.hammertime.io/"
-                  infos="
-                   soon...
+                time="01/2020 - 11/2020"
+                title="Hammertime"
+                type="Product Design"
+                link="external"
+                url="https://www.hammertime.io/"
+                infos="
+                   Redesigned our homepage, raised requirements, pitched our product and did customer acquisition. 
                   "
-                ></TimeStamp>
+              ></TimeStamp>
             </li>
             <li>
               <TimeStamp
-                time="03/2015"
+                time="03/2015 - 04/2021"
                 title="Frau Skroblies & Freunde"
                 type="Cinematography"
                 link="external"
@@ -121,7 +137,7 @@ const Timeline = () => (
           <ul className="ck-skill-list">
             <li>
               <TimeStamp
-                time="06/2015"
+                time="06/2015 - 10/2020"
                 title="GeoSpin"
                 type="Product Desgin"
                 link="external"
@@ -219,7 +235,7 @@ const Timeline = () => (
 
       <div className="spacer-1 "></div>
 
-     {/*  <div className="container-timeline__wrapper">
+      {/*  <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
           <h2 className="title-2">Projects</h2>
         </div>
@@ -251,6 +267,17 @@ const Timeline = () => (
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
           <li>
+              <TimeStamp
+                time="03/2021"
+                title="SmashingConf"
+                type="Workshop"
+                url=""
+                infos="
+                 Creating and Maintaining Successful Design Systems - Remote
+                "
+              ></TimeStamp>
+            </li>
+            <li>
               <TimeStamp
                 time="12/2019"
                 title="Udemy"

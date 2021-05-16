@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "caniuse-lite": "^1.0.30001228",
     "gatsby": "^2.18.17",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.0",

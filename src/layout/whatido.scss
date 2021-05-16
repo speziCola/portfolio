@@ -1,14 +1,3 @@
-.diamant {
-  @include themify($themes) {
-    @include width(298, 1056);
-    @include height(140, 495);
-    @include mb(16, 64);
-    background-image: themed("diamant");
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-}
-
 .skill-group {
   display: flex;
   flex-wrap: wrap;
@@ -115,9 +104,10 @@
       font-family: $font-body;
       font-weight: 400;
       text-align: center;
-      @include font-size(14, 16);
+      @include font-size(12, 14);
       @include line-height(16, 24);
       color: themed("text-first");
+      @include font-fade;
     }
   }
 }

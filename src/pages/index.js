@@ -25,25 +25,17 @@ const IndexPage = () => (
     <Navbar></Navbar>
     <div className="home">
       <article className="home__content">
-        <div className="home__mobile-full-height">
+
           <h1 className="home__headline">
             Hi, my name is Chris{NBSP}Kuhrt
             <br />
             I’m{NBSP}a Product Designer based in Germany
           </h1>
           <p className="home__subtext">
-            Browsing the internet since the early 2000s. I’ve worked on several
-            projects for companies and clients with a focus on the user and
-            business needs.
+            I’ve worked on several projects for companies and clients with a focus on user and business needs. 
+            Always in mind to create new scalable interactive experiences and products.
           </p>
-        </div>
-        <a href="#showcase" className="home__arrow-wrapper">
-          <div className="home__arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
+
         <ul className="home__menu">
           <li>
             <Link to="/work/">Work</Link>

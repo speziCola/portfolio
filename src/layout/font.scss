@@ -23,24 +23,25 @@
 }
 
 @font-face {
-  font-family: "Titillium";
-  src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Titillium";
-  src: url("../fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
   font-display: swap;
   font-weight: 600;
   font-style: normal;
 }
 
 $font-title: "Barlow", sans-serif;
-$font-body: "Titillium", sans-serif;
+$font-body: "Poppins", sans-serif;
 
+/* Selection */
 ::-moz-selection {
   color: $secondary;
 }
@@ -48,23 +49,25 @@ $font-body: "Titillium", sans-serif;
   color: $secondary;
 }
 
-@mixin hoverspeed {
+/* Hover */
+%hoverspeed {
   transition: all $time-1 ease-in-out;
 }
 
 @mixin hover-text {
-  @include hoverspeed;
-  color: themed("link-hover");
+  @extend %hoverspeed;
+  color: themed("color-link-hover");
 }
 
-.title-1 {
+/* Title */
+%title-1 {
   @include themify($themes) {
     display: inline-block;
     position: relative;
     @include pb(20, 32);
     font-family: $font-title;
-    @include font-size(28, 48);
-    @include line-height(32, 48);
+    @include font-size(32, 40);
+    @include line-height(32, 40);
     font-weight: 800;
     color: themed("title-first");
     text-transform: uppercase;
@@ -85,7 +88,22 @@ $font-body: "Titillium", sans-serif;
   }
 }
 
-.title-2 {
+.title-1 {
+  @extend %title-1;
+}
+
+%title-subtext {
+  @include themify($themes) {
+    font-family: $font-body;
+    @include font-size(16, 18);
+    @include line-height(26, 34);
+    color: themed("text-first");
+    @include font-fade;
+    box-sizing: border-box;
+  }
+}
+
+%title-2 {
   @include themify($themes) {
     padding-bottom: 1.6rem;
     font-family: $font-title;
@@ -99,19 +117,26 @@ $font-body: "Titillium", sans-serif;
   }
 }
 
-.title-3 {
+.title-2 {
+  @extend %title-2;
+}
+
+%title-3 {
   @include themify($themes) {
     @include mb(8, 16);
     font-family: $font-body;
-    @include font-size(18, 28);
-    @include line-height(20, 36);
+    @include font-size(16, 26);
+    @include line-height(18, 34);
     font-weight: 600;
     color: themed("title-third");
     @include font-fade;
   }
 }
+.title-3 {
+  @extend %title-3;
+}
 
-.title-4 {
+%title-4 {
   @include themify($themes) {
     @include mb(8, 16);
     font-family: $font-title;
@@ -124,7 +149,11 @@ $font-body: "Titillium", sans-serif;
   }
 }
 
-.title-5 {
+.title-4 {
+  @extend %title-4;
+}
+
+%title-5 {
   @include themify($themes) {
     font-family: $font-title;
     font-weight: 600;
@@ -133,13 +162,17 @@ $font-body: "Titillium", sans-serif;
     @include line-height(24, 32);
     color: themed("title-third");
     @include font-fade;
-    &--spacing {
-      @include mb(8, 16);
-    }
   }
 }
 
-.title-6 {
+.title-5 {
+  @extend %title-5;
+  &--spacing {
+    @include mb(8, 16);
+  }
+}
+
+%title-6 {
   @include themify($themes) {
     font-family: $font-title;
     @include font-size(16, 18);
@@ -149,24 +182,55 @@ $font-body: "Titillium", sans-serif;
   }
 }
 
-@mixin body-text {
-  font-family: $font-body;
-  font-weight: 400;
-  text-align: left;
-  color: themed("text-first");
-  @include font-fade;
+.title-6 {
+  @extend %title-6;
 }
 
-.body-text {
+/* Nav Links */
+%nav-links {
   @include themify($themes) {
-    @include mb(16, 32);
+    font-family: $font-body;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: themed("color-link-first");
+    text-align: left;
+    @extend %hoverspeed;
+
+    &:hover {
+      @include hover-text;
+    }
+  }
+}
+
+%teaser-links {
+  @include themify($themes) {
+    font-family: $font-body;
+    @include font-size(18, 22);
+    color: $primary;
+    font-weight: 600;
+    @extend %hoverspeed;
+
+    &:hover {
+      @include hover-text;
+    }
+  }
+}
+
+%body-text {
+  @include themify($themes) {
+    @include mb(16, 24);
     max-width: 96rem;
-    @include body-text;
-    @include font-size(16, 18);
+    font-family: $font-body;
+    font-weight: 400;
+    text-align: left;
+    color: themed("text-first");
+    @include font-size(14, 16);
     @include line-height(24, 32);
+    @include font-fade;
 
     &--no-bottom {
-      margin-bottom: 0 !important;
+      margin-bottom: 0;
       padding-bottom: 0;
     }
 
@@ -183,12 +247,16 @@ $font-body: "Titillium", sans-serif;
   }
 }
 
+.body-text {
+  @extend %body-text;
+}
+
 .no-bottom {
   @include themify($themes) {
     margin-bottom: 0;
   }
 }
-
+/* List Style */
 .side-border {
   @include themify($themes) {
     position: relative;
@@ -197,8 +265,8 @@ $font-body: "Titillium", sans-serif;
       content: "";
       position: absolute;
       display: block;
-      left: 0;
-      @include width(4,6);
+      left: 0.4rem;
+      @include width(4, 6);
       height: 100%;
       border-radius: 10rem;
       @include bg-fade;

@@ -5,16 +5,16 @@
     padding-top: 0.4rem;
     font-family: $font-body;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.4rem;
-    color: themed("link-second");
+    color: themed("color-link-second");
     transition: all $time-1 ease-in-out;
 
     &:hover {
-      color: themed("link-hover");
+      color: themed("color-link-hover");
 
       &::after {
-        color: themed("link-hover");
+        color: themed("color-link-hover");
       }
     }
 
@@ -67,7 +67,7 @@
         content: "\EA13";
       }
       &--light {
-        color: themed("link-first");
+        color: themed("color-link-first");
         font-weight: 400;
       }
     }

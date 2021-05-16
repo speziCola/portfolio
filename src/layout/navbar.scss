@@ -11,7 +11,9 @@
     @media only screen and (max-width: 800px) {
       padding-right: 1.6rem;
       padding-left: 8rem;
-      bottom: 0;
+      bottom: 0; 
+      background: themed("nav-background");
+      z-index: 20;
     }
 
     &__logo {
@@ -42,17 +44,7 @@
         }
 
         & a {
-          font-family: $font-body;
-          font-size: 1.8rem;
-          line-height: 3.2rem;
-          font-weight: 700;
-          color: themed("link-first");
-          text-align: left;
-          @include hoverspeed;
-
-          &:hover {
-            @include hover-text;
-          }
+          @extend %nav-links;
         }
       }
     }
@@ -70,6 +62,14 @@
       height: 4.8rem;
       @media only screen and (min-width: 800px) {
         display: none;
+      }
+
+      & svg {
+        fill: themed("color-link-first");
+
+        &:hover {
+          fill: themed("link-second");
+        }
       }
     }
   }

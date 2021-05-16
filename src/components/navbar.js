@@ -23,7 +23,9 @@ const Navbar = () => (
       </li>
       <li>
         <Link className="navbar__menu" to="/menu/" aria-label="Menu">
-          <img className="social-icon" src={menu} alt="menu" />
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1875 17.4844H15.5625V15.6562H3.1875V17.4844ZM3.18921 12.8799H21.5624V11.0733H3.18921V12.8799ZM3.1875 8.31938H21.5607V6.46875H3.1875V8.31938Z"/>
+        </svg>
         </Link>
       </li>
       <li className="footer__theme__mobile">

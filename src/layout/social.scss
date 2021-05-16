@@ -25,13 +25,13 @@
     & a {
       display: inline-flex;
       align-items: center;
-      color: themed("link-first");
-      @include hoverspeed;
+      color: themed("color-link-first");
+      @extend %hoverspeed;
 
       img {
         filter: invert(37%) sepia(38%) saturate(407%) hue-rotate(191deg)
           brightness(97%) contrast(93%);
-          @include hoverspeed;
+          @extend %hoverspeed;
       }
 
       &:hover {

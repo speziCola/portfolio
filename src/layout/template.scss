@@ -10,6 +10,16 @@ main {
     height: 100%;
     background: themed("background");
 
+    &:after {
+      position: fixed;
+      right: 0;
+      content: "";
+      width: 0.6rem;
+      height: 100vh;
+      background: $primary;
+      z-index: 15;
+    }
+
     @media only screen and (max-width: 800px) {
       grid-template-columns: auto;
       grid-template-areas:

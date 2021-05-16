@@ -7,6 +7,7 @@
     height: 100%;
     min-height: 100vh;
     @media only screen and (max-width: 800px) {
+      margin-top: -5.6rem;
       grid-template-columns: repeat(12, 1fr);
     }
 
@@ -22,104 +23,17 @@
     }
 
     &__headline {
-      display: inline-block;
-      position: relative;
-      @include mb(24, 32);
-      @include pb(20, 32);
-      font-family: $font-title;
-      @include font-size(28, 48);
-      @include line-height(32, 48);
-      font-weight: 800;
-      color: themed("title-first");
-      text-transform: uppercase;
-      @include font-fade;
-      @media only screen and (max-width: 800px) {
-        padding-top: 4.8rem;
-        @include font-size(32, 96);
-        @include line-height(32, 104);
-      }
-
-      &:before {
-        position: absolute;
-        bottom: 0;
-        content: "";
-        @include width(64, 96);
-        height: 0.8rem;
-        background: $primary;
-        border-radius: 0.8rem;
-        @media only screen and (max-width: 800px) {
-          height: 0.6rem;
-        }
-      }
+      @extend %title-1;
+      @include mb(40, 48);
     }
 
     &__subtext {
-      width: 100%;
-      @include mb(16, 64);
-      @include body-text;
-      @include font-size(20, 22);
-      color: themed("text-first");
-      @include font-fade;
-      box-sizing: border-box;
-
-      @media only screen and (max-width: 800px) {
-        @include mb(32, 64);
-        max-width: 100%;
-      }
-    }
-
-    &__arrow-wrapper {
-      display: block;
-      position: relative;
-      top: -12rem;
-      height: 4.8rem;
-      @media only screen and (min-width: 800px) {
-        display: none;
-      }
-    }
-
-    &__arrow {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-40%, -50%);
-      @media only screen and (min-width: 800px) {
-        display: none;
-      }
-      & span {
-        display: block;
-        width: 12px;
-        height: 12px;
-        border-bottom: 2px solid themed("title-fourth");
-        border-right: 2px solid themed("title-fourth");
-        transform: rotate(45deg);
-        margin: -10px;
-        animation: animate 2s infinite;
-      }
-      & span:nth-child(2) {
-        animation-delay: -0.2s;
-      }
-      & span:nth-child(3) {
-        animation-delay: -0.4s;
-      }
-      @keyframes animate {
-        0% {
-          opacity: 0;
-          transform: rotate(45deg) translate(-8px, -8px);
-        }
-        50% {
-          opacity: 0.6;
-        }
-        100% {
-          opacity: 0;
-          transform: rotate(45deg) translate(8px, 8px);
-        }
-      }
+      @extend %title-subtext;
+      @include mb(32, 64);
     }
 
     &__menu {
       display: flex;
-      align-items: center;
       list-style: none;
 
       & li {
@@ -131,18 +45,7 @@
       }
 
       & li a {
-        @include body-text;
-        @include font-size(20, 24);
-        color: $primary;
-        font-weight: 600;
-        @include hoverspeed;
-
-        &:hover {
-          color: $secondary;
-        }
-      }
-      @media only screen and (max-width: 800px) {
-        display: none;
+        @extend %teaser-links;
       }
     }
 
@@ -155,12 +58,7 @@
       grid-column-end: 37;
 
       @media only screen and (max-width: 800px) {
-        grid-column-start: 1;
-        grid-column-end: 13;
-        margin-right: 0;
-        height: 100vh;
-        box-sizing: border-box;
-        background: themed("background-home");
+        display: none;
       }
 
       &-wrapper {
@@ -168,9 +66,6 @@
         @include width(280, 460);
         animation: fadeIn ease 2s;
         z-index: 5;
-        @media only screen and (max-width: 800px) {
-          margin-top: -7.2rem;
-        }
       }
 
       &-video {
@@ -219,7 +114,7 @@
       mask-position: bottom right;
       background: themed("home-square");
       @media only screen and (max-width: 800px) {
-        width: 88rem;
+        display: none;
       }
     }
 
@@ -228,11 +123,6 @@
       width: 100%;
       height: 100vh;
       background: themed("background-home");
-    }
-  }
-  &__mobile-full-height {
-    @media only screen and (max-width: 800px) {
-      min-height: calc(100vh - 7.2rem);
     }
   }
 }
