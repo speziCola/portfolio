@@ -9,15 +9,17 @@
 
       &__space {
         width: 100%;
-        height: 0.2rem;
+        height: 0.4rem;
         margin: 2.4rem 0 2.4rem;
         border-radius: 0.4rem;
         background: themed("base-3");
       }
 
       &__profile {
-        padding-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
         & ul {
+          padding-left: 2.4rem;
           list-style: none;
         }
 
@@ -26,48 +28,28 @@
         }
 
         &__avatar {
-          position: absolute;
-          width: 10.4rem;
+          width: 9.6rem;
         }
 
         &__h3 {
           position: relative;
-          margin-bottom: 0.4rem;
-          padding-bottom: 0.4rem;
           @include pt(16, 4);
-          padding-left: 12rem;
           font-family: $font-title;
           font-weight: 800;
-          @include font-size(20, 28);
-          @include line-height(32, 48);
+          font-size: 2.4rem;
+          line-height: 2.8rem;
           color: themed("title-third");
           text-transform: uppercase;
           @include font-fade;
-
-          &:before {
-            position: absolute;
-            bottom: 0;
-            display: block;
-            content: "";
-            width: 4.8rem;
-            height: 0.4rem;
-            background: $primary;
-            border-radius: 4rem;
-          }
         }
       }
       &__h4 {
-        margin-bottom: 0.8rem;
         font-family: $font-body;
         font-weight: 400;
-        @include font-size(16, 18);
-        @include line-height(28, 32);
+        font-size: 1.6rem;
+        line-height: 3.2rem;
         color: themed("title-second");
         @include font-fade;
-
-        &--profile {
-          padding-left: 12rem;
-        }
 
         &--bold {
           font-weight: 600;

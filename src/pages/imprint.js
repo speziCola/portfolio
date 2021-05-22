@@ -24,7 +24,7 @@ const Imprint = () => (
         <div className="container__sidebar">
           <div className="sidebar__card">
             <div className="sidebar__card__profile sidebar__card__profile--no-bottom">
-              <p className="body-text body-text--no-bottom">
+              <p className="body-text no-bottom">
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
                 <br /> <br />
                 Christopher Kuhrt<br />

@@ -34,7 +34,7 @@ const Work = () => (
         </p>
         <h4 className="title-5">How</h4>
         <p className="body-text">
-          Does it benefit customers? Does it extend the company's mission?
+          Does it benefit the customers? Does it extend the company's mission?
         </p>
       </div>
       <h2 className="title-3 no-bottom">Determine the challenge</h2>

@@ -51,11 +51,14 @@ const Timeline = () => (
                 link="external"
                 url="https://www.reservix.net/"
                 infos="
-                  Worked in the areas of web, app, B2C, B2C, consumer and enterprise.
-                  Responsible for the UX/UI within the Portal team witch managed all white-lable webshops (+3000).
-                  As well as supporting B2B and B2C apps and various teams. My tasks were among others the following:
-                  raise requirements, create prototypes, laying the foundation for a Design System, introduction of a cross-site software stack for 
-                  better collaboration within the design team, founder of labs.reservix.de which is now maintained by a student worker.
+                Working on web, app, B2C, B2B, consumer and enterprise products. 
+                Responsible for the UX/UI within the Portal team witch managed all 
+                white-lable webshops (+3000). As well as supporting various teams. 
+                My tasks were among others the following: raise requirements, 
+                create prototypes, laying the foundation for a Design System, 
+                introduction of a cross-site software stack for better collaboration 
+                within the design team, founder of labs.reservix.de which is now 
+                maintained by a student worker.
                 "
               ></TimeStamp>
             </li>

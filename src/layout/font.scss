@@ -72,6 +72,10 @@ $font-body: "Poppins", sans-serif;
     color: themed("title-first");
     text-transform: uppercase;
     @include font-fade;
+    @media only screen and (min-width: 1600px) {
+      @include font-size(32, 52);
+      @include line-height(32, 50);
+    }
 
     &:before {
       position: absolute;
@@ -81,6 +85,7 @@ $font-body: "Poppins", sans-serif;
       height: 0.8rem;
       background: $primary;
       border-radius: 0.8rem;
+
       @media only screen and (max-width: 800px) {
         height: 0.6rem;
       }
@@ -95,7 +100,7 @@ $font-body: "Poppins", sans-serif;
 %title-subtext {
   @include themify($themes) {
     font-family: $font-body;
-    @include font-size(16, 18);
+    @include font-size(16, 20);
     @include line-height(26, 34);
     color: themed("text-first");
     @include font-fade;
@@ -190,7 +195,7 @@ $font-body: "Poppins", sans-serif;
 %nav-links {
   @include themify($themes) {
     font-family: $font-body;
-    font-size: 1.6rem;
+    @include font-size(16, 18);
     line-height: 3.2rem;
     font-weight: 700;
     color: themed("color-link-first");
@@ -229,11 +234,6 @@ $font-body: "Poppins", sans-serif;
     @include line-height(24, 32);
     @include font-fade;
 
-    &--no-bottom {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
     & span {
       font-family: $font-title;
       font-weight: 700;
@@ -242,7 +242,7 @@ $font-body: "Poppins", sans-serif;
     }
 
     &:last-child {
-      @include mb(32, 64);
+      @include mb(32, 80);
     }
   }
 }
@@ -253,7 +253,7 @@ $font-body: "Poppins", sans-serif;
 
 .no-bottom {
   @include themify($themes) {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 }
 /* List Style */

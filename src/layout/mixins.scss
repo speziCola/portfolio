@@ -109,6 +109,12 @@
   );
 }
 
+@mixin p-left($small, $big) {
+  padding-left: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
+}
+
 @mixin shadow-01 {
   box-shadow: 0px 4px 24px themed("shadow");
   transition: all 0.5s ease-in-out;
