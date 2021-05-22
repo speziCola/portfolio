@@ -25,7 +25,7 @@ const Timeline = () => (
     <div className="container">
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Work experince</h2>
+          <h2 className="title-3">Work experince</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -83,7 +83,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Part of the team</h2>
+          <h2 className="title-3">Part of the team</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -134,7 +134,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Freelancer</h2>
+          <h2 className="title-3">Freelancer</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -240,7 +240,7 @@ const Timeline = () => (
 
       {/*  <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Projects</h2>
+          <h2 className="title-3">Projects</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -265,7 +265,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Further education</h2>
+          <h2 className="title-3">Further education</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -464,7 +464,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Education</h2>
+          <h2 className="title-3">Education</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -494,7 +494,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Volunteer work</h2>
+          <h2 className="title-3">Volunteer work</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -561,7 +561,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Backer</h2>
+          <h2 className="title-3">Backer</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
@@ -621,7 +621,7 @@ const Timeline = () => (
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">
-          <h2 className="title-2">Other</h2>
+          <h2 className="title-3">Other</h2>
         </div>
         <div className="container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">

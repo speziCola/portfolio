@@ -22,7 +22,7 @@ const Work = () => (
     {/* Content */}
     <div className="container">
     <h2 className="title-3 no-bottom">Understanding the goal</h2>
-      <h3 className="title-4">Asking questions</h3>
+      <h3 className="title-4">Question & Verify</h3>
       <div className="side-border">
         <h4 className="title-5">Why</h4>
         <p className="body-text">

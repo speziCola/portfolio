@@ -50,9 +50,7 @@ const About = () => (
                   <h3 className="sidebar__card__profile__h3">Chris Kuhrt</h3>
                 </li>
                 <li>
-                  <h4 className="sidebar__card__h4">
-                    Product designer
-                  </h4>
+                  <h4 className="sidebar__card__h4">Product designer</h4>
                 </li>
               </ul>
             </div>
@@ -85,9 +83,9 @@ const About = () => (
         </div>
         <div className="container__content">
           <p className="body-text">
-            I’m a passionate product designer with a focus on user centered
-            design and design systems. I am also eager to improve the
-            workflow between design and frontend constantly.
+            I’m a passionate designer with over ten years of experience. I focus
+            on user centered design and design systems. I’m also eager to
+            improve the workflow between design and frontend constantly.
             <br />
             <br />
             As a representative of the customers and users I advocate for user
@@ -97,15 +95,14 @@ const About = () => (
             management. Ensure that all goals, expectations and needs of
             customers and users are met and exceeded.
             <br />
-            <br />
-            I have a strong desire for creativity, knowledge sharing, process
-            optimization, innovative thinking and solution-oriented work to
-            create new scalable interactive experiences and products.
+            <br />I have a strong desire for process optimization, knowledge
+            sharing, innovative thinking and solution-oriented work to create
+            new scalable interactive experiences and products.
           </p>
           <div className="spacer-3"></div>
           <h3 className="title-5">Recent engagements</h3>
           <ul className="ck-logos">
-          <li>
+            <li>
               <a href="https://www.chrono24.de/" title="Chrono24">
                 <img
                   className="ck-logos__images"

@@ -13,6 +13,7 @@ $base-45: #929ab9;
 $base-65: #5a648c;
 $base-70: #303859;
 $base-80: #1d1d3a;
+$base-85: #16162c;
 $base-90: #0f0f23;
 
 $transparent: rgba(0, 0, 0, 0);
@@ -54,6 +55,7 @@ $themes: (
     /* Styling */
     shadow: $base-10,
     spacer: $base-10,
+    spacer-card: $base-3,
     arrow: $base-30,
     text-footer: $base-30,
     card: $base-1,
@@ -99,6 +101,7 @@ $themes: (
     /* Styling */
     shadow: $base-90,
     spacer: $base-80,
+    spacer-card: $base-85,
     arrow: $base-70,
     text-footer: $base-45,
     card: $base-80,
