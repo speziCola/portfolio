@@ -83,7 +83,7 @@ const About = () => (
         </div>
         <div className="container__content">
           <p className="body-text">
-            I’m a passionate designer with over ten years of experience. I focus
+            Hi, my name is Chris Kuhrt and I’m a passionate designer with over ten years of experience. I focus
             on user centered design and design systems. I’m also eager to
             improve the workflow between design and frontend constantly.
             <br />

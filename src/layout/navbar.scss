@@ -38,7 +38,7 @@
       }
 
       & li {
-        @include p-left(96, 80);
+        @include p-left(48, 96);
         @media only screen and (max-width: 800px) {
           padding-left: 0;
         }

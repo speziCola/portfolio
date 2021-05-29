@@ -32,8 +32,8 @@ const IndexPage = () => (
             I’m{NBSP}a Product Designer based in Germany
           </h1>
           <p className="home__subtext">
-            I’ve worked on several projects for companies and clients with a focus on user and business needs. 
-            Always in mind to create new scalable interactive experiences and products.
+            With over ten years of experience I’ve worked on several projects with a focus on user and business needs. 
+            Always in mind to create new scalable experiences and products.
           </p>
 
         <ul className="home__menu">

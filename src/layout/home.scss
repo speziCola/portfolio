@@ -37,7 +37,7 @@
       list-style: none;
 
       & li {
-        margin-right: 10.4rem;
+       @include mright (72, 144);
       }
 
       & li:last-child {

@@ -160,13 +160,12 @@ $font-body: "Poppins", sans-serif;
 
 %title-5 {
   @include themify($themes) {
-    padding-bottom: 0.8rem;
     font-family: $font-title;
     font-weight: 600;
     text-align: left;
     @include font-size(16, 18);
     @include line-height(24, 32);
-    color: themed("title-third");
+    color: themed("title-fifth");
     @include font-fade;
   }
 }

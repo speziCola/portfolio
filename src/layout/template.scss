@@ -89,7 +89,7 @@ header {
 .spacer-1 {
   @include themify($themes) {
     width: 100%;
-    height: 0.2rem;
+    height: 0.4rem;
     border-radius: 0.2rem;
     @include mt(16, 80);
     @include mb(40, 144);
