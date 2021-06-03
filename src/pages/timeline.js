@@ -130,7 +130,7 @@ const Timeline = () => (
         </div>
       </div>
 
-      <div className="spacer-1 "></div>
+      <div className="spacer-1"></div>
 
       <div className="container-timeline__wrapper">
         <div className="container-timeline__wrapper__title">

@@ -6,10 +6,10 @@ import Navbar from "../components/navbar";
 import WorkPreview from "../components/WorkPreview";
 import Footer from "../components/footer";
 
-import mobileseatmap from "../images/projects/thumbnail-mobile-seat-map-075.jpg";
-import shopconfigurator from "../images/projects/thumbnail-shop-configurator-075.jpg";
-import ticketresale from "../images/projects/thumbnail-ticket-resale-075.jpg";
-import imageperformance from "../images/projects/thumbnail-image-performance-075.jpg";
+import mobileseatmap from "../images/projects/thumbnail-mobile-seat-map.jpg";
+import shopconfigurator from "../images/projects/thumbnail-shop-configurator.jpg";
+import ticketresale from "../images/projects/thumbnail-ticket-resale.jpg";
+import imageperformance from "../images/projects/thumbnail-image-performance.jpg";
 
 
 const Work = () => (

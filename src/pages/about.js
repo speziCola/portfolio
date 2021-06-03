@@ -84,7 +84,7 @@ const About = () => (
         <div className="container__content">
           <p className="body-text">
             Hi, my name is Chris Kuhrt and I’m a passionate designer with over ten years of experience. I focus
-            on user centered design and design systems. I’m also eager to
+            on user-centered design and design systems. I’m also eager to
             improve the workflow between design and frontend constantly.
             <br />
             <br />
@@ -96,7 +96,7 @@ const About = () => (
             customers and users are met and exceeded.
             <br />
             <br />I have a strong desire for process optimization, knowledge
-            sharing, innovative thinking and solution-oriented work to create
+            sharing, innovative thinking, and solution-oriented work to create
             new scalable interactive experiences and products.
           </p>
           <div className="spacer-3"></div>
