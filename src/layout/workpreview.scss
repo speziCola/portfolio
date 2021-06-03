@@ -49,6 +49,7 @@
     }
 
     &__content {
+      @include pt(0, 24);
       grid-column-start: 13;
       grid-column-end: 30;
       grid-row: 1;

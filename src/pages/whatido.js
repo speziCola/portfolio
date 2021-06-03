@@ -26,7 +26,7 @@ const Work = () => (
       <div className="side-border">
         <h4 className="title-5">Why</h4>
         <p className="body-text">
-          Understanding the importance of the product or feature.
+          Understanding the importance and origin of the product or feature.
         </p>
         <h4 className="title-5">What</h4>
         <p className="body-text">
