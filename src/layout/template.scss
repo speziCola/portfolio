@@ -81,6 +81,7 @@ header {
       @media only screen and (max-width: 1240px) {
         width: 100%;
         @include px(0, 0);
+        padding: 0;
       }
     }
   }
