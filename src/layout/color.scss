@@ -2,6 +2,19 @@
 $primary: #4264fb;
 $secondary: #00be73;
 
+$base-50: #fdfdff;
+$base-75: #f0f0ff;
+$base-100: #e0e0f5;
+$base-200: #cfcfe3;
+$base-300: #bbbbd8;
+$base-400: #737ba5;
+$base-500: #5a648c;
+$base-600: #303859;
+$base-700: #1d1d3a;
+$base-800: #181830;
+$base-900: #0f0f23;
+
+/* Old */
 $base-1: #fdfdff;
 $base-2: #fafafa;
 $base-3: #f0f0ff;
@@ -28,6 +41,22 @@ $themes: (
     primary: $primary,
     secondary: $secondary,
 
+    /* Font Color */
+    font-color-1: $base-600,
+    font-color-2: $base-500,
+    font-color-3: $base-400,
+    
+    /* Link */ 
+    link-color: $primary,
+    link-color-hover: $secondary,
+
+    /* Styling */
+    home-square: $base-50,
+    shadow: $base-200,
+    background: $base-75,
+
+
+    /* Old */
     /* Base Color */
     base-00: $base-2,
     base-3: $base-3,
@@ -53,14 +82,13 @@ $themes: (
     color-link-hover: $secondary,
 
     /* Styling */
-    shadow: $base-10,
+   
     spacer: $base-10,
     spacer-card: $base-3,
     arrow: $base-30,
     text-footer: $base-30,
     card: $base-1,
-    home-square: $base-2,
-    background: $base-3,
+    
     nav-background: $base-1,
 
     /* Assets */
@@ -74,6 +102,27 @@ $themes: (
     primary: $primary,
     secondary: $secondary,
 
+    /* Font Color */
+    font-color-1: $base-50,
+    font-color-2: $base-50,
+    font-color-3: $base-400,
+
+    /* Link */ 
+    link-color: $primary,
+    link-color-hover: $secondary,
+ 
+    /* Styling */
+    home-square: $base-700,
+    shadow: $base-900,
+    background: $base-900,
+
+
+  
+
+
+
+
+    /* OLD */
     /* Base Color */
     base-3: $base-90,
     base-30: $base-70,
@@ -81,6 +130,8 @@ $themes: (
     base-45: $base-20,
     base-65: $base-30,
     base-200: $base-2,
+
+
 
     /* Font - Title */
     title-first: $base-1,
@@ -96,17 +147,16 @@ $themes: (
     /* Font - Links */
     color-link-first: $base-3,
     color-link-second: $base-45,
-    color-link-hover: $secondary,
+    
 
     /* Styling */
-    shadow: $base-90,
+    
     spacer: $base-80,
     spacer-card: $base-85,
     arrow: $base-70,
     text-footer: $base-45,
     card: $base-80,
-    home-square: $base-80,
-    background: $base-90,
+    
     nav-background: $base-80,
 
     /* Assets */

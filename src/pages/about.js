@@ -33,11 +33,11 @@ const About = () => (
     <Navbar></Navbar>
     {/* Header */}
     <header>
-      <h1 className="title-1">About</h1>
+      <h1 className="o-title-1">About</h1>
     </header>
-    <div className="container">
-      <div className="container__wrapper">
-        <div className="container__sidebar">
+    <div className="o-container">
+      <div className="o-container__wrapper">
+        <div className="o-container__sidebar">
           <div className="sidebar__card">
             <div className="sidebar__card__profile">
               <img
@@ -81,26 +81,24 @@ const About = () => (
             © 2008 - 2020 <Link to="/imprint/">Imprint</Link>
           </p>
         </div>
-        <div className="container__content">
-          <p className="body-text">
+        <div className="o-container__content">
+          <p className="o-text-body">
             Hi, my name is Chris Kuhrt and I’m a passionate designer with over ten years of experience. I focus
             on user-centered design and design systems. I’m also eager to
             improve the workflow between design and frontend constantly.
             <br />
             <br />
-            As a representative of the customers and users I advocate for user
-            needs through planning, design and implementation ensuring all
-            results reflect a solid understanding of UX principles. Therefore I
-            work closely together with development, product owner and product
-            management. Ensure that all goals, expectations and needs of
-            customers and users are met and exceeded.
+            As a representative of the customers and users, I advocate for user needs through planning, 
+            design, and implementation ensuring all results reflect a solid understanding of UX principles. 
+            Therefore I work closely together with development, product owner, and product management. 
+            Ensure that all goals, expectations, and needs of customers and users are met and exceeded.
             <br />
             <br />I have a strong desire for process optimization, knowledge
             sharing, innovative thinking, and solution-oriented work to create
             new scalable interactive experiences and products.
           </p>
-          <div className="spacer-3"></div>
-          <h3 className="title-5">Recent engagements</h3>
+          <div className="c-spacer-3"></div>
+          <h3 className="o-title-4">Recent engagements</h3>
           <ul className="ck-logos">
             <li>
               <a href="https://www.chrono24.de/" title="Chrono24">

@@ -1,5 +1,5 @@
 /* Animation */
-@mixin font-fade {
+%font-fade {
   transition: color $time-1 ease-in-out;
 }
 @mixin bg-fade {
@@ -18,6 +18,22 @@
     #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
   );
 }
+
+/* Spacing */ 
+@mixin padding-bottom($small, $big) {
+  padding-bottom: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
+}
+
+@mixin margin-bottom($small, $big) {
+  margin-bottom: calc(
+    #{$small}px + (#{$big} - #{$small}) * ((100vw - 320px) / (1920 - 320))
+  );
+}
+
+
+
 
 /* Size */
 @mixin width($small, $big) {

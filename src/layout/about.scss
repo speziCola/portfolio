@@ -32,15 +32,7 @@
         }
 
         &__h3 {
-          position: relative;
-          @include pt(16, 4);
-          font-family: $font-title;
-          font-weight: 800;
-          font-size: 2.4rem;
-          line-height: 2.8rem;
-          color: themed("title-third");
-          text-transform: uppercase;
-          @include font-fade;
+          @extend %o-title-2;
         }
       }
       &__h4 {
@@ -49,7 +41,7 @@
         font-size: 1.6rem;
         line-height: 3.2rem;
         color: themed("title-third");
-        @include font-fade;
+        @extend %font-fade;
 
         &--bold {
           font-weight: 600;
@@ -65,7 +57,7 @@
         text-align: left;
         color: themed("text-footer");
         text-transform: uppercase;
-        @include font-fade;
+        @extend %font-fade;
 
         & a {
           padding-left: 0.8rem;

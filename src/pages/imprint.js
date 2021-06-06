@@ -17,14 +17,14 @@ const Imprint = () => (
     <Navbar></Navbar>
     {/* Header */}
     <header>
-      <h1 className="title-1">Imprint</h1>
+      <h1 className="o-title-1">Imprint</h1>
     </header>
-    <div className="container">
-      <div className="container__wrapper">
-        <div className="container__sidebar">
+    <div className="o-container">
+      <div className="o-container__wrapper">
+        <div className="o-container__sidebar">
           <div className="sidebar__card">
             <div className="sidebar__card__profile sidebar__card__profile--no-bottom">
-              <p className="body-text no-bottom">
+              <p className="o-text-body u-no-bottom">
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
                 <br /> <br />
                 Christopher Kuhrt<br />
@@ -33,8 +33,8 @@ const Imprint = () => (
             </div>
           </div>
         </div>
-        <div className="container__content">
-          <p className="body-text">
+        <div className="o-container__content">
+          <p className="o-text-body">
             <span>Haftung für Inhalte</span>
             <br />
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für

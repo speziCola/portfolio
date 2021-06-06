@@ -12,27 +12,17 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       color: themed("primary");
-      @include font-fade;
+      @extend %font-fade;
     }
 
     &__title {
       display: inline;
-      font-family: $font-title;
-      font-weight: 700;
-      font-size: 1.8rem;
-      line-height: 2.4rem;
-      color: themed("title-first");
-      @include font-fade;
+      @extend %o-title-4;
+      color: themed("font-color-1");
     }
     &__type {
       margin-bottom: 0.4rem;
-      font-family: $font-title;
-      font-weight: 600;
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: themed("title-fourth");
-      text-transform: uppercase;
-      @include font-fade;
+      @extend %o-title-6;
     }
     &__infos {
       display: block;
@@ -41,7 +31,7 @@
       @include font-size(14, 16);
       @include line-height(24, 28);
       color: themed("text-first");
-      @include font-fade;
+      @extend %font-fade;
     }
   }
 }

@@ -18,7 +18,7 @@ const workPreview = ({
         {info}
       </p>
       <a className={`link link--${type}`} href={url}>
-        <img className={`social-icon ${password}`} src={lock} loading="lazy" alt="Password protected" />
+        <img className={`icon ${password}`} src={lock} loading="lazy" alt="Password protected" />
         view
       </a>
     </div>

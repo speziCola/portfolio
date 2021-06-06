@@ -24,10 +24,10 @@ const Work = () => (
     <Navbar></Navbar>
     {/* Header */}
     <header>
-      <h1 className="title-1">Work</h1>
+      <h1 className="o-title-1">Work</h1>
     </header>
     {/* Content */}
-    <div className="container">
+    <div className="o-container">
       <WorkPreview
         title="Ticket resale"
         subtitle="Case study"

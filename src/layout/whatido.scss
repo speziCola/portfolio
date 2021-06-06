@@ -1,10 +1,10 @@
-.skill-group {
+.c-skill-group {
   display: flex;
   flex-wrap: wrap;
   max-width: 88rem;
 }
 
-.skill {
+.c-skill {
   @include themify($themes) {
     display: flex;
     align-items: center;
@@ -15,6 +15,10 @@
     @media only screen and (max-width: 800px) {
       width: calc(25% - 2.4rem);
       margin-right: 2.4rem;
+    }
+
+    & h4 {
+      @extend %o-text-small;
     }
 
     &__icon {
@@ -98,16 +102,6 @@
       &--cinema {
         background-position: -300px -120px;
       }
-    }
-
-    & h4 {
-      font-family: $font-body;
-      font-weight: 400;
-      text-align: center;
-      @include font-size(12, 14);
-      @include line-height(16, 24);
-      color: themed("text-first");
-      @include font-fade;
     }
   }
 }

@@ -4,7 +4,7 @@ import Link from "gatsby-link";
 import ThemeButton from "../components/theme-button";
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="c-footer">
     <ThemeButton />
   </footer>
 );

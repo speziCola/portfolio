@@ -48,39 +48,28 @@ $font-body: "Poppins", sans-serif;
 ::selection {
   color: $secondary;
 }
-
-/* Hover */
-%hoverspeed {
-  transition: all $time-1 ease-in-out;
-}
-
-@mixin hover-text {
-  @extend %hoverspeed;
-  color: themed("color-link-hover");
-}
-
 /* Title */
-%title-1 {
+%o-title-1 {
   @include themify($themes) {
     display: inline-block;
     position: relative;
-    @include pb(20, 32);
+    @include padding-bottom(20, 32);
     font-family: $font-title;
-    @include font-size(32, 40);
-    @include line-height(32, 40);
+    @include font-size(40, 48);
+    @include line-height(40, 48);
     font-weight: 800;
-    color: themed("title-first");
+    color: themed("font-color-1");
     text-transform: uppercase;
-    @include font-fade;
+    @extend %font-fade;
     @media only screen and (min-width: 1600px) {
       @include font-size(32, 52);
       @include line-height(32, 50);
     }
 
     &:before {
+      content: "";
       position: absolute;
       bottom: 0;
-      content: "";
       @include width(64, 96);
       height: 0.8rem;
       background: $primary;
@@ -93,102 +82,144 @@ $font-body: "Poppins", sans-serif;
   }
 }
 
-.title-1 {
-  @extend %title-1;
+%o-title-2 {
+  @include themify($themes) {
+    font-family: $font-title;
+    @include font-size(24, 26);
+    @include line-height(28, 34);
+    font-weight: 800;
+    color: themed("font-color-2");
+    text-transform: uppercase;
+    @extend %font-fade;
+  }
 }
 
-%title-subtext {
+%o-title-3 {
+  @include themify($themes) {
+    @include margin-bottom(8, 16);
+    font-family: $font-body;
+    @include font-size(18, 26);
+    @include line-height(24, 34);
+    font-weight: 600;
+    color: themed("font-color-2");
+    @extend %font-fade;
+  }
+}
+
+%o-title-4 {
+  @include themify($themes) {
+    font-family: $font-title;
+    @include font-size(16, 18);
+    @include line-height(24, 32);
+    font-weight: 700;
+    color: themed("font-color-3");
+    @extend %font-fade;
+  }
+}
+
+%o-title-5 {
+  @include themify($themes) {
+    @include margin-bottom(8, 16);
+    font-family: $font-title;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: themed("font-color-3");
+    @extend %font-fade;
+  }
+}
+
+%o-title-6 {
+  @include themify($themes) {
+    font-family: $font-title;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: themed("font-color-3");
+    text-transform: uppercase;
+    @extend %font-fade;
+  }
+}
+/* Text-Body */
+%o-text {
+  @include themify($themes) {
+    &-body {
+      @include mb(16, 24);
+      max-width: 96rem;
+      font-family: $font-body;
+      font-weight: 400;
+      text-align: left;
+      color: themed("font-color-2");
+      @include font-size(14, 16);
+      @include line-height(24, 32);
+      @extend %font-fade;
+
+      & span {
+        font-family: $font-title;
+        font-weight: 700;
+        color: themed("font-color-3");
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        @include mb(32, 80);
+      }
+    }
+    &-link {
+      font-family: $font-body;
+      @include font-size(16, 18);
+      line-height: 3.2rem;
+      font-weight: 700;
+      color: themed("font-color-1");
+      text-align: left;
+    }
+    &-small {
+      font-family: $font-body;
+
+      @include font-size(12, 14);
+      @include line-height(16, 24);
+      font-weight: 400;
+
+      color: themed("font-color-1");
+      text-align: center;
+      @extend %font-fade;
+    }
+  }
+}
+
+/* Home-Intro */
+%o-text-intro-body {
   @include themify($themes) {
     font-family: $font-body;
     @include font-size(16, 20);
     @include line-height(26, 34);
-    color: themed("text-first");
-    @include font-fade;
-    box-sizing: border-box;
+    color: themed("font-color-2");
+    @extend %font-fade;
   }
 }
 
-%title-2 {
+%o-text-intro-link {
   @include themify($themes) {
-    padding-bottom: 1.6rem;
-    font-family: $font-title;
-    font-weight: 700;
-    @include font-size(20, 28);
-    @include line-height(26, 32);
-    line-height: 2.4rem;
-    color: themed("title-second");
-    text-transform: uppercase;
-    @include font-fade;
-  }
-}
-
-.title-2 {
-  @extend %title-2;
-}
-
-%title-3 {
-  @include themify($themes) {
-    @include mb(8, 16);
     font-family: $font-body;
-    @include font-size(16, 26);
-    @include line-height(18, 34);
+    @include font-size(18, 22);
+    color: themed("primary");
     font-weight: 600;
-    color: themed("title-third");
-    @include font-fade;
-  }
-}
-.title-3 {
-  @extend %title-3;
-}
-
-%title-4 {
-  @include themify($themes) {
-    @include mb(8, 16);
-    font-family: $font-title;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    color: themed("title-fourth");
-    text-transform: uppercase;
-    @include font-fade;
+    @extend %font-fade;
+    &:hover {
+      color: themed("link-color-hover");
+    }
   }
 }
 
-.title-4 {
-  @extend %title-4;
+/* OLD */
+/* Hover */
+%hoverspeed {
+  transition: all $time-1 ease-in-out;
 }
 
-%title-5 {
-  @include themify($themes) {
-    font-family: $font-title;
-    font-weight: 600;
-    text-align: left;
-    @include font-size(16, 18);
-    @include line-height(24, 32);
-    color: themed("title-fifth");
-    @include font-fade;
-  }
-}
-
-.title-5 {
-  @extend %title-5;
-  &--spacing {
-    @include mb(8, 16);
-  }
-}
-
-%title-6 {
-  @include themify($themes) {
-    font-family: $font-title;
-    @include font-size(16, 18);
-    @include line-height(24, 32);
-    font-weight: 700;
-    color: themed("title-third");
-  }
-}
-
-.title-6 {
-  @extend %title-6;
+@mixin hover-text {
+  @extend %hoverspeed;
+  color: themed("color-link-hover");
 }
 
 /* Nav Links */
@@ -222,58 +253,4 @@ $font-body: "Poppins", sans-serif;
   }
 }
 
-%body-text {
-  @include themify($themes) {
-    @include mb(16, 24);
-    max-width: 96rem;
-    font-family: $font-body;
-    font-weight: 400;
-    text-align: left;
-    color: themed("text-first");
-    @include font-size(14, 16);
-    @include line-height(24, 32);
-    @include font-fade;
-
-    & span {
-      font-family: $font-title;
-      font-weight: 700;
-      color: themed("text-third");
-      text-transform: uppercase;
-    }
-
-    &:last-child {
-      @include mb(32, 80);
-    }
-  }
-}
-
-.body-text {
-  @extend %body-text;
-}
-
-.no-bottom {
-  @include themify($themes) {
-    margin-bottom: 0 !important;
-  }
-}
 /* List Style */
-.side-border {
-  @include themify($themes) {
-    position: relative;
-    padding-left: 3.2rem;
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      left: 0.4rem;
-      @include width(4, 6);
-      height: 100%;
-      border-radius: 10rem;
-      @include bg-fade;
-      background: themed("spacer");
-    }
-    @media only screen and (max-width: 800px) {
-      padding-left: 1.6rem;
-    }
-  }
-}

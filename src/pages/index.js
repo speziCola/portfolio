@@ -23,20 +23,20 @@ const IndexPage = () => (
       ]}
     />
     <Navbar></Navbar>
-    <div className="home">
-      <article className="home__content">
+    <div className="c-home">
+      <article className="c-home__content">
 
-          <h1 className="home__headline">
+          <h1 className="c-home__headline">
             Hi, my name is Chris{NBSP}Kuhrt
             <br />
             I’m{NBSP}a Product Designer based in Germany
           </h1>
-          <p className="home__subtext">
+          <p className="c-home__subtext">
             With over ten years of experience I’ve worked on several projects with a focus on user and business needs. 
             Always in mind to create new scalable experiences and products.
           </p>
 
-        <ul className="home__menu">
+        <ul className="c-home__menu">
           <li>
             <Link to="/work/">Work</Link>
           </li>
@@ -45,13 +45,13 @@ const IndexPage = () => (
           </li>
         </ul>
       </article>
-      <aside id="showcase" className="home__showcase">
-        <div className="home__showcase-wrapper">
+      <aside className="c-home__showcase">
+        <div className="c-home__showcase-wrapper">
           <video
             autoplay="autoplay"
             muted
             loop
-            className="home__showcase-video"
+            className="c-home__showcase-video"
           >
             <source src={showcasevideoMp4} type="video/mp4" />
             <source src={showcasevideoWebm} type="video/webm" />
@@ -60,17 +60,17 @@ const IndexPage = () => (
             <source srcset={showcaseimagewebp} type="image/webp" />
             <source srcset={showcaseimagejpg} type="image/jpeg" />
             <img
-              className="home__showcase-img"
+              className="c-home__showcase-img"
               src={showcaseimagejpg}
               alt="DFB Seat Map"
             ></img>
           </picture>
-          <div className="home__showcase-shadow"></div>
+          <div className="c-home__showcase-shadow"></div>
         </div>
       </aside>
     </div>
     <Footer></Footer>
-    <div className="home__square"></div>
+    <div className="c-home__square"></div>
   </Layout>
 );
 

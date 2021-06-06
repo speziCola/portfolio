@@ -31,7 +31,7 @@
       img {
         filter: invert(37%) sepia(38%) saturate(407%) hue-rotate(191deg)
           brightness(97%) contrast(93%);
-          @extend %hoverspeed;
+        @extend %hoverspeed;
       }
 
       &:hover {
@@ -45,7 +45,9 @@
   }
 }
 
-.social-icon {
+.icon {
   display: block;
-  padding-right: 0.8rem;
+  &-social {
+    padding-right: 0.8rem;
+  }
 }

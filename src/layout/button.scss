@@ -3,7 +3,7 @@
     display: inline-block;
     margin-bottom: 1.6rem;
     margin-right: 1.6rem;
-    @extend %body-text;
+    @extend %o-text-body;
     @include font-size(18, 24);
     @include line-height(24, 40);
 

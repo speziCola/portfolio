@@ -15,11 +15,11 @@ const Menu = () => (
       ]}
     />
     <header>
-      <h1 className="title-1">Menu</h1>
+      <h1 className="o-title-1">Menu</h1>
     </header>
     <Navbar></Navbar>
     {/* Header */}
-    <div className="container">
+    <div className="o-container">
       <ul className="mobile-menu">
         <li>
           <Link className="mobile-menu__link" to="/work/">Work</Link>

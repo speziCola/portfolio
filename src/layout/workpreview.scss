@@ -62,16 +62,16 @@
     }
 
     &__title {
-      @extend %title-3;
+      @extend %o-title-3;
       margin-bottom: 0;
     }
 
     &__subtitle {
-      @extend %title-4;
+      @extend %o-title-6;
     }
 
     &__info {
-      @extend %body-text;
+      @extend %o-text-body;
       @include mb(8, 16);
     }
   }
