@@ -1,4 +1,4 @@
-.container-timeline__wrapper {
+.o-container-timeline__wrapper {
   @include themify($themes) {
     display: flex;
     @media only screen and (max-width: 900px) {
