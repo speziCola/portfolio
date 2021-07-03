@@ -98,7 +98,7 @@ const About = () => (
             new scalable interactive experiences and products.
           </p>
           <div className="c-spacer-3"></div>
-          <h3 className="o-title-4 o-title-4--bottom">Recent engagements</h3>
+          <h3 className="o-title-4 o-title-4--bottom-1">Recent engagements</h3>
           <ul className="ck-logos">
             <li>
               <a href="https://www.chrono24.de/" title="Chrono24">

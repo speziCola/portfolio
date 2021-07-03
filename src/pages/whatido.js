@@ -87,7 +87,7 @@ const Work = () => (
         evenings and weekends learning new skills and technologies.
       </p>
       <div className="c-spacer-3"></div>
-      <h4 className="o-title-4 o-title-4--spacing">
+      <h4 className="o-title-4 o-title-4--bottom-2">
         Visual Design, Concept, Wireframing, Prototyping & Interaction Design
       </h4>
       <div className="c-skill-group">
@@ -173,7 +173,7 @@ const Work = () => (
         </div>
       </div>
       <div className="c-spacer-2"></div>
-      <h4 className="o-title-4 o-title-4--spacing">Web & Coding</h4>
+      <h4 className="o-title-4 o-title-4--bottom-2">Web & Coding</h4>
       <div className="c-skill-group">
         <div className="c-skill">
           <div
@@ -241,7 +241,7 @@ const Work = () => (
         </div>
       </div>
       <div className="c-spacer-2"></div>
-      <h4 className="o-title-4 o-title-4--spacing">
+      <h4 className="o-title-4 o-title-4--bottom-2">
         Illustrations, Photo & Video Editing
       </h4>
       <div className="c-skill-group">

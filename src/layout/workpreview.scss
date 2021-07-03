@@ -35,7 +35,7 @@
         transition: transform 0.24s ease-in-out;
         transform: scale(1.002);
         @include shadow-02;
-        border-radius: 0.4rem;
+        border-radius: 0.8rem;
 
         @media only screen and (max-width: 950px) {
           max-width: 100%;
