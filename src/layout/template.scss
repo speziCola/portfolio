@@ -12,8 +12,8 @@
 
 .o-title-4 {
   @extend %o-title-4;
-  &--spacing {
-    margin-bottom: 2.4rem;
+  &--bottom {
+    margin-bottom: 0.8rem;
   }
 }
 

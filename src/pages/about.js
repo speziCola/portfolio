@@ -38,7 +38,7 @@ const About = () => (
     <div className="o-container">
       <div className="o-container__wrapper">
         <div className="o-container__sidebar">
-          <div className="sidebar__card">
+          <div className="sidebar__card sidebar__card--no-bottom">
             <div className="sidebar__card__profile">
               <img
                 className="sidebar__card__profile__avatar"
@@ -98,7 +98,7 @@ const About = () => (
             new scalable interactive experiences and products.
           </p>
           <div className="c-spacer-3"></div>
-          <h3 className="o-title-4">Recent engagements</h3>
+          <h3 className="o-title-4 o-title-4--bottom">Recent engagements</h3>
           <ul className="ck-logos">
             <li>
               <a href="https://www.chrono24.de/" title="Chrono24">
