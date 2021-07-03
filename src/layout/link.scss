@@ -6,27 +6,27 @@
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
-    color: themed("color-link-second");
+    color: themed("font-color-3");
     transition: all $time-1 ease-in-out;
 
     &:hover {
-      color: themed("color-link-hover");
+      color: themed("link-color-hover");
 
       &::after {
-        color: themed("color-link-hover");
+        color: themed("link-color-hover");
       }
     }
 
     &:after {
       display: inline-block;
-      margin-top: -0.1rem;
+      margin-top: -0.2rem;
       padding-left: 0.2rem;
       font-family: "symbols";
       font-style: normal;
       font-weight: normal;
       line-height: 2.4rem;
       vertical-align: middle;
-      color: themed("arrow");
+      color: themed("font-color-3");
     }
 
     & span {
@@ -68,6 +68,14 @@
       &--light {
         color: themed("color-link-first");
         font-weight: 400;
+        &::after {
+          transform: translate(0px, 1px);
+        }
+        &:hover {
+          &::after {
+            transform: translate(2px, -1px);
+          }
+        }
       }
     }
     .no-lock {

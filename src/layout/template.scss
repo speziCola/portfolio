@@ -13,7 +13,7 @@
 .o-title-4 {
   @extend %o-title-4;
   &--spacing {
-    margin-bottom: 0.8rem;
+    margin-bottom: 2.4rem;
   }
 }
 
@@ -134,7 +134,7 @@ header {
 .c-spacer-2 {
   @include themify($themes) {
     width: 100%;
-    @include height(32, 96);
+    @include height(32, 72);
   }
 }
 

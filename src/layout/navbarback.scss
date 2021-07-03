@@ -13,7 +13,7 @@
       &:hover {
         @extend %hoverspeed;
         background: $primary;
-        box-shadow: 0 4px 8px 2px themed("shadow");
+        box-shadow: 0 4px 8px 2px themed("shadow-1");
         & i {
           color: $base-2;
         }

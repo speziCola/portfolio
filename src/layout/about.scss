@@ -5,7 +5,7 @@
       @include pb(24, 40);
       background: themed("card");
       border-radius: $border-radius-big;
-      @include shadow-01;
+      @include shadow-02;
 
       &__profile {
         display: flex;

@@ -19,6 +19,7 @@
 
     & h4 {
       @extend %o-text-small;
+      color: themed("font-color-2");
     }
 
     &__icon {

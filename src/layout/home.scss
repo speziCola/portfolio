@@ -95,13 +95,13 @@
         margin-top: 1.6rem;
         width: 100%;
         height: 4rem;
-        background: themed("shadow");
+        background: themed("shadow-1");
         border-radius: 100%;
         filter: blur(24px);
         z-index: 3;
       }
     }
-
+/*
     &__square {
       position: absolute;
       display: block;
@@ -118,7 +118,7 @@
         display: none;
       }
     }
-
+*/
     &__background {
       position: absolute;
       width: 100%;

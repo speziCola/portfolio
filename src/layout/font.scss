@@ -23,23 +23,23 @@
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-SemiBold.ttf") format("truetype");
   font-display: swap;
   font-weight: 600;
   font-style: normal;
 }
 
 $font-title: "Barlow", sans-serif;
-$font-body: "Poppins", sans-serif;
+$font-body: "Rubik", sans-serif;
 
 /* Selection */
 ::-moz-selection {
@@ -87,9 +87,8 @@ $font-body: "Poppins", sans-serif;
     font-family: $font-title;
     @include font-size(24, 26);
     @include line-height(28, 34);
-    font-weight: 800;
+    font-weight: 700;
     color: themed("font-color-2");
-    text-transform: uppercase;
     @extend %font-fade;
   }
 }
@@ -111,7 +110,7 @@ $font-body: "Poppins", sans-serif;
     font-family: $font-title;
     @include font-size(16, 18);
     @include line-height(24, 32);
-    font-weight: 700;
+    font-weight: 600;
     color: themed("font-color-3");
     @extend %font-fade;
   }
@@ -175,13 +174,10 @@ $font-body: "Poppins", sans-serif;
     }
     &-small {
       font-family: $font-body;
-
       @include font-size(12, 14);
       @include line-height(16, 24);
       font-weight: 400;
-
       color: themed("font-color-1");
-      text-align: center;
       @extend %font-fade;
     }
   }
@@ -211,6 +207,9 @@ $font-body: "Poppins", sans-serif;
   }
 }
 
+
+
+
 /* OLD */
 /* Hover */
 %hoverspeed {
@@ -219,7 +218,7 @@ $font-body: "Poppins", sans-serif;
 
 @mixin hover-text {
   @extend %hoverspeed;
-  color: themed("color-link-hover");
+  color: themed("link-color-hover");
 }
 
 /* Nav Links */

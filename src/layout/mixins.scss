@@ -131,9 +131,10 @@
   );
 }
 
-@mixin shadow-01 {
-  box-shadow: 0px 4px 24px themed("shadow");
+@mixin shadow-02 {
+  box-shadow: 0px 4px 24px themed("shadow-2");
   transition: all 0.5s ease-in-out;
 }
+
 
 $border-radius-big: 0.8rem;

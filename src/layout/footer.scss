@@ -21,7 +21,7 @@
       border-radius: 100%;
       transition: box-shadow 0.24s ease-in-out;
       background: none;
-      box-shadow: 0 4px 8px 2px themed("shadow");
+      box-shadow: 0 4px 8px 2px themed("shadow-1");
       @media only screen and (max-width: 800px) {
         margin-right: 0;
         margin-left: 1.6rem;
@@ -39,7 +39,7 @@
       }
 
       &:hover i {
-        color: themed("color-link-hover");
+        color: themed("link-color-hover");
         @media only screen and (max-width: 800px) {
           color: themed("link-second");
         }

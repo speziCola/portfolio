@@ -3,7 +3,7 @@ $primary: #4264fb;
 $secondary: #00be73;
 
 $base-50: #fdfdff;
-$base-75: #f0f0ff;
+$base-75: #f7f7ff;
 $base-100: #e0e0f5;
 $base-200: #cfcfe3;
 $base-300: #bbbbd8;
@@ -52,7 +52,8 @@ $themes: (
 
     /* Styling */
     home-square: $base-50,
-    shadow: $base-200,
+    shadow-1: $base-300,
+    shadow-2: $base-100,
     background: $base-75,
 
 
@@ -79,7 +80,6 @@ $themes: (
     /* Font - Links */
     color-link-first: $base-65,
     color-link-second: $base-65,
-    color-link-hover: $secondary,
 
     /* Styling */
    
@@ -107,14 +107,15 @@ $themes: (
     font-color-2: $base-50,
     font-color-3: $base-400,
 
-    /* Link */ 
+    /* Font - Links */ 
     link-color: $primary,
     link-color-hover: $secondary,
  
     /* Styling */
     home-square: $base-700,
-    shadow: $base-900,
-    background: $base-900,
+    shadow-1: $base-900,
+    shadow-2: $base-900,
+    background: $base-800,
 
 
   

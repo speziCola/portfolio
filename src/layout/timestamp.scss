@@ -7,10 +7,8 @@
 
     &__time {
       margin-bottom: 1.2rem;
-      font-family: $font-title;
-      font-weight: 700;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
+      @extend %o-text-small;
+      font-weight: 600;
       color: themed("primary");
       @extend %font-fade;
     }
