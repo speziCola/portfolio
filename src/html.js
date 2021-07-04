@@ -30,7 +30,6 @@ export default function HTML(props) {
 }
 
 HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
