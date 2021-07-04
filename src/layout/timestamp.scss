@@ -7,8 +7,7 @@
 
     &__time {
       margin-bottom: 1.2rem;
-      @extend %o-text-small;
-      font-weight: 600;
+      @extend %o-title-6;
       color: themed("primary");
       @extend %font-fade;
     }
@@ -19,7 +18,7 @@
       color: themed("font-color-1");
     }
     &__type {
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.8rem;
       @extend %o-title-6;
     }
     &__infos {

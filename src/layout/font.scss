@@ -110,7 +110,7 @@ $font-body: "Rubik", sans-serif;
     font-family: $font-title;
     @include font-size(16, 18);
     @include line-height(24, 32);
-    font-weight: 600;
+    font-weight: 700;
     color: themed("font-color-3");
     @extend %font-fade;
   }
@@ -135,7 +135,6 @@ $font-body: "Rubik", sans-serif;
     line-height: 2rem;
     font-weight: 700;
     color: themed("font-color-3");
-    text-transform: uppercase;
     @extend %font-fade;
   }
 }

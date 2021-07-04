@@ -19,6 +19,7 @@
     }
 
     &__img {
+      position: relative;
       grid-column-start: 1;
       grid-column-end: 12;
       margin-bottom: 1.6rem;
@@ -30,12 +31,13 @@
       }
 
       & img {
+        position: relative;
         display: block;
         width: 100%;
         transition: transform 0.24s ease-in-out;
         transform: scale(1.002);
-        @include shadow-02;
         border-radius: 0.8rem;
+        z-index: 10;
 
         @media only screen and (max-width: 950px) {
           max-width: 100%;
@@ -45,6 +47,24 @@
           transform: scale(1.025);
           transition: transform 0.24s ease-in-out;
         }
+      }
+    }
+
+    &__card {
+      display: block;
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 1.6rem;
+        margin-left: 1.6rem;
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        background: themed("card");
+        @include bg-fade;
+        @include shadow-02;
+        border-radius: 0.8rem;
+        z-index: 0;
       }
     }
 
@@ -64,6 +84,10 @@
     &__title {
       @extend %o-title-3;
       margin-bottom: 0;
+
+      &:hover {
+        color: themed("link-color-hover");
+      }
     }
 
     &__subtitle {

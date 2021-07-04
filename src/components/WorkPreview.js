@@ -9,7 +9,7 @@ const workPreview = ({
 }) => (
   <div className="work_container">
     <figure className="work__img">
-      <a href={url}><img src={img} alt={alt} /></a>
+      <a className="work__card" href={url}><img src={img} alt={alt} /></a>
     </figure>
     <div className="work__content">
       <a href={url}><h2 className="work__title"><span className="work__tile__title--underline">{title}</span></h2></a>

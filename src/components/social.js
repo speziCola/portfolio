@@ -1,19 +1,17 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import linkedin from '../../src/images/icons/linkedin.svg';
-import xing from '../../src/images/icons/xing.svg';
-import medium from '../../src/images/icons/medium.svg';
-import behance from '../../src/images/icons/behance.svg';
-import github from '../../src/images/icons/github.svg';
-import twitter from '../../src/images/icons/twitter.svg';
-import instagram from '../../src/images/icons/instagram.svg';
-import fivepx from '../../src/images/icons/500pixel.svg';
-import vimeo from '../../src/images/icons/vimeo.svg';
+import linkedin from "../../src/images/icons/linkedin.svg";
+import xing from "../../src/images/icons/xing.svg";
+import medium from "../../src/images/icons/medium.svg";
+import behance from "../../src/images/icons/behance.svg";
+import github from "../../src/images/icons/github.svg";
+import twitter from "../../src/images/icons/twitter.svg";
+import instagram from "../../src/images/icons/instagram.svg";
+import fivepx from "../../src/images/icons/500pixel.svg";
+import vimeo from "../../src/images/icons/vimeo.svg";
 
-const Social = ({
-  size
-}) => (
+const Social = ({ size }) => (
   <div>
     <ul className="ck_social ck_social--two-columns">
       <li>
@@ -29,15 +27,15 @@ const Social = ({
         </a>
       </li>
       <li>
-        <a href="http://medium.chriskuhrt.de/" aria-label="Medium">
-          <img className="icon-social" src={medium} alt="Medium" />
-          medium
+        <a href="http://twitter.chriskuhrt.de/" aria-label="Twitter">
+          <img className="icon-social" src={twitter} alt="Twitter" />
+          twitter
         </a>
       </li>
       <li>
-        <a href="http://behance.chriskuhrt.de/" aria-label="Behance">
-          <img className="icon-social" src={behance} alt="Behance" />
-          behance
+        <a href="http://medium.chriskuhrt.de/" aria-label="Medium">
+          <img className="icon-social" src={medium} alt="Medium" />
+          medium
         </a>
       </li>
       <li>
@@ -46,15 +44,17 @@ const Social = ({
           github
         </a>
       </li>
+
       <li>
-        <a href="http://twitter.chriskuhrt.de/" aria-label="Twitter">
-        <img className="icon-social" src={twitter} alt="Twitter" />
-          twitter
+        <a href="http://behance.chriskuhrt.de/" aria-label="Behance">
+          <img className="icon-social" src={behance} alt="Behance" />
+          behance
         </a>
       </li>
+
       <li>
         <a href="http://instagram.chriskuhrt.de/" aria-label="Instagram">
-        <img className="icon-social" src={instagram} alt="Instagram" />
+          <img className="icon-social" src={instagram} alt="Instagram" />
           instagram
         </a>
       </li>
@@ -75,12 +75,11 @@ const Social = ({
 );
 
 Social.defaultProps = {
-  size: ''
+  size: "",
 };
 
 Social.propTypes = {
-  size: PropTypes.string
-
+  size: PropTypes.string,
 };
 
 export default Social;

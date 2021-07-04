@@ -3,8 +3,11 @@
     list-style-type: none;
     font-family: $font-body;
     font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    text-align: left;
+    color: themed("font-color-2");
+    @include font-size(14, 16);
+    @include line-height(24, 32);
+    @extend %font-fade;
 
     &--two-columns {
       margin-bottom: 2.4rem;
