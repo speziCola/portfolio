@@ -1,4 +1,4 @@
-<h1>
+<h2>
  Hi there!
-</h1>
+</h2>
 Just my little portfolio. 
