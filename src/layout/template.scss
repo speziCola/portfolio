@@ -169,6 +169,21 @@ header {
       @include bg-fade;
       background: themed("spacer");
     }
+    &--red {
+      &:before {
+        background: $red;
+      }
+    }
+    &--blue {
+      &:before {
+        background: $blue;
+      }
+    }
+    &--green {
+      &:before {
+        background: $green;
+      }
+    }
     @media only screen and (max-width: 800px) {
       padding-left: 1.6rem;
     }

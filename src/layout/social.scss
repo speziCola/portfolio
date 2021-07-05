@@ -5,7 +5,7 @@
     font-weight: 400;
     text-align: left;
     color: themed("font-color-2");
-    @include font-size(14, 16);
+    @include font-size(16, 16);
     @include line-height(24, 32);
     @extend %font-fade;
 

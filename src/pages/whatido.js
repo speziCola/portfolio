@@ -23,7 +23,7 @@ const Work = () => (
     <div className="o-container">
     <h2 className="o-title-3 u-no-bottom">Understanding the goal</h2>
       <h3 className="o-title-6">Question & Verify</h3>
-      <div className="u-list-border">
+      <div className="u-list-border u-list-border--red">
         <h4 className="o-title-4">Why</h4>
         <p className="o-text-body">
           Understanding the importance and origin of the product or feature.
@@ -39,7 +39,7 @@ const Work = () => (
       </div>
       <h2 className="o-title-3 u-no-bottom">Determine the challenge</h2>
       <h3 className="o-title-6">Discover & Define</h3>
-      <div className="u-list-border">
+      <div className="u-list-border u-list-border--blue">
         <h4 className="o-title-4">Empathize</h4>
         <p className="o-text-body">
           Learning about the people for whom I design. In dialogue with users,
@@ -58,7 +58,7 @@ const Work = () => (
       </div>
       <h2 className="o-title-3 u-no-bottom">Provide a solution</h2>
       <h3 className="o-title-6">Develop & Deliver</h3>
-      <div className="u-list-border">
+      <div className="u-list-border u-list-border--green">
         <h4 className="o-title-4">Brainstorm</h4>
         <p className="o-text-body">
           By providing different solutions to the clearly defined challenge via

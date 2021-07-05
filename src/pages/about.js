@@ -45,14 +45,10 @@ const About = () => (
                 src={avatar}
                 alt="Chris Kuhrt, porfile picture."
               />
-              <ul>
-                <li>
-                  <h3 className="sidebar__card__profile__h3">Chris Kuhrt</h3>
-                </li>
-                <li>
-                  <h4 className="sidebar__card__h4">Product designer</h4>
-                </li>
-              </ul>
+              <div>
+                <h3 className="sidebar__card__profile__h3">Chris Kuhrt</h3>
+                <h4 className="sidebar__card__h4">Product designer</h4>
+              </div>
             </div>
 
             <div className="sidebar__card__space"></div>
@@ -83,15 +79,18 @@ const About = () => (
         </div>
         <div className="o-container__content">
           <p className="o-text-body">
-            Hi, my name is Chris Kuhrt and I’m a passionate designer with over ten years of experience. I focus
-            on user-centered design and design systems. I’m also eager to
-            improve the workflow between design and frontend constantly.
+            Hi, my name is Chris Kuhrt and I’m a passionate designer with over
+            ten years of experience. I focus on user-centered design and design
+            systems. I’m also eager to improve the workflow between design and
+            frontend constantly.
             <br />
             <br />
-            As a representative of the customers and users, I advocate for user needs through planning, 
-            design, and implementation ensuring all results reflect a solid understanding of UX principles. 
-            Therefore I work closely together with development, product owner, and product management. 
-            Ensure that all goals, expectations, and needs of customers and users are met and exceeded.
+            As a representative of the customers and users, I advocate for user
+            needs through planning, design, and implementation ensuring all
+            results reflect a solid understanding of UX principles. Therefore I
+            work closely together with development, product owner, and product
+            management. Ensure that all goals, expectations, and needs of
+            customers and users are met and exceeded.
             <br />
             <br />I have a strong desire for process optimization, knowledge
             sharing, innovative thinking, and solution-oriented work to create

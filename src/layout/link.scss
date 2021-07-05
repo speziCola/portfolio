@@ -4,7 +4,7 @@
     position: relative;
     font-family: $font-body;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
     color: themed("font-color-3");
     transition: all $time-1 ease-in-out;
@@ -19,7 +19,7 @@
 
     &:after {
       display: inline-block;
-      margin-top: -0.2rem;
+      margin-top: -0.1rem;
       padding-left: 0.2rem;
       font-family: "symbols";
       font-style: normal;

@@ -85,8 +85,8 @@ $font-body: "Rubik", sans-serif;
 %o-title-2 {
   @include themify($themes) {
     font-family: $font-title;
-    @include font-size(24, 26);
-    @include line-height(28, 34);
+    @include font-size(28, 30);
+    @include line-height(32, 40);
     font-weight: 700;
     color: themed("font-color-2");
     @extend %font-fade;
@@ -97,10 +97,10 @@ $font-body: "Rubik", sans-serif;
   @include themify($themes) {
     @include margin-bottom(8, 16);
     font-family: $font-body;
-    @include font-size(18, 26);
-    @include line-height(24, 34);
+    @include font-size(20, 26);
+    @include line-height(28, 34);
     font-weight: 600;
-    color: themed("font-color-2");
+    color: themed("font-color-1");
     @extend %font-fade;
   }
 }
@@ -108,8 +108,8 @@ $font-body: "Rubik", sans-serif;
 %o-title-4 {
   @include themify($themes) {
     font-family: $font-title;
-    @include font-size(16, 18);
-    @include line-height(24, 32);
+    @include font-size(20, 20);
+    @include line-height(26, 30);
     font-weight: 700;
     color: themed("font-color-3");
     @extend %font-fade;
@@ -120,7 +120,7 @@ $font-body: "Rubik", sans-serif;
   @include themify($themes) {
     @include margin-bottom(8, 16);
     font-family: $font-title;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 600;
     color: themed("font-color-3");
@@ -131,7 +131,7 @@ $font-body: "Rubik", sans-serif;
 %o-title-6 {
   @include themify($themes) {
     font-family: $font-title;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 700;
     color: themed("font-color-3");
@@ -148,8 +148,8 @@ $font-body: "Rubik", sans-serif;
       font-weight: 400;
       text-align: left;
       color: themed("font-color-2");
-      @include font-size(14, 16);
-      @include line-height(24, 32);
+      @include font-size(18, 18);
+      @include line-height(28, 36);
       @extend %font-fade;
 
       & span {
@@ -186,8 +186,8 @@ $font-body: "Rubik", sans-serif;
 %o-text-intro-body {
   @include themify($themes) {
     font-family: $font-body;
-    @include font-size(16, 20);
-    @include line-height(26, 34);
+    @include font-size(18, 20);
+    @include line-height(28, 34);
     color: themed("font-color-2");
     @extend %font-fade;
   }
@@ -196,7 +196,8 @@ $font-body: "Rubik", sans-serif;
 %o-text-intro-link {
   @include themify($themes) {
     font-family: $font-body;
-    @include font-size(18, 22);
+    @include font-size(20, 22);
+    @include line-height(32, 34);
     color: themed("primary");
     font-weight: 600;
     @extend %font-fade;

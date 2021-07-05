@@ -25,8 +25,8 @@
       display: block;
       font-family: $font-body;
       font-weight: 400;
-      @include font-size(14, 16);
-      @include line-height(24, 28);
+      @include font-size(16, 18);
+      @include line-height(26, 30);
       color: themed("text-first");
       @extend %font-fade;
     }
