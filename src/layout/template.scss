@@ -4,6 +4,9 @@
 
 .o-title-2 {
   @extend %o-title-2;
+  &--bottom-2 {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .o-title-3 {
@@ -23,11 +26,6 @@
 
 .o-title-5 {
   @extend %o-title-5;
-}
-
-.o-title-6 {
-  @extend %o-title-6;
-  @include mb(16, 24);
 }
 
 .o-text-body {

@@ -29,12 +29,12 @@
       display: inline-flex;
       align-items: center;
       color: themed("color-link-second");
-      @extend %hoverspeed;
+      @extend %font-fade;
 
       img {
         filter: invert(37%) sepia(38%) saturate(407%) hue-rotate(191deg)
           brightness(97%) contrast(93%);
-        @extend %hoverspeed;
+        @extend %font-fade;
       }
 
       &:hover {

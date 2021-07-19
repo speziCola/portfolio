@@ -21,8 +21,8 @@ const Work = () => (
     </header>
     {/* Content */}
     <div className="o-container">
-    <h2 className="o-title-3 u-no-bottom">Understanding the goal</h2>
-      <h3 className="o-title-6">Question & Verify</h3>
+    <h2 className="o-title-2 u-no-bottom">Understanding the goal</h2>
+      <h3 className="o-title-5">Question & Verify</h3>
       <div className="u-list-border u-list-border--red">
         <h4 className="o-title-4">Why</h4>
         <p className="o-text-body">
@@ -37,8 +37,8 @@ const Work = () => (
           Does it benefit the customers? Does it extend the company's mission?
         </p>
       </div>
-      <h2 className="o-title-3 u-no-bottom">Determine the challenge</h2>
-      <h3 className="o-title-6">Discover & Define</h3>
+      <h2 className="o-title-2 u-no-bottom">Determine the challenge</h2>
+      <h3 className="o-title-5">Discover & Define</h3>
       <div className="u-list-border u-list-border--blue">
         <h4 className="o-title-4">Empathize</h4>
         <p className="o-text-body">
@@ -56,8 +56,8 @@ const Work = () => (
           help me to define the challenge in a different way.
         </p>
       </div>
-      <h2 className="o-title-3 u-no-bottom">Provide a solution</h2>
-      <h3 className="o-title-6">Develop & Deliver</h3>
+      <h2 className="o-title-2 u-no-bottom">Provide a solution</h2>
+      <h3 className="o-title-5">Develop & Deliver</h3>
       <div className="u-list-border u-list-border--green">
         <h4 className="o-title-4">Brainstorm</h4>
         <p className="o-text-body">
@@ -80,7 +80,7 @@ const Work = () => (
         </p>
       </div>
       <div className="c-spacer-2"></div>
-      <h2 className="o-title-3">Technical Skills</h2>
+      <h2 className="o-title-2 o-title-2--bottom-2">Technical Skills</h2>
       <p className="o-text-body">
         I'm a Hybrid Designer. I also like to work with front-end code,
         designing and creating things is a passion of mine. I often spend my

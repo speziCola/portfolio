@@ -48,6 +48,11 @@ $font-body: "Rubik", sans-serif;
 ::selection {
   color: $secondary;
 }
+
+@mixin link-hover-color {
+  color: themed("link-color-hover");
+}
+
 /* Title */
 %o-title-1 {
   @include themify($themes) {
@@ -85,10 +90,10 @@ $font-body: "Rubik", sans-serif;
 %o-title-2 {
   @include themify($themes) {
     font-family: $font-title;
-    @include font-size(28, 30);
-    @include line-height(32, 40);
+    font-size: 2.6rem;
+    line-height: 3.2rem;
     font-weight: 700;
-    color: themed("font-color-2");
+    color: themed("font-color-1");
     @extend %font-fade;
   }
 }
@@ -97,10 +102,10 @@ $font-body: "Rubik", sans-serif;
   @include themify($themes) {
     @include margin-bottom(8, 16);
     font-family: $font-body;
-    @include font-size(20, 26);
-    @include line-height(28, 34);
-    font-weight: 600;
-    color: themed("font-color-1");
+    @include font-size(17, 20);
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: themed("font-color-3");
     @extend %font-fade;
   }
 }
@@ -108,10 +113,10 @@ $font-body: "Rubik", sans-serif;
 %o-title-4 {
   @include themify($themes) {
     font-family: $font-title;
-    @include font-size(20, 20);
-    @include line-height(26, 30);
-    font-weight: 700;
-    color: themed("font-color-3");
+    @include font-size(15, 17);
+    @include line-height(24, 33);
+    font-weight: 600;
+    color: themed("font-color-2");
     @extend %font-fade;
   }
 }
@@ -120,24 +125,14 @@ $font-body: "Rubik", sans-serif;
   @include themify($themes) {
     @include margin-bottom(8, 16);
     font-family: $font-title;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-weight: 600;
-    color: themed("font-color-3");
-    @extend %font-fade;
-  }
-}
-
-%o-title-6 {
-  @include themify($themes) {
-    font-family: $font-title;
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.0rem;
     font-weight: 700;
     color: themed("font-color-3");
     @extend %font-fade;
   }
 }
+
 /* Text-Body */
 %o-text {
   @include themify($themes) {
@@ -148,13 +143,13 @@ $font-body: "Rubik", sans-serif;
       font-weight: 400;
       text-align: left;
       color: themed("font-color-2");
-      @include font-size(18, 18);
-      @include line-height(28, 36);
+      font-size: 1.7rem;
+      @include line-height(28, 32);
       @extend %font-fade;
 
       & span {
         font-family: $font-title;
-        font-weight: 700;
+        font-weight: 600;
         color: themed("font-color-3");
         text-transform: uppercase;
       }
@@ -165,18 +160,30 @@ $font-body: "Rubik", sans-serif;
     }
     &-link {
       font-family: $font-body;
-      @include font-size(16, 18);
-      line-height: 3.2rem;
-      font-weight: 700;
-      color: themed("font-color-1");
+      font-size: 1.7rem;
+      @include line-height(28, 32);
+      font-weight: 600;
+      color: themed("font-color-2");
       text-align: left;
+      @extend %font-fade;
+
+      &:hover {
+        @include link-hover-color;
+      }
     }
-    &-small {
+    &-info {
       font-family: $font-body;
-      @include font-size(12, 14);
-      @include line-height(16, 24);
+      font-size: 1.5rem;
+      line-height: 2.4rem;
       font-weight: 400;
       color: themed("font-color-1");
+      @extend %font-fade;
+    }
+    &-imprint {
+      font-family: $font-title;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 2.0rem;
       @extend %font-fade;
     }
   }
@@ -186,8 +193,8 @@ $font-body: "Rubik", sans-serif;
 %o-text-intro-body {
   @include themify($themes) {
     font-family: $font-body;
-    @include font-size(18, 20);
-    @include line-height(28, 34);
+    @include font-size(17, 20);
+    @include line-height(28, 36);
     color: themed("font-color-2");
     @extend %font-fade;
   }
@@ -196,8 +203,8 @@ $font-body: "Rubik", sans-serif;
 %o-text-intro-link {
   @include themify($themes) {
     font-family: $font-body;
-    @include font-size(20, 22);
-    @include line-height(32, 34);
+    font-size: 2rem;
+    line-height: 3.6rem;
     color: themed("primary");
     font-weight: 600;
     @extend %font-fade;
@@ -209,18 +216,7 @@ $font-body: "Rubik", sans-serif;
 
 
 
-
 /* OLD */
-/* Hover */
-%hoverspeed {
-  transition: all $time-1 ease-in-out;
-}
-
-@mixin hover-text {
-  @extend %hoverspeed;
-  color: themed("link-color-hover");
-}
-
 /* Nav Links */
 %nav-links {
   @include themify($themes) {
@@ -230,10 +226,10 @@ $font-body: "Rubik", sans-serif;
     font-weight: 700;
     color: themed("color-link-first");
     text-align: left;
-    @extend %hoverspeed;
+    @extend %font-fade;
 
     &:hover {
-      @include hover-text;
+      @include link-hover-color;
     }
   }
 }
@@ -244,10 +240,10 @@ $font-body: "Rubik", sans-serif;
     @include font-size(18, 22);
     color: $primary;
     font-weight: 600;
-    @extend %hoverspeed;
+    @extend %font-fade;
 
     &:hover {
-      @include hover-text;
+      @include link-hover-color;
     }
   }
 }

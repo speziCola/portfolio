@@ -32,7 +32,7 @@
     }
 
     &:hover {
-      @extend %hoverspeed;
+      @include link-hover-color;
       background: $primary;
       color: $base-2;
       box-shadow: 0 4px 8px 2px themed("shadow-1");

@@ -7,26 +7,26 @@
 
     &__time {
       margin-bottom: 1.2rem;
-      @extend %o-title-6;
+      @extend %o-title-5;
       color: themed("primary");
       @extend %font-fade;
     }
 
     &__title {
-      display: inline;
-      @extend %o-title-4;
+      @extend %o-title-3;
+      margin-bottom: 0;
       color: themed("font-color-1");
     }
     &__type {
       margin-bottom: 0.8rem;
-      @extend %o-title-6;
+      @extend %o-title-5;
     }
     &__infos {
       display: block;
       font-family: $font-body;
       font-weight: 400;
-      @include font-size(16, 16);
-      @include line-height(26, 28);
+      font-size: 1.7rem;
+      line-height: 2.8rem;
       color: themed("text-first");
       @extend %font-fade;
     }

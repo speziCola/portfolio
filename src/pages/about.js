@@ -47,7 +47,7 @@ const About = () => (
               />
               <div>
                 <h3 className="sidebar__card__profile__h3">Chris Kuhrt</h3>
-                <h4 className="sidebar__card__h4">Product designer</h4>
+                <h4 className="sidebar__card__profile__h4">Product designer</h4>
               </div>
             </div>
 

@@ -27,35 +27,32 @@
           @extend %o-title-2;
           color: themed("font-color-1");
         }
+        &__h4 {
+          @extend %o-title-4;
+          color: themed("font-color-3");
+        }
       }
       &__h4 {
         @extend %o-title-4;
-        @extend %font-fade;
 
         &--bold {
-          font-weight: 600;
-          padding-bottom: 1.6rem;
-          color: themed("font-color-1");
+          padding-bottom: 0.8rem;
         }
       }
       &__credit {
         padding: 1.6rem 1.6rem 0;
-        font-family: $font-title;
-        font-weight: 600;
-        font-size: 1.2rem;
-        line-height: 2.4rem;
+        @extend %o-text-imprint;
         text-align: left;
         color: themed("text-footer");
         text-transform: uppercase;
-        @extend %font-fade;
 
         & a {
           padding-left: 0.8rem;
           color: themed("text-footer");
-          @extend %hoverspeed;
+          @extend %font-fade;
 
           &:hover {
-            @include hover-text;
+            @include link-hover-color;
           }
         }
       }

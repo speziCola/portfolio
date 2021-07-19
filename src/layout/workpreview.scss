@@ -87,7 +87,7 @@
     }
 
     &__title {
-      @extend %o-title-3;
+      @extend %o-title-2;
       margin-bottom: 0;
 
       &:hover {
@@ -97,7 +97,7 @@
 
     &__subtitle {
       margin-bottom: 0.8rem;
-      @extend %o-title-6;
+      @extend %o-title-5;
     }
 
     &__info {

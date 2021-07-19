@@ -8,10 +8,10 @@
       width: calc(5.6rem + (80 - 56) * (100vw - 320px) / (2560 - 320));
       border-radius: 100%;
       box-sizing: border-box;
-      @extend %hoverspeed;
+      @extend %font-fade;
 
       &:hover {
-        @extend %hoverspeed;
+        @include link-hover-color;
         background: $primary;
         box-shadow: 0 4px 8px 2px themed("shadow-1");
         & i {
