@@ -113,7 +113,7 @@ $font-body: "Rubik", sans-serif;
 %o-title-4 {
   @include themify($themes) {
     font-family: $font-title;
-    @include font-size(15, 17);
+    font-size: 1.7rem;
     @include line-height(24, 33);
     font-weight: 600;
     color: themed("font-color-2");
@@ -174,7 +174,7 @@ $font-body: "Rubik", sans-serif;
     &-info {
       font-family: $font-body;
       font-size: 1.5rem;
-      line-height: 2.4rem;
+      line-height: 1.8rem;
       font-weight: 400;
       color: themed("font-color-1");
       @extend %font-fade;
