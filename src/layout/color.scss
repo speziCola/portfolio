@@ -1,10 +1,13 @@
 /* Color - Palette */
-$primary: #3C5FFB;
+$primary: #3c5ffb;
 $secondary: #00be73;
 
-$red: #E06E6E;
-$blue: #6EC4E0;
-$green: #A0E06E;
+$red-50: #e06e6e;
+$red-100: #d63d3d;
+$blue-50: #6ec4e0;
+$blue-100: #2280a0;
+$green-50: #a0e06e;
+$green-100: #48821c;
 
 $base-50: #fdfdff;
 $base-75: #f7f7ff;
@@ -22,10 +25,10 @@ $base-900: #0f0f23;
 $base-1: #fdfdff;
 $base-2: #fafafa;
 $base-3: #f0f0ff;
-$base-10: #E0E0F5;
+$base-10: #e0e0f5;
 $base-15: #cfcfe3;
 $base-20: #bbbbd8;
-$base-30: #A9A9C9;
+$base-30: #a9a9c9;
 $base-45: #929ab9;
 $base-65: #5a648c;
 $base-70: #303859;
@@ -35,34 +38,40 @@ $base-90: #0f0f23;
 
 $transparent: rgba(0, 0, 0, 0);
 
-
 /* Everything after this points needs rework */
 
 /* Theme */
 $themes: (
   light: (
-    /* Main Color */
+    /* Main Color */ 
     primary: $primary,
     secondary: $secondary,
 
-    /* Font Color */
+    /* Font Color */ 
     font-color-1: $base-600,
     font-color-2: $base-500,
     font-color-3: $base-400,
-    
+
     /* Link */ 
     link-color: $primary,
     link-color-hover: $secondary,
 
-    /* Styling */
+    /* Styling */ 
     home-square: $base-50,
     shadow-1: $base-300,
     shadow-2: $base-100,
     background: $base-75,
 
+    /* Componente: What I do */ 
+    cat-line-understand: $red-50,
+    cat-title-understand: $red-100,
+    cat-line-determine: $blue-50,
+    cat-title-determine: $blue-100,
+    cat-line-solution: $green-50,
+    cat-title-solution: $green-100,
 
-    /* Old */
-    /* Base Color */
+    /* Old */ 
+    /* Base Color */ 
     base-00: $base-2,
     base-3: $base-3,
     base-20: $base-20,
@@ -70,43 +79,40 @@ $themes: (
     base-45: $base-45,
     base-65: $base-65,
 
-    /* Font - Title */
+    /* Font - Title */ 
     title-first: $base-70,
     title-second: $base-65,
     title-third: $base-65,
     title-fourth: $base-45,
     title-fifth: $base-65,
 
-    /* Font - Text */
+    /* Font - Text */ 
     text-first: $base-65,
     text-second: $base-45,
 
-    /* Font - Links */
+    /* Font - Links */ 
     color-link-first: $base-65,
     color-link-second: $base-65,
 
-    /* Styling */
-   
+    /* Styling */ 
     spacer: $base-10,
     spacer-card: $base-3,
     arrow: $base-30,
     text-footer: $base-30,
     card: $base-1,
-    
     nav-background: $base-1,
 
-    /* Assets */
+    /* Assets */ 
     theme-icon: "\EA16",
     home-logo: url("./../images/ck-logo.svg"),
-    diamant: url("./../images/double-diamant-light.png")
-
+    diamant: url("./../images/double-diamant-light.png"),
   ),
   dark: (
-     /* Main Color */
+    /* Main Color */ 
     primary: $primary,
     secondary: $secondary,
 
-    /* Font Color */
+    /* Font Color */ 
     font-color-1: $base-50,
     font-color-2: $base-50,
     font-color-3: $base-400,
@@ -114,21 +120,22 @@ $themes: (
     /* Font - Links */ 
     link-color: $primary,
     link-color-hover: $secondary,
- 
-    /* Styling */
+
+    /* Styling */ 
     home-square: $base-700,
     shadow-1: $base-900,
     shadow-2: $base-900,
     background: $base-800,
 
+    /* Componente: What I do */ 
+    cat-line-understand: $red-50,
+    cat-title-understand: $red-50,
+    cat-line-determine: $blue-50,
+    cat-title-determine: $blue-50,
+    cat-line-solution: $green-50,
+    cat-title-solution: $green-50,
 
-  
-
-
-
-
-    /* OLD */
-    /* Base Color */
+    /* OLD */ /* Base Color */ 
     base-3: $base-90,
     base-30: $base-70,
     base-20: $base-65,
@@ -136,40 +143,34 @@ $themes: (
     base-65: $base-30,
     base-200: $base-2,
 
-
-
-    /* Font - Title */
+    /* Font - Title */ 
     title-first: $base-1,
     title-second: $base-45,
     title-third: $base-3,
     title-fourth: $base-65,
     title-fifth: $base-65,
 
-    /* Font - Text */
+    /* Font - Text */ 
     text-first: $base-3,
     text-second: $base-30,
 
-    /* Font - Links */
+    /* Font - Links */ 
     color-link-first: $base-3,
     color-link-second: $base-45,
-    
 
-    /* Styling */
-    
+    /* Styling */ 
     spacer: $base-80,
     spacer-card: $base-85,
     arrow: $base-70,
     text-footer: $base-45,
     card: $base-80,
-    
     nav-background: $base-80,
 
-    /* Assets */
+    /* Assets */ 
     theme-icon: "\EA17",
     home-logo: url("./../images/ck-logo.svg"),
-    diamant: url("./../images/double-diamant-dark.png")
-
-  )
+    diamant: url("./../images/double-diamant-dark.png"),
+  ),
 );
 
 @mixin themify($themes) {
@@ -181,7 +182,7 @@ $themes: (
         $theme-map: map-merge(
           $theme-map,
           (
-            $key: $value
+            $key: $value,
           )
         ) !global;
       }

@@ -24,15 +24,15 @@ const Work = () => (
     <h2 className="o-title-2 u-no-bottom">Understanding the goal</h2>
       <h3 className="o-title-5">Question & Verify</h3>
       <div className="u-list-border u-list-border--red">
-        <h4 className="o-title-4">Why</h4>
+        <h4 className="o-title-4 o-title-4--first-stage">Why</h4>
         <p className="o-text-body">
           Understanding the importance and origin of the product or feature.
         </p>
-        <h4 className="o-title-4">What</h4>
+        <h4 className="o-title-4 o-title-4--first-stage">What</h4>
         <p className="o-text-body">
           Are we building the right thing? Which problem are we trying to solve?
         </p>
-        <h4 className="o-title-4">How</h4>
+        <h4 className="o-title-4 o-title-4--first-stage">How</h4>
         <p className="o-text-body">
           Does it benefit the customers? Does it extend the company's mission?
         </p>
@@ -40,17 +40,17 @@ const Work = () => (
       <h2 className="o-title-2 u-no-bottom">Determine the challenge</h2>
       <h3 className="o-title-5">Discover & Define</h3>
       <div className="u-list-border u-list-border--blue">
-        <h4 className="o-title-4">Empathize</h4>
+        <h4 className="o-title-4 o-title-4--second-stage">Empathize</h4>
         <p className="o-text-body">
           Learning about the people for whom I design. In dialogue with users,
           customers, stakeholders, and team members.
         </p>
-        <h4 className="o-title-4">Analyze</h4>
+        <h4 className="o-title-4 o-title-4--second-stage">Analyze</h4>
         <p className="o-text-body">
           Looking into existing data such as tracking, market research to gain
           quantitative knowledge about the product.
         </p>
-        <h4 className="o-title-4">Evaluate</h4>
+        <h4 className="o-title-4 o-title-4--second-stage">Evaluate</h4>
         <p className="o-text-body">
           Gathering insights from hard (data) and soft (experience) facts can
           help me to define the challenge in a different way.
@@ -59,19 +59,19 @@ const Work = () => (
       <h2 className="o-title-2 u-no-bottom">Provide a solution</h2>
       <h3 className="o-title-5">Develop & Deliver</h3>
       <div className="u-list-border u-list-border--green">
-        <h4 className="o-title-4">Brainstorm</h4>
+        <h4 className="o-title-4 o-title-4--third-stage">Brainstorm</h4>
         <p className="o-text-body">
           By providing different solutions to the clearly defined challenge via
           the HMW question. Also seeking inspiration from elsewhere and
           co-designing with a range of different people with the help of
           workshops (LDJ).
         </p>
-        <h4 className="o-title-4"> Creating a prototype</h4>
+        <h4 className="o-title-4 o-title-4--third-stage"> Creating a prototype</h4>
         <p className="o-text-body">
           Exploring possible ideas for structures, functionalities, and visual
           elements and translate them into interface prototypes.
         </p>
-        <h4 className="o-title-4"> Testing a prototype</h4>
+        <h4 className="o-title-4 o-title-4--third-stage"> Testing a prototype</h4>
         <p className="o-text-body">
           Testing before building the product is essential. Depending on
           product, feature, and deadline I apply different testing methods to

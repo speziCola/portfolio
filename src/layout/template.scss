@@ -14,13 +14,24 @@
 }
 
 .o-title-4 {
-  @extend %o-title-4;
-  font-weight: 600 !important;
-  &--bottom-1 {
-    margin-bottom: 0.8rem;
-  }
-  &--bottom-2 {
-    margin-bottom: 2.4rem;
+  @include themify($themes) {
+    @extend %o-title-4;
+    font-weight: 600 !important;
+    &--first-stage {
+      color: themed("cat-title-understand");
+    }
+    &--second-stage {
+      color: themed("cat-title-determine");
+    }
+    &--third-stage {
+      color: themed("cat-title-solution");
+    }
+    &--bottom-1 {
+      margin-bottom: 0.8rem;
+    }
+    &--bottom-2 {
+      margin-bottom: 2.4rem;
+    }
   }
 }
 
@@ -169,17 +180,17 @@ header {
     }
     &--red {
       &:before {
-        background: $red;
+        background: $red-50;
       }
     }
     &--blue {
       &:before {
-        background: $blue;
+        background: $blue-50;
       }
     }
     &--green {
       &:before {
-        background: $green;
+        background: $green-50;
       }
     }
     @media only screen and (max-width: 800px) {
