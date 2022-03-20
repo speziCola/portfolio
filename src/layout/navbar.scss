@@ -12,7 +12,7 @@
 
     @media only screen and (max-width: 800px) {
       padding-right: 1.6rem;
-      padding-left: 8rem;
+      padding-left: 1.6rem;
       bottom: 0; 
       background: themed("nav-background");
       z-index: 20;
@@ -46,6 +46,9 @@
         }
         @media only screen and (max-width: 800px) {
           padding-left: 0;
+          &:nth-last-child(2) {
+            padding-left: 4rem;
+          }
         }
 
         & a {
