@@ -83,9 +83,8 @@ const About = () => (
           <p className="o-text-body">
             Hi, my name is Chris Kuhrt and I’m a passionate designer with over
             ten years of experience. I focus on user-centered design and design
-            systems. I'm also keen to not only consistently enhance the workflow 
-            between design and frontend, but also to change an organization's 
-            optimizations. The core of a UX strategy.
+            systems. I'm also eager to not only improve the workflow between design and frontend, 
+            but also to transform an organization's optimizations. The core of a UX strategy.
             <br />
             <br />
             As a representative of the customers and users, I advocate for user
