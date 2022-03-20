@@ -60,20 +60,6 @@ const About = () => (
             </h4>
 
             <Social></Social>
-
-            <h4 className="sidebar__card__h4 sidebar__card__h4--bold">
-              Part of the team
-            </h4>
-            <ul className="ck_social ck_social--links">
-              <li>
-                <a
-                  className="link link--external link--external--light"
-                  href="https://www.steamcalculator.com/"
-                >
-                  steamcalculator.com
-                </a>
-              </li>
-            </ul>
           </div>
           <p className="sidebar__card__credit">
             © 2008 - 2022 <Link to="/imprint/">Imprint</Link>
