@@ -83,8 +83,9 @@ const About = () => (
           <p className="o-text-body">
             Hi, my name is Chris Kuhrt and I’m a passionate designer with over
             ten years of experience. I focus on user-centered design and design
-            systems. I'm also eager to not only improve the workflow between design 
-            and frontend, but also to transform an organization's optimizations.
+            systems. I'm also eager to not only improve the workflow between
+            design and frontend, but also to transform an organization's
+            optimizations.
             <br />
             <br />
             As a representative of the customers and users, I advocate for user
@@ -96,19 +97,15 @@ const About = () => (
             <br />
             <br />I have a strong desire for process optimization, knowledge
             sharing, innovative thinking, and solution-oriented work to create
-            new scalable interactive experiences and products. 
-            But also to enable my team on the subject UX.
+            new scalable interactive experiences and products. But also to
+            enable my team on the subject UX.
           </p>
           <div className="c-spacer-3"></div>
           <h3 className="o-title-4 o-title-4--bottom-1">Recent engagements</h3>
           <ul className="ck-logos">
-          <li>
+            <li>
               <a href="https://niiio.com/" title="Niiio">
-                <img
-                  className="ck-logos__images"
-                  src={rniiio}
-                  alt="Niiio"
-                />
+                <img className="ck-logos__images" src={rniiio} alt="Niiio" />
               </a>
             </li>
             <li>
