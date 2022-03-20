@@ -61,6 +61,7 @@ $themes: (
     shadow-1: $base-300,
     shadow-2: $base-100,
     background: $base-75,
+    nav-background: rgba(247,247,255,0.6),
 
     /* Componente: What I do */ 
     cat-line-understand: $red-50,
@@ -100,7 +101,7 @@ $themes: (
     arrow: $base-30,
     text-footer: $base-30,
     card: $base-1,
-    nav-background: $base-1,
+    
 
     /* Assets */ 
     theme-icon: "\EA16",
@@ -126,6 +127,7 @@ $themes: (
     shadow-1: $base-900,
     shadow-2: $base-900,
     background: $base-800,
+    nav-background: rgba(24,24,48,0.6),
 
     /* Componente: What I do */ 
     cat-line-understand: $red-50,
@@ -164,7 +166,6 @@ $themes: (
     arrow: $base-70,
     text-footer: $base-45,
     card: $base-80,
-    nav-background: $base-80,
 
     /* Assets */ 
     theme-icon: "\EA17",

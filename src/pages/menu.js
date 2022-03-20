@@ -21,9 +21,9 @@ const Menu = () => (
     {/* Header */}
     <div className="o-container">
       <ul className="mobile-menu">
-        <li>
+       {/*  <li>
           <Link className="mobile-menu__link" to="/work/">Work</Link>
-        </li>
+        </li> */}
         <li>
           <Link className="mobile-menu__link" to="/whatido/">What I do</Link>
         </li>

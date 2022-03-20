@@ -10,6 +10,8 @@ import Footer from "../components/footer";
 
 import avatar from "../../src/images/qrt-ck.png";
 
+import rniiio from "../../src/images/reference/ck-r-niiio.png";
+import rpatronas from "../../src/images/reference/ck-r-patronas.png";
 import rchrono24 from "../../src/images/reference/ck-r-chrono24.png";
 import rdfb from "../../src/images/reference/ck-r-dfb.png";
 import rgeospin from "../../src/images/reference/ck-r-geospin.png";
@@ -74,15 +76,16 @@ const About = () => (
             </ul>
           </div>
           <p className="sidebar__card__credit">
-            © 2008 - 2020 <Link to="/imprint/">Imprint</Link>
+            © 2008 - 2022 <Link to="/imprint/">Imprint</Link>
           </p>
         </div>
         <div className="o-container__content">
           <p className="o-text-body">
             Hi, my name is Chris Kuhrt and I’m a passionate designer with over
             ten years of experience. I focus on user-centered design and design
-            systems. I’m also eager to improve the workflow between design and
-            frontend constantly.
+            systems. I'm also keen to not only consistently enhance the workflow 
+            between design and frontend, but also to change an organization's 
+            optimizations. The core of a UX strategy.
             <br />
             <br />
             As a representative of the customers and users, I advocate for user
@@ -94,11 +97,30 @@ const About = () => (
             <br />
             <br />I have a strong desire for process optimization, knowledge
             sharing, innovative thinking, and solution-oriented work to create
-            new scalable interactive experiences and products.
+            new scalable interactive experiences and products. 
+            But also to enable my team on the subject UX.
           </p>
           <div className="c-spacer-3"></div>
           <h3 className="o-title-4 o-title-4--bottom-1">Recent engagements</h3>
           <ul className="ck-logos">
+          <li>
+              <a href="https://niiio.com/" title="Niiio">
+                <img
+                  className="ck-logos__images"
+                  src={rniiio}
+                  alt="Niiio"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.patronas.com/" title="Patronas">
+                <img
+                  className="ck-logos__images"
+                  src={rpatronas}
+                  alt="Patronas"
+                />
+              </a>
+            </li>
             <li>
               <a href="https://www.chrono24.de/" title="Chrono24">
                 <img
@@ -159,15 +181,6 @@ const About = () => (
                   className="ck-logos__images"
                   src={rreinpfalz}
                   alt="Rheinpfalz reference"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.geospin.de/" title="GeoSpin">
-                <img
-                  className="ck-logos__images"
-                  src={rgeospin}
-                  alt="GeoSpin reference"
                 />
               </a>
             </li>

@@ -29,16 +29,30 @@ const Timeline = () => (
         </div>
         <div className="o-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
+          <li>
+              <TimeStamp
+                time="02/2022"
+                title="Patronas"
+                type="Product Design"
+                link="external"
+                url="https://www.patronas.com/"
+                infos="
+                Establishing UX within the company and transfering a rich client platform to the web.
+                Also introducing new tools and workflows to enable and work more cooperatively with 
+                our colleagues and cross-functional teams together.
+                "
+              ></TimeStamp>
+            </li>
             <li>
               <TimeStamp
-                time="11/2020"
+                time="11/2020 - 01/2022"
                 title="Chrono24"
                 type="UX/UI Design"
                 link="external"
-                url="https://about.chrono24.com/en/"
+                url="https://about.chrono24.com/"
                 infos="
                   Setting up a new location within Freiburg. Our team is responsible for: first class service & VIPs.
-                  My tasks are among others the following: web & app alignment, initiator to improve the software stack due to changing workflows,
+                  My tasks are among others the following: web & app UX/UI alignment, initiator to improve the software stack due to changing workflows,
                   laying down a foundation for our Design System. 
                 "
               ></TimeStamp>
@@ -83,10 +97,20 @@ const Timeline = () => (
 
       <div className="o-container-timeline__wrapper">
         <div className="o-container-timeline__wrapper__title">
-          <h2 className="o-title-2">Part of the team</h2>
+          <h2 className="o-title-2">Side projects</h2>
         </div>
         <div className="o-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">
+            <li>
+              <TimeStamp
+                time="03/2021"
+                title="Freiburger UX Community"
+                type="Co-founder"
+                infos="
+                I founded a small UX group with a friend to share knowledge, experience, and articles.
+                "
+              ></TimeStamp>
+            </li>
             <li>
               <TimeStamp
                 time="01/2020 - 11/2020"
@@ -531,7 +555,7 @@ const Timeline = () => (
                 link="external"
                 url="https://www.caritas-rheine.de/hilfeundberatung/kinderjugendlicheundfamilien/kinderjugendundfamilienberatung/jugendberatung/stadtranderholung/stadtranderholung"
                 infos="
-                  Working and playing with socially underprivileged children by planning and organizing day trips.
+                During my summer school holidays I worked and played with socially underprivileged children by planning and organizing day trips.
                 "
               ></TimeStamp>
             </li>
@@ -621,7 +645,7 @@ const Timeline = () => (
 
       <div className="o-container-timeline__wrapper">
         <div className="o-container-timeline__wrapper__title">
-          <h2 className="o-title-2">Other</h2>
+          <h2 className="o-title-2">Gaming</h2>
         </div>
         <div className="o-container-timeline__wrapper__timestamp">
           <ul className="ck-skill-list">

@@ -38,7 +38,7 @@ const IndexPage = () => (
 
         <ul className="c-home__menu">
           <li>
-            <Link to="/work/">Work</Link>
+            <Link to="/whatido/">What I do</Link>
           </li>
           <li>
             <Link to="/about/">About</Link>

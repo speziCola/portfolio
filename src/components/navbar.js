@@ -9,9 +9,9 @@ const Navbar = () => (
   <nav className="c-navbar">
     <Link to="/" className="c-navbar__logo" aria-label="Homelink"></Link>
     <ul>
-      <li>
+  {/*     <li>
         <Link className="c-navbar__link" to="/work/">Work</Link>
-      </li>
+      </li> */}
       <li>
         <Link className="c-navbar__link" to="/whatido/">What I do</Link>
       </li>
