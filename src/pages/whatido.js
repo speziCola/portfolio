@@ -11,7 +11,7 @@ const Work = () => (
       title="Chris Kuhrt - What I do"
       meta={[
         { name: "description", content: "What I do" },
-        { name: "keywords", content: "What I do" }
+        { name: "keywords", content: "What I do" },
       ]}
     ></Helmet>
     <Navbar></Navbar>
@@ -21,7 +21,20 @@ const Work = () => (
     </header>
     {/* Content */}
     <div className="o-container">
-    <h2 className="o-title-2 u-no-bottom">Understanding the goal</h2>
+      <p className="o-text-body">
+      Design for me means solving problems in the most efficient way. 
+      First, I pay attention to the pains and needs of the users. What 
+      outcome are we aiming for? This while keeping in mind the technical 
+      constraints and timeline. Also, the solution should contribute to the 
+      company's mission and strengthen the brand. <br /> Furthermore, I strive for 
+      the design to also lead to code reduction, which in the end leads to 
+      faster time to market solutions (output).
+      <br />
+      <br />
+      I also enable my team on UX by giving them a set of tools and leading workshops.         
+      </p>
+      <div className="c-spacer-3"></div>
+      <h2 className="o-title-2 u-no-bottom">Understanding the goal</h2>
       <h3 className="o-title-5">Question & Verify</h3>
       <div className="u-list-border u-list-border--red">
         <h4 className="o-title-4 o-title-4--first-stage">Why</h4>
@@ -66,12 +79,18 @@ const Work = () => (
           co-designing with a range of different people with the help of
           workshops (LDJ).
         </p>
-        <h4 className="o-title-4 o-title-4--third-stage"> Creating a prototype</h4>
+        <h4 className="o-title-4 o-title-4--third-stage">
+          {" "}
+          Creating a prototype
+        </h4>
         <p className="o-text-body">
           Exploring possible ideas for structures, functionalities, and visual
           elements and translate them into interface prototypes.
         </p>
-        <h4 className="o-title-4 o-title-4--third-stage"> Testing a prototype</h4>
+        <h4 className="o-title-4 o-title-4--third-stage">
+          {" "}
+          Testing a prototype
+        </h4>
         <p className="o-text-body">
           Testing before building the product is essential. Depending on
           product, feature, and deadline I apply different testing methods to

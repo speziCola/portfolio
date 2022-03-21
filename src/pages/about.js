@@ -14,7 +14,6 @@ import rniiio from "../../src/images/reference/ck-r-niiio.png";
 import rpatronas from "../../src/images/reference/ck-r-patronas.png";
 import rchrono24 from "../../src/images/reference/ck-r-chrono24.png";
 import rdfb from "../../src/images/reference/ck-r-dfb.png";
-import rgeospin from "../../src/images/reference/ck-r-geospin.png";
 import rhr from "../../src/images/reference/ck-r-hr.png";
 import rreservix from "../../src/images/reference/ck-r-reservix.png";
 import rreinpfalz from "../../src/images/reference/ck-r-rheinpfalz.png";
@@ -52,13 +51,10 @@ const About = () => (
                 <h4 className="sidebar__card__profile__h4">Product designer</h4>
               </div>
             </div>
-
             <div className="sidebar__card__space"></div>
-
             <h4 className="sidebar__card__h4 sidebar__card__h4--bold">
               You can find me on
             </h4>
-
             <Social></Social>
           </div>
           <p className="sidebar__card__credit">
@@ -70,18 +66,19 @@ const About = () => (
             Hi, my name is Chris Kuhrt and I’m a passionate designer with over
             ten years of experience. I focus on user-centered design and design
             systems. I'm also eager to not only improve the workflow between
-            design and frontend, but also to transform an organization's
+            design and frontend but also to adjust the organization's
             optimizations.
             <br />
             <br />
             As a representative of the customers and users, I advocate for user
-            needs through planning, design, and implementation ensuring all
+            needs through planning, design, and implementation. Ensuring all
             results reflect a solid understanding of UX principles. Therefore I
             work closely together with development, product owner, and product
-            management. Ensure that all goals, expectations, and needs of
+            management. Making sure that all goals, expectations, and needs of
             customers and users are met and exceeded.
             <br />
-            <br />I have a strong desire for process optimization, knowledge
+            <br />
+            I have a strong desire for process optimization, knowledge
             sharing, innovative thinking, and solution-oriented work to create
             new scalable interactive experiences and products. But also to
             enable my team on the subject UX.
