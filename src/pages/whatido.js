@@ -28,7 +28,7 @@ const Work = () => (
       constraints and timeline. Also, the solution should contribute to the 
       company's mission and strengthen the brand. <br /> Furthermore, I strive for 
       the design to also lead to code reduction, which in the end leads to 
-      faster time to market solutions (output).
+      faster time to market solutions.
       <br />
       <br />
       I also enable my team on UX by giving them a set of tools and leading workshops.         
