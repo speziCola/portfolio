@@ -13,12 +13,18 @@
   @media only screen and (min-width: 650px) {
     display: none;
   }
+}
+
+.navBarMobile {
   & ul {
     @media only screen and (max-width: 650px) {
       flex-direction: column;
       gap: 0;
     }
   }
+}
+
+.navBarMobile {
   & a {
     @media only screen and (max-width: 650px) {
       display: block;
