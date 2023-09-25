@@ -30,8 +30,6 @@ svg {
   --textSmall: clamp(1rem, 1rem + 0vw, 1rem); /* 16px - 16px */
   --textXS: clamp(0.75rem, 0.7356rem + 0.0641vw, 0.8125rem); /* 12px - 13px */
 
-  --textLineheight: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
-
   --weightBold: 800;
   --weightSemiBold: 600;
   --weightNormal: 400;
@@ -103,9 +101,6 @@ h1 {
   }
 }
 
-
-
-
 h2 {
   font-family: var(--fontBody);
   font-weight: var(--weightSemiBold);
@@ -159,7 +154,7 @@ h3 + .textBody {
   font-family: var(--fontBody);
   font-weight: var(--weightNormal);
   font-size: var(--text);
-  line-height: var(--textLineheight);
+  line-height: 1.75;
   color: var(--fontBodyColor);
   margin-bottom: 2em;
 }
@@ -169,7 +164,7 @@ h3 + .textBody {
   font-family: var(--fontBody);
   font-weight: var(--weightNormal);
   font-size: var(--textXS);
-  line-height: var(--textLineheight);
+  line-height: 2.0;
   color: var(--fontBodyColor);
 }
 
