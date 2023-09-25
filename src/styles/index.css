@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   grid-column: span 5;
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 80px);
 
   & h1 {
     margin: clamp(2rem, 1.7692rem + 1.0256vw, 3rem) 0
       clamp(2rem, 1.7692rem + 1.0256vw, 3rem) 0;
   }
   @media only screen and (max-width: 950px) {
-    height: calc(100vh - 64px);
+    height: calc(100dvh - 64px);
   }
 }
 

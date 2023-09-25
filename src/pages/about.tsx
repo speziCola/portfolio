@@ -56,32 +56,40 @@ const About: React.FC<PageProps> = () => {
                   </li>
                   <li>
                     <Links
-                      to="https://www.polywork.com/chriskuhrt"
-                      aria="Polywork"
-                    >
-                      Polywork
+                      to="https://xing.chriskuhrt.de/"
+                      aria="Xing">
+                      Xing
                     </Links>
                   </li>
+               
                   <li>
                     <Links to="http://500px.chriskuhrt.de/" aria="500px">
                       500px
                     </Links>
                   </li>
-
                   <li>
-                    <Links to="http://twitter.chriskuhrt.de/" aria="Twitter">
-                      Twitter
+                    <Links
+                      to="https://www.polywork.com/chriskuhrt"
+                      aria="Polywork">
+                      Polywork
                     </Links>
                   </li>
+
+                
                   <li>
                     <Links to="http://vimeo.chriskuhrt.de/" aria="Vimeo">
                       Vimeo
                     </Links>
                   </li>
+                  <li>
+                    <Links to="http://twitter.chriskuhrt.de/" aria="Twitter">
+                      Twitter
+                    </Links>
+                  </li>
 
                   <li>
                     <Links to="http://git.chriskuhrt.de/" aria="Github">
-                      Vimeo
+                      Github
                     </Links>
                   </li>
                 </ul>
