@@ -20,18 +20,18 @@ const Accordion: React.FC<AccordionProps> = ({
   closed = false,
   openOnMobile = false, // By default, it's closed on mobile 
 }) => {
-const isMobile = window.innerWidth < 900;
-const [isHidden, setIsHidden] = useState(isMobile ? !openOnMobile : closed);
+  const isMobile = typeof window !== 'undefined' ? window.innerWidth < 900 : false;
+  const [isHidden, setIsHidden] = useState(isMobile ? !openOnMobile : closed);
 
-useEffect(() => {
-  setIsHidden(prevHidden => isMobile ? !openOnMobile : (prevHidden && closed));
-}, [isMobile, closed, openOnMobile]);
+  useEffect(() => {
+    setIsHidden(prevHidden => isMobile ? !openOnMobile : (prevHidden && closed));
+  }, [isMobile, closed, openOnMobile]);
 
-const handleButtonClick = () => {
-  if (isMobile || closed) {
-    setIsHidden(!isHidden);
-  }
-};
+  const handleButtonClick = () => {
+    if (isMobile || closed) {
+      setIsHidden(!isHidden);
+    }
+  };
 
 const buttonStyle = {
   cursor: (isMobile || closed) ? 'pointer' : 'text',
