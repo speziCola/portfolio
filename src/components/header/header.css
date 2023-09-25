@@ -1,0 +1,83 @@
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  padding: 24px calc(var(--gridGap) / 2);
+
+  transition: background-color 0.3s ease;
+  z-index: 10;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    left: calc(-1 * var(--pageContentSpacing));
+    right: calc(-1 * var(--pageContentSpacing));
+    background: var(--pageBackground);
+    box-shadow: inset 0px -1px 0px 0px var(--gridLines);
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 950px) {
+    padding: 16px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    grid-row: 2;
+    bottom: 0;
+    &::before {
+      box-shadow: inset 0px 1px 0px 0px var(--gridLines);
+    }
+  }
+}
+
+.headerContainer {
+  grid-column: 2 / 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 2000px) {
+    grid-column: span 8;
+  }
+  @media only screen and (max-width: 1200px) {
+    grid-column: span 6;
+  }
+  @media only screen and (max-width: 650px) {
+    grid-column: span 4;
+  }
+}
+
+.homeLink {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+/* For Mobile */
+.headerContainer {
+  @media only screen and (max-width: 650px) {
+    justify-content: start;
+    gap: 16px;
+  }
+}
+
+.menuLink {
+  display: none;
+  align-items: center;
+  height: 32px;
+  @media only screen and (max-width: 650px) {
+    display: block;
+  }
+}
+
+.navBarDesktop {
+  & ul {
+    display: flex;
+    gap: 64px;
+    list-style-type: none;
+  }
+  @media only screen and (max-width: 650px) {
+    display: none;
+  }
+}

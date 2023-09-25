@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(80px + (var(--gridGap) / 2));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+}
+::selection {
+  color: var(--fontInvert);
+  background-color: var(--primaryColor);
+}
+
+svg {
+  fill: currentColor;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --textXL: clamp(2rem, 1.7692rem + 1.0256vw, 3rem); /* 32px - 48px */
+  --textLarge: clamp(1.5rem, 1.4423rem + 0.2564vw, 1.75rem); /* 24px - 28px */
+  --textMiddel: clamp(
+    1.0625rem,
+    1.0192rem + 0.1923vw,
+    1.25rem
+  ); /* 17px - 20px */
+  --text: clamp(0.9375rem, 0.9087rem + 0.1282vw, 1.0625rem); /* 15px - 17px */
+  --textSmall: clamp(1rem, 1.0433rem + -0.1923vw, 0.8125rem); /* 13px - 16px */
+  --textXS: clamp(0.75rem, 0.7356rem + 0.0641vw, 0.8125rem); /* 12px - 13px */
+
+  --weightBold: 800;
+  --weightSemiBold: 600;
+  --weightNormal: 400;
+
+  --fontTitle: "Noto Serif", serif;
+  --fontBody: "Barlow", sans-serif;
+
+  --primaryColor: #1d1d3a; /*Base-700*/
+  --secondaryColor: #00be73; /*Secondary*/
+
+  --pageBackground: rgb(247, 247, 255); /*Base-50*/
+  --gridLines: #e0e0f5; /*Base-50*/
+
+  --fontTitleColor: #303859; /*Base-600*/
+  --fontTitleLine: var(--primaryColor);
+
+  --fontBodyColor: #5a648c; /*Base-500*/
+  --colorTextHover: var(--secondaryColor);
+
+  --fontInvert: #e0e0f5; /*Base-50*/
+
+  --shadow01: rgba(219, 226, 255, 0.5);
+  --sideLineBranding: 6px;
+
+  --devider: #bbbbd8; /*Base-300*/
+  --patternDefaultColor: #bbbbd8; /*Base-300*/
+
+  --timelineStart: #303859; /*Base-600*/
+  --timelineDot: var(--pageBackground); /*Base-50*/
+  --timeline: 197, 197, 236; /*Base-300*/
+
+  --stage00Color: #1d1d3a;
+  --stage01Color: #D43535;
+  --stage02Color: #226ba0;
+  --stage03Color: #467E1B;
+  --fontOnStage: #ffffff;
+
+  --pageContentSpacing: clamp(
+    0.5rem,
+    -6rem + 16vw,
+    3rem
+  ); /* Content Side Spacing */
+  --gridGap: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
+}
+
+/* Title - Start */
+
+h1 {
+  position: relative;
+  margin: clamp(2rem, 1.0769rem + 4.1026vw, 6rem) 0
+    clamp(2rem, 1.3077rem + 3.0769vw, 5rem) 0;
+  padding-bottom: 0.375em;
+  font-family: var(--fontTitle);
+  font-weight: var(--weightBold);
+  font-size: var(--textXL);
+  line-height: clamp(1.0, calc(0.00032 * 100vw + 0.8848), 1.5);
+  color: var(--fontTitleColor);
+  text-wrap: pretty;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    width: 80px;
+    height: 6px;
+    background-color: var(--fontTitleLine);
+    border-radius: 2px;
+  }
+}
+
+
+
+
+h2 {
+  font-family: var(--fontBody);
+  font-weight: var(--weightSemiBold);
+  font-size: var(--textLarge);
+  line-height: 1.2;
+  color: var(--fontTitleColor);
+}
+
+h3 {
+  font-family: var(--fontBody);
+  font-weight: var(--weightSemiBold);
+  font-size: var(--text);
+  line-height: 1.75;
+  color: var(--fontTitleColor);
+  padding-bottom: 8px;
+}
+
+h4 {
+  font-family: var(--fontBody);
+  font-weight: var(--weightNormal);
+  font-size: var(--text);
+  line-height: 1.2;
+  color: var(--fontTitleColor);
+}
+
+/* Title - End */
+
+a {
+  text-decoration: underline;
+  color: inherit;
+
+  &:hover {
+    color: var(--colorTextHover);
+  }
+}
+
+h3 + .textBody {
+  margin-top: -8px;
+}
+
+.textIntro {
+  font-family: var(--fontBody);
+  font-weight: var(--weightRegular);
+  font-size: var(--textMiddel);
+  line-height: 1.75;
+  color: var(--fontBodyColor);
+  margin-bottom: 2em;
+}
+
+.textBody {
+  font-family: var(--fontBody);
+  font-weight: var(--weightNormal);
+  font-size: var(--text);
+  line-height: 2;
+  color: var(--fontBodyColor);
+  margin-bottom: 2em;
+}
+
+.textXS {
+  margin-bottom: 0;
+  font-family: var(--fontBody);
+  font-weight: var(--weightNormal);
+  font-size: var(--textXS);
+  line-height: 2;
+  color: var(--fontBodyColor);
+}
+
+body {
+  background: var(--pageBackground);
+  overflow-y: scroll;
+}
+
+/* Layout - Start */
+#gatsby-focus-wrapper {
+  &::after {
+    /* Left Border Branding */
+    content: "";
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: var(--sideLineBranding);
+    background: var(--primaryColor);
+    z-index: 20;
+  }
+
+  @media only screen and (max-width: 650px) {
+    padding: 0 8px; /* Line Side Spacing */
+  }
+}
+
+.gridContainer {
+  display: grid;
+  place-self: center;
+  grid-template-columns: repeat(1, 3fr);
+  grid-template-rows: 1fr min-content;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  width: calc(100% - var(--sideLineBranding));
+  margin-right: var(--sideLineBranding);
+}
+
+.gridWrapper {
+  display: grid;
+  column-gap: var(--gridGap);
+  grid-template-columns: repeat(10, 1fr);
+  margin: 0 var(--pageContentSpacing);
+
+  @media only screen and (max-width: 2000px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media only screen and (max-width: 1500px) {
+    gap: 0;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media only screen and (max-width: 950px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media only screen and (max-width: 650px) {
+    margin: 0;
+  }
+}
+
+.mainContainer {
+  grid-column: 2 / 10;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: var(--gridGap);
+  @media only screen and (max-width: 2000px) {
+    grid-column: span 8;
+  }
+  @media only screen and (max-width: 1500px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: span 6;
+  }
+  @media only screen and (max-width: 950px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 4;
+  }
+}
+
+main {
+  grid-area: main;
+  padding: 0 calc(var(--gridGap) / 2); /* 1/2 of Grid Gap for alignment */
+  @media only screen and (max-width: 650px) {
+    grid-row: 1;
+  }
+}
+
+.fullRowWidth {
+  grid-column: span 8;
+  @media only screen and (max-width: 1500px) {
+    grid-column: span 6;
+  }
+  @media only screen and (max-width: 950px) {
+    grid-column: span 4;
+  }
+}
+
+/* Layout - End */
+
+#defaultPattern {
+  color: var(--patternDefaultColor);
+}

@@ -1,0 +1,25 @@
+.customLink {
+  position: relative;
+  padding-right: 1em;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 1em;
+  line-height: 1.75;
+
+  &:hover .customLinkArrow {
+    margin-top: -0.125em;
+    margin-right: -0.125em;
+    fill: var(--secondaryColor);
+  }
+}
+
+.customLinkArrow {
+  position: absolute;
+  right: 0;
+  margin-top: 0.125em;
+  width: 0.875em;
+  height: 0.875em;
+  transition: margin-top 0.16s ease-in-out,  margin-right  0.16s ease-in-out;
+  fill: "currentColor";
+}

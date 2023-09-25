@@ -1,0 +1,30 @@
+.card {
+    position: relative;
+    margin-bottom: 64px;
+    background: var(--pageBackground);
+}
+
+
+
+
+
+
+.cardStyle {
+    position: absolute;
+    width: calc(50% + (var(--gridGap) / 2));
+    height: calc(100% + (var(--gridGap) / 2));
+    left: calc(var(--gridGap) / -2);
+    bottom: calc(var(--gridGap) / -2);
+    z-index: -1;
+}
+
+.cardContent {
+    height: 100%;
+    padding: 32px;
+    box-shadow: inset 0px 0px 0px 1px var(--gridLines);
+    box-sizing: border-box;
+}
+
+
+
+

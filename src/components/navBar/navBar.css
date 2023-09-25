@@ -1,0 +1,12 @@
+nav {
+  & ul {
+    list-style-type: none;
+  }
+
+  & a {
+    font-family: var(--fontBody);
+    font-weight: var(--weightSemiBold);
+    font-size: var(--text);
+    color: var(--fontBodyColor);
+  }
+}

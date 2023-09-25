@@ -1,0 +1,114 @@
+.stage00,
+.stage01,
+.stage02,
+.stage03 {
+  & h3 {
+    font-family: var(--fontBody);
+    font-weight: var(--weightSemiBold);
+    font-size: var(--textMiddel);
+    line-height: 1.5;
+    color: var(--fontTitleColor);
+  }
+
+  & h4 {
+    font-family: var(--fontBody);
+    font-weight: var(--weightSemiBold);
+    font-size: var(--text);
+    line-height: 1.5;
+    color: var(--fontTitleColor);
+  }
+
+  & p {
+    margin-bottom: 16px;
+    font-family: var(--fontBody);
+    font-weight: var(--weightNormal);
+    font-size: var(--textSmall);
+    line-height: 1.5;
+    color: var(--fontBodyColor);
+  }
+
+  grid-column: span 2;
+
+  @media only screen and (max-width: 1500px) {
+    grid-column: span 3;
+  }
+  @media only screen and (max-width: 950px) {
+    grid-column: span 2;
+  }
+  @media only screen and (max-width: 650px) {
+    grid-column: span 4;
+  }
+}
+
+.stageHeader {
+  margin-top: -32px;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: 32px;
+  padding: 16px 32px;
+
+  & h2 {
+    font-family: var(--fontTitle);
+    color: var(--fontOnStage);
+  }
+
+  & span {
+    font-family: var(--fontBody);
+    font-weight: var(--weightSemiBold);
+    font-size: var(--text);
+    line-height: 1.5;
+    color: rgba(255,255,255, 0.85);
+  }
+}
+
+.stage00 {
+  color: var(--stage00Color);
+  & .cardContent {
+    box-shadow: inset 0px 0px 0px 1px var(--stage00Color);
+  }
+  & .stageHeader {
+    background: var(--stage00Color);
+  }
+  & h4 {
+    color: var(--stage00Color);
+  }
+}
+
+.stage01 {
+  color: var(--stage01Color);
+  & .cardContent {
+    box-shadow: inset 0px 0px 0px 1px var(--stage01Color);
+  }
+  & .stageHeader {
+    background: var(--stage01Color);
+  }
+  & h4 {
+    color: var(--stage01Color);
+  }
+}
+
+.stage02 {
+  color: var(--stage02Color);
+  & .cardContent {
+    box-shadow: inset 0px 0px 0px 1px var(--stage02Color);
+  }
+  & .stageHeader {
+    background: var(--stage02Color);
+  }
+  & h4 {
+    color: var(--stage02Color);
+  }
+}
+
+.stage03 {
+  color: var(--stage03Color);
+  & .cardContent {
+    box-shadow: inset 0px 0px 0px 1px var(--stage03Color);
+  }
+  & .stageHeader {
+    background: var(--stage03Color);
+  }
+  & h4 {
+    color: var(--stage03Color);
+  }
+}

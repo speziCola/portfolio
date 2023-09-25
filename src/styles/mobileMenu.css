@@ -1,0 +1,29 @@
+.menu {
+  height: calc(100vh - 64px);
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+
+.navBarMobile {
+  @media only screen and (max-width: 650px) {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  @media only screen and (min-width: 650px) {
+    display: none;
+  }
+  & ul {
+    @media only screen and (max-width: 650px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  & a {
+    @media only screen and (max-width: 650px) {
+      display: block;
+      padding: 32px 0;
+    }
+  }
+}

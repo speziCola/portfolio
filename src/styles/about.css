@@ -1,0 +1,83 @@
+.cardProfileWrapper {
+  border: 1px solid var(--gridLines);
+  padding: 32px;
+}
+
+.avatarCardProfile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+
+.aboutAvatar {
+  width: 80px;
+}
+
+.references {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+
+  & .referencesCard {
+    border: 1px solid var(--gridLines);
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media only screen and (max-width: 650px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ulAboutSocial,
+.ulAboutProjects {
+  list-style: none;
+
+  & a {
+    color: var(--fontBodyColor);
+  }
+
+  & a:hover {
+    color: var(--colorTextHover);
+  }
+
+  & li {
+    font-family: var(--fontBody);
+    font-weight: var(--weightNormal);
+    font-size: var(--textSmall);
+    line-height: 1.75;
+    color: var(--fontBodyColor);
+  }
+}
+
+.ulAboutSocial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  row-gap: 8px;
+  padding-bottom: 64px;
+}
+
+.ulAboutProjects {
+  padding-bottom: 32px;
+
+  & li {
+    padding-bottom: 8px;
+  }
+}
+
+.credits a {
+  padding-left: 8px;
+}

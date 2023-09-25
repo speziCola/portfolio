@@ -1,0 +1,67 @@
+.accordionTitleWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+}
+
+.accordionTitle {
+  all: unset;
+  position: relative;
+  display: block;
+  width: 100% !important;
+  padding: 0 0 16px 0px !important;
+  cursor: pointer;
+  font-family: var(--fontBody);
+  font-weight: var(--weightSemiBold);
+  font-size: var(--textLarge);
+  line-height: 1.2;
+  color: var(--fontTitleColor);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: calc(var(--gridGap) / -2);
+    width: 4px;
+    height: 32px;
+    background: var(--fontTitleColor);
+    border-radius: 2px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 32px 0 !important;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-top: 4px;
+      right: 0px;
+      background-image: url("../../images/iconopen.svg");
+      fill: currentColor;
+      transition: transform 0.16s ease-in-out;
+    }
+  }
+}
+
+.accordionContent {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.accordionContent[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.accordionContentWrapper {
+  margin-left: -8px;
+  overflow: hidden;
+}
+
+.accordionTitle[aria-expanded="true"]::after {
+  transform: rotate(45deg);
+}

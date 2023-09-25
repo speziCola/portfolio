@@ -1,0 +1,28 @@
+.contentIntro {
+  display: flex;
+  align-items: center;
+  grid-column: span 5;
+  height: calc(100vh - 80px);
+
+  & h1 {
+    margin: clamp(2rem, 1.7692rem + 1.0256vw, 3rem) 0
+      clamp(2rem, 1.7692rem + 1.0256vw, 3rem) 0;
+  }
+  @media only screen and (max-width: 950px) {
+    height: calc(100vh - 64px);
+  }
+}
+
+.contentIntro ul {
+  display: flex;
+  gap: 104px;
+  list-style-type: none;
+}
+
+.contentIntroNav {
+  font-family: var(--fontBody);
+  font-weight: var(--weightSemiBold);
+  font-size: var(--textMiddel);
+  line-height: 1.75;
+  color: var(--fontBodyColor);
+}
