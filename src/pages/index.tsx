@@ -21,10 +21,10 @@ const IndexPage: React.FC<PageProps> = () => {
                 in Europe.
               </h1>
               <p className="textIntro">
-                Browsing the web since 1999. I have expertise in both financial sectors and e-commerce.
+                I have expertise in both financial and e-commerce sectors.
                 <br /> Whether it's selling mass volume, satisfying the tastes
                 of high-end enthusiasts, or navigating the complex world of
-                finance, my goal is to align the user experience with business
+                finance, my objective is to align the user experience with business
                 goals.
               </p>
               <ul>
