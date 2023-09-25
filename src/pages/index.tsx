@@ -21,7 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 in Europe.
               </h1>
               <p className="textIntro">
-                I have expertise in both financial and e-commerce sectors.
+                I have expertise in both financial and <span>e-commerce</span> sectors.
                 <br /> Whether it's selling mass volume, satisfying the tastes
                 of high-end enthusiasts, or navigating the complex world of
                 finance, my objective is to align the user experience with business
@@ -29,12 +29,12 @@ const IndexPage: React.FC<PageProps> = () => {
               </p>
               <ul>
                 <li>
-                  <Link className="contentIntroNav" to="/whatIdo">
+                  <Link to="/whatIdo">
                     What I do
                   </Link>
                 </li>
                 <li>
-                  <Link className="contentIntroNav" to="/about">
+                  <Link to="/about">
                     About
                   </Link>
                 </li>

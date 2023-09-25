@@ -11,18 +11,18 @@
   @media only screen and (max-width: 950px) {
     height: calc(100dvh - 64px);
   }
+
+  & a {
+    font-family: var(--fontBody);
+    font-weight: var(--weightSemiBold);
+    font-size: var(--textMiddel);
+    line-height: 1.75;
+    color: var(--fontBodyColor);
+  }
 }
 
 .contentIntro ul {
   display: flex;
   gap: 104px;
   list-style-type: none;
-}
-
-.contentIntroNav {
-  font-family: var(--fontBody);
-  font-weight: var(--weightSemiBold);
-  font-size: var(--textMiddel);
-  line-height: 1.75;
-  color: var(--fontBodyColor);
 }

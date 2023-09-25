@@ -25,10 +25,14 @@ svg {
 :root {
   --textXL: clamp(2rem, 1.7692rem + 1.0256vw, 3rem); /* 32px - 48px */
   --textLarge: clamp(1.5rem, 1.4423rem + 0.2564vw, 1.75rem); /* 24px - 28px */
-  --textMiddel: clamp(1.0625rem, 1.0192rem + 0.1923vw, 1.25rem); /* 17px - 20px */
+  --textMiddel: clamp(1.125rem, 1.0962rem + 0.1282vw, 1.25rem); /* 17px - 20px */
   --text: clamp(1.0625rem, 1.0625rem + 0vw, 1.0625rem); /* 16px - 17px */
   --textSmall: clamp(1rem, 1rem + 0vw, 1rem); /* 16px - 16px */
   --textXS: clamp(0.75rem, 0.7356rem + 0.0641vw, 0.8125rem); /* 12px - 13px */
+
+  --lineHeightMiddel: 1.6;
+  --lineHeight: clamp(1.75rem, 1.6923rem + 0.2564vw, 2rem);
+  --lineHeightSmall: 1.5;
 
   --weightBold: 800;
   --weightSemiBold: 600;
@@ -145,16 +149,20 @@ h3 + .textBody {
   font-family: var(--fontBody);
   font-weight: var(--weightRegular);
   font-size: var(--textMiddel);
-  line-height: 1.75;
+  line-height: var(--lineHeightMiddel);
   color: var(--fontBodyColor);
   margin-bottom: 2em;
+
+  & span {
+    white-space:nowrap;
+  }
 }
 
 .textBody {
   font-family: var(--fontBody);
   font-weight: var(--weightNormal);
   font-size: var(--text);
-  line-height: 1.75;
+  line-height: var(--lineHeight);
   color: var(--fontBodyColor);
   margin-bottom: 2em;
 }
