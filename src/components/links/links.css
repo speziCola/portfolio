@@ -1,6 +1,6 @@
 .customLink {
   position: relative;
-  padding-right: 1em;
+  padding-right: 0; /* Space for external Link + Tab set to 1em */
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;

@@ -1,6 +1,5 @@
 .menu {
   height: calc(100dvh - 64px);
-  padding-bottom: 32px;
   box-sizing: border-box;
 }
 

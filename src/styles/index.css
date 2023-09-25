@@ -10,6 +10,7 @@
   }
   @media only screen and (max-width: 950px) {
     height: calc(100dvh - 64px);
+    grid-column: span 4;
   }
 
   & a {
@@ -18,6 +19,10 @@
     font-size: var(--textMiddel);
     line-height: 1.75;
     color: var(--fontBodyColor);
+  
+    &:hover {
+      color: var(--colorTextHover);
+    }
   }
 }
 
