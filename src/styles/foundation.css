@@ -202,7 +202,7 @@ a {
 }
 
 .anchor {
-  position: relative;
+  position: absolute;
   margin-top: calc(-80px - (var(--gridGap) / 2));
   height: 10px;
   @media only screen and (max-width: 650px) {
