@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from "gatsby"
 import "./header.css";
 
@@ -10,9 +10,9 @@ const Header: React.FC = () => {
   return (
     <>
       <header className="gridWrapper">
-        <div className="headerContainer">
+        <div className="contentContainer contentContainer--header">
         <Link className="homeLink" to="/"><img src={CKLogo} alt="Christopher Kuhrt"></img></Link>
-        <Link className="menuLink" to="/mobileMenu"><img src={Menu} alt="Menu"></img></Link>
+        <Link className="mobileMenuLink" to="/mobileMenu"><img src={Menu} alt="Menu"></img></Link>
         <NavBar className="navBarDesktop" />
         </div>
       </header>

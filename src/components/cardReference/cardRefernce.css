@@ -1,0 +1,95 @@
+.referenceCard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: var(--gridGap);
+  container: cardReference / inline-size;
+  margin-bottom: clamp(2.5rem, 2.2692rem + 1.0256vw, 3.5rem);
+
+  /* Page Grid changes, so container needs new rules */
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.referenceImg {
+  grid-column: 4 / 7;
+  grid-row: 2;
+  margin: 
+    calc(clamp(3rem, 1.7692rem + 1.0256vw, 2rem) * -1)
+    clamp(2rem, 1.7692rem + 1.0256vw, 3rem)
+    clamp(2rem, 1.7692rem + 1.0256vw, 3rem) 0;
+  height: fit-content;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border: 1px solid var(--imgBorder);
+  border-radius: 12px;
+  z-index: 10;
+  bottom: 0;
+
+  @container cardReference (max-width: 950px) {
+    grid-row: 1;
+    margin: 0 clamp(2rem, 1.7692rem + 1.0256vw, 3rem)
+      calc(clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem) * -1) 0;
+  }
+  @container cardReference (max-width: 656px) {
+    grid-column: 3 / 7;
+  }
+  /* Page Grid changes, so container needs new rules */
+  @media (max-width: 950px) {
+    @container cardReference (max-width: 950px) {
+      grid-column: 3 / 5;
+    }
+    @container cardReference (max-width: 656px) {
+      grid-column: 2 / 5;
+    }
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+.referenceCardWrapper {
+  display: grid;
+  grid-column: 1 / -1; /* Span full width of the subgrid */
+  grid-row: 2;
+  grid-template-columns: subgrid;
+  margin-bottom: 0 !important;
+
+  @container cardReference (max-width: 950px) {
+    grid-column: 1 / 7; /* Span full width of the subgrid */
+  }
+  /* Page Grid changes, so container needs new rules */
+  @media (max-width: 950px) {
+    @container cardReference (max-width: 950px) {
+      grid-column: 1 / 5; /* Span full width of the subgrid */
+    }
+    @container cardReference (max-width: 656px) {
+      grid-column: 1 / 5;
+    }
+  }
+}
+
+.referenceCardContent {
+  grid-column: 1 / 4; /* Span full width of the subgrid */
+
+  @container cardReference (max-width: 950px) {
+    grid-column: 1 / -1; /* Span full width of the subgrid */
+  }
+}
+
+.width--full {
+  &:has(.referenceImg) {
+    margin-top: 48px;
+    @media only screen and (max-width: 1090px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.card {
+  &:has(.referenceCard) {
+  margin-bottom: 0;
+  }
+}

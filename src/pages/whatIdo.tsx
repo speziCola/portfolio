@@ -5,6 +5,7 @@ import "../styles/foundation.css";
 import "../styles/whatIdo.css";
 
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 import GridLines from "../components/gridlines/gridLines";
 import Card from "../components/card/card";
 
@@ -14,15 +15,15 @@ const WhatIDo: React.FC<PageProps> = () => {
       <GridLines />
       <Header />
       <main className="gridWrapper">
-        <div className="mainContainer">
-          <h1 className="fullRowWidth">What I Do</h1>
-          <p className="fullRowWidth textIntro">
+        <div className="contentContainer contentContainer--main">
+          <h1 className="width--full title--XXXL">What I Do</h1>
+          <p className="width--full text--Medium">
             Navigating the world of UX, I follow four stages:
           </p>
-          <Card svgid="stage00" className="stage00">
+          <Card svgid="stage00" className="stage00 cardSpacing--Medium">
             <div className="stageHeader">
               <span>UX Maturity</span>
-              <h2>Stage 0</h2>
+              <h2>Stage 1</h2>
             </div>
             <h3>Cultivate UX Maturity</h3>
             <p>
@@ -46,10 +47,10 @@ const WhatIDo: React.FC<PageProps> = () => {
               validate UX significance.
             </p>
           </Card>
-          <Card svgid="stage01" className="stage01">
+          <Card svgid="stage01" className="stage01 cardSpacing--Medium">
             <div className="stageHeader">
               <span>Question & Verify</span>
-              <h2>Stage 1 </h2>
+              <h2>Stage 2 </h2>
             </div>
             <h3>Understanding the goal</h3>
             <p>
@@ -71,10 +72,10 @@ const WhatIDo: React.FC<PageProps> = () => {
               solve?
             </p>
           </Card>
-          <Card svgid="stage02" className="stage02">
+          <Card svgid="stage02" className="stage02 cardSpacing--Medium">
             <div className="stageHeader">
               <span>Discover & Define</span>
-              <h2>Stage 2</h2>
+              <h2>Stage 3</h2>
             </div>
             <h3>Determine the challenge</h3>
             <p>
@@ -97,10 +98,10 @@ const WhatIDo: React.FC<PageProps> = () => {
               can help me to define the challenge in a different way.
             </p>
           </Card>
-          <Card svgid="stage03" className="stage03">
+          <Card svgid="stage03" className="stage03 cardSpacing--Medium">
             <div className="stageHeader">
               <span>Develop & Deliver</span>
-              <h2>Stage 3</h2>
+              <h2>Stage 4</h2>
             </div>
             <h3>Provide a solution</h3>
             <p>
@@ -129,6 +130,8 @@ const WhatIDo: React.FC<PageProps> = () => {
           </Card>
         </div>
       </main>
+      <div></div>
+      <Footer />
     </div>
   );
 };

@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Link, HeadFC, PageProps } from "gatsby";
+import { HeadFC, PageProps } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "../styles/foundation.css";
-import "../styles/baseTemplateB.css";
 import "../styles/timeline.css";
+import "../styles/baseTemplateB.css";
 
 import Accordion from "../components/accordion/accordion";
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 import GridLines from "../components/gridlines/gridLines";
-import Links from "../components/links/links";
+
+
 import Card from "../components/card/card";
+import Links from "../components/links/links";
 
 const Timeline: React.FC<PageProps> = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -20,8 +24,7 @@ const Timeline: React.FC<PageProps> = () => {
 
     const handleScroll = () => {
       if (
-        window.scrollY >= scrollTrigger ||
-        window.pageYOffset >= scrollTrigger
+        window.scrollY >= scrollTrigger
       ) {
         document.querySelector(".scrollTop").classList.add(className);
       } else {
@@ -88,51 +91,51 @@ const Timeline: React.FC<PageProps> = () => {
       <Header />
       <main className="gridWrapper">
         <div id="pageTop"></div>
-        <div className="mainContainer TemplateB">
-          <h1>Timeline</h1>
-          <p className="timeLineIntro textIntro">
+        <div className="contentContainer contentContainer--main TemplateB">
+          <h1 className="width--full title--XXXL">Timeline</h1>
+          <p className="timeLineIntro text--Medium">
             I am filled with gratitude for every experience. Each one has helped
             shape the designer I am today and I look forward to the next chapter
             of this ever-evolving journey.
           </p>
           <aside>
             <div className="timelineMenu">
-              <Card pattern="Pattern01">
+              <Card pattern="Pattern01" className="cardSpacing--Large">
                 <div className="timelineMenuStyle"></div>
                 <ul className="anchorTimeline">
                   <li>
-                    <a href="#workExperince">Work experince</a>
+                    <AnchorLink to="timeline/#workExperince">Work experince</AnchorLink>
                   </li>
                   <li>
-                    <a href="#sideProjects">Passion & Projects</a>
+                    <AnchorLink to="timeline/#sideProjects">Passion & Projects</AnchorLink >
                   </li>
                   <li>
-                    <a href="#freelancer">Freelancer</a>
+                    <AnchorLink to="timeline/#freelancer">Freelancer</AnchorLink >
                   </li>
                   <li>
-                    <a href="#furtherEducation">Further education</a>
+                    <AnchorLink to="timeline/#furtherEducation">Further education</AnchorLink >
                   </li>
                   <li>
-                    <a href="#volunteerWork">Volunteer work</a>
+                    <AnchorLink to="timeline/#volunteerWork">Volunteer work</AnchorLink >
                   </li>
                   <li>
-                    <a href="#backer">Backer</a>
+                    <AnchorLink to="timeline/#backer">Backer</AnchorLink >
                   </li>
                   <li>
-                    <a href="#gaming">Gaming</a>
+                    <AnchorLink to="timeline/#gaming">Gaming</AnchorLink >
                   </li>
                   <li>
-                    <a className="scrollTop" href="#pageTop">
+                    <AnchorLink className="scrollTop" to="timeline/#pageTop">
                       Scroll to top
-                    </a>
+                    </AnchorLink >
                   </li>
                 </ul>
               </Card>
             </div>
           </aside>
           <section className="accordion">
+            <div className="anchor" id="workExperince"></div>
             <Accordion
-              id="workExperince"
               buttonText="💼 Work experince"
               openOnMobile={true}
             >
@@ -159,28 +162,28 @@ const Timeline: React.FC<PageProps> = () => {
                       customers. My further responsibilities and achievements
                       included:
                       <ul>
-                      <li>
-                        Leading Figma Roll-Out: I was in leading the
-                        introduction of Figma for the whole team.
-                      </li>
-                      <li>
-                        Designen a new customer login: I conducted research and
-                        developed concepts for a new login interface. Its
-                        implementation resulted in a conversion rate increase of
-                        up to 12%.
-                      </li>
-                      <li>
-                        Creating the basis for the design system: I worked with
-                        another designer. another designer, working closely with
-                        the front-end team to create the foundations of the
-                        design system.
-                      </li>
-                      <li>
-                        Harmonizing Web & App UX/UI: In collaboration with a
-                        designer from the App Team, we harmonized the user
-                        experience and user interface across web and mobile
-                        applications.
-                      </li>
+                        <li>
+                          Leading Figma Roll-Out: I was in leading the
+                          introduction of Figma for the whole team.
+                        </li>
+                        <li>
+                          Designen a new customer login: I conducted research
+                          and developed concepts for a new login interface. Its
+                          implementation resulted in a conversion rate increase
+                          of up to 12%.
+                        </li>
+                        <li>
+                          Creating the basis for the design system: I worked
+                          with another designer. another designer, working
+                          closely with the front-end team to create the
+                          foundations of the design system.
+                        </li>
+                        <li>
+                          Harmonizing Web & App UX/UI: In collaboration with a
+                          designer from the App Team, we harmonized the user
+                          experience and user interface across web and mobile
+                          applications.
+                        </li>
                       </ul>
                     </p>
                   </li>
@@ -229,7 +232,8 @@ const Timeline: React.FC<PageProps> = () => {
 
             <div className="timeLineDevider"></div>
 
-            <Accordion id="sideProjects" buttonText="❤️ Passion & Projects">
+            <div className="anchor" id="sideProjects"></div>
+            <Accordion buttonText="❤️ Passion & Projects">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -269,9 +273,9 @@ const Timeline: React.FC<PageProps> = () => {
                       This included overseeing the plugin, Figma files,
                       homepage, FAQs, and Instagram - every part that makes a
                       good product complete. Thanks to{" "}
-                      <Link to="https://twitter.com/mariusbethge" aria="marius">
+                      <Links to="https://twitter.com/mariusbethge" aria="marius">
                         Marius
-                      </Link>{" "}
+                      </Links>{" "}
                       for the coding.
                     </p>
                   </li>
@@ -328,7 +332,8 @@ const Timeline: React.FC<PageProps> = () => {
 
             <div className="timeLineDevider"></div>
 
-            <Accordion id="freelancer" buttonText="💻 Freelancer">
+            <div className="anchor" id="freelancer"></div>
+            <Accordion buttonText="💻 Freelancer">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -456,7 +461,8 @@ const Timeline: React.FC<PageProps> = () => {
 
             <div className="timeLineDevider"></div>
 
-            <Accordion id="furtherEducation" buttonText="🎓 Further education">
+            <div className="anchor" id="furtherEducation"></div>
+            <Accordion buttonText="🎓 Further education">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -649,7 +655,8 @@ const Timeline: React.FC<PageProps> = () => {
 
             <div className="timeLineDevider"></div>
 
-            <Accordion id="volunteerWork" buttonText="🏅 Volunteer work">
+            <div className="anchor" id="volunteerWork"></div>
+            <Accordion buttonText="🏅 Volunteer work">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -705,7 +712,8 @@ const Timeline: React.FC<PageProps> = () => {
 
             <div className="timeLineDevider"></div>
 
-            <Accordion id="backer" buttonText="💰 Backer">
+            <div className="anchor" id="backer"></div>
+            <Accordion  buttonText="💰 Backer">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -781,7 +789,8 @@ const Timeline: React.FC<PageProps> = () => {
 
             <div className="timeLineDevider"></div>
 
-            <Accordion id="gaming" buttonText="🕹️ Gaming">
+            <div className="anchor" id="gaming"></div>
+            <Accordion buttonText="🕹️ Gaming">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -849,6 +858,7 @@ const Timeline: React.FC<PageProps> = () => {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
@@ -857,14 +867,12 @@ export default Timeline;
 
 export const Head: HeadFC = () => (
   <>
-  <meta charSet="UTF-8"></meta>
-  <html lang="en" />
-  <title>Timeline</title>
-  <meta
+    <meta charSet="UTF-8"></meta>
+    <html lang="en" />
+    <title>Timeline</title>
+    <meta
       name="description"
       content="Hi, my name is Chris Kuhrt and I am a Designer who is passionate about user-centered design, design processes and design systems. I am always looking for ways to improve the workflow between design, development, and management in order to improve the output and, above all, the outcome."
     />
-  
   </>
-) ;
-
+);

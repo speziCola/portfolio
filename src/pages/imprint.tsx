@@ -2,12 +2,11 @@ import * as React from "react";
 import { HeadFC, PageProps } from "gatsby";
 
 import "../styles/foundation.css";
-import "../styles/baseTemplateA.css";
+import "../styles/baseTemplateC.css";
 
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 import GridLines from "../components/gridlines/gridLines";
-
-import chrisKuhrt from "../images/Avatar-Chris-Kuhrt.png";
 
 const Imprint: React.FC<PageProps> = () => {
   return (
@@ -15,29 +14,17 @@ const Imprint: React.FC<PageProps> = () => {
       <GridLines />
       <Header />
       <main className="gridWrapper">
-        <div className="mainContainer TemplateB">
-          <h1>Imprint</h1>
-          <aside>
-            <div className="avatarCardProfile">
-              <img
-                className="aboutAvatar"
-                src={chrisKuhrt}
-                alt="Chris Kuhrt"
-              ></img>
-              <div>
-                <h2>Chris Kuhrt</h2>
-                <h4>Designer</h4>
-              </div>
-            </div>
-            <div>
-              <h3>Contact</h3>
-              <p className="textBody">
-                Christopher Kuhrt <br></br>
-                E-Mail: christopher(at)qrt.de
-              </p>
-            </div>
-          </aside>
+        <div className="contentContainer contentContainer--main TemplateC">
+          <h1 className="width--full title--XXXL">Imprint</h1>
+
           <section>
+
+            <h3>Contact</h3>
+            <p className="textBody">
+              Christopher Kuhrt <br></br>
+              E-Mail: christopher(at)qrt.de
+            </p>
+
             <h3>Haftung für Inahlte</h3>
             <p className="textBody">
               Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
@@ -105,6 +92,8 @@ const Imprint: React.FC<PageProps> = () => {
           </section>
         </div>
       </main>
+      <div></div>
+      <Footer />
     </div>
   );
 };
@@ -113,14 +102,12 @@ export default Imprint;
 
 export const Head: HeadFC = () => (
   <>
-  <meta charSet="UTF-8"></meta>
-  <html lang="en" />
-  <title>Imprint</title>
-  <meta
+    <meta charSet="UTF-8"></meta>
+    <html lang="en" />
+    <title>Imprint</title>
+    <meta
       name="description"
       content="Hi, my name is Chris Kuhrt and I am a Designer who is passionate about user-centered design, design processes and design systems. I am always looking for ways to improve the workflow between design, development, and management in order to improve the output and, above all, the outcome."
     />
-  
   </>
-) ;
-
+);

@@ -4,7 +4,7 @@ interface Pattern02Props {
   id: string;
 }
 
-const Pattern01: React.FC<Pattern02Props> = ({ id }) => {
+const Pattern02: React.FC<Pattern02Props> = ({ id }) => {
   return (
     <>
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -25,4 +25,4 @@ const Pattern01: React.FC<Pattern02Props> = ({ id }) => {
   );
 };
 
-export default Pattern01;
+export default Pattern02;

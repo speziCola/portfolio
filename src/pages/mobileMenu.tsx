@@ -14,9 +14,7 @@ const MobileMenu: React.FC<PageProps> = () => {
       <GridLines />
       <Header />
       <main className="gridWrapper menu">
-        <div className="mainContainer">
             <NavBar className="navBarMobile" />
-        </div>
       </main>
     </div>
   );

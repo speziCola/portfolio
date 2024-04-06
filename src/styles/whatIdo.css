@@ -5,9 +5,9 @@
   & h3 {
     font-family: var(--fontBody);
     font-weight: var(--weightSemiBold);
-    font-size: var(--textMiddel);
+    font-size: var(--textMedium);
     line-height: 1.5;
-    color: var(--fontTitleColor);
+    color: var(--colorForegroundBold);
   }
 
   & h4 {
@@ -15,16 +15,16 @@
     font-weight: var(--weightSemiBold);
     font-size: var(--text);
     line-height: 1.5;
-    color: var(--fontTitleColor);
+    color: var(--colorForegroundBold);
   }
 
   & p {
     margin-bottom: 16px;
     font-family: var(--fontBody);
     font-weight: var(--weightNormal);
-    font-size: var(--textSmall);
+    font-size: var(--text);
     line-height: 1.5;
-    color: var(--fontBodyColor);
+    color: var(--colorForegroundRegular);
   }
 
   grid-column: span 2;
@@ -46,10 +46,17 @@
   margin-right: -32px;
   margin-bottom: 32px;
   padding: 16px 32px;
+  border-radius: var(--borderRadiusDefault) var(--borderRadiusDefault) 0 0;
+
+  @media only screen and (max-width: 650px) {
+    margin-top: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
 
   & h2 {
     font-family: var(--fontTitle);
-    color: var(--fontOnStage);
+    color: var(--colorForegroundInvert);
   }
 
   & span {
@@ -63,9 +70,8 @@
 
 .stage00 {
   color: var(--stage00Color);
-  & .cardContent {
-    box-shadow: inset 0px 0px 0px 1px var(--stage00Color);
-  }
+  box-shadow: inset 0px 0px 0px 1px var(--stage00Color) !important;
+
   & .stageHeader {
     background: var(--stage00Color);
   }
@@ -76,9 +82,8 @@
 
 .stage01 {
   color: var(--stage01Color);
-  & .cardContent {
-    box-shadow: inset 0px 0px 0px 1px var(--stage01Color);
-  }
+  box-shadow: inset 0px 0px 0px 1px var(--stage01Color) !important;
+
   & .stageHeader {
     background: var(--stage01Color);
   }
@@ -89,9 +94,8 @@
 
 .stage02 {
   color: var(--stage02Color);
-  & .cardContent {
-    box-shadow: inset 0px 0px 0px 1px var(--stage02Color);
-  }
+  box-shadow: inset 0px 0px 0px 1px var(--stage02Color) !important;
+
   & .stageHeader {
     background: var(--stage02Color);
   }
@@ -102,9 +106,8 @@
 
 .stage03 {
   color: var(--stage03Color);
-  & .cardContent {
-    box-shadow: inset 0px 0px 0px 1px var(--stage03Color);
-  }
+  box-shadow: inset 0px 0px 0px 1px var(--stage03Color) !important;;;
+
   & .stageHeader {
     background: var(--stage03Color);
   }

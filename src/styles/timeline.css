@@ -21,9 +21,9 @@
   list-style-type: none;
   font-family: var(--fontBody);
   font-weight: var(--weightNormal);
-  font-size: var(--textSmall);
+  font-size: var(--text);
   line-height: 1.75;
-  color: var(--fontBodyColor);
+  color: var(--colorForegroundRegular);
 
   & li {
     margin-bottom: 8px;
@@ -75,6 +75,7 @@ a.active {
 }
 
 #pageTop {
+  position: relative;
   top: -120px;
 }
 
@@ -100,15 +101,15 @@ a.active {
   font-weight: var(--weightSemiBold);
   font-size: var(--textXS);
   line-height: 1;
-  color: var(--fontTitleColor);
+  color: var(--colorForegroundBold);
   padding-bottom: 8px;
 }
 .timelineCompany {
   font-family: var(--fontBody);
   font-weight: var(--weightBold);
-  font-size: var(--textMiddel);
+  font-size: var(--textMedium);
   line-height: 1.5;
-  color: var(--fontTitleColor);
+  color: var(--colorForegroundBold);
   padding-bottom: 0;
 }
 .timelineTitle {
@@ -116,7 +117,7 @@ a.active {
   font-weight: var(--weight);
   font-size: var(--textSmall);
   line-height: 1.25;
-  color: var(--fontTitleColor);
+  color: var(--colorForegroundBold);
   padding-bottom: 8px;
 }
 .timelineText {
@@ -124,8 +125,8 @@ a.active {
   font-family: var(--fontBody);
   font-weight: var(--weightNormal);
   font-size: var(--text);
-  line-height: var(--lineHeight);
-  color: var(--fontBodyColor);
+  line-height: var(--lineHeightLarge);
+  color: var(--colorForegroundRegular);
 
   & li {
     margin-left: 24px;

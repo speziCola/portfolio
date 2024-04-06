@@ -1,10 +1,8 @@
 header {
-  grid-area: header;
-  position: sticky;
-  top: 0;
-  padding: 24px calc(var(--gridGap) / 2);
-
-  transition: background-color 0.3s ease;
+  position: fixed;
+  width: calc(100% - (var(--pageContentSpacing) * 2));
+  box-sizing: border-box;
+  padding: 20px calc(var(--gridGap) / 2);
   z-index: 10;
 
   &::before {
@@ -13,8 +11,8 @@ header {
     height: 100%;
     left: calc(-1 * var(--pageContentSpacing));
     right: calc(-1 * var(--pageContentSpacing));
-    background: var(--pageBackground);
-    box-shadow: inset 0px -1px 0px 0px var(--gridLines);
+    background: var(--base-00);
+    box-shadow: 0px 4px 20px 0px rgba(14, 94, 178, 0.10);
     z-index: -1;
   }
 
@@ -23,7 +21,7 @@ header {
   }
 
   @media only screen and (max-width: 650px) {
-    grid-row: 2;
+    grid-row: last;
     bottom: 0;
     &::before {
       box-shadow: inset 0px 1px 0px 0px var(--gridLines);
@@ -31,21 +29,10 @@ header {
   }
 }
 
-.headerContainer {
-  grid-column: 2 / 10;
+.contentContainer--header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media only screen and (max-width: 2000px) {
-    grid-column: span 8;
-  }
-  @media only screen and (max-width: 1200px) {
-    grid-column: span 6;
-  }
-  @media only screen and (max-width: 650px) {
-    grid-column: span 4;
-  }
 }
 
 .homeLink {
@@ -54,18 +41,11 @@ header {
   height: 32px;
 }
 
-/* For Mobile */
-.headerContainer {
-  @media only screen and (max-width: 650px) {
-    justify-content: start;
-    gap: 16px;
-  }
-}
-
-.menuLink {
+.mobileMenuLink {
   display: none;
   align-items: center;
   height: 32px;
+
   @media only screen and (max-width: 650px) {
     display: block;
   }

@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({
   children,
   pattern = "Pattern01", // Default
   className,
-  svgid = "defaultPattern", // Default
+  svgid = "Pattern01", // Default
 }) => {
   return (
     <>
@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
           {pattern === "Pattern01" && <Pattern01 id={svgid} />}
           {pattern === "Pattern02" && <Pattern02 id={svgid} />}
         </div>
-        <div className="cardContent">{children}</div>
+        {children}
       </div>
     </>
   );

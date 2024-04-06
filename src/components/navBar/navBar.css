@@ -7,6 +7,6 @@ nav {
     font-family: var(--fontBody);
     font-weight: var(--weightSemiBold);
     font-size: var(--text);
-    color: var(--fontBodyColor);
+    color: var(--colorForegroundRegular);
   }
 }
