@@ -204,10 +204,9 @@ a {
 .anchor {
   position: relative;
   margin-top: calc(-80px - (var(--gridGap) / 2));
-  height: calc(80px + (var(--gridGap) / 2));
-
+  height: 10px;
   @media only screen and (max-width: 650px) {
-    display: none;
+    margin-top: calc(-8px - (var(--gridGap) / 2));
   }   
 }
 
@@ -335,7 +334,7 @@ main {
       margin-top: 96px;
     }
     @media only screen and (max-width: 650px) {
-      margin-top: 32px;
+      margin-top: 0px;
     }
   }
 }
