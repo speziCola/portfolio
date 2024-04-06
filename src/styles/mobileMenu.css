@@ -13,17 +13,13 @@
     justify-content: end;
 }
 
-.navBarMobile {
-  & ul {
+.navBarMobile ul {
       flex-direction: column;
       gap: 0;
-  }
 }
 
-.navBarMobile {
-  & a {
+.navBarMobile a {
       display: block;
       width: 100%;
       padding: 24px 0;
-  }
 }
