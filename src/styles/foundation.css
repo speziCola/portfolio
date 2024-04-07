@@ -123,7 +123,7 @@ a {
 
 .title--XXXL {
   position: relative;
-  margin: clamp(2rem, 1.0769rem + 4.1026vw, 6rem) 0
+  margin: clamp(2rem, -0.3602rem + 3.9752vw, 6rem) 0
     clamp(2rem, 1.3077rem + 3.0769vw, 3rem) 0;
   padding-bottom: 0.5em;
   font-family: var(--fontTitle);
@@ -159,7 +159,7 @@ a {
   font-size: var(--textMedium);
   line-height: var(--lineHeightMedium);
   color: var(--colorForegroundRegular);
-  margin-bottom: 2em;
+  margin-bottom: 1.25em;
 }
 
 h2 {
@@ -333,9 +333,6 @@ main {
 
   &.contentContainer--main {
     margin-top: 72px;
-    @media only screen and (max-width: 950px) {
-      margin-top: 96px;
-    }
     @media only screen and (max-width: 650px) {
       margin-top: 0px;
     }

@@ -3,7 +3,7 @@ header {
   width: calc(100% - (var(--pageContentSpacing) * 2));
   box-sizing: border-box;
   padding: 20px calc(var(--gridGap) / 2);
-  z-index: 10;
+  z-index: 10;  
 
   &::before {
     position: absolute;
@@ -14,10 +14,6 @@ header {
     background: var(--base-00);
     box-shadow: 0px 4px 20px 0px rgba(14, 94, 178, 0.10);
     z-index: -1;
-  }
-
-  @media only screen and (max-width: 950px) {
-    padding: 16px;
   }
 
   @media only screen and (max-width: 650px) {
