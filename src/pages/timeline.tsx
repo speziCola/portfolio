@@ -92,6 +92,7 @@ const Timeline: React.FC<PageProps> = () => {
       <main className="gridWrapper">
         <div id="pageTop"></div>
         <div className="contentContainer contentContainer--main TemplateB">
+        <div className="anchor" id="workExperince"></div>
           <h1 className="width--full title--XXXL">Timeline</h1>
           <p className="timeLineIntro text--Medium">
             I am filled with gratitude for every experience. Each one has helped
@@ -134,7 +135,7 @@ const Timeline: React.FC<PageProps> = () => {
             </div>
           </aside>
           <section className="accordion">
-            <div className="anchor" id="workExperince"></div>
+          
             <Accordion
               buttonText="💼 Work experince"
               openOnMobile={true}

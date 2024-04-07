@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-
-  /* scroll-padding-top: calc(80px + (var(--gridGap) / 2)); */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -69,10 +68,10 @@ a {
   --timelineDot: var(--pageBackground);
   --timeline: var(--base-300-rgb);
 
-  --color-iconCategory-background: var(--base-100);
-  --color-iconCategory-backgroundHover: var(--base-700);
   --color-iconCategory-foreground: var(--base-500);
   --color-iconCategory-foregroundHover: var(--base-00);
+  --color-iconCategory-background: var(--base-100);
+  --color-iconCategory-backgroundHover: var(--base-700);
 
   --color-iconCategoryTitle-foreground: var(--base-00);
   --color-iconCategoryTitle-background: var(--base-700);
