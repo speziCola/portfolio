@@ -15,9 +15,6 @@ const NavBar: React.FC<NavBarProps> = ({ className }) => {
             <Link to="/whatIdo">What I do</Link>
           </li>
           <li>
-            <a href="https://ckblog.framer.website/">Article</a>
-          </li>
-          <li>
             <Link to="/timeline">Timeline</Link>
           </li>
           <li>
