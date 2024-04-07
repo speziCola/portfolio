@@ -196,9 +196,11 @@ a {
   text-decoration: underline;
   color: var(--colorForegroundRegular);
   transition: var(--linktransition);
+  @media (hover: hover) {
   &:hover {
     color: var(--colorStateForegroundHover);
   }
+}
 }
 
 .anchor {
@@ -337,26 +339,6 @@ main {
     @media only screen and (max-width: 650px) {
       margin-top: 0px;
     }
-  }
-}
-
-
-.headerContainer {
-  grid-column: 2 / 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media only screen and (max-width: 2000px) {
-    grid-column: span 8;
-  }
-  @media only screen and (max-width: 1200px) {
-    grid-column: span 6;
-  }
-  @media only screen and (max-width: 650px) {
-    justify-content: start;
-    grid-column: span 4;
-    gap: 16px;
   }
 }
 

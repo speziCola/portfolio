@@ -77,8 +77,10 @@
     color: var(--colorForegroundRegular);
   }
 
-  & a:hover {
-    color: var(--colorStateForegroundHover);
+  @media (hover: hover) {
+    & a:hover {
+      color: var(--colorStateForegroundHover);
+    }
   }
 
   & li {

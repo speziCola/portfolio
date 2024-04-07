@@ -98,10 +98,11 @@
     background: var(--base-00);
     border-radius: var(--borderRadiusDefault);
     box-shadow: 0px 4px 20px 0px rgba(14, 94, 178, 0.10);
-    
-    &:hover .categoryIcon {
-      color: var(--color-iconCategory-foregroundHover);
-      background: var(--color-iconCategory-backgroundHover);
+    @media (hover: hover) {
+      &:hover .categoryIcon {
+        color: var(--color-iconCategory-foregroundHover);
+        background: var(--color-iconCategory-backgroundHover);
+      }
     }
 
     @media only screen and (max-width: 1500px) {
