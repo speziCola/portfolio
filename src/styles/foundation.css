@@ -298,7 +298,8 @@ main {
 }
 
 & .gridWrapperContent {
-  grid-template-rows: minmax(900px, 100dvh) auto;
+  grid-template-rows: minmax(1024px, 100dvh);
+  grid-auto-rows: auto;
   
   @media only screen and (max-width: 950px) {
     grid-template-rows: auto;
