@@ -128,6 +128,14 @@ a.active {
   line-height: var(--lineHeightLarge);
   color: var(--colorForegroundRegular);
 
+  & ul {
+    font-family: var(--fontBody);
+    font-weight: var(--weightNormal);
+    font-size: var(--text);
+    line-height: var(--lineHeightLarge);
+    color: var(--colorForegroundRegular);
+  }
+
   & li {
     margin-left: 24px;
     list-style-type: disc;
