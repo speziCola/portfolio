@@ -165,6 +165,7 @@ const Timeline: React.FC<PageProps> = () => {
                       responsibility was to provide first-class service to VIPs
                       customers. My further responsibilities and achievements
                       included:
+                    </p>
                       <ul>
                         <li>
                           Leading Figma Roll-Out: I was in leading the
@@ -189,7 +190,6 @@ const Timeline: React.FC<PageProps> = () => {
                           applications.
                         </li>
                       </ul>
-                    </p>
                   </li>
                   <li className="timelineList">
                     <span className="timelineDate">06/2015 – 08/2020</span>
@@ -200,6 +200,7 @@ const Timeline: React.FC<PageProps> = () => {
                       managed over 3000 white label web shops and supported
                       various teams across web, app, B2C, B2B and products. My
                       primary responsibilities and outcomes were:
+                    </p>
                       <ul>
                         <li>Gathering requirements and creating prototypes.</li>
                         <li>Creating the foundations for a design system.</li>
@@ -217,7 +218,6 @@ const Timeline: React.FC<PageProps> = () => {
                           flexibility according to the needs of the organiser.
                         </li>
                       </ul>
-                    </p>
                   </li>
                   <li className="timelineList">
                     <span className="timelineDate">01/2009 - 02/2009</span>
