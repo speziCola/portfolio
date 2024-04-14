@@ -127,19 +127,6 @@ a.active {
   font-size: var(--text);
   line-height: var(--lineHeightLarge);
   color: var(--colorForegroundRegular);
-
-  & ul {
-    font-family: var(--fontBody);
-    font-weight: var(--weightNormal);
-    font-size: var(--text);
-    line-height: var(--lineHeightLarge);
-    color: var(--colorForegroundRegular);
-  }
-
-  & li {
-    margin-left: 24px;
-    list-style-type: disc;
-  }
 }
 
 .timelineWrapper {
@@ -153,11 +140,21 @@ a.active {
   list-style: none;
   border-left: 1px solid rgba(var(--timeline), 1);
 
+  & ul {
+    font-family: var(--fontBody);
+    font-weight: var(--weightNormal);
+    font-size: var(--text);
+    line-height: var(--lineHeightLarge);
+    color: var(--colorForegroundRegular);
+  }
+  & li {
+    margin-left: 24px;
+    list-style-type: disc;
+  }
   &:last-child {
     border-left: none;
     padding-bottom: 0px;
   }
-
   &::before {
     content: "";
     display: block;
