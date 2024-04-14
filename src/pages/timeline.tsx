@@ -11,7 +11,6 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import GridLines from "../components/gridlines/gridLines";
 
-
 import Card from "../components/card/card";
 import Links from "../components/links/links";
 
@@ -23,9 +22,7 @@ const Timeline: React.FC<PageProps> = () => {
     const scrollTrigger = 120;
 
     const handleScroll = () => {
-      if (
-        window.scrollY >= scrollTrigger
-      ) {
+      if (window.scrollY >= scrollTrigger) {
         document.querySelector(".scrollTop").classList.add(className);
       } else {
         document.querySelector(".scrollTop").classList.remove(className);
@@ -92,7 +89,6 @@ const Timeline: React.FC<PageProps> = () => {
       <main className="gridWrapper">
         <div id="pageTop"></div>
         <div className="contentContainer contentContainer--main TemplateB">
-        <div className="anchor" id="workExperince"></div>
           <h1 className="width--full title--XXXL">Timeline</h1>
           <p className="timeLineIntro text--Medium">
             I am filled with gratitude for every experience. Each one has helped
@@ -105,41 +101,48 @@ const Timeline: React.FC<PageProps> = () => {
                 <div className="timelineMenuStyle"></div>
                 <ul className="anchorTimeline">
                   <li>
-                    <AnchorLink to="timeline/#workExperince">Work experince</AnchorLink>
+                    <AnchorLink to="timeline/#workExperince">
+                      Work experince
+                    </AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink to="timeline/#sideProjects">Passion & Projects</AnchorLink >
+                    <AnchorLink to="timeline/#sideProjects">
+                      Passion & Projects
+                    </AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink to="timeline/#freelancer">Freelancer</AnchorLink >
+                    <AnchorLink to="timeline/#freelancer">
+                      Freelancer
+                    </AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink to="timeline/#furtherEducation">Further education</AnchorLink >
+                    <AnchorLink to="timeline/#furtherEducation">
+                      Further education
+                    </AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink to="timeline/#volunteerWork">Volunteer work</AnchorLink >
+                    <AnchorLink to="timeline/#volunteerWork">
+                      Volunteer work
+                    </AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink to="timeline/#backer">Backer</AnchorLink >
+                    <AnchorLink to="timeline/#backer">Backer</AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink to="timeline/#gaming">Gaming</AnchorLink >
+                    <AnchorLink to="timeline/#gaming">Gaming</AnchorLink>
                   </li>
                   <li>
                     <AnchorLink className="scrollTop" to="timeline/#pageTop">
                       Scroll to top
-                    </AnchorLink >
+                    </AnchorLink>
                   </li>
                 </ul>
               </Card>
             </div>
           </aside>
           <section className="accordion">
-          
-            <Accordion
-              buttonText="💼 Work experince"
-              openOnMobile={true}
-            >
+            <div className="anchor" id="workExperince"></div>
+            <Accordion buttonText="💼 Work experince" openOnMobile={true}>
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
@@ -175,9 +178,9 @@ const Timeline: React.FC<PageProps> = () => {
                         </li>
                         <li>
                           Creating the basis for the design system: I worked
-                          with another designer. another designer, working
-                          closely with the front-end team to create the
-                          foundations of the design system.
+                          with another designer, collaborating closely with the
+                          front-end team to create the foundations of the design
+                          system.
                         </li>
                         <li>
                           Harmonizing Web & App UX/UI: In collaboration with a
@@ -274,7 +277,10 @@ const Timeline: React.FC<PageProps> = () => {
                       This included overseeing the plugin, Figma files,
                       homepage, FAQs, and Instagram - every part that makes a
                       good product complete. Thanks to{" "}
-                      <Links to="https://twitter.com/mariusbethge" aria="marius">
+                      <Links
+                        to="https://twitter.com/mariusbethge"
+                        aria="marius"
+                      >
                         Marius
                       </Links>{" "}
                       for the coding.
@@ -714,7 +720,7 @@ const Timeline: React.FC<PageProps> = () => {
             <div className="timeLineDevider"></div>
 
             <div className="anchor" id="backer"></div>
-            <Accordion  buttonText="💰 Backer">
+            <Accordion buttonText="💰 Backer">
               {
                 <ul className="timelineWrapper">
                   <li className="timelineList">
